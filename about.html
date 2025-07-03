@@ -275,6 +275,256 @@
             }
         }
     </style>
+
+      <!-- footer -->
+        <style>
+        :root {
+            --charcoal: #2C3E50;
+            --silver-mist: #BDC3C7;
+            --petroleum: #1ABC9C;
+            --deep-petroleum: #16A085;
+            --rose-gold: #E74C3C;
+            --warm-rose: #C0392B;
+            --light-silver: #ECF0F1;
+            --pure-white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, var(--light-silver), var(--pure-white));
+            min-height: 100vh;
+            color: var(--charcoal);
+        }
+
+        .footer-gradient {
+            background: linear-gradient(135deg, var(--charcoal), var(--deep-petroleum));
+            padding: 50px;
+        }
+
+        .footer-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .footer-section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--pure-white);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .footer-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--petroleum), var(--rose-gold));
+            border-radius: 2px;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer-link:hover {
+            color: var(--petroleum);
+            transform: translateX(-5px);
+        }
+
+        .footer-link i {
+            margin-left: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--pure-white);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .social-icon:hover {
+            background: var(--petroleum);
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
+        }
+
+        .social-icon.facebook:hover {
+            background: #1877F2;
+        }
+
+        .social-icon.twitter:hover {
+            background: #1DA1F2;
+        }
+
+        .social-icon.instagram:hover {
+            background: linear-gradient(45deg, #F56040, #E1306C, #C13584);
+        }
+
+        .social-icon.linkedin:hover {
+            background: #0A66C2;
+        }
+
+        .social-icon.whatsapp:hover {
+            background: #25D366;
+        }
+
+        .contact-info {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .contact-info i {
+            margin-left: 12px;
+            color: var(--petroleum);
+            width: 20px;
+            text-align: center;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .company-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--petroleum), var(--rose-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .company-tagline {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer-bottom p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom a {
+            color: var(--petroleum);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--rose-gold);
+        }
+
+        @keyframes footerFloat {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            padding: 12px 20px;
+            color: var(--pure-white);
+            font-family: 'Tajawal', sans-serif;
+            width: 100%;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: var(--petroleum);
+            box-shadow: 0 0 20px rgba(26, 188, 156, 0.3);
+        }
+
+        .newsletter-input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .newsletter-btn {
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            color: var(--pure-white);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+            width: 100%;
+            box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+        }
+
+        .newsletter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(26, 188, 156, 0.4);
+            background: linear-gradient(135deg, var(--deep-petroleum), var(--charcoal));
+        }
+
+        @media (max-width: 768px) {
+            .company-logo {
+                font-size: 2rem;
+            }
+            
+            .footer-section-title {
+                font-size: 1.1rem;
+            }
+            
+            .social-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+
+
 </head>
 <body>
     <!-- Mobile Menu Overlay -->
@@ -333,7 +583,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="luxury-gradient pt-24 pb-16">
+    <section class="luxury-gradient pt-40 pb-16">
         <div class="container-custom">
             <div class="text-center text-pure-white">
                 <h1 class="text-4xl lg:text-6xl font-bold mb-6 font-luxury">من نحن</h1>
@@ -517,57 +767,190 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section-padding rose-gradient">
-        <div class="container-custom">
-            <div class="text-center text-pure-white">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-luxury">جاهز للانضمام إلى عائلة عملائنا؟</h2>
-                <p class="text-xl mb-12 font-elegant">تواصل معنا اليوم واكتشف الفرق في جودة الخدمة</p>
-                <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <a href="contact.html" class="luxury-btn text-lg px-8 py-4">
-                        <i class="fas fa-envelope ml-2"></i>
-                        تواصل معنا
+   
+
+       <!-- Footer Section -->
+    <footer class="footer-gradient relative overflow-hidden">
+        <div class="footer-particles" id="footerParticles"></div>
+        
+        <div class="container mx-auto px-4 py-12 relative z-10">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <h2 class="company-logo">خدمات الخليج</h2>
+                <p class="company-tagline">شريكك الموثوق في الخدمات المنزلية الفاخرة</p>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="footer-section-title">معلومات الاتصال</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>+966 50 123 4567</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@gulfservices.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>الرياض، المملكة العربية السعودية</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 خدمة على مدار الساعة</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="footer-section-title">روابط سريعة</h3>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-home"></i>
+                        الرئيسية
                     </a>
-                    <a href="tel:+966501234567" class="rose-btn bg-charcoal hover:bg-dark-charcoal text-pure-white border-2 border-pure-white text-lg px-8 py-4">
-                        <i class="fas fa-phone ml-2"></i>
-                        اتصل الآن
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-cogs"></i>
+                        خدماتنا
                     </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-users"></i>
+                        من نحن
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-blog"></i>
+                        المدونة
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-phone-alt"></i>
+                        اتصل بنا
+                    </a>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="footer-section-title">خدماتنا</h3>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-truck"></i>
+                        نقل العفش
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-broom"></i>
+                        خدمات التنظيف
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-tools"></i>
+                        الصيانة العامة
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-paint-roller"></i>
+                        أعمال الدهان
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-leaf"></i>
+                        تنسيق الحدائق
+                    </a>
+                </div>
+
+                <!-- Newsletter & Social Media -->
+                <div>
+                    <h3 class="footer-section-title">ابق على تواصل</h3>
+                    <p class="text-white/80 mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
+                    
+                    
+
+                    <div class="flex gap-3 justify-center lg:justify-start">
+                        <a href="#" class="social-icon facebook" title="فيسبوك">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter" title="تويتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon instagram" title="إنستغرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon linkedin" title="لينكد إن">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon whatsapp" title="واتساب">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark-charcoal text-pure-white py-12">
-        <div class="container-custom">
-            <div class="text-center">
-                <div class="flex items-center justify-center space-x-3 space-x-reverse mb-6">
-                    <div class="service-icon w-16 h-16">
-                        <i class="fas fa-home text-2xl"></i>
-                    </div>
-                    <h3 class="text-3xl font-bold text-luxury font-luxury">خدمات الخليج</h3>
-                </div>
-                <p class="text-silver-mist mb-8 text-lg font-elegant">أفضل الخدمات المنزلية الفاخرة في دول الخليج العربي</p>
-                <div class="flex justify-center space-x-6 space-x-reverse mb-8">
-                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                        <i class="fab fa-facebook text-petroleum hover:text-pure-white"></i>
-                    </a>
-                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                        <i class="fab fa-twitter text-petroleum hover:text-pure-white"></i>
-                    </a>
-                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                        <i class="fab fa-instagram text-petroleum hover:text-pure-white"></i>
-                    </a>
-                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
-                        <i class="fab fa-whatsapp text-petroleum hover:text-pure-white"></i>
-                    </a>
-                </div>
-                <div class="border-t border-petroleum border-opacity-30 pt-8">
-                    <p class="text-silver-mist font-elegant">&copy; 2024 خدمات الخليج. جميع الحقوق محفوظة.</p>
-                </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 خدمات الخليج. جميع الحقوق محفوظة.</p>
+                <p>
+                    <a href="#">سياسة الخصوصية</a> | 
+                    <a href="#">شروط الاستخدام</a> | 
+                    <a href="#">سياسة الاسترداد</a>
+                </p>
+                <p class="mt-2 text-sm">
+                    تم التطوير بواسطة <a href="#" class="text-petroleum hover:text-rose-gold">فريق التطوير</a>
+                </p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Footer Particles Animation
+        function createFooterParticles() {
+            const footerParticles = document.getElementById('footerParticles');
+            if (!footerParticles) return;
+
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${Math.random() * 4 + 2}px;
+                    height: ${Math.random() * 4 + 2}px;
+                    background: linear-gradient(45deg, var(--petroleum), var(--rose-gold));
+                    border-radius: 50%;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                    animation: footerFloat ${Math.random() * 15 + 15}s infinite linear;
+                    opacity: ${Math.random() * 0.3 + 0.1};
+                `;
+                footerParticles.appendChild(particle);
+            }
+        }
+
+        // Newsletter Subscription
+        function handleNewsletterSubmit() {
+            const newsletterBtn = document.querySelector('.newsletter-btn');
+            const newsletterInput = document.querySelector('.newsletter-input');
+            
+            if (newsletterBtn && newsletterInput) {
+                newsletterBtn.addEventListener('click', function() {
+                    const email = newsletterInput.value.trim();
+                    if (email) {
+                        // Here you would typically send the email to your backend
+                        alert(`شكراً لك! تم تسجيل بريدك الإلكتروني: ${email}`);
+                        newsletterInput.value = '';
+                    } else {
+                        alert('يرجى إدخال بريد إلكتروني صحيح');
+                    }
+                });
+
+                // Handle Enter key press
+                newsletterInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        newsletterBtn.click();
+                    }
+                });
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            createFooterParticles();
+            handleNewsletterSubmit();
+        });
+    </script>
 
     <script>
         // Mobile menu functionality

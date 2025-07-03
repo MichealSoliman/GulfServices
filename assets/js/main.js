@@ -7,7 +7,7 @@ const services = [
         id: 1,
         name: 'نقل العفش بالكويت',
         description: 'خدمة نقل العفش والأثاث في الكويت بأحدث الوسائل وأفضل الأسعار مع ضمان سلامة الأثاث وخدمة فاخرة',
-        image: '../images/',
+        image: 'https://www.bashir-mover.com/pro1.png',
         url: 'https://www.bashir-mover.com/',
         location: 'الكويت',
         category: ' بشاير الخير ',
@@ -20,6 +20,7 @@ const services = [
         name: 'تنظيف المنازل جدة',
         description: 'خدمة تنظيف شاملة للمنازل والشقق بعمالة مدربة ومواد تنظيف عالية الجودة مع ضمان النظافة',
         image: 'https://naqaa-clean.com/blog/water-leak-detection.png',
+        
         url: 'https://naqaa-clean.com/',
         location: 'جدة',
         category: 'تنظيف',
@@ -215,7 +216,7 @@ class GulfServices {
         
         card.innerHTML = `
             <div class="relative">
-                <img src="${service.image}" alt="${service.name}" class="w-full h-48 object-cover rounded-t-lg">
+                <img src="${service.image}" alt="${service.name}" class="w-full h-48 object-center rounded-t-lg">
                 <div class="absolute top-4 left-4 bg-petroleum text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.location}
                 </div>
