@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - خدمات الخليج</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'charcoal': '#2C3E50',
+                        'silver-mist': '#BDC3C7',
+                        'petroleum': '#1ABC9C',
+                        'rose-gold': '#E74C3C',
+                        'pure-white': '#FFFFFF',
+                        'dark-charcoal': '#1A252F',
+                        'light-silver': '#ECF0F1',
+                        'deep-petroleum': '#16A085',
+                        'warm-rose': '#C0392B'
+                    },
+                    fontFamily: {
+                        'arabic': ['Tajawal', 'Arial', 'sans-serif'],
+                        'luxury': ['Playfair Display', 'serif'],
+                        'elegant': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --charcoal: #2C3E50;
+            --silver-mist: #BDC3C7;
+            --petroleum: #1ABC9C;
+            --rose-gold: #E74C3C;
+            --pure-white: #FFFFFF;
+            --dark-charcoal: #1A252F;
+            --light-silver: #ECF0F1;
+            --deep-petroleum: #16A085;
+            --warm-rose: #C0392B;
+        }
+
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--light-silver) 0%, var(--pure-white) 100%);
+        }
+
+        .luxury-gradient {
+            background: linear-gradient(135deg, var(--petroleum) 0%, var(--deep-petroleum) 50%, var(--charcoal) 100%);
+        }
+
+        .rose-gradient {
+            background: linear-gradient(135deg, var(--rose-gold) 0%, var(--warm-rose) 100%);
+        }
+
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .luxury-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--petroleum);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(26, 188, 156, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .luxury-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(26, 188, 156, 0.3);
+            border-color: var(--deep-petroleum);
+        }
+
+        .navbar {
+            background: rgba(26, 37, 47, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 2px solid var(--petroleum);
+        }
+
+        .nav-link {
+            color: var(--pure-white);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 8px 16px;
+            border-radius: 25px;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--petroleum);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            width: 80%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--petroleum);
+            background: rgba(26, 188, 156, 0.1);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 300px;
+            height: 100vh;
+            background: linear-gradient(135deg, var(--dark-charcoal), var(--charcoal));
+            backdrop-filter: blur(20px);
+            border-left: 2px solid var(--petroleum);
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+            padding: 80px 30px 30px;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .hamburger {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: var(--petroleum);
+            border-radius: 2px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hamburger span:nth-child(1) { top: 0; }
+        .hamburger span:nth-child(2) { top: 50%; transform: translateY(-50%); }
+        .hamburger span:nth-child(3) { bottom: 0; }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 50%;
+            margin-top: -1.5px;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg);
+            bottom: 50%;
+            margin-bottom: -1.5px;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        .text-luxury {
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-icon:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
+        }
+
+        .service-icon i {
+            color: var(--pure-white);
+            font-size: 24px;
+        }
+
+        .luxury-btn {
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            color: var(--pure-white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(26, 188, 156, 0.3);
+        }
+
+        .luxury-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(26, 188, 156, 0.4);
+        }
+
+        .rose-btn {
+            background: linear-gradient(135deg, var(--rose-gold), var(--warm-rose));
+            color: var(--pure-white);
+            padding: 14px 28px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+        }
+
+        .rose-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(231, 76, 60, 0.4);
+        }
+
+        .luxury-input {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--petroleum);
+            border-radius: 15px;
+            padding: 16px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        .luxury-input:focus {
+            outline: none;
+            border-color: var(--deep-petroleum);
+            box-shadow: 0 0 20px rgba(26, 188, 156, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .luxury-select {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--petroleum);
+            border-radius: 15px;
+            padding: 16px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: 'Tajawal', sans-serif;
+            cursor: pointer;
+        }
+
+        .luxury-select:focus {
+            outline: none;
+            border-color: var(--deep-petroleum);
+            box-shadow: 0 0 20px rgba(26, 188, 156, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .luxury-textarea {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--petroleum);
+            border-radius: 15px;
+            padding: 16px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: 'Tajawal', sans-serif;
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .luxury-textarea:focus {
+            outline: none;
+            border-color: var(--deep-petroleum);
+            box-shadow: 0 0 20px rgba(26, 188, 156, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .luxury-label {
+            color: var(--charcoal);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 4rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="index.html" class="block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="index.html#services" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="about.html" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">من نحن</a>
+            <a href="contact.html" class="block text-silver-mist hover:text-pure-white transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">اتصل بنا</a>
+        </div>
+        <div class="mt-8">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="service-icon w-12 h-12">
+                        <i class="fas fa-home text-lg"></i>
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-luxury font-luxury hover:opacity-80 transition-opacity">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="index.html#services" class="nav-link">خدماتنا</a>
+                    <a href="about.html" class="nav-link">من نحن</a>
+                    <a href="contact.html" class="nav-link active">اتصل بنا</a>
+                </div>
+                
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="luxury-gradient pt-24 pb-16">
+        <div class="container-custom">
+            <div class="text-center text-pure-white">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 font-luxury">اتصل بنا</h1>
+                <p class="text-xl opacity-90 max-w-4xl mx-auto leading-relaxed font-elegant">
+                    نحن هنا لخدمتك في أي وقت. تواصل معنا للحصول على أفضل الخدمات المنزلية والتجارية الفاخرة
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section-padding bg-light-silver">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="luxury-card p-10">
+                    <h2 class="text-3xl font-bold text-charcoal mb-8 font-luxury text-center">
+                        أرسل لنا <span class="text-luxury">رسالة فاخرة</span>
+                    </h2>
+                    
+                    <form class="space-y-6" id="contactForm">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="luxury-label">الاسم الكامل *</label>
+                                <input type="text" class="luxury-input w-full" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+                            <div>
+                                <label class="luxury-label">رقم الهاتف *</label>
+                                <input type="tel" class="luxury-input w-full" placeholder="أدخل رقم هاتفك" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="luxury-label">البريد الإلكتروني *</label>
+                            <input type="email" class="luxury-input w-full" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="luxury-label">نوع الخدمة</label>
+                                <select class="luxury-select w-full">
+                                    <option>اختر نوع الخدمة</option>
+                                    <option>نقل العفش</option>
+                                    <option>تنظيف المنازل</option>
+                                    <option>صيانة عامة</option>
+                                    <option>تنظيف السجاد</option>
+                                    <option>خدمات السباكة</option>
+                                    <option>أخرى</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="luxury-label">المدينة</label>
+                                <select class="luxury-select w-full">
+                                    <option>اختر المدينة</option>
+                                    <option>الكويت</option>
+                                    <option>الرياض</option>
+                                    <option>جدة</option>
+                                    <option>دبي</option>
+                                    <option>أبوظبي</option>
+                                    <option>الدوحة</option>
+                                    <option>المنامة</option>
+                                    <option>مسقط</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="luxury-label">الرسالة</label>
+                            <textarea class="luxury-textarea w-full" placeholder="اكتب رسالتك هنا..." rows="5"></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="rose-btn text-lg px-12 py-4">
+                                <i class="fas fa-paper-plane ml-2"></i>
+                                إرسال الرسالة
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="luxury-card p-8 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">اتصل بنا</h3>
+                        <div class="space-y-2 text-silver-mist font-elegant">
+                            <p class="text-lg">+966 50 123 4567</p>
+                            <p class="text-lg">+965 9999 8888</p>
+                            <p class="text-lg">+971 50 555 7777</p>
+                        </div>
+                    </div>
+                    
+                    <div class="luxury-card p-8 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">راسلنا</h3>
+                        <div class="space-y-2 text-silver-mist font-elegant">
+                            <p class="text-lg">info@gulf-services.com</p>
+                            <p class="text-lg">support@gulf-services.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="luxury-card p-8 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">موقعنا</h3>
+                        <div class="space-y-2 text-silver-mist font-elegant">
+                            <p class="text-lg">جميع دول الخليج العربي</p>
+                            <p class="text-lg">خدمة 24/7</p>
+                        </div>
+                    </div>
+                    
+                    <div class="luxury-card p-8 text-center">
+                        <div class="service-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">واتساب</h3>
+                        <div class="space-y-2 text-silver-mist font-elegant">
+                            <p class="text-lg">+966 50 123 4567</p>
+                            <p class="text-sm opacity-80">متاح 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="section-padding luxury-gradient">
+        <div class="container-custom">
+            <div class="text-center text-pure-white mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-luxury">
+                    مناطق <span class="text-rose-gold">خدماتنا</span> الفاخرة
+                </h2>
+                <p class="text-xl font-elegant">نخدم جميع دول الخليج العربي بأعلى معايير الفخامة</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">الكويت</h3>
+                    <p class="text-silver-mist font-elegant">جميع المحافظات والمناطق</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">السعودية</h3>
+                    <p class="text-silver-mist font-elegant">الرياض، جدة، الدمام، والمدن الرئيسية</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">الإمارات</h3>
+                    <p class="text-silver-mist font-elegant">دبي، أبوظبي، الشارقة، وجميع الإمارات</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">قطر</h3>
+                    <p class="text-silver-mist font-elegant">الدوحة والضواحي والمناطق المحيطة</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-diamond"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">البحرين</h3>
+                    <p class="text-silver-mist font-elegant">المنامة والمحرق وجميع المناطق</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-charcoal mb-4 font-luxury">عُمان</h3>
+                    <p class="text-silver-mist font-elegant">مسقط وصلالة والمدن الرئيسية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding rose-gradient">
+        <div class="container-custom">
+            <div class="text-center text-pure-white">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-luxury">جاهز للحصول على خدماتنا الفاخرة؟</h2>
+                <p class="text-xl mb-12 font-elegant">تواصل معنا الآن واحصل على أفضل الخدمات المنزلية والتجارية الفاخرة</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <button class="luxury-btn text-lg px-8 py-4" onclick="scrollToForm()">
+                        <i class="fas fa-envelope ml-2"></i>
+                        أرسل رسالة
+                    </button>
+                    <a href="tel:+966501234567" class="rose-btn bg-charcoal hover:bg-dark-charcoal text-pure-white border-2 border-pure-white text-lg px-8 py-4">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل الآن
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-charcoal text-pure-white py-12">
+        <div class="container-custom">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 space-x-reverse mb-6">
+                    <div class="service-icon w-16 h-16">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-luxury font-luxury">خدمات الخليج</h3>
+                </div>
+                <p class="text-silver-mist mb-8 text-lg font-elegant">أفضل الخدمات المنزلية الفاخرة في دول الخليج العربي</p>
+                <div class="flex justify-center space-x-6 space-x-reverse mb-8">
+                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-facebook text-petroleum hover:text-pure-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-twitter text-petroleum hover:text-pure-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-instagram text-petroleum hover:text-pure-white"></i>
+                    </a>
+                    <a href="#" class="w-12 h-12 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                        <i class="fab fa-whatsapp text-petroleum hover:text-pure-white"></i>
+                    </a>
+                </div>
+                <div class="border-t border-petroleum border-opacity-30 pt-8">
+                    <p class="text-silver-mist font-elegant">&copy; 2024 خدمات الخليج. جميع الحقوق محفوظة.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        let isMenuOpen = false;
+
+        function toggleMobileMenu() {
+            isMenuOpen = !isMenuOpen;
+            
+            if (isMenuOpen) {
+                hamburger.classList.add('active');
+                mobileMenu.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        hamburger.addEventListener('click', toggleMobileMenu);
+        mobileMenuOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when clicking on links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMobileMenu);
+        });
+
+        // Contact form handling
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-check ml-2"></i>تم الإرسال بنجاح!';
+            submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = '';
+                this.reset();
+            }, 3000);
+        });
+
+        // Scroll to form function
+        function scrollToForm() {
+            const form = document.getElementById('contactForm');
+            form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Luxury hover effects
+        const luxuryCards = document.querySelectorAll('.luxury-card');
+        luxuryCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Input focus effects
+        const inputs = document.querySelectorAll('.luxury-input, .luxury-select, .luxury-textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.style.transform = 'scale(1.02)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
+

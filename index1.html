@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة المشاريع - خدمات الخليج</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --charcoal: #2C3E50;
+            --silver-mist: #BDC3C7;
+            --petroleum: #1ABC9C;
+            --deep-petroleum: #16A085;
+            --rose-gold: #E74C3C;
+            --warm-rose: #C0392B;
+            --light-silver: #ECF0F1;
+            --pure-white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, var(--light-silver), var(--pure-white));
+            min-height: 100vh;
+            color: var(--charcoal);
+        }
+
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section-padding {
+            padding: 6rem 0;
+        }
+
+        /* Blog Section Styles */
+        .blog-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .blog-filter {
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            color: var(--pure-white);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+            box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+        }
+
+        .blog-filter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(26, 188, 156, 0.4);
+            background: linear-gradient(135deg, var(--deep-petroleum), var(--charcoal));
+        }
+
+        .blog-filter.active {
+            background: linear-gradient(135deg, var(--rose-gold), var(--warm-rose));
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card--hero {
+            grid-column: span 2;
+            min-height: 400px;
+        }
+
+        .blog-card--standard {
+            min-height: 350px;
+        }
+
+        .blog-card--mini {
+            min-height: 250px;
+        }
+
+        .blog-card--text {
+            min-height: 300px;
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            color: var(--pure-white);
+        }
+
+        .blog-card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .blog-card--hero .blog-card-image {
+            height: 250px;
+        }
+
+        .blog-card:hover .blog-card-image {
+            transform: scale(1.1);
+        }
+
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+
+        .blog-card--hero .blog-card-content {
+            padding: 2rem;
+        }
+
+        .blog-card-category {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .blog-card-category--moving {
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            color: var(--pure-white);
+        }
+
+        .blog-card-category--cleaning {
+            background: linear-gradient(135deg, #10B981, #059669);
+            color: var(--pure-white);
+        }
+
+        .blog-card-category--maintenance {
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+            color: var(--pure-white);
+        }
+
+        .blog-card-category--tips {
+            background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+            color: var(--pure-white);
+        }
+
+        .blog-card-category--success {
+            background: linear-gradient(135deg, var(--rose-gold), var(--warm-rose));
+            color: var(--pure-white);
+        }
+
+        .blog-card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .blog-card--hero .blog-card-title {
+            font-size: 2rem;
+        }
+
+        .blog-card--text .blog-card-title {
+            color: var(--pure-white);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .blog-card-excerpt {
+            color: var(--silver-mist);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .blog-card--text .blog-card-excerpt {
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .blog-card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: var(--silver-mist);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .blog-card--text .blog-card-meta {
+            color: rgba(255, 255, 255, 0.8);
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .luxury-btn-outline {
+            background: transparent;
+            border: 2px solid var(--petroleum);
+            color: var(--petroleum);
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .luxury-btn-outline:hover {
+            background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
+            color: var(--pure-white);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.3);
+        }
+
+        .font-luxury {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-elegant {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .text-luxury {
+            background: linear-gradient(135deg, var(--petroleum), var(--rose-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes blogFloat {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        @media (max-width: 1024px) {
+            .blog-card--hero {
+                grid-column: span 1;
+            }
+            
+            .blog-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .blog-card {
+                min-height: auto;
+            }
+            
+            .blog-card--hero,
+            .blog-card--standard,
+            .blog-card--mini,
+            .blog-card--text {
+                min-height: auto;
+            }
+            
+            .blog-card-title {
+                font-size: 1.25rem;
+            }
+            
+            .blog-card--hero .blog-card-title {
+                font-size: 1.5rem;
+            }
+            
+            .blog-card--text .blog-card-title {
+                font-size: 1.75rem;
+            }
+
+            .section-padding {
+                padding: 4rem 0;
+            }
+
+            .container-custom {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Blog Section -->
+    <section id="blog" class="section-padding bg-gradient-to-br from-light-silver to-pure-white relative overflow-hidden">
+        <div class="blog-particles" id="blogParticles"></div>
+        <div class="container-custom relative z-10">
+            <!-- Blog Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-luxury mb-6 font-luxury">مدونة المشاريع</h2>
+                <p class="text-xl text-charcoal opacity-80 max-w-3xl mx-auto font-elegant leading-relaxed">
+                    اكتشف قصص نجاح مشاريعنا ونصائح الخبراء في عالم الخدمات المنزلية الفاخرة
+                </p>
+                
+                <!-- Blog Filters -->
+                <div class="flex flex-wrap justify-center gap-4 mt-8" id="blogFilters">
+                    <button class="blog-filter active" data-category="all">
+                        <i class="fas fa-th-large ml-2"></i>
+                        جميع المقالات
+                    </button>
+                    <button class="blog-filter" data-category="moving">
+                        <i class="fas fa-truck ml-2"></i>
+                        نقل العفش
+                    </button>
+                    <button class="blog-filter" data-category="cleaning">
+                        <i class="fas fa-broom ml-2"></i>
+                        التنظيف
+                    </button>
+                    <button class="blog-filter" data-category="maintenance">
+                        <i class="fas fa-tools ml-2"></i>
+                        الصيانة
+                    </button>
+                    <button class="blog-filter" data-category="tips">
+                        <i class="fas fa-lightbulb ml-2"></i>
+                        نصائح
+                    </button>
+                    <button class="blog-filter" data-category="success">
+                        <i class="fas fa-trophy ml-2"></i>
+                        قصص نجاح
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog cards will be dynamically inserted here -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="loadMoreBlog" class="luxury-btn-outline">
+                    <i class="fas fa-plus ml-2"></i>
+                    عرض المزيد من المقالات
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Blog Posts Data
+        const blogPosts = [
+            {
+                id: 1,
+                title: 'مشروع نقل عفش فيلا فاخرة في الكويت',
+                excerpt: 'قصة نجاح مشروع نقل عفش فيلا فاخرة مكونة من 3 طوابق في منطقة السالمية، الكويت. تم استخدام أحدث المعدات وأفضل الفنيين لضمان نقل آمن وسريع.',
+                image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
+                category: 'moving',
+                date: '2024-01-15',
+                readTime: '5 دقائق',
+                type: 'hero',
+                author: 'فريق خدمات الخليج'
+            },
+            {
+                id: 2,
+                title: 'تنظيف شامل لمجمع سكني في الرياض',
+                excerpt: 'مشروع تنظيف شامل لمجمع سكني يضم 50 شقة في الرياض. استخدمنا أحدث تقنيات التنظيف الصديقة للبيئة.',
+                image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&h=300&fit=crop',
+                category: 'cleaning',
+                date: '2024-01-10',
+                readTime: '4 دقائق',
+                type: 'standard',
+                author: 'فريق التنظيف'
+            },
+            {
+                id: 3,
+                title: 'نصائح للحفاظ على الأثاث أثناء النقل',
+                excerpt: 'دليل شامل للحفاظ على الأثاث والممتلكات الثمينة أثناء عملية النقل مع نصائح من خبراء نقل العفش.',
+                image: null,
+                category: 'tips',
+                date: '2024-01-08',
+                readTime: '7 دقائق',
+                type: 'text',
+                author: 'خبراء النقل'
+            },
+            {
+                id: 4,
+                title: 'صيانة مكيفات مبنى تجاري في دبي',
+                excerpt: 'مشروع صيانة شاملة لنظام التكييف في مبنى تجاري مكون من 20 طابق في دبي.',
+                image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&h=300&fit=crop',
+                category: 'maintenance',
+                date: '2024-01-05',
+                readTime: '3 دقائق',
+                type: 'mini',
+                author: 'فريق الصيانة'
+            },
+            {
+                id: 5,
+                title: 'قصة نجاح: عميل راضٍ في جدة',
+                excerpt: 'تجربة عميل مميزة مع خدمات التنظيف الشاملة في جدة وكيف حققنا توقعاته وأكثر.',
+                image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop',
+                category: 'success',
+                date: '2024-01-03',
+                readTime: '6 دقائق',
+                type: 'standard',
+                author: 'إدارة العلاقات'
+            },
+            {
+                id: 6,
+                title: 'تقنيات التنظيف الحديثة',
+                excerpt: 'استكشف أحدث تقنيات التنظيف التي نستخدمها لضمان أفضل النتائج وحماية البيئة.',
+                image: null,
+                category: 'tips',
+                date: '2024-01-01',
+                readTime: '5 دقائق',
+                type: 'text',
+                author: 'فريق البحث والتطوير'
+            }
+        ];
+
+        // Blog functionality
+        class BlogManager {
+            constructor() {
+                this.currentFilter = 'all';
+                this.displayedPosts = 4;
+                this.postsPerLoad = 2;
+                this.init();
+            }
+
+            init() {
+                this.createBlogParticles();
+                this.renderBlogPosts();
+                this.setupEventListeners();
+            }
+
+            createBlogParticles() {
+                const blogParticles = document.getElementById('blogParticles');
+                if (!blogParticles) return;
+
+                for (let i = 0; i < 15; i++) {
+                    const particle = document.createElement('div');
+                    particle.style.cssText = `
+                        position: absolute;
+                        width: ${Math.random() * 6 + 2}px;
+                        height: ${Math.random() * 6 + 2}px;
+                        background: linear-gradient(45deg, var(--petroleum), var(--rose-gold));
+                        border-radius: 50%;
+                        left: ${Math.random() * 100}%;
+                        top: ${Math.random() * 100}%;
+                        animation: blogFloat ${Math.random() * 10 + 10}s infinite linear;
+                        opacity: ${Math.random() * 0.5 + 0.2};
+                    `;
+                    blogParticles.appendChild(particle);
+                }
+            }
+
+            setupEventListeners() {
+                // Filter buttons
+                const filterButtons = document.querySelectorAll('.blog-filter');
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const category = e.target.dataset.category;
+                        this.filterPosts(category);
+                        
+                        // Update active filter
+                        filterButtons.forEach(btn => btn.classList.remove('active'));
+                        e.target.classList.add('active');
+                    });
+                });
+
+                // Load more button
+                const loadMoreBtn = document.getElementById('loadMoreBlog');
+                if (loadMoreBtn) {
+                    loadMoreBtn.addEventListener('click', () => {
+                        this.loadMorePosts();
+                    });
+                }
+            }
+
+            filterPosts(category) {
+                this.currentFilter = category;
+                this.displayedPosts = 4;
+                this.renderBlogPosts();
+            }
+
+            getFilteredPosts() {
+                if (this.currentFilter === 'all') {
+                    return blogPosts;
+                }
+                return blogPosts.filter(post => post.category === this.currentFilter);
+            }
+
+            renderBlogPosts() {
+                const blogGrid = document.getElementById('blogGrid');
+                if (!blogGrid) return;
+
+                const filteredPosts = this.getFilteredPosts();
+                const postsToShow = filteredPosts.slice(0, this.displayedPosts);
+                
+                blogGrid.innerHTML = '';
+                
+                postsToShow.forEach((post, index) => {
+                    const postElement = this.createBlogCard(post);
+                    blogGrid.appendChild(postElement);
+                    
+                    // Add staggered animation
+                    setTimeout(() => {
+                        postElement.style.opacity = '1';
+                        postElement.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+
+                // Update load more button
+                this.updateLoadMoreButton(filteredPosts.length);
+            }
+
+            createBlogCard(post) {
+                const card = document.createElement('div');
+                card.className = `blog-card blog-card--${post.type}`;
+                card.style.cssText = 'opacity: 0; transform: translateY(30px); transition: all 0.6s ease;';
+
+                const categoryClass = `blog-card-category--${post.category}`;
+                const categoryNames = {
+                    moving: 'نقل العفش',
+                    cleaning: 'التنظيف',
+                    maintenance: 'الصيانة',
+                    tips: 'نصائح',
+                    success: 'قصص نجاح'
+                };
+
+                let cardContent = '';
+
+                if (post.type === 'text') {
+                    cardContent = `
+                        <div class="blog-card-content">
+                            <span class="blog-card-category ${categoryClass}">${categoryNames[post.category]}</span>
+                            <h3 class="blog-card-title">${post.title}</h3>
+                            <p class="blog-card-excerpt">${post.excerpt}</p>
+                            <div class="blog-card-meta">
+                                <span><i class="fas fa-calendar ml-1"></i> ${this.formatDate(post.date)}</span>
+                                <span><i class="fas fa-clock ml-1"></i> ${post.readTime}</span>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    cardContent = `
+                        ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-card-image">` : ''}
+                        <div class="blog-card-content">
+                            <span class="blog-card-category ${categoryClass}">${categoryNames[post.category]}</span>
+                            <h3 class="blog-card-title">${post.title}</h3>
+                            <p class="blog-card-excerpt">${post.excerpt}</p>
+                            <div class="blog-card-meta">
+                                <span><i class="fas fa-calendar ml-1"></i> ${this.formatDate(post.date)}</span>
+                                <span><i class="fas fa-clock ml-1"></i> ${post.readTime}</span>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                card.innerHTML = cardContent;
+
+                // Add click event
+                card.addEventListener('click', () => {
+                    this.openBlogPost(post);
+                });
+
+                return card;
+            }
+
+            formatDate(dateString) {
+                const date = new Date(dateString);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                return date.toLocaleDateString('ar-SA', options);
+            }
+
+            loadMorePosts() {
+                this.displayedPosts += this.postsPerLoad;
+                this.renderBlogPosts();
+            }
+
+            updateLoadMoreButton(totalPosts) {
+                const loadMoreBtn = document.getElementById('loadMoreBlog');
+                if (!loadMoreBtn) return;
+
+                if (this.displayedPosts >= totalPosts) {
+                    loadMoreBtn.style.display = 'none';
+                } else {
+                    loadMoreBtn.style.display = 'inline-block';
+                }
+            }
+
+            openBlogPost(post) {
+                // Create modal or navigate to full post
+                alert(`عنوان المقال: ${post.title}\nالفئة: ${post.category}\nتاريخ النشر: ${this.formatDate(post.date)}\nوقت القراءة: ${post.readTime}\nالكاتب: ${post.author}\n\n${post.excerpt}`);
+            }
+        }
+
+        // Initialize blog when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            window.blogManager = new BlogManager();
+        });
+    </script>
+</body>
+</html>
+
