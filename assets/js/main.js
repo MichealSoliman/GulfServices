@@ -27,6 +27,18 @@ const services = [
         price: 'افضل الأسعار',
         borderClass: 'rose-border'
     },
+      {
+        id: 3,
+        name: 'نقل العفش بجدة ',
+      description: 'صيانة شاملة واحترافية لأنظمة التكييف في الرياض تشمل التنظيف، الفحص، وإصلاح الأعطال، مع أسعار تنافسية، وخدمة سريعة، وضمان كفاءة التبريد والأداء المثالي طوال العام.',
+
+        image: 'https://homo-ve.com/Untitled-1Artboard-12%20copy.webp',
+        url: 'https://homo-ve.com/',
+        location: 'جدة',
+        category: 'نقل عفش',
+        price: 'Homve',
+        borderClass: 'petroleum-border'
+    },
 
     {
         id: 4,
@@ -73,17 +85,7 @@ const services = [
         price: 'عفشك بأمان',
         borderClass: 'petroleum-border'
     },
-     {
-        id: 9,
-        name: 'نقل العفش بالرياض',
-        description: 'نقل الأثاث والعفش في الرياض بخدمة فاخرة، أسعار تنافسية، وضمان كامل لسلامة الأثاث.',
-        image: 'https://www.primomoves.com/serv2.avif',
-        url: 'https://www.primomoves.com/',
-        location: 'الرياض',
-        category: 'نقل عفش',
-        price: ' بريمو موفرز',
-        borderClass: 'petroleum-border'
-    },
+   
      {
         id: 8,
         name: 'نقل العفش بجدة',
@@ -96,7 +98,18 @@ const services = [
         borderClass: 'petroleum-border'
     },
       {
-        id: 6,
+        id: 9,
+        name: 'نقل العفش بالرياض',
+        description: 'نقل الأثاث والعفش في الرياض بخدمة فاخرة، أسعار تنافسية، وضمان كامل لسلامة الأثاث.',
+        image: 'https://www.primomoves.com/serv2.avif',
+        url: 'https://www.primomoves.com/',
+        location: 'الرياض',
+        category: 'نقل عفش',
+        price: ' بريمو موفرز',
+        borderClass: 'petroleum-border'
+    },
+      {
+        id: 10,
         name: 'نظافة منزلك  ',
         description: 'نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق والقصور بأعلى معايير الجودة، مع عمالة تنظيف محترفة وأحدث تقنيات التنظيف',
         image: 'https://cleanplusteam.com/pest_control.jpg',
@@ -107,7 +120,7 @@ const services = [
         borderClass: 'rose-border'
     },
       {
-        id: 6,
+        id: 11,
         name: 'النظافه المثالية ',
         description: 'نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق والقصور بأعلى معايير الجودة، مع عمالة تنظيف محترفة وأحدث تقنيات التنظيف',
         image: 'https://www.cleanwithfresh.com/images/blog/home-disinfection.png',
@@ -117,6 +130,31 @@ const services = [
         price: 'كلين',
         borderClass: 'rose-border'
     },
+      {
+        id: 12,
+        name: 'نقل العفش بالرياض',
+       description: 'أفضل حلول نقل الأثاث والعفش في الرياض مع ضمان السرعة والأمان، تغليف احترافي وخدمة عملاء على مدار الساعة بأسعار مغرية.',
+
+        image: 'https://jadmoves.com/Untitled-1Artboard-3%20copy.webp',
+        url: 'https://jadmoves.com/',
+        location: 'الرياض',
+        category: 'نقل عفش',
+        price: ' جادة موفرز',
+        borderClass: 'petroleum-border'
+    },
+      {
+        id: 13,
+        name: ' مكافحة الحرائق ',
+       description: 'خدمات مكافحة حرائق متكاملة تشمل الوقاية والتوعية، مع نصائح احترافية لحماية الأرواح والممتلكات وضمان أعلى معايير الأمان والسلامة على مدار الساعة.',
+
+        image: 'https://nazretelebdaa.com/assets/img/Artboard3.webp',
+        url: 'https://nazretelebdaa.com/',
+        location: 'الرياض',
+        category: ' انظيمة السلامة',
+        price: ' نظرة الابداع ',
+        borderClass: 'petroleum-border'
+    },
+   
 ];
 
 // Gulf Services Main Class
