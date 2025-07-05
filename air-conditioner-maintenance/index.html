@@ -13,11 +13,11 @@
                         'arabic': ['Tajawal', 'Arial', 'sans-serif']
                     },
                     colors: {
-                        'primary': '#1e40af',
-                        'secondary': '#3b82f6',
-                        'accent': '#06b6d4',
-                        'dark': '#1f2937',
-                        'light': '#f8fafc'
+                        'primary-custom': '#2c3981',
+                        'primary-light': '#4a59a3',
+                        'primary-dark': '#1e285a',
+                        'gray-custom': '#f8fafc',
+                        'dark-custom': '#1f2937'
                     }
                 }
             }
@@ -29,7 +29,7 @@
             font-family: 'Tajawal', Arial, sans-serif;
         }
         .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c3981 0%, #4a59a3 100%);
         }
         .card-hover {
             transition: all 0.3s ease;
@@ -51,18 +51,18 @@
             margin: 3rem 0;
         }
         .text-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c3981 0%, #4a59a3 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c3981 0%, #4a59a3 100%);
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 20px rgba(44, 57, 129, 0.3);
         }
         .floating {
             animation: floating 3s ease-in-out infinite;
@@ -79,29 +79,29 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-custom text-gray-800">
     <!-- Header -->
     <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4 space-x-reverse">
                     <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
                         </svg>
                     </div>
                     <div>
                         <h1 class="text-2xl font-bold"> صيانة المكيفات</h1>
-                        <p class="text-blue-100">دليلك الشامل للحفاظ على برودة منزلك</p>
+                        <p class="text-primary-light">دليلك الشامل للحفاظ على برودة منزلك</p>
                     </div>
                 </div>
                 <nav class="hidden md:flex space-x-6 space-x-reverse">
-                    <a href="#home" class="hover:text-blue-200 transition-colors">الرئيسية</a>
-                    <a href="#importance" class="hover:text-blue-200 transition-colors">أهمية الصيانة</a>
-                    <a href="#types" class="hover:text-blue-200 transition-colors">أنواع المكيفات</a>
-                    <a href="#problems" class="hover:text-blue-200 transition-colors">الأعطال الشائعة</a>
-                    <a href="#tips" class="hover:text-blue-200 transition-colors">نصائح ذهبية</a>
-                    <a href="#modifications" class="hover:text-blue-200 transition-colors">التعديلات</a>
+                    <a href="#home" class="hover:text-primary-light transition-colors">الرئيسية</a>
+                    <a href="#importance" class="hover:text-primary-light transition-colors">أهمية الصيانة</a>
+                    <a href="#types" class="hover:text-primary-light transition-colors">أنواع المكيفات</a>
+                    <a href="#problems" class="hover:text-primary-light transition-colors">الأعطال الشائعة</a>
+                    <a href="#tips" class="hover:text-primary-light transition-colors">نصائح ذهبية</a>
+                    <a href="#modifications" class="hover:text-primary-light transition-colors">التعديلات</a>
                 </nav>
             </div>
         </div>
@@ -109,25 +109,25 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-dark via-primary-custom to-primary-dark"></div>
         <div class="absolute inset-0 bg-black opacity-40"></div>
         <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
             <div class="floating">
-                <svg class="w-24 h-24 mx-auto mb-8 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                <svg class="w-24 h-24 mx-auto mb-8 text-primary-light" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
                 </svg>
             </div>
             <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">
                 صيانة وتعديل المكيفات
             </h1>
-            <p class="text-xl md:text-2xl mb-8 text-blue-100 fade-in">
+            <p class="text-xl md:text-2xl mb-8 text-primary-light fade-in">
                 دليلك الشامل للحفاظ على برودة منزلك وكفاءة جهازك
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
                 <button class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">
                     ابدأ القراءة
                 </button>
-                <!-- <button class="border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-900 transition-all">
+                <!-- <button class="border-2 border-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary-dark transition-all">
                     تحميل الدليل
                 </button> -->
             </div>
@@ -144,7 +144,7 @@
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">مقدمة</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
             </div>
             <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                 <p class="text-xl mb-8 text-center text-gray-600">
@@ -161,7 +161,7 @@
                     </div>
                     <div class="relative">
                         <img src="https://ironcool.net/img/carousel-2.jpg" alt="صيانة المكيفات" class="rounded-lg shadow-xl w-full h-64 object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/20 to-transparent rounded-lg"></div>
                     </div>
                 </div>
             </div>
@@ -169,11 +169,11 @@
     </section>
 
     <!-- Importance Section -->
-    <section id="importance" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section id="importance" class="py-20 bg-gradient-to-br from-primary-light/10 to-primary-light/5">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">أهمية صيانة المكيفات</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     تُعد صيانة المكيفات من الأمور الحيوية التي لا يمكن إغفالها، فهي ليست مجرد إجراء روتيني، بل هي استثمار في راحة وصحة الأفراد
                 </p>
@@ -181,8 +181,8 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
@@ -193,8 +193,8 @@
                 </div>
                 
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/>
                         </svg>
                     </div>
@@ -205,8 +205,8 @@
                 </div>
                 
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
                         </svg>
                     </div>
@@ -217,8 +217,8 @@
                 </div>
                 
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-cyan-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
                         </svg>
                     </div>
@@ -229,8 +229,8 @@
                 </div>
                 
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 2L3 7v11a2 2 0 002 2h10a2 2 0 002-2V7l-7-5z"/>
                         </svg>
                     </div>
@@ -241,8 +241,8 @@
                 </div>
                 
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
-                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                    <div class="w-16 h-16 bg-primary-light/20 rounded-full flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
@@ -260,7 +260,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">أنواع المكيفات الشائعة</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     تتنوع أجهزة تكييف الهواء بشكل كبير لتناسب الاحتياجات المختلفة للمساحات السكنية والتجارية والصناعية
                 </p>
@@ -268,9 +268,9 @@
 
             <div class="grid lg:grid-cols-2 gap-12 mb-16">
                 <!-- Split AC -->
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 card-hover">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-2xl p-8 card-hover">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center ml-4">
+                        <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center ml-4">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                             </svg>
@@ -283,7 +283,7 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-green-600 mb-2">المميزات</h4>
+                            <h4 class="font-semibold text-primary-custom mb-2">المميزات</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• هدوء في التشغيل</li>
                                 <li>• تصميم أنيق</li>
@@ -291,7 +291,7 @@
                             </ul>
                         </div>
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-red-600 mb-2">العيوب</h4>
+                            <h4 class="font-semibold text-primary-dark mb-2">العيوب</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• تكلفة أعلى</li>
                                 <li>• تركيب احترافي</li>
@@ -302,9 +302,9 @@
                 </div>
 
                 <!-- Window AC -->
-                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 card-hover">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-2xl p-8 card-hover">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center ml-4">
+                        <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center ml-4">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4z"/>
                             </svg>
@@ -317,7 +317,7 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-green-600 mb-2">المميزات</h4>
+                            <h4 class="font-semibold text-primary-custom mb-2">المميزات</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• سهولة التركيب</li>
                                 <li>• تكلفة منخفضة</li>
@@ -325,7 +325,7 @@
                             </ul>
                         </div>
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-red-600 mb-2">العيوب</h4>
+                            <h4 class="font-semibold text-primary-dark mb-2">العيوب</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• ضوضاء أعلى</li>
                                 <li>• مظهر أقل جمالية</li>
@@ -336,9 +336,9 @@
                 </div>
 
                 <!-- Central AC -->
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 card-hover">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-2xl p-8 card-hover">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center ml-4">
+                        <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center ml-4">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
                             </svg>
@@ -351,7 +351,7 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-green-600 mb-2">المميزات</h4>
+                            <h4 class="font-semibold text-primary-custom mb-2">المميزات</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• تبريد شامل</li>
                                 <li>• هدوء نسبي</li>
@@ -359,7 +359,7 @@
                             </ul>
                         </div>
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-red-600 mb-2">العيوب</h4>
+                            <h4 class="font-semibold text-primary-dark mb-2">العيوب</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• تكلفة عالية</li>
                                 <li>• تركيب معقد</li>
@@ -370,9 +370,9 @@
                 </div>
 
                 <!-- Portable AC -->
-                <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-2xl p-8 card-hover">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-2xl p-8 card-hover">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center ml-4">
+                        <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center ml-4">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5z"/>
                             </svg>
@@ -385,7 +385,7 @@
                     </p>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-green-600 mb-2">المميزات</h4>
+                            <h4 class="font-semibold text-primary-custom mb-2">المميزات</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• سهولة النقل</li>
                                 <li>• لا تحتاج تركيب</li>
@@ -393,7 +393,7 @@
                             </ul>
                         </div>
                         <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-semibold text-red-600 mb-2">العيوب</h4>
+                            <h4 class="font-semibold text-primary-dark mb-2">العيوب</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li>• كفاءة أقل</li>
                                 <li>• ضوضاء مزعجة</li>
@@ -407,11 +407,11 @@
     </section>
 
     <!-- Common Problems Section -->
-    <section id="problems" class="py-20 bg-gradient-to-br from-red-50 to-orange-50">
+    <section id="problems" class="py-20 bg-gradient-to-br from-primary-light/10 to-primary-light/5">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">الأعطال الشائعة وحلولها</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     معرفة الأعطال الشائعة وكيفية التعامل معها يمكن أن يوفر عليك الوقت والمال
                 </p>
@@ -419,18 +419,18 @@
 
             <div class="grid lg:grid-cols-2 gap-8">
                 <!-- Problem 1 -->
-                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-red-500">
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-primary-custom">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                            <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">ضعف التبريد أو عدم التبريد</h3>
                     </div>
                     <div class="space-y-4">
-                        <div class="bg-red-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-red-700 mb-2">الأسباب المحتملة:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-dark mb-2">الأسباب المحتملة:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• فلاتر الهواء المتسخة</li>
                                 <li>• نقص غاز التبريد (الفريون)</li>
@@ -438,8 +438,8 @@
                                 <li>• مشكلة في الضاغط</li>
                             </ul>
                         </div>
-                        <div class="bg-green-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-green-700 mb-2">الحلول:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-custom mb-2">الحلول:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• تنظيف أو استبدال الفلاتر</li>
                                 <li>• فحص وإصلاح تسرب الفريون</li>
@@ -451,18 +451,18 @@
                 </div>
 
                 <!-- Problem 2 -->
-                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-blue-500">
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-primary-custom">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                            <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">تسرب المياه من الوحدة</h3>
                     </div>
                     <div class="space-y-4">
-                        <div class="bg-red-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-red-700 mb-2">الأسباب المحتملة:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-dark mb-2">الأسباب المحتملة:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• انسداد خط الصرف</li>
                                 <li>• تلف حوض التصريف</li>
@@ -470,8 +470,8 @@
                                 <li>• مشكلة في التركيب</li>
                             </ul>
                         </div>
-                        <div class="bg-green-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-green-700 mb-2">الحلول:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-custom mb-2">الحلول:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• تنظيف خط الصرف</li>
                                 <li>• استبدال حوض التصريف</li>
@@ -483,18 +483,18 @@
                 </div>
 
                 <!-- Problem 3 -->
-                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-yellow-500">
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-primary-custom">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                            <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536"/>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">أصوات غريبة من المكيف</h3>
                     </div>
                     <div class="space-y-4">
-                        <div class="bg-red-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-red-700 mb-2">الأسباب المحتملة:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-dark mb-2">الأسباب المحتملة:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• ارتخاء الأجزاء الميكانيكية</li>
                                 <li>• مشكلة في المروحة</li>
@@ -502,8 +502,8 @@
                                 <li>• وجود عوائق في المروحة</li>
                             </ul>
                         </div>
-                        <div class="bg-green-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-green-700 mb-2">الحلول:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-custom mb-2">الحلول:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• إحكام البراغي والوصلات</li>
                                 <li>• فحص وتنظيف المروحة</li>
@@ -515,18 +515,18 @@
                 </div>
 
                 <!-- Problem 4 -->
-                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-purple-500">
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-r-4 border-primary-custom">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                        <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                            <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold text-gray-800">عدم استجابة الريموت كنترول</h3>
                     </div>
                     <div class="space-y-4">
-                        <div class="bg-red-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-red-700 mb-2">الأسباب المحتملة:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-dark mb-2">الأسباب المحتملة:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• بطاريات الريموت فارغة</li>
                                 <li>• مشكلة في لوحة التحكم</li>
@@ -534,8 +534,8 @@
                                 <li>• تلف في الدائرة الكهربائية</li>
                             </ul>
                         </div>
-                        <div class="bg-green-50 rounded-lg p-4">
-                            <h4 class="font-semibold text-green-700 mb-2">الحلول:</h4>
+                        <div class="bg-primary-light/10 rounded-lg p-4">
+                            <h4 class="font-semibold text-primary-custom mb-2">الحلول:</h4>
                             <ul class="text-sm text-gray-700 space-y-1">
                                 <li>• استبدال بطاريات الريموت</li>
                                 <li>• فحص لوحة التحكم</li>
@@ -547,7 +547,7 @@
                 </div>
             </div>
 
-            <div class="mt-12 bg-gradient-to-r from-red-500 to-orange-500 rounded-xl p-8 text-white text-center">
+            <div class="mt-12 bg-gradient-to-r from-primary-custom to-primary-light rounded-xl p-8 text-white text-center">
                 <div class="flex items-center justify-center mb-4">
                     <svg class="w-8 h-8 ml-3" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92z"/>
@@ -567,15 +567,15 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">نصائح ذهبية للحفاظ على كفاءة المكيف</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     لضمان أن يعمل مكيف الهواء الخاص بك بأقصى كفاءة ممكنة ولأطول فترة زمنية
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                         </svg>
@@ -586,8 +586,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
@@ -598,8 +598,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
                         </svg>
@@ -610,8 +610,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                         </svg>
@@ -622,8 +622,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                         </svg>
@@ -634,8 +634,8 @@
                     </p>
                 </div>
 
-                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                <div class="bg-gradient-to-br from-primary-light/10 to-primary-light/5 rounded-xl p-6 card-hover">
+                    <div class="w-16 h-16 bg-primary-custom rounded-full flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
@@ -648,7 +648,7 @@
             </div>
 
             <!-- Energy Saving Tips -->
-            <div class="bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl p-8 text-white">
+            <div class="bg-gradient-to-r from-primary-custom to-primary-light rounded-2xl p-8 text-white">
                 <div class="text-center mb-8">
                     <h3 class="text-3xl font-bold mb-4">نصائح توفير الطاقة</h3>
                     <p class="text-lg opacity-90">اتبع هذه النصائح لتقليل استهلاك الكهرباء وتوفير المال</p>
@@ -694,11 +694,11 @@
     </section>
 
     <!-- Modifications Section -->
-    <section id="modifications" class="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section id="modifications" class="py-20 bg-gradient-to-br from-primary-light/10 to-primary-light/5">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">تعديل المكيفات: متى ولماذا؟</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     تعديل المكيفات يشير إلى إجراء تحسينات أو تعديلات على النظام الحالي لزيادة كفاءته وتحسين أدائه
                 </p>
@@ -710,7 +710,7 @@
                     
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 bg-primary-custom rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span class="text-white font-bold text-sm">1</span>
                             </div>
                             <div>
@@ -720,7 +720,7 @@
                         </div>
 
                         <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 bg-primary-custom rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span class="text-white font-bold text-sm">2</span>
                             </div>
                             <div>
@@ -730,7 +730,7 @@
                         </div>
 
                         <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 bg-primary-custom rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span class="text-white font-bold text-sm">3</span>
                             </div>
                             <div>
@@ -740,7 +740,7 @@
                         </div>
 
                         <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 bg-primary-custom rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span class="text-white font-bold text-sm">4</span>
                             </div>
                             <div>
@@ -750,7 +750,7 @@
                         </div>
 
                         <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 bg-primary-custom rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                 <span class="text-white font-bold text-sm">5</span>
                             </div>
                             <div>
@@ -767,8 +767,8 @@
                     <div class="grid gap-6">
                         <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                                    <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                     </svg>
                                 </div>
@@ -779,8 +779,8 @@
 
                         <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                                    <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                                     </svg>
                                 </div>
@@ -791,8 +791,8 @@
 
                         <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                                    <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
                                     </svg>
                                 </div>
@@ -803,8 +803,8 @@
 
                         <div class="bg-white rounded-lg p-6 shadow-lg card-hover">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-cyan-600" fill="currentColor" viewBox="0 0 20 20">
+                                <div class="w-12 h-12 bg-primary-light/20 rounded-full flex items-center justify-center ml-4">
+                                    <svg class="w-6 h-6 text-primary-custom" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                                     </svg>
                                 </div>
@@ -816,7 +816,7 @@
                 </div>
             </div>
 
-            <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl p-8 text-white text-center">
+            <div class="bg-gradient-to-r from-primary-custom to-primary-light rounded-xl p-8 text-white text-center">
                 <div class="flex items-center justify-center mb-4">
                     <svg class="w-8 h-8 ml-3" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -832,70 +832,70 @@
     </section>
 
     <!-- Ironcool Company Section -->
-    <section class="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+    <section class="py-20 bg-gradient-to-br from-dark-custom to-primary-dark text-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-6">شركة ايرو كول: حلول متكاملة لراحة منزلك</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="space-y-6">
-                    <p class="text-lg text-blue-100 leading-relaxed">
+                    <p class="text-lg text-primary-light leading-relaxed">
                         في سعينا الدائم نحو توفير بيئة منزلية مريحة ومنعشة، تبرز أهمية اختيار الشريك المناسب لخدمات تكييف الهواء. 
                         هنا يأتي دور شركة <strong class="text-white">ايرو كول (Ironcool)</strong>، التي تقدم مجموعة متكاملة من الحلول والخدمات الاحترافية 
                         في مجال صيانة وتركيب وتعديل المكيفات.
                     </p>
                     
-                    <p class="text-blue-100 leading-relaxed">
+                    <p class="text-primary-light leading-relaxed">
                         تتميز شركة ايرو كول بفريق عمل محترف ومدرب على أعلى مستوى، يمتلك الخبرة والكفاءة اللازمة للتعامل مع جميع أنواع أنظمة التكييف، 
                         بدءاً من مكيفات السبليت وصولاً إلى الأنظمة المركزية المعقدة.
                     </p>
 
                     <div class="grid grid-cols-2 gap-4 mt-8">
                         <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mb-3">
+                            <div class="w-12 h-12 bg-primary-custom rounded-full flex items-center justify-center mb-3">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
                             <h4 class="font-semibold mb-2">صيانة دورية ووقائية</h4>
-                            <p class="text-sm text-blue-200">لضمان أداء مثالي وإطالة العمر الافتراضي</p>
+                            <p class="text-sm text-primary-light">لضمان أداء مثالي وإطالة العمر الافتراضي</p>
                         </div>
 
                         <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-3">
+                            <div class="w-12 h-12 bg-primary-custom rounded-full flex items-center justify-center mb-3">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                                 </svg>
                             </div>
                             <h4 class="font-semibold mb-2">إصلاح الأعطال</h4>
-                            <p class="text-sm text-blue-200">تشخيص دقيق وإصلاح سريع بقطع غيار أصلية</p>
+                            <p class="text-sm text-primary-light">تشخيص دقيق وإصلاح سريع بقطع غيار أصلية</p>
                         </div>
 
                         <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-3">
+                            <div class="w-12 h-12 bg-primary-custom rounded-full flex items-center justify-center mb-3">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
                                 </svg>
                             </div>
                             <h4 class="font-semibold mb-2">تركيب المكيفات</h4>
-                            <p class="text-sm text-blue-200">تركيب احترافي مع ضمان الأداء الأمثل</p>
+                            <p class="text-sm text-primary-light">تركيب احترافي مع ضمان الأداء الأمثل</p>
                         </div>
 
                         <div class="bg-white bg-opacity-10 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center mb-3">
+                            <div class="w-12 h-12 bg-primary-custom rounded-full flex items-center justify-center mb-3">
                                 <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                                 </svg>
                             </div>
                             <h4 class="font-semibold mb-2">تعديل وتحسين</h4>
-                            <p class="text-sm text-blue-200">حلول مبتكرة لتحسين الكفاءة وتوفير الطاقة</p>
+                            <p class="text-sm text-primary-light">حلول مبتكرة لتحسين الكفاءة وتوفير الطاقة</p>
                         </div>
                     </div>
 
                     <div class="mt-8">
-                        <a href="https://ironcool.net/" target="_blank" class="inline-flex items-center bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
+                        <a href="https://ironcool.net/" target="_blank" class="inline-flex items-center bg-gradient-to-r from-primary-custom to-primary-light hover:from-primary-dark hover:to-primary-custom px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
                             زيارة موقع ايرو كول
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
@@ -906,7 +906,7 @@
 
                 <div class="relative">
                     <img src="https://ironcool.net/img/carousel-1.jpg" alt="خدمات ايرو كول" class="rounded-2xl shadow-2xl w-full h-96 object-cover">
-                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent rounded-2xl"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/50 to-transparent rounded-2xl"></div>
                     <div class="absolute bottom-6 left-6 right-6">
                         <div class="bg-white bg-opacity-90 rounded-lg p-4">
                             <h4 class="font-bold text-gray-800 mb-2">شريكك الموثوق</h4>
@@ -919,11 +919,11 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-custom">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">الأسئلة الشائعة</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     إجابات على أكثر الأسئلة شيوعاً حول صيانة وتعديل المكيفات
                 </p>
@@ -931,7 +931,7 @@
 
             <div class="max-w-4xl mx-auto space-y-6">
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6 border-r-4 border-blue-500">
+                    <div class="p-6 border-r-4 border-primary-custom">
                         <h3 class="text-lg font-bold text-gray-800 mb-3">كم مرة يجب أن أقوم بصيانة مكيفي؟</h3>
                         <p class="text-gray-600">
                             يوصى بإجراء صيانة دورية للمكيف مرة واحدة على الأقل سنوياً من قبل فني متخصص، ويفضل أن يكون ذلك قبل بداية موسم الصيف. 
@@ -941,7 +941,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6 border-r-4 border-green-500">
+                    <div class="p-6 border-r-4 border-primary-custom">
                         <h3 class="text-lg font-bold text-gray-800 mb-3">ما هي علامات نقص غاز الفريون في المكيف؟</h3>
                         <p class="text-gray-600">
                             علامات نقص الفريون تشمل: ضعف التبريد، خروج هواء غير بارد من المكيف، تجمد ملف المبخر (تراكم الثلج على الأنابيب)، 
@@ -951,7 +951,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6 border-r-4 border-purple-500">
+                    <div class="p-6 border-r-4 border-primary-custom">
                         <h3 class="text-lg font-bold text-gray-800 mb-3">ما هي درجة الحرارة المثلى لضبط المكيف عليها؟</h3>
                         <p class="text-gray-600">
                             درجة الحرارة المثلى لضبط المكيف عليها في الصيف تتراوح عادة بين 24 إلى 26 درجة مئوية. 
@@ -961,7 +961,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6 border-r-4 border-yellow-500">
+                    <div class="p-6 border-r-4 border-primary-custom">
                         <h3 class="text-lg font-bold text-gray-800 mb-3">هل يمكنني تنظيف المكيف بنفسي؟</h3>
                         <p class="text-gray-600">
                             نعم، يمكنك تنظيف فلاتر الهواء والوحدة الخارجية من الأتربة بنفسك. ومع ذلك، فإن التنظيف العميق للملفات الداخلية 
@@ -971,7 +971,7 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6 border-r-4 border-red-500">
+                    <div class="p-6 border-r-4 border-primary-custom">
                         <h3 class="text-lg font-bold text-gray-800 mb-3">ما هو العمر الافتراضي للمكيف؟</h3>
                         <p class="text-gray-600">
                             يختلف العمر الافتراضي للمكيف باختلاف النوع وجودة التصنيع والصيانة. بشكل عام، يتراوح العمر الافتراضي للمكيفات 
@@ -988,7 +988,7 @@
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-gradient mb-6">الخاتمة</h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary-custom to-primary-light mx-auto mb-8"></div>
             </div>
             
             <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -1012,7 +1012,7 @@
                     </div>
                     <div class="relative">
                         <img src="images/maintenance-hero.jpg" alt="صيانة المكيفات" class="rounded-lg shadow-xl w-full h-64 object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/20 to-transparent rounded-lg"></div>
                     </div>
                 </div>
             </div>
@@ -1020,12 +1020,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-dark-custom text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <div class="flex items-center space-x-4 space-x-reverse mb-6">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-primary-custom rounded-full flex items-center justify-center">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
                             </svg>
@@ -1053,8 +1053,8 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">شركاء النجاح</h4>
                     <div class="space-y-3">
-                        <a href="https://ironcool.net/" target="_blank" class="block bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors">
-                            <h5 class="font-semibold text-blue-400">ايرو كول</h5>
+                        <a href="https://ironcool.net/" target="_blank" class="block bg-dark-custom rounded-lg p-4 hover:bg-primary-dark transition-colors">
+                            <h5 class="font-semibold text-primary-light">ايرو كول</h5>
                             <p class="text-gray-400 text-sm">خدمات تكييف احترافية</p>
                         </a>
                     </div>
@@ -1068,7 +1068,7 @@
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="fixed bottom-8 left-8 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110">
+    <button id="scrollToTop" class="fixed bottom-8 left-8 bg-gradient-to-r from-primary-custom to-primary-light text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
         </svg>
@@ -1130,4 +1130,5 @@
     </script>
 </body>
 </html>
+
 
