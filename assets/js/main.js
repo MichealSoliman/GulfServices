@@ -10,8 +10,8 @@ const services = [
         image: 'https://www.bashir-mover.com/pro1.png',
         url: 'https://www.bashir-mover.com/',
         location: 'الكويت',
-        category: ' بشاير الخير ',
-        price: 'اثاث الكويت',
+        category: '  اثاث الكويت ',
+        nameCom: 'بشاير الخير  ',
         borderClass: 'petroleum-border'
     },
    
@@ -24,7 +24,7 @@ const services = [
         url: 'https://naqaa-clean.com/',
         location: 'جدة',
         category: 'تنظيف',
-        price: 'افضل الأسعار',
+        nameCom: ' نقاء كلين',
         borderClass: 'rose-border'
     },
       {
@@ -36,7 +36,7 @@ const services = [
         url: 'https://homo-ve.com/',
         location: 'جدة',
         category: 'نقل عفش',
-        price: 'Homve',
+        nameCom: 'Homve',
         borderClass: 'petroleum-border'
     },
 
@@ -48,7 +48,7 @@ const services = [
         url: 'https://ironcool.net/',
         location: 'الرياض',
         category: 'صيانة',
-        price: 'ابتداءً من 100 د.إ',
+        nameCom: 'iron Cool',
         borderClass: 'silver-border'
     },
     {
@@ -60,7 +60,7 @@ const services = [
         url: 'https://exzofor.com/',
         location: 'جدة',
         category: 'نقل عفش',
-        price: ' ميفوكس',
+        nameCom: ' ميفوكس',
         borderClass: 'petroleum-border'
     },
     {
@@ -71,7 +71,7 @@ const services = [
         url: 'https://getlamaaclean.com/',
         location: 'الرياض',
         category: 'لمعة',
-        price: 'كلين',
+        nameCom: 'لمعة كلين',
         borderClass: 'rose-border'
     },
      {
@@ -82,7 +82,7 @@ const services = [
         url: 'https://naqlaty-ship.com/',
         location: 'الرياض',
         category: 'نقل عفش',
-        price: 'عفشك بأمان',
+        nameCom: ' نقلاتي ',
         borderClass: 'petroleum-border'
     },
    
@@ -94,7 +94,7 @@ const services = [
         url: 'https://meuvex-furniture.com/',
         location: 'جدة',
         category: 'نقل عفش',
-        price: ' ميفوكس',
+        nameCom: ' ميفوكس',
         borderClass: 'petroleum-border'
     },
       {
@@ -105,7 +105,7 @@ const services = [
         url: 'https://www.primomoves.com/',
         location: 'الرياض',
         category: 'نقل عفش',
-        price: ' بريمو موفرز',
+        nameCom: ' بريمو موفرز',
         borderClass: 'petroleum-border'
     },
       {
@@ -116,7 +116,7 @@ const services = [
         url: 'https://cleanplusteam.com/',
         location: 'الرياض',
         category: 'بلس كلين ',
-        price: 'كلين',
+        nameCom: 'كلين',
         borderClass: 'rose-border'
     },
       {
@@ -127,7 +127,7 @@ const services = [
         url: 'https://www.cleanwithfresh.com/',
         location: 'جدة',
         category: ' فريش ',
-        price: 'كلين',
+        nameCom: 'كلين',
         borderClass: 'rose-border'
     },
       {
@@ -139,7 +139,7 @@ const services = [
         url: 'https://jadmoves.com/',
         location: 'الرياض',
         category: 'نقل عفش',
-        price: ' جادة موفرز',
+        nameCom: ' جادة موفرز',
         borderClass: 'petroleum-border'
     },
       {
@@ -151,7 +151,7 @@ const services = [
         url: 'https://nazretelebdaa.com/',
         location: 'الرياض',
         category: ' انظيمة السلامة',
-        price: ' نظرة الابداع ',
+        nameCom: ' نظرة الابداع ',
         borderClass: 'petroleum-border'
     },
    
@@ -262,7 +262,7 @@ class GulfServices {
                     ${service.category}
                 </div>
                 <div class="absolute bottom-4 right-4 bg-charcoal bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    ${service.price}
+                    ${service.nameCom}
                 </div>
             </div>
             <div class="p-6">
