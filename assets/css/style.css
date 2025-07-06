@@ -184,7 +184,7 @@
 
         .service-icon:hover {
             transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
+           
         }
 
         .service-icon i {
@@ -230,7 +230,7 @@
             position: relative;
             overflow: hidden;
             border: 2px solid var(--rose-gold);
-            /* box-shadow: 0 8px 25px var(--rose-gold, 0.3); */
+           
         }
          .rose-btn:hover {
             background: var(--petroleum);
@@ -362,7 +362,7 @@
             border-radius: 20px;
             margin-bottom: 3rem;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(26, 188, 156, 0.3);
+           
             position: relative;
             overflow: hidden;
         }
@@ -526,12 +526,12 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+           
         }
 
         .blog-card-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(26, 188, 156, 0.4);
+          
             background: linear-gradient(135deg, var(), var(--charcoal));
         }
 
@@ -693,7 +693,7 @@
         .social-icon:hover {
             background: var(--petroleum);
             transform: translateY(-3px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
+            
         }
 
         .social-icon.facebook:hover {
@@ -800,7 +800,7 @@
         .newsletter-input:focus {
             outline: none;
             border-color: var(--petroleum);
-            box-shadow: 0 0 20px rgba(26, 188, 156, 0.3);
+            
         }
 
         .newsletter-input::placeholder {
@@ -818,12 +818,12 @@
             cursor: pointer;
             font-family: 'Tajawal', sans-serif;
             width: 100%;
-            box-shadow: 0 4px 15px rgba(26, 188, 156, 0.3);
+            
         }
 
         .newsletter-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(26, 188, 156, 0.4);
+           
             background: linear-gradient(135deg, var(--deep-petroleum), var(--charcoal));
         }
 
