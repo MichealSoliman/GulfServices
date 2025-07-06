@@ -15,6 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <style>
+          @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+          
+
+        }
         :root {
             --primary-color: #940000;
             --secondary-color: #ee200e;
@@ -25,12 +31,12 @@
             --bg-white: #ffffff;
             --border-color: #e6dede;
             --success-color: #ae4627;
-            --bashir-color: #2c5530;
+            --bashir-color: #940000;
             --competitor-color: #8b4513;
         }
         
         * {
-            font-family: 'Cairo', sans-serif;
+           font-family: "Lama-sans";
         }
         
         body {
@@ -40,7 +46,7 @@
         }
         
         .hero-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #1e3c72 100%);
+            background:var(--primary-color);
             color: white;
             padding: 80px 0;
             position: relative;
@@ -92,7 +98,7 @@
         }
         
         .section-header {
-            background: linear-gradient(135deg, var(--primary-color), #3498db);
+            background: linear-gradient(135deg, var(--primary-color));
             color: white;
             padding: 1.5rem 2rem;
             margin: 0;
@@ -100,11 +106,11 @@
         }
         
         .section-header.bashir-header {
-            background: linear-gradient(135deg, var(--bashir-color), #27ae60);
+            background: var(--bashir-color);
         }
         
         .section-header.competitor-header {
-            background: linear-gradient(135deg, var(--competitor-color), #e67e22);
+            background:  var(--competitor-color);
         }
         
         .section-header::after {

@@ -23,11 +23,17 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+            @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+          
+
+        }
         body {
-            font-family: 'Cairo', sans-serif;
+             font-family: "Lama-sans";
         }
         .gradient-bg {
-            background: linear-gradient(135deg, #c84552 0%, #A33642 100%);
+            background: #A33642;
         }
         .fire-animation {
             animation: none;
@@ -36,11 +42,11 @@
             scroll-behavior: smooth;
         }
         .section-divider {
-            background: linear-gradient(90deg, transparent, #c84552, transparent);
+            background: #A33642;
             height: 2px;
         }
         .company-highlight {
-            background: linear-gradient(135deg, #c84552 0%, #A33642 100%);
+           background: #A33642;
         }
         .hover-lift {
             transition: transform 0.3s ease;
@@ -123,7 +129,6 @@
 
         <!-- Fire Basics Section -->
         <section id="fire-basics" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🔬</div>
                     <h2 class="text-3xl md:text-4xl font-bold">فهم الحريق: مثلث النار وأنواع الحرائق</h2>
@@ -175,50 +180,7 @@
             </div>
         </section>
 
-        <!-- Fire Systems Section -->
-        <section id="fire-systems" class="mb-16">
-            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
-                <div class="flex items-center mb-8">
-                    <div class="text-4xl ml-4">🛠️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">أنظمة مكافحة الحرائق: أنواعها ومكوناتها</h2>
-                </div>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 border border-primary-color">
-                        <div class="text-3xl mb-4">🚨</div>
-                        <h3 class="text-xl font-bold mb-3 text-dark-color">أنظمة الكشف والإنذار</h3>
-                        <ul class="text-sm space-y-2 text-dark-color">
-                            <li>• كواشف الدخان</li>
-                            <li>• كواشف الحرارة</li>
-                            <li>• كواشف اللهب</li>
-                            <li>• أنظمة الإنذار الصوتي</li>
-                            <li>• أنظمة الإنذار المرئي</li>
-                        </ul>
-                    </div>
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 border border-primary-color">
-                        <div class="text-3xl mb-4">💧</div>
-                        <h3 class="text-xl font-bold mb-3 text-dark-color">أنظمة الإطفاء المائية</h3>
-                        <ul class="text-sm space-y-2 text-dark-color">
-                            <li>• أنظمة الرشاشات التلقائية</li>
-                            <li>• أنظمة ضباب الماء</li>
-                            <li>• أنظمة الرغوة</li>
-                            <li>• خراطيم الحريق</li>
-                            <li>• مضخات الحريق</li>
-                        </ul>
-                    </div>
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 border border-primary-color">
-                        <div class="text-3xl mb-4">🌪️</div>
-                        <h3 class="text-xl font-bold mb-3 text-dark-color">أنظمة الإطفاء الخاصة</h3>
-                        <ul class="text-sm space-y-2 text-dark-color">
-                            <li>• أنظمة الغازات النظيفة</li>
-                            <li>• أنظمة ثاني أكسيد الكربون</li>
-                            <li>• أنظمة المسحوق الجاف</li>
-                            <li>• أنظمة الكيميائي الرطب</li>
-                            <li>• طفايات الحريق اليدوية</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      
 
         <!-- Prevention Section -->
         <section id="prevention" class="mb-16">
@@ -282,37 +244,7 @@
             </div>
         </section>
 
-        <!-- Technology Section -->
-        <section id="technology" class="mb-16">
-            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
-                <div class="flex items-center mb-8">
-                    <div class="text-4xl ml-4">🤖</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">التقنيات الحديثة في مكافحة الحرائق</h2>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 text-center border border-primary-color">
-                        <div class="text-4xl mb-4">🧠</div>
-                        <h3 class="text-lg font-bold mb-2 text-dark-color">الذكاء الاصطناعي</h3>
-                        <p class="text-sm text-dark-color">تحليل البيانات والتنبؤ بالحرائق</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 text-center border border-primary-color">
-                        <div class="text-4xl mb-4">🌐</div>
-                        <h3 class="text-lg font-bold mb-2 text-dark-color">إنترنت الأشياء</h3>
-                        <p class="text-sm text-dark-color">أجهزة استشعار ذكية متصلة</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 text-center border border-primary-color">
-                        <div class="text-4xl mb-4">🚁</div>
-                        <h3 class="text-lg font-bold mb-2 text-dark-color">الطائرات بدون طيار</h3>
-                        <p class="text-sm text-dark-color">مراقبة ومكافحة الحرائق</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-light-color to-primary-color rounded-xl p-6 text-center border border-primary-color">
-                        <div class="text-4xl mb-4">🤖</div>
-                        <h3 class="text-lg font-bold mb-2 text-dark-color">الروبوتات</h3>
-                        <p class="text-sm text-dark-color">إطفاء في البيئات الخطرة</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+   
 
         <!-- New Sections -->
         <section id="history" class="mb-16">

@@ -35,7 +35,7 @@ const services = [
     description:
       "صيانة شاملة واحترافية لأنظمة التكييف في الرياض تشمل التنظيف، الفحص، وإصلاح الأعطال، مع أسعار تنافسية، وخدمة سريعة، وضمان كفاءة التبريد والأداء المثالي طوال العام.",
 
-    image: "./assets/images/pexels-rdne-7464393.jpg",
+    image: "https://homo-ve.com/Untitled-1Artboard-12%20copy.webp",
     url: "https://homo-ve.com/",
     location: "جدة",
     category: "نقل عفش",
@@ -61,7 +61,7 @@ const services = [
     description:
       "اكزو موف تقدم خدمة نقل العفش والأثاث في الرياض بأحدث الوسائل وبأفضل الأسعار مع ضمان سلامة الأثاث وخدمة فاخرة.",
 
-    image: "./assets/images/pexels-rdne-7464403.jpg",
+    image: "https://exzofor.com/Artboard%206.avif",
     url: "https://exzofor.com/",
     location: "جدة",
     category: "نقل عفش",
@@ -73,7 +73,7 @@ const services = [
     name: "خدمات النظافة المنزلية  ",
     description:
       "نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق والقصور بأعلى معايير الجودة، مع عمالة تنظيف محترفة وأحدث تقنيات التنظيف",
-    image: "./assets/images/pexels-matilda-wormwood-4099091.jpg",
+    image: "https://getlamaaclean.com/Artboard%206.png",
     url: "https://getlamaaclean.com/",
     location: "الرياض",
     category: "لمعة",
@@ -85,8 +85,7 @@ const services = [
     name: "نقل العفش بالرياض",
     description:
       "نقل أثاث وعفش في الرياض بأسلوب حديث، مع ضمان الأمان الكامل للعفش وخدمة عملاء راقية وبأسعار مناسبة.",
-    image: "./assets/images/istockphoto-1332288894-612x612.jpg",
-    
+    image: "https://naqlaty-ship.com/Artboard%205.avif",
     url: "https://naqlaty-ship.com/",
     location: "الرياض",
     category: "نقل عفش",
@@ -111,9 +110,7 @@ const services = [
     name: "نقل العفش بالرياض",
     description:
       "نقل الأثاث والعفش في الرياض بخدمة فاخرة، أسعار تنافسية، وضمان كامل لسلامة الأثاث.",
-    
-    image: "./assets/images/istockphoto-928084778-612x612 (1).jpg",
-
+    image: "https://www.primomoves.com/serv2.avif",
     url: "https://www.primomoves.com/",
     location: "الرياض",
     category: "نقل عفش",
@@ -125,7 +122,7 @@ const services = [
     name: "نظافة منزلك  ",
     description:
       "نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق والقصور بأعلى معايير الجودة، مع عمالة تنظيف محترفة وأحدث تقنيات التنظيف",
-    image: "./assets/images/istockphoto-1316473356-612x612.jpg",
+    image: "https://cleanplusteam.com/pest_control.jpg",
     url: "https://cleanplusteam.com/",
     location: "الرياض",
     category: "بلس كلين ",
@@ -150,9 +147,7 @@ const services = [
     description:
       "أفضل حلول نقل الأثاث والعفش في الرياض مع ضمان السرعة والأمان، تغليف احترافي وخدمة عملاء على مدار الساعة بأسعار مغرية.",
 
-    
-    image: "./assets/images/istockphoto-1395748211-612x612.jpg",
-
+    image: "https://jadmoves.com/Untitled-1Artboard-3%20copy.webp",
     url: "https://jadmoves.com/",
     location: "الرياض",
     category: "نقل عفش",
@@ -486,7 +481,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق خدمات الخليج",
-      link: "./comprehensive-transportation-solutions/index.html",
+      link: "../comprehensive-transportation-solutions/index.html",
     },
     {
       id: 2,
@@ -499,7 +494,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق النقل التجاري",
-      link: "./furniture-arrangement/index.html",
+      link: "../furniture-arrangement/index.html",
     },
     {
       id: 3,
@@ -512,7 +507,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق النقل السكني",
-      link: "./furniture-moving-companies/index.html",
+      link: "../furniture-moving-companies/index.html",
     },
   ],
   cleaning: [
@@ -527,7 +522,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق التنظيف",
-      link: "./cleaning-companies/index.html",
+      link: "../cleaning-companies/index.html",
     },
     {
       id: 5,
@@ -540,7 +535,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق التنظيف التجاري",
-      link: "./cleaning-methods-and-services/index.html",
+      link: "../cleaning-methods-and-services/index.html",
     },
     {
       id: 6,
@@ -553,7 +548,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق التنظيف السكني",
-      link: "./cleaning-services/index.html",
+      link: "../cleaning-services/index.html",
     },
   ],
   maintenance: [
@@ -568,7 +563,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق الصيانة",
-      link: "./air-conditioner-maintenance/index.html",
+      link: "../air-conditioner-maintenance/index.html",
     },
     {
       id: 8,
@@ -582,7 +577,7 @@ const blogData = {
       date: "",
       readTime: "",
       author: "فريق صيانة الأنظمة",
-      link: "./fire-fighting/index.html",
+      link: "../fire-fighting/index.html",
     },
     // {
     //     id: 9,

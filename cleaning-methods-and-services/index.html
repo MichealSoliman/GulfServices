@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل شامل لأساليب وخدمات التنظيف</title>
+    <title>دليل شامل لأساليب وخدمات التنظيف - شركة لمعة للنظافة</title>
 
-     <!-- SEO Meta Tags -->
-    <meta name="description" content="اكتشف الحلول الشاملة لنقل العفش في الكويت وجميع مدنها مع أفضل شركات النقل. خدمات متكاملة تشمل التغليف، الفك والتركيب، والنقل الآمن.">
-    <meta name="keywords" content="نقل العفش، الكويت، شركات نقل، نقل اثاث، تغليف الأثاث، فك وتركيب، نقل العفش في الكويت، شحن عفش، مدن الكويت، خدمات نقل احترافية">
-    <meta name="author" content="اسم الموقع أو الشركة">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="دليل شامل لأساليب وخدمات التنظيف من شركة لمعة للنظافة - أفضل شركة تنظيف في الرياض. اكتشف الحلول المتكاملة والأساليب الحديثة للحصول على بيئة نظيفة وصحية.">
+    <meta name="keywords" content="شركة تنظيف، الرياض، تنظيف منازل، شركة نظافة، خدمات تنظيف، تنظيف بالبخار، عمالة تنظيف، شركة لمعة">
+    <meta name="author" content="شركة لمعة للنظافة">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="الحلول الشاملة لعملية نقل العفش بالكويت ومدن الكويت">
-    <meta property="og:description" content="دليل كامل يقدم حلولاً متكاملة لنقل العفش في جميع مدن الكويت، باحترافية وجودة عالية.">
+    <meta property="og:title" content="دليل شامل لأساليب وخدمات التنظيف - شركة لمعة للنظافة">
+    <meta property="og:description" content="دليل كامل يقدم حلولاً متكاملة للتنظيف من أفضل شركة نظافة في الرياض">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/نقل-العفش-الكويت">
-    <meta property="og:image" content="https://example.com/assets/moving-cover.jpg">
+    <meta property="og:url" content="https://getlamaaclean.com/">
+    <meta property="og:image" content="https://getlamaaclean.com/cover.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="الحلول الشاملة لعملية نقل العفش بالكويت ومدن الكويت">
-    <meta name="twitter:description" content="خدمات نقل عفش احترافية لجميع مناطق ومدن الكويت، بأساليب متطورة وضمان سلامة الأثاث.">
-    <meta name="twitter:image" content="https://example.com/assets/moving-cover.jpg">
+    <meta name="twitter:title" content="دليل شامل لأساليب وخدمات التنظيف - شركة لمعة للنظافة">
+    <meta name="twitter:description" content="خدمات تنظيف احترافية ومعتمدة في الرياض - دليل شامل لأساليب التنظيف الحديثة">
+    <meta property="twitter:image" content="https://getlamaaclean.com/cover.png">
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -30,41 +30,132 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!-- Google Fonts - Arabic -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Arabic (Cairo & Tajawal for better match) -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet"> -->
     
     <style>
+        @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+          
+
+        }
         :root {
-            --primary-color: #2c5aa0;
-            --secondary-color: #4a90e2;
-            --accent-color: #28a745;
-            --light-blue: #e3f2fd;
-            --dark-blue: #1a365d;
-            --text-dark: #2d3748;
-            --text-light: #718096;
-            --border-color: #e2e8f0;
-            --success-color: #48bb78;
-            --warning-color: #ed8936;
-            --danger-color: #f56565;
+            --primary-color: #213d94;
+            --secondary-color: #213d94;
+            --accent-color: #213d94;
+            --light-blue: #dbeafe;
+            --dark-blue: #1e3a8a;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --border-color: #e5e7eb;
+            --success-color: #213d94;
+            --warning-color: #f59e0b;
+            --danger-color: #6582da;
+            --lamaa-green: #213d94;
+            --lamaa-blue: #0ea5e9;
+           
         }
         
         * {
-            font-family: 'Noto Sans Arabic', sans-serif;
+
+
+            /* font-family: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
         }
         
         body {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             color: var(--text-dark);
             line-height: 1.8;
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+         font-family: "Lama-sans";
         }
-        
-        /* Header Styles */
-        .hero-section {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+
+        /* Company Header Bar */
+        .company-header {
+            background: var(--primary-color);
             color: white;
-            padding: 80px 0;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .company-header h3 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.3rem;
+            font-family: 'Lama-sans';
+        }
+
+        .company-header .contact-info {
+            margin-top: 8px;
+            font-size: 0.95rem;
+        }
+
+        .company-header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .company-header a:hover {
+            color: #fef3c7;
+            transform: scale(1.05);
+        }
+
+        /* Floating Contact Buttons */
+        .floating-contacts {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-btn.phone {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        .contact-btn.whatsapp {
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 100px 0 80px 0;
             position: relative;
             overflow: hidden;
         }
@@ -86,37 +177,54 @@
         }
         
         .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
+            font-size: 3.8rem;
+            font-weight: 800;
             margin-bottom: 1.5rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .hero-subtitle {
-            font-size: 1.3rem;
-            font-weight: 300;
-            opacity: 0.9;
+            font-size: 1.4rem;
+            font-weight: 400;
+            opacity: 0.95;
             margin-bottom: 2rem;
         }
-        
+
+        .company-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .company-badge a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
         /* Navigation */
         .table-of-contents {
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 2rem;
-            margin: -50px 0 50px 0;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            padding: 2.5rem;
+            margin: -60px 0 60px 0;
             position: relative;
             z-index: 3;
+            border: 3px solid var(--lamaa-green);
         }
         
         .toc-title {
             color: var(--primary-color);
-            font-size: 1.8rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 700;
             margin-bottom: 1.5rem;
             text-align: center;
-            border-bottom: 3px solid var(--accent-color);
+            border-bottom: 4px solid var(--lamaa-green);
             padding-bottom: 1rem;
         }
         
@@ -127,50 +235,53 @@
         }
         
         .toc-item {
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
         
         .toc-link {
             color: var(--text-dark);
             text-decoration: none;
-            padding: 0.8rem 1rem;
-            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
             display: block;
             transition: all 0.3s ease;
-            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            font-weight: 500;
         }
         
         .toc-link:hover {
             background: var(--light-blue);
             color: var(--primary-color);
-            border-left-color: var(--accent-color);
-            transform: translateX(5px);
+            border-right-color: var(--lamaa-green);
+            transform: translateX(-8px);
         }
         
         .toc-link i {
-            margin-left: 0.5rem;
-            color: var(--secondary-color);
+            margin-left: 0.8rem;
+            color: var(--lamaa-blue);
+            font-size: 1.1rem;
         }
         
         /* Content Sections */
         .content-section {
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            margin-bottom: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            margin-bottom: 3.5rem;
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid var(--lamaa-green);
         }
         
         .content-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
         }
         
         .section-header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
             color: white;
-            padding: 2rem;
+            padding: 2.5rem;
             position: relative;
         }
         
@@ -180,140 +291,206 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: var(--accent-color);
+            height: 5px;
+            background: var(--lamaa-green);
         }
         
         .section-title {
-            font-size: 2.2rem;
-            font-weight: 600;
+            font-size: 2.4rem;
+            font-weight: 700;
             margin: 0;
             display: flex;
             align-items: center;
         }
         
         .section-title i {
-            margin-left: 1rem;
-            font-size: 2rem;
+            margin-left: 1.2rem;
+            font-size: 2.2rem;
         }
         
         .section-content {
-            padding: 2.5rem;
+            padding: 3rem;
         }
         
         .section-content h3 {
             color: var(--primary-color);
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin: 2rem 0 1rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--light-blue);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2.5rem 0 1.2rem 0;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid var(--light-blue);
         }
         
         .section-content h4 {
-            color: var(--secondary-color);
-            font-size: 1.3rem;
-            font-weight: 500;
-            margin: 1.5rem 0 1rem 0;
+            color: var(--lamaa-blue);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
         }
         
         .section-content p {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
             text-align: justify;
+            font-size: 1.1rem;
+            line-height: 1.9;
         }
         
         .section-content ul, .section-content ol {
-            margin-bottom: 1.5rem;
-            padding-right: 1.5rem;
+            margin-bottom: 2rem;
+            padding-right: 2rem;
         }
         
         .section-content li {
-            margin-bottom: 0.8rem;
-            line-height: 1.7;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Company Promotion Boxes */
+        .company-promo {
+            background: linear-gradient(135deg, var(--lamaa-green) 0%, var(--lamaa-blue) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .company-promo h4 {
+            color: white;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .company-promo .btn {
+            background: white;
+            color: var(--lamaa-green);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .company-promo .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
         /* Special Elements */
         .highlight-box {
             background: linear-gradient(135deg, var(--light-blue) 0%, #f0f9ff 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-right: 4px solid var(--accent-color);
+            border: 2px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-right: 6px solid var(--lamaa-green);
         }
         
         .tip-box {
             background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
-            border: 1px solid #c6f6d5;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-right: 4px solid var(--success-color);
+            border: 2px solid #c6f6d5;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-right: 6px solid var(--success-color);
         }
         
         .warning-box {
             background: linear-gradient(135deg, #fffaf0 0%, #fef5e7 100%);
-            border: 1px solid #fbd38d;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-right: 4px solid var(--warning-color);
+            border: 2px solid #fbd38d;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-right: 6px solid var(--warning-color);
         }
         
         .info-icon {
-            color: var(--secondary-color);
-            margin-left: 0.5rem;
+            color: var(--lamaa-blue);
+            margin-left: 0.8rem;
         }
         
         .success-icon {
             color: var(--success-color);
-            margin-left: 0.5rem;
+            margin-left: 0.8rem;
         }
         
         .warning-icon {
             color: var(--warning-color);
-            margin-left: 0.5rem;
+            margin-left: 0.8rem;
         }
         
         /* Statistics Cards */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
         }
         
         .stat-card {
             background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
+            border-radius: 15px;
+            padding: 2rem;
             text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            border-top: 4px solid var(--lamaa-green);
         }
         
         .stat-card:hover {
-            transform: translateY(-3px);
+            transform: translateY(-5px);
         }
         
         .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 800;
             color: var(--primary-color);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
         }
         
         .stat-label {
             color: var(--text-light);
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--lamaa-green) 0%, var(--lamaa-blue) 100%);
+            color: white;
+            padding: 15px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1.05rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
         }
         
         /* Footer */
         .footer {
-            background: var(--dark-blue);
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-color) 100%);
             color: white;
-            padding: 3rem 0 2rem 0;
-            margin-top: 4rem;
+            padding: 4rem 0 2rem 0;
+            margin-top: 5rem;
         }
         
         .footer-content {
@@ -321,61 +498,92 @@
         }
         
         .footer-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
         }
         
         .footer-text {
-            opacity: 0.8;
-            margin-bottom: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
         }
         
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 3rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
         }
         
         .footer-link {
             color: white;
             text-decoration: none;
             transition: color 0.3s ease;
+            font-weight: 500;
+            font-size: 1.05rem;
         }
         
         .footer-link:hover {
-            color: var(--accent-color);
+            color: var(--lamaa-green);
         }
         
         .copyright {
-            border-top: 1px solid rgba(255,255,255,0.2);
-            padding-top: 1.5rem;
-            opacity: 0.7;
-            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 2rem;
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+
+        .company-info {
+            background: var(--lamaa-green);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            color: white;
+            text-align: center;
         }
         
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero-title {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             
             .hero-subtitle {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             
             .section-title {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             
             .section-content {
-                padding: 1.5rem;
+                padding: 2rem;
             }
             
             .table-of-contents {
-                margin: -30px 0 30px 0;
-                padding: 1.5rem;
+                margin: -40px 0 40px 0;
+                padding: 2rem;
+            }
+
+            .floating-contacts {
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                flex-direction: row;
+                justify-content: center;
+                margin: 20px 0;
+            }
+
+            .company-header h3 {
+                font-size: 1.1rem;
+            }
+
+            .company-header .contact-info {
+                font-size: 0.85rem;
             }
         }
         
@@ -389,18 +597,19 @@
             position: fixed;
             bottom: 30px;
             left: 30px;
-            background: var(--primary-color);
+            background: var(--lamaa-green);
             color: white;
             border: none;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 1.2rem;
+            width: 55px;
+            height: 55px;
+            font-size: 1.3rem;
             cursor: pointer;
             transition: all 0.3s ease;
             opacity: 0;
             visibility: hidden;
             z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
         .back-to-top.show {
@@ -409,12 +618,66 @@
         }
         
         .back-to-top:hover {
-            background: var(--secondary-color);
+            background: var(--lamaa-blue);
             transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Print/PDF optimizations */
+        @media print {
+            .floating-contacts,
+            .back-to-top,
+            .company-header {
+                display: none !important;
+            }
+            
+            .content-section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+            
+            body {
+                background: white;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Company Header -->
+    <div class="company-header">
+        <div class="container">
+            <h3>
+                <i class="fas fa-star"></i>
+                شركة لمعة للنظافة - أفضل شركة تنظيف معتمدة في الرياض
+            </h3>
+            <div class="contact-info">
+                <a href="tel:0563009155">
+                    <i class="fas fa-phone"></i>
+                    0563009155
+                </a>
+                <a href="https://wa.me/966563009155" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    واتساب
+                </a>
+                <a href="https://getlamaaclean.com/" target="_blank">
+                    <i class="fas fa-globe"></i>
+                    الموقع الرسمي
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contacts">
+        <a href="tel:0563009155" class="contact-btn phone" title="اتصل الآن">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/966563009155?text=أرغب في الحصول على خدمة تنظيف شاملة" 
+           class="contact-btn whatsapp" target="_blank" title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
@@ -425,7 +688,15 @@
                 </h1>
                 <p class="hero-subtitle">
                     أفكار وحلول مبتكرة حول عملية التنظيف - دليلك الكامل للحصول على بيئة نظيفة وصحية
+                    <br>
+                    <strong>من شركة لمعة للنظافة - الرائدة في خدمات التنظيف بالرياض</strong>
                 </p>
+                <div class="company-badge">
+                    <a href="https://getlamaaclean.com/" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        زيارة موقع شركة لمعة للنظافة
+                    </a>
+                </div>
                 <div class="stats-grid mt-5">
                     <div class="stat-card">
                         <div class="stat-number">15,000+</div>
@@ -439,6 +710,10 @@
                         <div class="stat-number">100+</div>
                         <div class="stat-label">نصيحة عملية</div>
                     </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">عميل راضٍ في الرياض</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -451,6 +726,12 @@
                 <i class="fas fa-list"></i>
                 فهرس المحتويات
             </h2>
+            <div class="company-info">
+                <strong>هذا الدليل مقدم من شركة لمعة للنظافة</strong> - أفضل شركة تنظيف معتمدة في الرياض
+                <br>
+                للحصول على خدماتنا الاحترافية: 
+                <a href="tel:0563009155" style="color: white; font-weight: bold;">0563009155</a>
+            </div>
             <ul class="toc-list row">
                 <li class="col-md-6 toc-item">
                     <a href="#introduction" class="toc-link">
@@ -559,6 +840,13 @@
             <div class="section-content">
                 <p>يُعد التنظيف جزءًا لا يتجزأ من حياتنا اليومية، فهو ليس مجرد مهمة روتينية نقوم بها للحفاظ على المظهر الجمالي لمحيطنا، بل هو استثمار حقيقي في صحتنا ورفاهيتنا وجودة حياتنا بشكل عام. في عالم يتسارع فيه إيقاع الحياة وتتزايد فيه التحديات البيئية والصحية، أصبح فهم أساليب التنظيف الصحيحة والاستفادة من الخدمات المتخصصة أمرًا ضروريًا أكثر من أي وقت مضى.</p>
 
+                <div class="company-promo">
+                    <h4><i class="fas fa-star"></i> شركة لمعة للنظافة - خبرة أكثر من 10 سنوات</h4>
+                    <p>نحن في شركة لمعة للنظافة نفهم أهمية البيئة النظيفة لصحتكم وراحتكم، لذلك نقدم خدمات تنظيف احترافية بأعلى معايير الجودة</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">زيارة موقعنا</a>
+                    <a href="tel:0563009155" class="btn">اتصل الآن</a>
+                </div>
+
                 <div class="highlight-box">
                     <h4><i class="fas fa-info-circle info-icon"></i>لماذا يُعد التنظيف مهمًا؟</h4>
                     <p>التنظيف الفعال يساهم في خلق بيئة صحية خالية من الجراثيم والبكتيريا، ويحسن من جودة الهواء الذي نتنفسه، ويقلل من مخاطر الإصابة بالأمراض والحساسية. كما أنه يعزز من الصحة النفسية والعقلية، حيث تُظهر الدراسات أن البيئة النظيفة والمنظمة تقلل من مستويات التوتر والقلق، وتزيد من التركيز والإنتاجية.</p>
@@ -567,8 +855,8 @@
                 <p>في هذا الدليل الشامل، سنأخذك في رحلة عبر عالم التنظيف بكل جوانبه، بدءًا من الأساليب التقليدية والمجربة، مرورًا بأحدث التقنيات والابتكارات، وصولًا إلى الممارسات المستدامة والصديقة للبيئة. سنتناول أيضًا أنواع خدمات التنظيف المختلفة، وكيفية اختيار الأنسب منها، بالإضافة إلى نصائح عملية وحلول مبتكرة يمكن تطبيقها في المنزل أو مكان العمل.</p>
 
                 <div class="tip-box">
-                    <h4><i class="fas fa-lightbulb success-icon"></i>نصيحة مهمة</h4>
-                    <p>تذكر أن التنظيف الفعال لا يتطلب بالضرورة استخدام منتجات كيميائية قاسية أو معدات باهظة الثمن. في كثير من الأحيان، الطرق البسيطة والطبيعية تكون الأكثر فعالية وأمانًا.</p>
+                    <h4><i class="fas fa-lightbulb success-icon"></i>نصيحة مهمة من خبراء شركة لمعة</h4>
+                    <p>تذكر أن التنظيف الفعال لا يتطلب بالضرورة استخدام منتجات كيميائية قاسية أو معدات باهظة الثمن. في كثير من الأحيان، الطرق البسيطة والطبيعية تكون الأكثر فعالية وأمانًا. وإذا كنت تحتاج لخدمة احترافية، فنحن في شركة لمعة للنظافة نستخدم أحدث التقنيات الآمنة والصديقة للبيئة.</p>
                 </div>
 
                 <p>سواء كنت تبحث عن طرق لتحسين روتين التنظيف في منزلك، أو تفكر في الاستعانة بخدمات تنظيف احترافية لمكتبك أو شركتك، فإن هذا الدليل سيوفر لك المعلومات والأدوات اللازمة لاتخاذ قرارات مدروسة وتحقيق أفضل النتائج. دعنا نبدأ هذه الرحلة معًا نحو بيئة أنظف وأكثر صحة.</p>
@@ -585,6 +873,12 @@
             </div>
             <div class="section-content">
                 <p>يُعد تنظيف المنزل من أهم المهام التي تساهم في خلق بيئة صحية ومريحة للعائلة. إن اتباع أساليب تنظيف منهجية وفعالة لا يوفر الوقت والجهد فحسب، بل يضمن أيضًا تحقيق أفضل النتائج والحفاظ على نظافة دائمة.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-home"></i> خدمات تنظيف المنازل من شركة لمعة</h4>
+                    <p>نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق بأعلى معايير الجودة مع عمالة فلبينية محترفة</p>
+                    <a href="https://wa.me/966563009155?text=أرغب في خدمة تنظيف منزلي" target="_blank" class="btn">احجز الآن</a>
+                </div>
 
                 <h3>التنظيف اليومي السريع</h3>
                 <p>يُعد التنظيف اليومي السريع الأساس للحفاظ على منزل نظيف ومنظم. هذه المهام البسيطة التي لا تستغرق أكثر من 15-30 دقيقة يوميًا تمنع تراكم الأوساخ والفوضى:</p>
@@ -629,7 +923,7 @@
 
                 <div class="warning-box">
                     <h4><i class="fas fa-exclamation-triangle warning-icon"></i>تحذير مهم</h4>
-                    <p>تجنب خلط منتجات التنظيف المختلفة، خاصة تلك التي تحتوي على الكلور والأمونيا، حيث يمكن أن ينتج عن ذلك غازات سامة خطيرة.</p>
+                    <p>تجنب خلط منتجات التنظيف المختلفة، خاصة تلك التي تحتوي على الكلور والأمونيا، حيث يمكن أن ينتج عن ذلك غازات سامة خطيرة. في شركة لمعة للنظافة، نستخدم منتجات آمنة ومعتمدة لضمان سلامة عائلتك.</p>
                 </div>
 
                 <h3>التنظيف الموسمي الشامل</h3>
@@ -646,22 +940,21 @@
                 </ul>
 
                 <div class="tip-box">
-                    <h4><i class="fas fa-star success-icon"></i>نصائح للتنظيف الفعال</h4>
+                    <h4><i class="fas fa-star success-icon"></i>نصائح للتنظيف الفعال من خبراء لمعة</h4>
                     <ul>
                         <li>ابدأ دائمًا من الأعلى إلى الأسفل لتجنب إعادة تنظيف الأسطح</li>
                         <li>استخدم منتجات التنظيف المناسبة لكل سطح</li>
                         <li>اتبع مبدأ "نظف أثناء التنقل" لتوفير الوقت</li>
                         <li>استعن بأفراد العائلة وقسم المهام عليهم</li>
                         <li>استخدم الموسيقى لجعل التنظيف أكثر متعة</li>
+                        <li>وإذا كان الوقت ضيقًا، فلا تتردد في الاتصال بشركة لمعة للحصول على خدمة احترافية سريعة</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- Office Cleaning Section -->
-
- <section id="office-cleaning" class="content-section">
-
+        <section id="office-cleaning" class="content-section">
             <div class="section-header">
                 <h2 class="section-title">
                     <i class="fas fa-building"></i>
@@ -670,6 +963,13 @@
             </div>
             <div class="section-content">
                 <p>تُعد نظافة مكان العمل عاملاً حاسمًا في إنتاجية الموظفين وصحتهم، بالإضافة إلى الانطباع الذي يتركه المكتب على العملاء والزوار. إن تطبيق أساليب تنظيف مناسبة ومنتظمة في البيئة المكتبية يساهم في خلق مساحة عمل صحية ومحفزة للإبداع والإنتاجية.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-building"></i> خدمات تنظيف المكاتب والشركات</h4>
+                    <p>نوفر خدمات تنظيف احترافية للمكاتب والشركات والمؤسسات التجارية بجودة عالية وأسعار تنافسية</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">اعرف المزيد</a>
+                    <a href="tel:0563009155" class="btn">استشارة مجانية</a>
+                </div>
 
                 <h3>التنظيف اليومي للمكاتب</h3>
                 <p>يشمل التنظيف اليومي المهام الأساسية التي تضمن بيئة عمل نظيفة ومريحة:</p>
@@ -719,7 +1019,7 @@
 
                 <div class="highlight-box">
                     <h4><i class="fas fa-users info-icon"></i>أهمية النظافة في بيئة العمل</h4>
-                    <p>تُظهر الدراسات أن الموظفين في البيئات النظيفة يتغيبون عن العمل بنسبة أقل بـ 46% مقارنة بالبيئات غير النظيفة، كما تزيد إنتاجيتهم بنسبة تصل إلى 12%.</p>
+                    <p>تُظهر الدراسات أن الموظفين في البيئات النظيفة يتغيبون عن العمل بنسبة أقل بـ 46% مقارنة بالبيئات غير النظيفة، كما تزيد إنتاجيتهم بنسبة تصل إلى 12%. هذا ما نضمنه في شركة لمعة للنظافة من خلال خدماتنا المتخصصة للمكاتب والشركات.</p>
                 </div>
 
                 <h3>التنظيف المتخصص للمعدات المكتبية</h3>
@@ -742,7 +1042,7 @@
 
                 <div class="tip-box">
                     <h4><i class="fas fa-clock success-icon"></i>جدولة التنظيف المكتبي</h4>
-                    <p>لضمان أقل تعطيل لسير العمل، يُفضل تنفيذ مهام التنظيف الكبيرة خارج ساعات العمل الرسمية، بينما يمكن تنفيذ المهام السريعة أثناء فترات الراحة أو في نهاية اليوم.</p>
+                    <p>لضمان أقل تعطيل لسير العمل، يُفضل تنفيذ مهام التنظيف الكبيرة خارج ساعات العمل الرسمية، بينما يمكن تنفيذ المهام السريعة أثناء فترات الراحة أو في نهاية اليوم. شركة لمعة للنظافة تقدم خدمات مرنة تناسب مواعيد عملكم.</p>
                 </div>
 
                 <h3>بروتوكولات التعقيم في المكاتب</h3>
@@ -758,9 +1058,6 @@
             </div>
         </section>
 
-        <!-- Continue with other sections... -->
-        <!-- For brevity, I'll include a few more key sections -->
-
         <!-- Cleaning Services Section -->
         <section id="cleaning-services" class="content-section">
             <div class="section-header">
@@ -771,6 +1068,13 @@
             </div>
             <div class="section-content">
                 <p>تتنوع خدمات التنظيف لتلبي احتياجات مختلفة، من التنظيف المنزلي البسيط إلى التنظيف الصناعي المتخصص. فهم أنواع هذه الخدمات يساعد في اختيار الأنسب حسب الحاجة والميزانية.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-star"></i> خدمات شركة لمعة للنظافة الشاملة</h4>
+                    <p>نحن نقدم جميع أنواع خدمات التنظيف بأعلى معايير الجودة وبأسعار تنافسية في جميع أنحاء الرياض</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">اطلع على خدماتنا</a>
+                    <a href="https://wa.me/966563009155?text=أريد معرفة أسعار خدمات التنظيف" target="_blank" class="btn">احصل على عرض سعر</a>
+                </div>
 
                 <h3>خدمات التنظيف المنزلي</h3>
                 <div class="row">
@@ -805,7 +1109,7 @@
                     </ul>
                 </div>
 
-                <h3>خدمات التنظيف المتخصصة</h3>
+                <h3>خدمات التنظيف المتخصصة من شركة لمعة</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="stat-card">
@@ -815,7 +1119,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="stat-card">
-                            <h5>تنظيف السجاد</h5>
+                            <h5>تنظيف السجاد والمفروشات</h5>
                             <p>تنظيف عميق بالبخار وإزالة البقع العنيدة</p>
                         </div>
                     </div>
@@ -825,6 +1129,29 @@
                             <p>تنظيف احترافي للنوافذ الداخلية والخارجية</p>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <h5>تنظيف المكيفات</h5>
+                            <p>صيانة وتنظيف أنظمة التكييف والتهوية</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <h5>تنظيف الخزانات</h5>
+                            <p>تنظيف وتعقيم خزانات المياه</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card">
+                            <h5>خدمات التعقيم</h5>
+                            <p>تعقيم شامل ضد الفيروسات والبكتيريا</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-phone success-icon"></i>كيفية اختيار الخدمة المناسبة</h4>
+                    <p>لا تتردد في الاتصال بنا على الرقم 0563009155 للحصول على استشارة مجانية حول أفضل خدمة تنظيف تناسب احتياجاتك وميزانيتك. فريق خبرائنا مستعد لمساعدتك في اختيار الحل الأمثل.</p>
                 </div>
             </div>
         </section>
@@ -839,6 +1166,12 @@
             </div>
             <div class="section-content">
                 <p>في عصر التطور التكنولوجي والابتكار، ظهرت العديد من الأفكار والحلول المبتكرة التي تجعل عملية التنظيف أكثر فعالية وأقل جهدًا. هذه الحلول تتراوح بين استخدام المواد الطبيعية والتقنيات الذكية والأدوات المتطورة.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-robot"></i> أحدث التقنيات في شركة لمعة</h4>
+                    <p>نستخدم أحدث التقنيات والمعدات المتطورة عالمياً في خدمات التنظيف لضمان أفضل النتائج</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">تعرف على تقنياتنا</a>
+                </div>
 
                 <h3>الحلول الطبيعية والصديقة للبيئة</h3>
                 <div class="row">
@@ -868,8 +1201,8 @@
 
                 <h3>التقنيات الذكية في التنظيف</h3>
                 <div class="highlight-box">
-                    <h4><i class="fas fa-robot info-icon"></i>الروبوتات المنزلية</h4>
-                    <p>أصبحت روبوتات التنظيف جزءًا لا يتجزأ من المنازل الذكية، حيث تقوم بتنظيف الأرضيات تلقائيًا وفقًا لجداول زمنية محددة، مما يوفر الوقت والجهد على أصحاب المنازل.</p>
+                    <h4><i class="fas fa-robot info-icon"></i>الروبوتات المنزلية والمعدات المتطورة</h4>
+                    <p>أصبحت روبوتات التنظيف جزءًا لا يتجزأ من المنازل الذكية، حيث تقوم بتنظيف الأرضيات تلقائيًا وفقًا لجداول زمنية محددة، مما يوفر الوقت والجهد على أصحاب المنازل. في شركة لمعة، نستخدم أحدث المعدات الآلية والذكية لضمان تنظيف متطور وفعال.</p>
                 </div>
 
                 <h3>أفكار مبتكرة لتوفير الوقت</h3>
@@ -878,218 +1211,37 @@
                     <li><strong>استخدام الموسيقى:</strong> تشغيل الموسيقى المحفزة لجعل التنظيف أكثر متعة</li>
                     <li><strong>تقنية الـ 15 دقيقة:</strong> تخصيص 15 دقيقة يوميًا للتنظيف السريع</li>
                     <li><strong>التنظيف الجماعي:</strong> إشراك جميع أفراد العائلة في مهام التنظيف</li>
+                    <li><strong>الاستعانة بالمحترفين:</strong> الاتصال بشركة لمعة للحصول على خدمة سريعة وفعالة عند الحاجة</li>
                 </ul>
 
                 <div class="warning-box">
-                    <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة مهمة</h4>
-                    <p>عند تجربة أي منتج أو تقنية جديدة، اختبرها أولاً على منطقة صغيرة وغير ظاهرة للتأكد من عدم تسببها في أي ضرر.</p>
+                    <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة مهمة من خبراء لمعة</h4>
+                    <p>عند تجربة أي منتج أو تقنية جديدة، اختبرها أولاً على منطقة صغيرة وغير ظاهرة للتأكد من عدم تسببها في أي ضرر. وإذا كنت غير متأكد من أي منتج أو طريقة، فلا تتردد في استشارة خبراء شركة لمعة للنظافة.</p>
+                </div>
+
+                <h3>الابتكارات التقنية في خدمات لمعة</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-cloud" style="font-size: 2rem; color: var(--lamaa-blue); margin-bottom: 1rem;"></i>
+                        <h5>التنظيف بالبخار</h5>
+                        <p>أجهزة بخار متطورة للتعقيم والتنظيف العميق</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-microscope" style="font-size: 2rem; color: var(--lamaa-green); margin-bottom: 1rem;"></i>
+                        <h5>تقنيات النانو</h5>
+                        <p>منتجات تنظيف بتقنية النانو للحماية طويلة المدى</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shield-virus" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h5>التعقيم بالأوزون</h5>
+                        <p>تقنيات متقدمة للتعقيم والقضاء على الجراثيم</p>
+                    </div>
                 </div>
             </div>
         </section>
-<!-- eco-cleaning -->
-        <section id="eco-friendly" class="content-section fade-in">
-    <div class="section-header">
-        <h2>
-            <i class="fas fa-recycle"></i>
-            التنظيف الصديق للبيئة: حلول وأساليب مبتكرة
-        </h2>
-    </div>
-    <div class="section-content">
-        <p>التنظيف الصديق للبيئة أصبح ضرورة في عصرنا الحالي للحفاظ على صحة الإنسان والطبيعة. تعتمد هذه الأساليب على استخدام مواد ومنتجات طبيعية تقلل من التلوث وتساعد في حماية البيئة.</p>
-
-        <h3>مواد تنظيف طبيعية وآمنة</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="tip-box">
-                    <h4><i class="fas fa-seedling success-icon"></i>الخل الأبيض الطبيعي</h4>
-                    <ul>
-                        <li>منظف طبيعي مضاد للبكتيريا</li>
-                        <li>فعال في إزالة البقع والأوساخ</li>
-                        <li>آمن للاستخدام في المطابخ والحمامات</li>
-                        <li>صديق للبيئة وقابل للتحلل</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="tip-box">
-                    <h4><i class="fas fa-lemon success-icon"></i>صودا الخبز العضوية</h4>
-                    <ul>
-                        <li>مزيل روائح طبيعي وغير سام</li>
-                        <li>مقشر لطيف للأسطح</li>
-                        <li>يقلل من الحاجة للمواد الكيميائية</li>
-                        <li>آمن للأطفال والحيوانات الأليفة</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <h3>التقنيات البيئية في التنظيف</h3>
-        <div class="highlight-box">
-            <h4><i class="fas fa-water info-icon"></i>استخدام الماء المقطر والتقنيات الحديثة</h4>
-            <p>تساعد تقنيات التنظيف باستخدام الماء المقطر والبخاخات البيئية في تقليل استهلاك المواد الكيميائية وتوفير ماء أقل مع نتائج تنظيف فعالة.</p>
-        </div>
-
-        <h3>نصائح للحفاظ على بيئة نظيفة</h3>
-        <ul>
-            <li><strong>استخدام المنظفات القابلة للتحلل:</strong> اختيار منتجات سهلة التحلل بيئيًا لتقليل الأثر البيئي</li>
-            <li><strong>تقليل استخدام البلاستيك:</strong> شراء منظفات بعبوات قابلة لإعادة التدوير أو إعادة التعبئة</li>
-            <li><strong>التخلص السليم من الفضلات:</strong> التأكد من عدم التخلص من المواد الكيميائية في المجاري</li>
-            <li><strong>التنظيف بالطرق الطبيعية:</strong> استخدام الخل، الليمون، وصودا الخبز بدلًا من المواد الكيميائية القاسية</li>
-        </ul>
-
-        <div class="warning-box">
-            <h4><i class="fas fa-exclamation-triangle warning-icon"></i>تحذير بيئي</h4>
-            <p>تجنب خلط مواد التنظيف المختلفة لتفادي تكوين مركبات ضارة بالبيئة أو بصحة الإنسان.</p>
-        </div>
-    </div>
-        </section>
-
-<!-- professional-importance -->
-        <section id="professional-importance" class="content-section fade-in">
-    <div class="section-header">
-        <h2>
-            <i class="fas fa-handshake"></i>
-            أهمية الخدمات الاحترافية في نقل العفش
-        </h2>
-    </div>
-    <div class="section-content">
-        <p>الاعتماد على خدمات احترافية في نقل العفش يضمن سلامة ممتلكاتك ويوفر عليك الوقت والجهد. الخدمات الاحترافية تقدم حلولًا متكاملة ومميزة تلبي احتياجاتك بكل دقة وأمان.</p>
-
-        <h3>خبرة عالية وجودة مضمونة</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="tip-box">
-                    <h4><i class="fas fa-user-check success-icon"></i>فريق متخصص</h4>
-                    <ul>
-                        <li>خبراء في فك وتركيب الأثاث بدقة</li>
-                        <li>متمرسون على التعامل مع مختلف أنواع العفش</li>
-                        <li>يضمنون الحفاظ على سلامة الأثاث</li>
-                        <li>يوفرون الوقت والجهد عليك</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="tip-box">
-                    <h4><i class="fas fa-shield-alt success-icon"></i>معدات حديثة وآمنة</h4>
-                    <ul>
-                        <li>شاحنات مجهزة لحماية الأثاث</li>
-                        <li>مواد تغليف احترافية ومتينة</li>
-                        <li>أدوات نقل متخصصة لتفادي الخدوش والأضرار</li>
-                        <li>تخزين آمن في حال الحاجة</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <h3>راحة وسهولة أثناء النقل</h3>
-        <div class="highlight-box">
-            <h4><i class="fas fa-smile info-icon"></i>تجربة خالية من القلق</h4>
-            <p>الخدمات الاحترافية توفر لك راحة البال من خلال التخطيط الدقيق والتنفيذ السلس، مما يجعل عملية النقل سهلة ومنظمة دون أي توتر أو مشاكل.</p>
-        </div>
-
-        <h3>توفير الوقت والمال</h3>
-        <ul>
-            <li><strong>تجنب التلفيات:</strong> يقلل من احتمال حدوث أضرار مكلفة للأثاث</li>
-            <li><strong>تنظيم وجدولة:</strong> يضمن انسيابية النقل في الوقت المحدد</li>
-            <li><strong>خدمات شاملة:</strong> تشمل التعبئة، النقل، الفك والتركيب بشكل متكامل</li>
-            <li><strong>دعم فني مستمر:</strong> مساعدة في أي مشكلة تظهر أثناء عملية النقل</li>
-        </ul>
-
-        <div class="warning-box">
-            <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة هامة</h4>
-            <p>اختيار شركة نقل محترفة وذات سمعة جيدة يقلل من المخاطر ويوفر عليك الكثير من المشاكل المحتملة.</p>
-        </div>
-    </div>
-        </section>
-
-
-        <section id="planning-schedule" class="content-section fade-in">
-    <div class="section-header">
-        <h2>
-            <i class="fas fa-calendar-check"></i>
-            جداول التخطيط والتنفيذ لنقل العفش
-        </h2>
-    </div>
-    <div class="section-content">
-        <p>التخطيط والتنفيذ المنظم هما مفتاح نجاح عملية نقل العفش دون أي مشاكل أو تأخيرات. إليك جداول زمنية تساعدك على تنظيم خطوات النقل بشكل فعّال.</p>
-
-        <h3>الجدول الزمني للتخطيط</h3>
-        <table class="planning-table" style="width:100%; border-collapse: collapse; margin-bottom: 20px;">
-            <thead style="background-color: #007bff; color: white;">
-                <tr>
-                    <th style="padding: 10px; border: 1px solid #ddd;">المرحلة</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">المدة الزمنية</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">التفاصيل</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">اختيار شركة النقل</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">قبل 3 أسابيع</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">البحث والمقارنة واختيار الشركة المناسبة</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">التقييم والتقدير</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">قبل 2 أسابيع</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">تحديد كمية العفش والخدمات المطلوبة</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">التجهيز المسبق</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">قبل 1 أسبوع</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">التغليف وتجهيز الأثاث والأدوات اللازمة</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">تأكيد المواعيد</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">قبل 3 أيام</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">التأكد من مواعيد النقل والتنسيق مع الشركة</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>جدول التنفيذ</h3>
-        <table class="execution-table" style="width:100%; border-collapse: collapse;">
-            <thead style="background-color: #28a745; color: white;">
-                <tr>
-                    <th style="padding: 10px; border: 1px solid #ddd;">الخطوة</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">الوقت المتوقع</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">الوصف</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">فك وتركيب الأثاث</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">4-6 ساعات</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">فك الأثاث بحذر وتركيبه في المكان الجديد</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">التغليف والتعبئة</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">3-5 ساعات</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">تغليف الأغراض الصغيرة والكبيرة بشكل آمن</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">النقل والشحن</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">حسب المسافة</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">تحميل الأثاث على الشاحنات ونقله بأمان</td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd;">التفريغ والتركيب النهائي</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">3-4 ساعات</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">تفريغ الأثاث وتركيبه في المنزل الجديد</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="warning-box" style="margin-top: 20px;">
-            <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة مهمة</h4>
-            <p>التخطيط الجيد والالتزام بالجداول الزمنية يساعد في إنجاز النقل بسرعة وبدون مشاكل.</p>
-        </div>
-    </div>
-        </section>
-
-
 
         <!-- Tools and Equipment Section -->
-        <section id="scheduling" class="content-section">
+        <section id="tools-equipment" class="content-section">
             <div class="section-header">
                 <h2 class="section-title">
                     <i class="fas fa-tools"></i>
@@ -1098,6 +1250,12 @@
             </div>
             <div class="section-content">
                 <p>اختيار الأدوات والمعدات المناسبة يُعد عاملاً حاسمًا في فعالية عملية التنظيف. الاستثمار في أدوات عالية الجودة لا يحسن من نتائج التنظيف فحسب، بل يوفر أيضًا الوقت والجهد على المدى الطويل.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-tools"></i> معدات شركة لمعة المتطورة</h4>
+                    <p>نستخدم أحدث الأدوات والمعدات المتطورة المستوردة عالمياً لضمان أفضل نتائج التنظيف</p>
+                    <a href="tel:0563009155" class="btn">احجز خدمة احترافية</a>
+                </div>
 
                 <h3>الأدوات الأساسية لكل منزل</h3>
                 <div class="stats-grid">
@@ -1140,6 +1298,17 @@
                     </div>
                 </div>
 
+                <h3>معدات شركة لمعة المتخصصة</h3>
+                <div class="highlight-box">
+                    <h4><i class="fas fa-star info-icon"></i>تقنيات متطورة حصرياً في لمعة</h4>
+                    <ul>
+                        <li><strong>أجهزة التنظيف بالأوزون:</strong> للتعقيم والقضاء على الروائح</li>
+                        <li><strong>معدات التنظيف بالضغط العالي:</strong> لتنظيف الواجهات والأرضيات</li>
+                        <li><strong>أجهزة التجفيف السريع:</strong> لتقليل وقت التجفيف بعد التنظيف</li>
+                        <li><strong>معدات التنظيف بالترددات فوق الصوتية:</strong> لتنظيف الأجهزة الحساسة</li>
+                    </ul>
+                </div>
+
                 <div class="tip-box">
                     <h4><i class="fas fa-star success-icon"></i>نصائح لاختيار الأدوات</h4>
                     <ul>
@@ -1147,118 +1316,8 @@
                         <li>اختر أدوات متعددة الاستخدامات لتوفير المساحة</li>
                         <li>تأكد من سهولة التنظيف والصيانة</li>
                         <li>اقرأ المراجعات قبل الشراء</li>
+                        <li>أو اتصل بشركة لمعة للحصول على خدمة احترافية بأحدث المعدات</li>
                     </ul>
-                </div>
-            </div>
-        </section>
-
-
-<!-- future-trends -->
-        <section id="future-trends" class="content-section fade-in">
-    <div class="section-header">
-        <h2><i class="fas fa-arrow-trend-up"></i>الاتجاهات المستقبلية في نقل العفش</h2>
-    </div>
-    <div class="section-content">
-        <p>تشهد صناعة نقل العفش تطورات مستمرة مع تبني تقنيات حديثة وأساليب مبتكرة تهدف إلى تحسين الكفاءة والراحة للعملاء.</p>
-
-        <h3>استخدام التكنولوجيا الذكية</h3>
-        <p>تشمل الاتجاهات الحديثة استخدام تطبيقات الهواتف الذكية لتتبع الشحنات، وتحديد أوقات التسليم بدقة، وتحسين التواصل بين العملاء وشركات النقل.</p>
-
-        <h3>التغليف المستدام والصديق للبيئة</h3>
-        <p>تتجه الشركات إلى استخدام مواد تغليف قابلة لإعادة التدوير وتجنب المواد البلاستيكية الضارة، مما يعزز من الاستدامة ويحافظ على البيئة.</p>
-
-        <h3>خدمات النقل الآلي والروبوتات</h3>
-        <p>يتم تطوير روبوتات وأنظمة آلية للمساعدة في حمل الأثاث الثقيل وتسهيل عمليات النقل داخل المنازل والمستودعات.</p>
-
-        <h3>تخصيص الخدمات وتجربة العملاء</h3>
-        <p>يزداد الاهتمام بتقديم خدمات مخصصة تناسب احتياجات كل عميل، مع توفير دعم متواصل وخدمات ما بعد النقل لضمان رضا العميل الكامل.</p>
-
-        <div class="highlight-box">
-            <h4><i class="fas fa-lightbulb info-icon"></i>لمحة مستقبلية</h4>
-            <p>مع استمرار الابتكار، سيكون نقل العفش أكثر سهولة، أمانًا، وصداقة للبيئة في السنوات القادمة.</p>
-        </div>
-    </div>
-        </section>
-
-<!-- advanced-cleaning-techniques -->
-        <section id="advanced-techniques" class="content-section fade-in">
-    <div class="section-header">
-        <h2><i class="fas fa-broom"></i>تقنيات التنظيف المتقدمة</h2>
-    </div>
-    <div class="section-content">
-        <p>مع تطور التكنولوجيا، ظهرت العديد من التقنيات المتقدمة التي تجعل عملية التنظيف أكثر كفاءة وأقل جهدًا، مع نتائج مذهلة في الحفاظ على النظافة والصحة.</p>
-
-        <h3>التنظيف بالبخار</h3>
-        <p>يستخدم بخار الماء عالي الحرارة لتعقيم الأسطح وقتل الجراثيم والبكتيريا دون الحاجة إلى مواد كيميائية ضارة.</p>
-
-        <h3>الروبوتات الذكية</h3>
-        <p>أجهزة روبوتية متطورة تقوم بالتنظيف التلقائي للأرضيات والسجاد، مع إمكانية البرمجة حسب أوقات محددة ومساحات معينة.</p>
-
-        <h3>الأشعة فوق البنفسجية (UV)</h3>
-        <p>تستخدم تقنية الأشعة فوق البنفسجية لتعقيم وتعطير الأماكن، خاصة في المستشفيات والمرافق الصحية، حيث تساعد في القضاء على الفيروسات والبكتيريا.</p>
-
-        <h3>التنظيف بالبلازما</h3>
-        <p>تقنية حديثة تعتمد على الأيونات المشحونة لتعقيم وتعطير الهواء والأسطح بطريقة فعالة وصديقة للبيئة.</p>
-
-        <div class="highlight-box">
-            <h4><i class="fas fa-robot info-icon"></i>نظرة مستقبلية</h4>
-            <p>مع استمرار الابتكار، ستصبح تقنيات التنظيف أكثر ذكاءً، صديقة للبيئة، وأكثر فاعلية في الحفاظ على صحة البيئة والمنزل.</p>
-        </div>
-    </div>
-        </section>
-
-        <section id="sustainable-practices" class="content-section fade-in">
-            <div class="section-header">
-                <h2>
-                    <i class="fas fa-seedling"></i>
-                    أهمية الممارسات المستدامة في نقل العفش
-                </h2>
-            </div>
-            <div class="section-content">
-                <p>اتباع الممارسات المستدامة في نقل العفش يساهم في الحفاظ على البيئة وتقليل الأثر السلبي، بالإضافة إلى تحسين كفاءة العملية وتوفير الموارد.</p>
-
-                <h3>استخدام مواد تغليف صديقة للبيئة</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="tip-box">
-                            <h4><i class="fas fa-recycle success-icon"></i>مواد قابلة لإعادة التدوير</h4>
-                            <ul>
-                                <li>كراتين وأكياس مصنوعة من مواد قابلة لإعادة التدوير</li>
-                                <li>تقليل النفايات البلاستيكية</li>
-                                <li>استخدام مواد تغليف قابلة للتحلل البيولوجي</li>
-                                <li>توفير حلول تغليف صديقة للبيئة</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="tip-box">
-                            <h4><i class="fas fa-seedling success-icon"></i>التقليل من الهدر</h4>
-                            <ul>
-                                <li>تجنب الإفراط في استخدام المواد</li>
-                                <li>إعادة استخدام مواد التغليف متى ما أمكن</li>
-                                <li>تخطيط دقيق للتغليف والنقل لتقليل الفاقد</li>
-                                <li>تحسين أساليب التغليف لتكون أكثر استدامة</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>توفير الطاقة وتقليل الانبعاثات</h3>
-                <div class="highlight-box">
-                    <h4><i class="fas fa-bolt info-icon"></i>ممارسات نقل صديقة للبيئة</h4>
-                    <p>استخدام شاحنات نقل مجهزة بكفاءة طاقة عالية، وترتيب عمليات النقل لتقليل الرحلات غير الضرورية، مما يساهم في تقليل استهلاك الوقود وانبعاثات الكربون.</p>
-                </div>
-
-                <h3>تعزيز الوعي والتدريب</h3>
-                <ul>
-                    <li><strong>تدريب الفرق:</strong> تعزيز فهم أهمية الاستدامة في النقل والتغليف</li>
-                    <li><strong>توعية العملاء:</strong> شرح الفوائد البيئية لاختيار الممارسات المستدامة</li>
-                    <li><strong>تشجيع المشاركة:</strong> إشراك الجميع في تبني حلول صديقة للبيئة</li>
-                </ul>
-
-                <div class="warning-box">
-                    <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة هامة</h4>
-                    <p>اختيار شركات النقل التي تلتزم بالممارسات المستدامة يدعم حماية البيئة ويعزز من مسؤوليتك الاجتماعية.</p>
                 </div>
             </div>
         </section>
@@ -1273,6 +1332,12 @@
             </div>
             <div class="section-content">
                 <p>تتجاوز فوائد النظافة المظهر الجمالي لتشمل تأثيرات إيجابية عميقة على الصحة الجسدية والنفسية. البيئة النظيفة تساهم في تحسين جودة الحياة بطرق متعددة ومهمة.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-heartbeat"></i> صحتكم أولويتنا في شركة لمعة</h4>
+                    <p>نستخدم منتجات آمنة وصديقة للصحة لضمان بيئة نظيفة وصحية لكم ولعائلاتكم</p>
+                    <a href="https://wa.me/966563009155?text=أريد خدمة تنظيف صحية وآمنة" target="_blank" class="btn">احجز تنظيف صحي</a>
+                </div>
 
                 <h3>الفوائد الصحية الجسدية</h3>
                 <div class="row">
@@ -1303,9 +1368,10 @@
                 <h3>الفوائد النفسية والعقلية</h3>
                 <div class="tip-box">
                     <h4><i class="fas fa-brain success-icon"></i>تحسين الصحة النفسية</h4>
-                    <p>تُظهر الدراسات أن البيئة النظيفة والمنظمة تقلل من مستويات التوتر والقلق، وتزيد من الشعور بالراحة والسيطرة على البيئة المحيطة. كما تساهم في تحسين التركيز والإنتاجية.</p>
+                    <p>تُظهر الدراسات أن البيئة النظيفة والمنظمة تقلل من مستويات التوتر والقلق، وتزيد من الشعور بالراحة والسيطرة على البيئة المحيطة. كما تساهم في تحسين التركيز والإنتاجية. هذا ما نسعى لتحقيقه في شركة لمعة من خلال خدماتنا المتميزة.</p>
                 </div>
 
+                <h3>الفوائد المثبتة علمياً</h3>
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-number">75%</div>
@@ -1319,6 +1385,16 @@
                         <div class="stat-number">40%</div>
                         <div class="stat-label">زيادة في الإنتاجية</div>
                     </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">تحسن في الصحة العامة</div>
+                    </div>
+                </div>
+
+                <h3>خدمات التنظيف الصحي من شركة لمعة</h3>
+                <div class="highlight-box">
+                    <h4><i class="fas fa-leaf info-icon"></i>تنظيف آمن وصحي</h4>
+                    <p>في شركة لمعة للنظافة، نحرص على استخدام منتجات تنظيف آمنة وصديقة للصحة، خاصة في المنازل التي بها أطفال أو كبار سن أو أشخاص يعانون من الحساسية. كما نوفر خدمات تعقيم متخصصة باستخدام تقنيات متطورة وآمنة.</p>
                 </div>
             </div>
         </section>
@@ -1334,177 +1410,527 @@
             <div class="section-content">
                 <p>يواجه الكثيرون تحديات مختلفة أثناء عملية التنظيف، من البقع العنيدة إلى ضيق الوقت. فهم هذه التحديات وإيجاد حلول فعالة لها يمكن أن يجعل التنظيف أكثر سهولة وفعالية.</p>
 
+                <div class="company-promo">
+                    <h4><i class="fas fa-hands-helping"></i> حلول شركة لمعة لجميع تحديات التنظيف</h4>
+                    <p>مهما كان التحدي، فريق خبراء شركة لمعة مستعد لمواجهته بالحلول الاحترافية المناسبة</p>
+                    <a href="tel:0563009155" class="btn">استشارة فورية</a>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">حلولنا المتخصصة</a>
+                </div>
+
                 <h3>التحديات الشائعة</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="warning-box">
                             <h4><i class="fas fa-clock warning-icon"></i>ضيق الوقت</h4>
-                            <p><strong>الحل:</strong> تطبيق تقنية التنظيف السريع لمدة 15 دقيقة يوميًا، وتقسيم المهام على أيام الأسبوع.</p>
+                            <p><strong>الحل:</strong> تطبيق تقنية التنظيف السريع لمدة 15 دقيقة يوميًا، وتقسيم المهام على أيام الأسبوع، أو الاستعانة بخدمات شركة لمعة للنظافة.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="warning-box">
                             <h4><i class="fas fa-tint warning-icon"></i>البقع العنيدة</h4>
-                            <p><strong>الحل:</strong> استخدام منتجات متخصصة لكل نوع بقعة، والتعامل مع البقع فور حدوثها.</p>
+                            <p><strong>الحل:</strong> استخدام منتجات متخصصة لكل نوع بقعة، والتعامل مع البقع فور حدوثها، أو الاتصال بخبراء لمعة للحصول على حلول احترافية.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="warning-box">
+                            <h4><i class="fas fa-nose warning-icon"></i>الروائح الكريهة</h4>
+                            <p><strong>الحل:</strong> استخدام الفحم النشط أو صودا الخبز كمزيل طبيعي للروائح، أو الاستفادة من خدمات التعقيم والتعطير من شركة لمعة.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="warning-box">
+                            <h4><i class="fas fa-allergies warning-icon"></i>الحساسية</h4>
+                            <p><strong>الحل:</strong> استخدام منتجات طبيعية وتجنب المواد الكيميائية القاسية، أو طلب خدمة تنظيف صحية من شركة لمعة باستخدام منتجات آمنة.</p>
                         </div>
                     </div>
                 </div>
 
                 <h3>حلول مبتكرة للتحديات</h3>
                 <ul>
-                    <li><strong>للروائح الكريهة:</strong> استخدام الفحم النشط أو صودا الخبز كمزيل طبيعي للروائح</li>
                     <li><strong>للمساحات الضيقة:</strong> استخدام أدوات تنظيف صغيرة ومرنة للوصول للأماكن الصعبة</li>
-                    <li><strong>للحساسية:</strong> استخدام منتجات طبيعية وتجنب المواد الكيميائية القاسية</li>
                     <li><strong>للدافعية:</strong> وضع أهداف صغيرة قابلة للتحقيق ومكافأة النفس عند إنجازها</li>
+                    <li><strong>للمهام الكبيرة:</strong> تقسيم المهام الكبيرة إلى مهام صغيرة يمكن إنجازها</li>
+                    <li><strong>للتنظيف المتخصص:</strong> الاستعانة بخبراء شركة لمعة للمهام التي تتطلب تخصصاً</li>
                 </ul>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-phone success-icon"></i>أسهل حل لجميع التحديات</h4>
+                    <p>لا تدع تحديات التنظيف تؤرقك! اتصل بشركة لمعة للنظافة على الرقم 0563009155 واحصل على حلول احترافية لجميع مشاكل التنظيف. فريقنا المتخصص جاهز لمساعدتك في أي وقت.</p>
+                </div>
             </div>
         </section>
 
+        <!-- Eco-Friendly Section -->
+        <section id="eco-friendly" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-leaf"></i>
+                    التنظيف الصديق للبيئة
+                </h2>
+            </div>
+            <div class="section-content">
+                <p>التنظيف الصديق للبيئة أصبح ضرورة في عصرنا الحالي للحفاظ على صحة الإنسان والطبيعة. تعتمد هذه الأساليب على استخدام مواد ومنتجات طبيعية تقلل من التلوث وتساعد في حماية البيئة.</p>
 
-<!-- standards-certifications -->
-        <section id="certifications" class="content-section fade-in">
-    <div class="section-header">
-        <h2>
-            <i class="fas fa-certificate"></i>
-            المعايير والشهادات في خدمات نقل العفش
-        </h2>
-    </div>
-    <div class="section-content">
-        <p>الالتزام بالمعايير والشهادات المهنية يضمن جودة وأمان عملية نقل العفش، ويعكس مستوى احترافي عالي وثقة العملاء.</p>
+                <div class="company-promo">
+                    <h4><i class="fas fa-globe-americas"></i> شركة لمعة وحماية البيئة</h4>
+                    <p>نحن ملتزمون في شركة لمعة باستخدام منتجات صديقة للبيئة ومواد تنظيف قابلة للتحلل البيولوجي</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">تنظيف أخضر</a>
+                </div>
 
-        <h3>المعايير الدولية والمحلية</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="tip-box">
-                    <h4><i class="fas fa-globe success-icon"></i>المعايير الدولية</h4>
-                    <ul>
-                        <li>ISO 9001 لإدارة الجودة</li>
-                        <li>ISO 14001 لإدارة البيئة</li>
-                        <li>معايير السلامة والصحة المهنية</li>
-                        <li>تطبيق أفضل الممارسات في النقل والتغليف</li>
-                    </ul>
+                <h3>مواد تنظيف طبيعية وآمنة</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tip-box">
+                            <h4><i class="fas fa-seedling success-icon"></i>الخل الأبيض الطبيعي</h4>
+                            <ul>
+                                <li>منظف طبيعي مضاد للبكتيريا</li>
+                                <li>فعال في إزالة البقع والأوساخ</li>
+                                <li>آمن للاستخدام في المطابخ والحمامات</li>
+                                <li>صديق للبيئة وقابل للتحلل</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tip-box">
+                            <h4><i class="fas fa-lemon success-icon"></i>صودا الخبز العضوية</h4>
+                            <ul>
+                                <li>مزيل روائح طبيعي وغير سام</li>
+                                <li>مقشر لطيف للأسطح</li>
+                                <li>يقلل من الحاجة للمواد الكيميائية</li>
+                                <li>آمن للأطفال والحيوانات الأليفة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>التقنيات البيئية في التنظيف</h3>
+                <div class="highlight-box">
+                    <h4><i class="fas fa-water info-icon"></i>استخدام الماء المقطر والتقنيات الحديثة</h4>
+                    <p>تساعد تقنيات التنظيف باستخدام الماء المقطر والبخاخات البيئية في تقليل استهلاك المواد الكيميائية وتوفير ماء أقل مع نتائج تنظيف فعالة. شركة لمعة تستخدم أحدث هذه التقنيات الصديقة للبيئة.</p>
+                </div>
+
+                <h3>نصائح للحفاظ على بيئة نظيفة</h3>
+                <ul>
+                    <li><strong>استخدام المنظفات القابلة للتحلل:</strong> اختيار منتجات سهلة التحلل بيئيًا لتقليل الأثر البيئي</li>
+                    <li><strong>تقليل استخدام البلاستيك:</strong> شراء منظفات بعبوات قابلة لإعادة التدوير أو إعادة التعبئة</li>
+                    <li><strong>التخلص السليم من الفضلات:</strong> التأكد من عدم التخلص من المواد الكيميائية في المجاري</li>
+                    <li><strong>التنظيف بالطرق الطبيعية:</strong> استخدام الخل، الليمون، وصودا الخبز بدلًا من المواد الكيميائية القاسية</li>
+                    <li><strong>الاستعانة بشركات واعية بيئياً:</strong> اختيار شركة لمعة التي تلتزم بالممارسات البيئية المسؤولة</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle warning-icon"></i>تحذير بيئي</h4>
+                    <p>تجنب خلط مواد التنظيف المختلفة لتفادي تكوين مركبات ضارة بالبيئة أو بصحة الإنسان. في شركة لمعة، نضمن استخدام منتجات آمنة ومتوافقة مع معايير السلامة البيئية.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="tip-box">
-                    <h4><i class="fas fa-building success-icon"></i>المعايير المحلية</h4>
-                    <ul>
-                        <li>الالتزام بقوانين دولة الكويت في النقل والخدمات</li>
-                        <li>شهادات الاعتماد المحلية من الجهات المختصة</li>
-                        <li>تراخيص العمل الرسمية لشركات النقل</li>
-                        <li>الامتثال لمعايير السلامة في التخزين والنقل</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <h3>أهمية الشهادات الاحترافية</h3>
-        <div class="highlight-box">
-            <h4><i class="fas fa-award info-icon"></i>شهادات ترفع مستوى الثقة</h4>
-            <p>الشهادات الاحترافية تثبت التزام الشركات بالجودة والسلامة، وتوفر للعملاء ضمانات بخدمات ذات معايير عالية تحمي الأثاث والممتلكات.</p>
-        </div>
-
-        <h3>كيفية التأكد من الاعتمادات</h3>
-        <ul>
-            <li><strong>طلب الاطلاع على الشهادات:</strong> التأكد من صحة الاعتمادات المقدمة من الشركات</li>
-            <li><strong>التحقق من الجهات المانحة:</strong> التأكد من مصداقية الجهات المانحة للشهادات</li>
-            <li><strong>التواصل مع العملاء السابقين:</strong> للاستفسار عن جودة الخدمات والالتزام بالمعايير</li>
-        </ul>
-
-        <div class="warning-box">
-            <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة هامة</h4>
-            <p>اختر دائمًا شركات نقل معتمدة وذات شهادات رسمية لضمان أفضل جودة وأمان في النقل.</p>
-        </div>
-    </div>
         </section>
 
+        <!-- Advanced Techniques Section -->
+        <section id="advanced-techniques" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-robot"></i>
+                    تقنيات التنظيف المتقدمة
+                </h2>
+            </div>
+            <div class="section-content">
+                <p>مع تطور التكنولوجيا، ظهرت العديد من التقنيات المتقدمة التي تجعل عملية التنظيف أكثر كفاءة وأقل جهدًا، مع نتائج مذهلة في الحفاظ على النظافة والصحة.</p>
 
-        <!-- Continue with remaining sections... -->
-        
-    </div>
+                <div class="company-promo">
+                    <h4><i class="fas fa-cogs"></i> أحدث التقنيات في شركة لمعة</h4>
+                    <p>نستخدم أحدث التقنيات العالمية في التنظيف لضمان أفضل النتائج وأعلى معايير الجودة</p>
+                    <a href="https://wa.me/966563009155?text=أريد معرفة التقنيات المتقدمة في التنظيف" target="_blank" class="btn">اطلع على تقنياتنا</a>
+                </div>
 
-    <!-- Footer -->
-    <footer class="footer">
+                <h3>التنظيف بالبخار</h3>
+                <p>يستخدم بخار الماء عالي الحرارة لتعقيم الأسطح وقتل الجراثيم والبكتيريا دون الحاجة إلى مواد كيميائية ضارة. هذه التقنية متوفرة في جميع خدمات شركة لمعة للنظافة.</p>
+
+                <h3>الروبوتات الذكية</h3>
+                <p>أجهزة روبوتية متطورة تقوم بالتنظيف التلقائي للأرضيات والسجاد، مع إمكانية البرمجة حسب أوقات محددة ومساحات معينة. شركة لمعة تواكب أحدث هذه التقنيات في خدماتها.</p>
+
+                <h3>الأشعة فوق البنفسجية (UV)</h3>
+                <p>تستخدم تقنية الأشعة فوق البنفسجية لتعقيم وتعطير الأماكن، خاصة في المستشفيات والمرافق الصحية، حيث تساعد في القضاء على الفيروسات والبكتيريا.</p>
+
+                <h3>التنظيف بالبلازما</h3>
+                <p>تقنية حديثة تعتمد على الأيونات المشحونة لتعقيم وتعطير الهواء والأسطح بطريقة فعالة وصديقة للبيئة.</p>
+
+                <h3>تقنيات شركة لمعة المتخصصة</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-cloud" style="font-size: 2rem; color: var(--lamaa-blue); margin-bottom: 1rem;"></i>
+                        <h5>تنظيف بالأوزون</h5>
+                        <p>تقنية متطورة للتعقيم والقضاء على الروائح</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-atom" style="font-size: 2rem; color: var(--lamaa-green); margin-bottom: 1rem;"></i>
+                        <h5>تقنية النانو</h5>
+                        <p>حماية طويلة المدى للأسطح والمواد</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-microchip" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <h5>أنظمة ذكية</h5>
+                        <p>مراقبة وتحكم آلي في عمليات التنظيف</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4><i class="fas fa-robot info-icon"></i>نظرة مستقبلية</h4>
+                    <p>مع استمرار الابتكار، ستصبح تقنيات التنظيف أكثر ذكاءً، صديقة للبيئة، وأكثر فاعلية في الحفاظ على صحة البيئة والمنزل. شركة لمعة للنظافة تسعى دائماً لتطبيق أحدث هذه التقنيات لخدمة عملائها في الرياض.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Importance Section -->
+        <section id="professional-importance" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    أهمية الخدمات الاحترافية في التنظيف
+                </h2>
+            </div>
+            <div class="section-content">
+                <p>الاعتماد على خدمات احترافية في التنظيف يضمن سلامة ممتلكاتك ويوفر عليك الوقت والجهد. الخدمات الاحترافية تقدم حلولًا متكاملة ومميزة تلبي احتياجاتك بكل دقة وأمان.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-award"></i> لماذا شركة لمعة للنظافة؟</h4>
+                    <p>مع خبرة أكثر من 10 سنوات وفريق من المتخصصين، نقدم خدمات تنظيف احترافية تفوق توقعاتكم</p>
+                    <a href="tel:0563009155" class="btn">اتصل الآن</a>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">تعرف علينا أكثر</a>
+                </div>
+
+                <h3>خبرة عالية وجودة مضمونة</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tip-box">
+                            <h4><i class="fas fa-user-check success-icon"></i>فريق متخصص</h4>
+                            <ul>
+                                <li>خبراء في جميع أنواع التنظيف</li>
+                                <li>متمرسون على التعامل مع مختلف المواد</li>
+                                <li>يضمنون الحفاظ على سلامة الممتلكات</li>
+                                <li>يوفرون الوقت والجهد عليك</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tip-box">
+                            <h4><i class="fas fa-shield-alt success-icon"></i>معدات حديثة وآمنة</h4>
+                            <ul>
+                                <li>أحدث معدات التنظيف العالمية</li>
+                                <li>مواد تنظيف آمنة ومعتمدة</li>
+                                <li>أدوات متخصصة لكل نوع تنظيف</li>
+                                <li>تقنيات متطورة لأفضل النتائج</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>راحة وسهولة أثناء التنظيف</h3>
+                <div class="highlight-box">
+                    <h4><i class="fas fa-smile info-icon"></i>تجربة خالية من القلق</h4>
+                    <p>الخدمات الاحترافية توفر لك راحة البال من خلال التخطيط الدقيق والتنفيذ السلس، مما يجعل عملية التنظيف سهلة ومنظمة دون أي توتر أو مشاكل. في شركة لمعة، نضمن لك تجربة استثنائية من البداية إلى النهاية.</p>
+                </div>
+
+                <h3>توفير الوقت والمال</h3>
+                <ul>
+                    <li><strong>تجنب التلفيات:</strong> يقلل من احتمال حدوث أضرار مكلفة للأثاث والممتلكات</li>
+                    <li><strong>تنظيم وجدولة:</strong> يضمن انسيابية التنظيف في الوقت المحدد</li>
+                    <li><strong>خدمات شاملة:</strong> تشمل جميع أنواع التنظيف بشكل متكامل</li>
+                    <li><strong>دعم فني مستمر:</strong> مساعدة في أي مشكلة تظهر أثناء عملية التنظيف</li>
+                    <li><strong>ضمان النتائج:</strong> إعادة التنظيف مجاناً في حال عدم الرضا</li>
+                </ul>
+
+                <h3>مزايا شركة لمعة الحصرية</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">سنوات خبرة في الرياض</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">عميل راضٍ عن خدماتنا</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">خدمة على مدار الساعة</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">ضمان الجودة والرضا</div>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة هامة</h4>
+                    <p>اختيار شركة تنظيف محترفة وذات سمعة جيدة مثل شركة لمعة للنظافة يقلل من المخاطر ويوفر عليك الكثير من المشاكل المحتملة. لا تتردد في الاتصال بنا على 0563009155 للاستفسار عن خدماتنا.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainable Practices Section -->
+        <section id="sustainable-practices" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-recycle"></i>
+                    الممارسات المستدامة في التنظيف
+                </h2>
+            </div>
+            <div class="section-content">
+                <p>اتباع الممارسات المستدامة في التنظيف يساهم في الحفاظ على البيئة وتقليل الأثر السلبي، بالإضافة إلى تحسين كفاءة العملية وتوفير الموارد.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-earth-americas"></i> التزام شركة لمعة بالاستدامة</h4>
+                    <p>نحن في شركة لمعة ملتزمون بحماية البيئة من خلال استخدام ممارسات تنظيف مستدامة وصديقة للبيئة</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">اعرف المزيد</a>
+                </div>
+
+                <h3>استخدام مواد تنظيف صديقة للبيئة</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tip-box">
+                            <h4><i class="fas fa-recycle success-icon"></i>مواد قابلة لإعادة التدوير</h4>
+                            <ul>
+                                <li>منتجات تنظيف قابلة للتحلل البيولوجي</li>
+                                <li>تقليل النفايات البلاستيكية</li>
+                                <li>استخدام عبوات قابلة لإعادة التعبئة</li>
+                                <li>توفير حلول تنظيف مستدامة</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tip-box">
+                            <h4><i class="fas fa-seedling success-icon"></i>التقليل من الهدر</h4>
+                            <ul>
+                                <li>تجنب الإفراط في استخدام المواد</li>
+                                <li>إعادة استخدام أدوات التنظيف</li>
+                                <li>تخطيط دقيق لتقليل الفاقد</li>
+                                <li>تحسين أساليب التنظيف للاستدامة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>توفير الطاقة وتقليل الانبعاثات</h3>
+                <div class="highlight-box">
+                    <h4><i class="fas fa-bolt info-icon"></i>ممارسات تنظيف صديقة للبيئة</h4>
+                    <p>استخدام معدات تنظيف عالية الكفاءة في استهلاك الطاقة، وتطبيق طرق تنظيف تقلل من استهلاك المياه والكهرباء، مما يساهم في تقليل البصمة الكربونية. شركة لمعة تستخدم أحدث المعدات الموفرة للطاقة.</p>
+                </div>
+
+                <h3>تعزيز الوعي والتدريب</h3>
+                <ul>
+                    <li><strong>تدريب الفرق:</strong> تعزيز فهم أهمية الاستدامة في التنظيف</li>
+                    <li><strong>توعية العملاء:</strong> شرح الفوائد البيئية لاختيار الممارسات المستدامة</li>
+                    <li><strong>تشجيع المشاركة:</strong> إشراك الجميع في تبني حلول صديقة للبيئة</li>
+                    <li><strong>الابتكار المستمر:</strong> البحث عن طرق جديدة لتحسين الاستدامة</li>
+                </ul>
+
+                <h3>مبادرات شركة لمعة البيئية</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-leaf" style="font-size: 2rem; color: var(--lamaa-green); margin-bottom: 1rem;"></i>
+                        <h5>منتجات طبيعية 100%</h5>
+                        <p>نستخدم منتجات تنظيف طبيعية وآمنة</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-water" style="font-size: 2rem; color: var(--lamaa-blue); margin-bottom: 1rem;"></i>
+                        <h5>توفير المياه</h5>
+                        <p>تقنيات تنظيف تقلل استهلاك المياه بـ 40%</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-solar-panel" style="font-size: 2rem; color: var(--warning-color); margin-bottom: 1rem;"></i>
+                        <h5>طاقة نظيفة</h5>
+                        <p>معدات تعمل بكفاءة عالية في الطاقة</p>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <h4><i class="fas fa-exclamation-triangle warning-icon"></i>نصيحة هامة</h4>
+                    <p>اختيار شركات التنظيف التي تلتزم بالممارسات المستدامة مثل شركة لمعة للنظافة يدعم حماية البيئة ويعزز من مسؤوليتك الاجتماعية. كن جزءاً من التغيير الإيجابي!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scheduling Section -->
+        <section id="scheduling" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-calendar-alt"></i>
+                    جداول التنظيف والتخطيط
+                </h2>
+            </div>
+            <div class="section-content">
+                <p>التخطيط والتنفيذ المنظم هما مفتاح نجاح عملية التنظيف دون أي مشاكل أو تأخيرات. إليك جداول زمنية تساعدك على تنظيم خطوات التنظيف بشكل فعّال.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-calendar-check"></i> جدولة مرنة مع شركة لمعة</h4>
+                    <p>نوفر خدمات تنظيف مجدولة حسب احتياجاتكم - يومية، أسبوعية، شهرية أو حسب الطلب</p>
+                    <a href="https://wa.me/966563009155?text=أريد جدولة خدمة تنظيف منتظمة" target="_blank" class="btn">احجز جدولة</a>
+                </div>
+
+                <h3>الجدول الزمني للتخطيط</h3>
+                <table style="width:100%; border-collapse: collapse; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <thead style="background: linear-gradient(135deg, var(--lamaa-green) 0%, var(--lamaa-blue) 100%); color: white;">
+                        <tr>
+                            <th style="padding: 15px; font-family: 'Cairo', sans-serif; font-weight: 600;">المرحلة</th>
+                            <th style="padding: 15px; font-family: 'Cairo', sans-serif; font-weight: 600;">المدة الزمنية</th>
+                            <th style="padding: 15px; font-family: 'Cairo', sans-serif; font-weight: 600;">التفاصيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f9fafb;">
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">التقييم المبدئي</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">يوم واحد</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تحديد نوع وحجم الخدمة المطلوبة</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">اختيار الخدمة</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">قبل 3 أيام</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">اختيار نوع التنظيف والجدولة المناسبة</td>
+                        </tr>
+                        <tr style="background-color: #f9fafb;">
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">التحضير المسبق</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">قبل يوم واحد</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تجهيز المكان وإزالة العوائق</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;">تأكيد الموعد</td>
+                            <td style="padding: 15px;">قبل 24 ساعة</td>
+                            <td style="padding: 15px;">التأكد من المواعيد والتنسيق النهائي</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>جدول التنفيذ</h3>
+                <table style="width:100%; border-collapse: collapse; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                    <thead style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white;">
+                        <tr>
+                            <th style="padding: 15px; font-family: 'Cairo', sans-serif; font-weight: 600;">نوع التنظيف</th>
+                            <th style="padding: 15px; font-family: 'Cairo', sans-serif; font-weight: 600;">الوقت المتوقع</th>
+                            <th style="padding: 15px; font-family: 'Cairo', sans-serif; font-weight: 600;">الوصف</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #f9fafb;">
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">التنظيف العادي</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">2-3 ساعات</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف عام للمنزل أو المكتب</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">التنظيف العميق</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">4-6 ساعات</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف شامل ومفصل لجميع الأركان</td>
+                        </tr>
+                        
+                        <tr style="background-color: #f9fafb;">
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف السجاد</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">1-2 ساعة</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف شامل للسجاد والموكيت</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px;">تنظيف النوافذ</td>
+                            <td style="padding: 15px;">1-2 ساعة</td>
+                            <td style="padding: 15px;">تنظيف شامل للنوافذ والزجاج</td>
+                        </tr>
+                        <tr style="background-color: #f9fafb;">
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف المطبخ</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">2-3 ساعات</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف شامل للمطبخ والأجهزة</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف الحمامات</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">1-2 ساعة</td>
+                            <td style="padding: 15px; border-bottom: 1px solid #e5e7eb;">تنظيف شامل للحمامات والمراحيض</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>نصائح للتخطيط الفعال</h3>
+                <ul>
+                    <li>حدد أولويات التنظيف حسب الحاجة</li>
+                    <li>خصص وقتًا كافيًا لكل مهمة</li>
+                    <li>استخدم قائمة مرجعية لضمان عدم نسيان أي شيء</li>
+                    <li>تأكد من توفر جميع المواد والأدوات قبل البدء</li>
+                    <li>قم بتقسيم المهام الكبيرة إلى مهام أصغر لتسهيل التنفيذ</li>
+                </ul>
+                <div class="tip-box">
+                    <h4><i class="fas fa-clock success-icon"></i>نصيحة التخطيط</h4>
+                    <p>التخطيط الجيد هو مفتاح النجاح في أي عملية تنظيف. استخدم الجداول الزمنية والنصائح المذكورة أعلاه لضمان تجربة تنظيف سلسة وفعالة. وإذا كنت بحاجة إلى مساعدة، لا تتردد في الاتصال بشركة لمعة للنظافة.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="content-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-thumbs-up"></i>
+                    خلاصة
+                </h2>
+            </div>
+            <div class="section-content">
+                <p>التنظيف ليس مجرد مهمة روتينية، بل هو عملية تعزز من صحتنا النفسية والجسدية وتساهم في الحفاظ على بيئة نظيفة وصحية. من خلال اتباع النصائح والتقنيات المذكورة، يمكنك جعل عملية التنظيف أكثر سهولة وفعالية.</p>
+
+                <div class="company-promo">
+                    <h4><i class="fas fa-handshake"></i> شركة لمعة للنظافة - شريكك في النظافة</h4>
+                    <p>نحن هنا لتقديم أفضل خدمات التنظيف الاحترافية التي تلبي احتياجاتك وتضمن لك بيئة صحية وآمنة</p>
+                    <a href="https://getlamaaclean.com/" target="_blank" class="btn">احجز الآن</a>
+                </div>
+
+                <h3>لماذا تختار شركة لمعة؟</h3>
+                <ul>
+                    <li>خبرة تزيد عن 10 سنوات في مجال التنظيف</li>
+                    <li>فريق متخصص ومدرب على أعلى مستوى</li>
+                    <li>استخدام أحدث التقنيات والمنتجات الآمنة</li>
+                    <li>خدمة عملاء متميزة ودعم فني متواصل</li>
+                    <li>ضمان رضا العملاء وإعادة التنظيف مجاناً إذا لزم الأمر</li>
+                </ul>
+
+                <div class="tip-box">
+                    <h4><i class="fas fa-phone success-icon"></i>اتصل بنا اليوم!</h4>
+                    <p>لا تتردد في الاتصال بنا على الرقم 0563009155 للحصول على استشارة مجانية أو لحجز خدمة تنظيف احترافية. فريقنا جاهز لخدمتك في أي وقت.</p>
+                </div>
+
+                <p class="final-note">تذكر أن النظافة ليست مجرد مهمة، بل هي أسلوب حياة. استثمر في صحتك وراحتك من خلال الحفاظ على بيئة نظيفة وصحية لك ولعائلتك.</p>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <h3 class="footer-title">دليل شامل لأساليب وخدمات التنظيف</h3>
-                <p class="footer-text">
-                    دليلك الموثوق للحصول على بيئة نظيفة وصحية - أفكار وحلول مبتكرة لجميع احتياجات التنظيف
-                </p>
-                <div class="footer-links">
-                    <a href="#introduction" class="footer-link">المقدمة</a>
-                    <a href="#home-cleaning" class="footer-link">تنظيف المنازل</a>
-                    <a href="#office-cleaning" class="footer-link">تنظيف المكاتب</a>
-                    <a href="#cleaning-services" class="footer-link">خدمات التنظيف</a>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2024 دليل التنظيف الشامل. جميع الحقوق محفوظة.</p>
-                </div>
-            </div>
+            <p>&copy; 2023 شركة لمعة للنظافة. جميع الحقوق محفوظة.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/getlamaaclean" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/getlamaaclean" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://wa.me/966563009155" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-links">
+            <a href="#introduction">مقدمة</a>
+            <a href="#health-benefits">فوائد التنظيف للصحة</a>
+            <a href="#cleaning-challenges">تحديات التنظيف وحلولها</a>
+            <a href="#eco-friendly">التنظيف الصديق للبيئة</a>
+            <a href="#advanced-techniques">تقنيات التنظيف المتقدمة</a>
+            <a href="#professional-importance">أهمية الخدمات الاحترافية</a>
+            <a href="#sustainable-practices">الممارسات المستدامة</a>
+            <a href="#scheduling">جداول التنظيف والتخطيط</a>
+            <a href="#conclusion">خلاصة</a>
+        </div>
+    </footer> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+" integrity="sha256-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+4+Y5n8z5h5p6b5l5d5f5d5f5d5f5d5f5f5f5f5f5f5f5f" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap    
+.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8z5p6b5l5d5f5d5f5d5f5f5f5f5f5f5f5f5f" crossorigin="anonymous"></script>
     <script>
-        // Back to top functionality
-        window.onscroll = function() {
-            const backToTopBtn = document.querySelector('.back-to-top');
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        };
-
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+        $(document).ready(function() {
+            // Smooth scrolling for internal links
+            $('a[href^="#"]').on('click', function(event) {
+                event.preventDefault();
+                var target = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
             });
         });
-
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all content sections
-        document.querySelectorAll('.content-section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-    </script>
+        </script>
 </body>
 </html>
-
+       

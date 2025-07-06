@@ -34,8 +34,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     
     <style>
+              @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+          
+
+        }
         * {
-            font-family: 'Cairo', Arial, sans-serif;
+           font-family: "Lama-sans";
         }
         
         body {
@@ -45,7 +51,7 @@
         }
         
         .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             padding: 80px 0;
             text-align: center;
@@ -82,7 +88,7 @@
             transform: translateX(-50%);
             width: 100px;
             height: 4px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #940000, #940000);
             border-radius: 2px;
         }
         
@@ -110,22 +116,23 @@
         
         .feature-card i {
             font-size: 2.5rem;
-            color: #667eea;
+            color: #940000;
             margin-bottom: 20px;
         }
         
         .city-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             border-radius: 20px;
             padding: 25px;
             margin: 15px 0;
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             border: 2px solid #e3f2fd;
             transition: all 0.3s ease;
+            color: white;
         }
         
         .city-card:hover {
-            border-color: #667eea;
+            border-color: #940000;
             transform: scale(1.02);
         }
         
@@ -137,7 +144,7 @@
         }
         
         .environmental-section {
-            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             padding: 60px 0;
             margin: 50px 0;
@@ -162,7 +169,7 @@
             color: #2c3e50;
             font-weight: 600;
             margin-bottom: 20px;
-            border-bottom: 2px solid #667eea;
+            border-bottom: 2px solid #940000;
             padding-bottom: 10px;
         }
         
@@ -189,7 +196,7 @@
         }
         
         .warning-box {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             padding: 25px;
             border-radius: 15px;
@@ -198,7 +205,7 @@
         }
         
         .tip-box {
-            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             padding: 25px;
             border-radius: 15px;
@@ -207,7 +214,7 @@
         }
         
         .economic-impact {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             padding: 50px 0;
             margin: 40px 0;
             border-radius: 20px;
@@ -249,7 +256,7 @@
         }
         
         .price-table th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             padding: 20px;
             font-weight: 600;
@@ -263,7 +270,7 @@
         }
         
         .conclusion-section {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             padding: 60px 0;
             margin: 50px 0 0 0;
@@ -271,11 +278,12 @@
         }
         
         .highlight-text {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             padding: 20px;
             border-radius: 10px;
             margin: 15px 0;
-            border-right: 4px solid #e17055;
+            color:white;
+            border-right: 4px solid #940000;
         }
         
         .company-types {
@@ -283,10 +291,11 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin: 30px 0;
+            color: white;
         }
         
         .type-card {
-            background: linear-gradient(135deg, #ffffff 0%, #f1f3f4 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             border-radius: 15px;
             padding: 25px;
             border: 2px solid #e0e0e0;
@@ -327,7 +336,7 @@
         }
         
         .sidebar-content {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             border-radius: 15px;
             padding: 30px;
             margin: 20px 0;
@@ -335,11 +344,12 @@
         }
         
         .important-note {
-            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             border: 2px solid #ffc107;
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+            color: white;
         }
         
         .step-card {
@@ -348,7 +358,7 @@
             padding: 25px;
             margin: 15px 0;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            border-right: 4px solid #667eea;
+            border-right: 4px solid #940000;
             position: relative;
         }
         
@@ -356,7 +366,7 @@
             position: absolute;
             top: -10px;
             right: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #940000 0%, #940000 100%);
             color: white;
             width: 30px;
             height: 30px;
