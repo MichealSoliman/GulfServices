@@ -25,6 +25,8 @@
             --bg-white: #ffffff;
             --border-color: #e6dede;
             --success-color: #ae4627;
+            --bashir-color: #2c5530;
+            --competitor-color: #8b4513;
         }
         
         * {
@@ -95,6 +97,14 @@
             padding: 1.5rem 2rem;
             margin: 0;
             position: relative;
+        }
+        
+        .section-header.bashir-header {
+            background: linear-gradient(135deg, var(--bashir-color), #27ae60);
+        }
+        
+        .section-header.competitor-header {
+            background: linear-gradient(135deg, var(--competitor-color), #e67e22);
         }
         
         .section-header::after {
@@ -255,6 +265,71 @@
             color: var(--secondary-color);
         }
         
+        .bashir-card {
+            background: linear-gradient(135deg, #f8fff8, #e8f5e8);
+            border: 2px solid var(--bashir-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 20px rgba(44, 85, 48, 0.1);
+        }
+        
+        .bashir-card h5 {
+            color: var(--bashir-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .bashir-card .btn {
+            background: var(--bashir-color);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .bashir-card .btn:hover {
+            background: #1e3c24;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 85, 48, 0.3);
+        }
+        
+        .competitor-card {
+            background: linear-gradient(135deg, #fdf8f0, #f4ede0);
+            border: 2px solid var(--competitor-color);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 3px 15px rgba(139, 69, 19, 0.1);
+        }
+        
+        .competitor-card h5 {
+            color: var(--competitor-color);
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .competitor-card a {
+            color: var(--competitor-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .competitor-card a:hover {
+            color: #654321;
+            text-decoration: underline;
+        }
+        
         .footer {
             background: linear-gradient(135deg, var(--text-dark), #34495e);
             color: white;
@@ -292,7 +367,7 @@
         
         .scroll-to-top:hover {
             background: var(--secondary-color);
-            color: var(--text-dark);
+            color: white;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
@@ -325,6 +400,46 @@
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+        
+        .timeline {
+            position: relative;
+            margin-top: 40px;
+            padding-right: 20px;
+            border-right: 3px solid #940000;
+        }
+
+        .timeline-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .circle-icon {
+            width: 50px;
+            height: 50px;
+            background: #940000;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content h5 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            color: #555;
+            font-size: 15px;
+            margin: 0;
         }
     </style>
 </head>
@@ -363,11 +478,13 @@
                     <h3><i class="fas fa-list"></i> فهرس المحتويات</h3>
                     <ul class="toc-list">
                         <li><a href="#introduction"><i class="fas fa-home"></i>المقدمة</a></li>
+                        <li><a href="#bashir-company"><i class="fas fa-star"></i>شركة Bashir Mover</a></li>
                         <li><a href="#services"><i class="fas fa-cogs"></i>خدمات شركات نقل العفش</a></li>
                         <li><a href="#furniture-types"><i class="fas fa-couch"></i>أنواع الأثاث</a></li>
                         <li><a href="#governorates"><i class="fas fa-map-marker-alt"></i>محافظات الكويت</a></li>
                         <li><a href="#cost-factors"><i class="fas fa-calculator"></i>العوامل المؤثرة على التكلفة</a></li>
                         <li><a href="#choosing-company"><i class="fas fa-search"></i>اختيار الشركة المناسبة</a></li>
+                        <li><a href="#competitors"><i class="fas fa-building"></i>الشركات المنافسة</a></li>
                         <li><a href="#benefits"><i class="fas fa-star"></i>فوائد الاستعانة بالمحترفين</a></li>
                         <li><a href="#planning"><i class="fas fa-calendar-alt"></i>التخطيط والإعداد</a></li>
                         <li><a href="#misconceptions"><i class="fas fa-exclamation-triangle"></i>المفاهيم الخاطئة</a></li>
@@ -430,156 +547,223 @@
                     </div>
                 </div>
 
-                <!-- Services Section -->
-                        <div class="content-section fade-in" id="services">
-                            <div class="section-header">
-                                <h2><i class="fas fa-cogs"></i>خدمات شركات نقل العفش الشاملة في الكويت</h2>
+                <!-- Bashir Company Section -->
+                <div class="content-section fade-in" id="bashir-company">
+                    <div class="section-header bashir-header">
+                        <h2><i class="fas fa-crown"></i>شركة Bashir Mover - الرائدة في نقل العفش بالكويت</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>تتربع شركة Bashir Mover على عرش شركات نقل العفش في الكويت، حيث تقدم خدمات متكاملة وحلول مبتكرة لنقل الأثاث والممتلكات بأعلى مستويات الجودة والاحترافية. تأسست الشركة على أسس متينة من الخبرة والكفاءة، مما جعلها الخيار الأول لآلاف العملاء في جميع أنحاء الكويت.</p>
+
+                        <div class="bashir-card">
+                            <h5><i class="fas fa-award"></i>لماذا تختار شركة Bashir Mover؟</h5>
+                            <ul>
+                                <li><strong>خبرة طويلة:</strong> سنوات من الخبرة في خدمة العملاء في الكويت</li>
+                                <li><strong>فريق محترف:</strong> فنيون مدربون ومتخصصون في نقل جميع أنواع الأثاث</li>
+                                <li><strong>معدات حديثة:</strong> أسطول من الشاحنات المجهزة بأحدث التقنيات</li>
+                                <li><strong>خدمة شاملة:</strong> من الفك والتغليف إلى النقل والتركيب</li>
+                                <li><strong>أسعار تنافسية:</strong> خدمات عالية الجودة بأسعار معقولة</li>
+                                <li><strong>ضمان التأمين:</strong> تغطية تأمينية شاملة على جميع الممتلكات</li>
+                            </ul>
+                            <div class="text-center mt-3">
+                                <a href="https://www.bashir-mover.com/" target="_blank" class="btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    زيارة موقع شركة Bashir Mover
+                                </a>
                             </div>
-                            <div class="section-content">
-                                <p>تقدم شركات نقل العفش المحترفة في الكويت مجموعة واسعة من الخدمات المتكاملة التي تغطي جميع جوانب عملية النقل، من التخطيط الأولي وحتى التسليم النهائي في الموقع الجديد. هذه الخدمات مصممة لتلبية احتياجات مختلف شرائح العملاء، سواء كانوا أفرادًا ينتقلون إلى منازل جديدة، أو شركات تنقل مكاتبها.</p>
+                        </div>
 
-                                <h3>خدمة فك وتركيب الأثاث</h3>
-                                <p>تعتبر هذه الخدمة من أهم الخدمات التي تقدمها شركات نقل العفش، حيث تتطلب خبرة ومهارة خاصة للتعامل مع أنواع مختلفة من الأثاث:</p>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="info-card">
-                                            <h5><i class="fas fa-bed"></i>غرف النوم</h5>
-                                            <p>فك وتركيب الأسرة، الدواليب، التسريحات، والكومودينات بعناية فائقة.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="info-card">
-                                            <h5><i class="fas fa-utensils"></i>المطابخ</h5>
-                                            <p>التعامل مع وحدات المطبخ، الأحواض، وأسطح العمل بحرفية عالية.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="info-card">
-                                            <h5><i class="fas fa-couch"></i>غرف المعيشة</h5>
-                                            <p>فك وتركيب الكنب، طاولات القهوة، ووحدات التلفزيون.</p>
-                                        </div>
-                                    </div>
+                        <h3>خدمات شركة Bashir Mover المتميزة</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-home"></i>نقل المنازل</h5>
+                                    <p>خدمة شاملة لنقل الأثاث المنزلي بجميع أنواعه من الشقق والفلل والمنازل التقليدية.</p>
                                 </div>
-
-                                <h3>خدمة التغليف الاحترافي</h3>
-                                <p>التغليف الصحيح هو خط الدفاع الأول لحماية الأثاث والممتلكات من التلف أثناء النقل. تستخدم الشركات المحترفة مواد تغليف عالية الجودة:</p>
-
-                                <ul>
-                                    <li><strong>البلاستيك الفقاعي:</strong> لحماية الأسطح الحساسة والقطع الزجاجية</li>
-                                    <li><strong>الكراتين المقواة:</strong> لتعبئة الأغراض الصغيرة والمتوسطة</li>
-                                    <li><strong>البطانيات الواقية:</strong> لحماية الأثاث من الخدوش</li>
-                                    <li><strong>الأشرطة اللاصقة القوية:</strong> لتثبيت مواد التغليف</li>
-                                </ul>
-
-                                <h3>خدمة النقل الآمن</h3>
-                                <p>تستخدم شركات النقل المحترفة أسطولًا من الشاحنات المجهزة خصيصًا لنقل الأثاث:</p>
-
-                                <div class="highlight-box">
-                                    <h4><i class="fas fa-truck"></i> مواصفات شاحنات النقل المحترفة</h4>
-                                    <ul>
-                                        <li>مبطنة من الداخل لحماية الأثاث من الصدمات</li>
-                                        <li>مجهزة بأحزمة تثبيت لمنع حركة الأثاث أثناء النقل</li>
-                                        <li>أحجام مختلفة لتناسب جميع أنواع النقل</li>
-                                        <li>مكيفة لحماية الأثاث من الحرارة العالية</li>
-                                    </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-building"></i>نقل المكاتب</h5>
+                                    <p>حلول متخصصة لنقل مكاتب الشركات والمؤسسات مع الحفاظ على سرية المعلومات.</p>
                                 </div>
-
-                                <h3>خدمة التخزين المؤقت</h3>
-                                <p>توفر العديد من الشركات مستودعات تخزين آمنة ومجهزة لحفظ الأثاث لفترات مؤقتة:</p>
-
-                                <ul>
-                                    <li><strong>الأمان:</strong> مراقبة بالكاميرات وحراسة على مدار الساعة</li>
-                                    <li><strong>التحكم البيئي:</strong> تكييف ومكافحة الرطوبة والحشرات</li>
-                                    <li><strong>المرونة:</strong> إمكانية التخزين لفترات قصيرة أو طويلة</li>
-                                    <li><strong>سهولة الوصول:</strong> إمكانية الوصول للأثاث عند الحاجة</li>
-                                </ul>
-
-                                <h3>خدمات إضافية متخصصة</h3>
-                                <p>تقدم بعض الشركات خدمات إضافية لتلبية احتياجات خاصة:</p>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="info-card">
-                                            <h5><i class="fas fa-snowflake"></i>فك وتركيب المكيفات</h5>
-                                            <p>خدمة متخصصة تتطلب فنيين مؤهلين للتعامل مع أنظمة التكييف.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="info-card">
-                                            <h5><i class="fas fa-broom"></i>خدمة التنظيف</h5>
-                                            <p>تنظيف المنزل القديم والجديد قبل وبعد عملية النقل.</p>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-warehouse"></i>التخزين المؤقت</h5>
+                                    <p>مستودعات آمنة ومجهزة لتخزين الأثاث والممتلكات لفترات قصيرة أو طويلة.</p>
                                 </div>
                             </div>
                         </div>
-                <!-- furniture-types -->
-                        <div class="content-section fade-in" id="furniture-types">
-                          <div class="section-header">
-                             <h2><i class="fas fa-couch"></i>أنواع الأثاث والعفش المستخدمة في المنازل</h2>
+
+                        <h3>مناطق الخدمة</h3>
+                        <p>تغطي شركة Bashir Mover جميع محافظات الكويت بخدماتها المتميزة:</p>
+                        <ul>
+                            <li><strong>محافظة العاصمة:</strong> خدمة سريعة ومتميزة في قلب الكويت</li>
+                            <li><strong>محافظة حولي:</strong> تغطية شاملة لجميع مناطق حولي</li>
+                            <li><strong>محافظة الأحمدي:</strong> خدمات متخصصة للمجمعات السكنية الكبيرة</li>
+                            <li><strong>محافظة الفروانية:</strong> خدمة مطار الكويت الدولي والمناطق المحيطة</li>
+                            <li><strong>محافظة الجهراء:</strong> تغطية المناطق الواسعة بكفاءة عالية</li>
+                            <li><strong>محافظة مبارك الكبير:</strong> خدمات حديثة للمناطق الجديدة</li>
+                        </ul>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-phone"></i>تواصل مع شركة Bashir Mover</h4>
+                            <p>للحصول على استشارة مجانية وعرض سعر مخصص، يمكنك زيارة موقع الشركة الإلكتروني أو الاتصال بفريق خدمة العملاء المتاح على مدار الساعة لتقديم أفضل الحلول لاحتياجاتك.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <div class="content-section fade-in" id="services">
+                    <div class="section-header">
+                        <h2><i class="fas fa-cogs"></i>خدمات شركات نقل العفش الشاملة في الكويت</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>تقدم شركات نقل العفش المحترفة في الكويت مجموعة واسعة من الخدمات المتكاملة التي تغطي جميع جوانب عملية النقل، من التخطيط الأولي وحتى التسليم النهائي في الموقع الجديد. هذه الخدمات مصممة لتلبية احتياجات مختلف شرائح العملاء، سواء كانوا أفرادًا ينتقلون إلى منازل جديدة، أو شركات تنقل مكاتبها.</p>
+
+                        <h3>خدمة فك وتركيب الأثاث</h3>
+                        <p>تعتبر هذه الخدمة من أهم الخدمات التي تقدمها شركات نقل العفش، حيث تتطلب خبرة ومهارة خاصة للتعامل مع أنواع مختلفة من الأثاث:</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-bed"></i>غرف النوم</h5>
+                                    <p>فك وتركيب الأسرة، الدواليب، التسريحات، والكومودينات بعناية فائقة.</p>
                                 </div>
-                                <div class="section-content">
-                                    <p>يعتبر الأثاث عنصرًا أساسيًا في تصميم أي منزل، فهو لا يضيف فقط الوظائف العملية، بل يعكس أيضًا الذوق والشخصية. تتنوع أنواع الأثاث والعفش لتناسب أنماط الحياة المختلفة والمساحات المتاحة، وتشمل قطعًا مخصصة لكل غرفة حسب الاستخدام والطابع التصميمي.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-utensils"></i>المطابخ</h5>
+                                    <p>التعامل مع وحدات المطبخ، الأحواض، وأسطح العمل بحرفية عالية.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-couch"></i>غرف المعيشة</h5>
+                                    <p>فك وتركيب الكنب، طاولات القهوة، ووحدات التلفزيون.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                                        <h3>أثاث غرف النوم</h3>
-                                        <p>تعد غرف النوم من أكثر الأماكن خصوصية في المنزل، ولذلك يتم اختيار أثاثها بعناية:</p>
+                        <h3>خدمة التغليف الاحترافي</h3>
+                        <p>التغليف الصحيح هو خط الدفاع الأول لحماية الأثاث والممتلكات من التلف أثناء النقل. تستخدم الشركات المحترفة مواد تغليف عالية الجودة:</p>
 
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="info-card">
-                                                        <h5><i class="fas fa-bed"></i>الأسرة</h5>
-                                                        <p>متوفرة بمقاسات متنوعة من المفرد إلى الكينج، وتشمل تصميمات خشبية ومبطنة.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="info-card">
-                                                        <h5><i class="fas fa-warehouse"></i>الدواليب</h5>
-                                                        <p>تشمل الدواليب الخشبية، المنزلقة، والمزودة بمرايا لتوفير المساحة.</p>
-                                                    </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="info-card">
-                                                            <h5><i class="fas fa-magic"></i>التسريحات والكومودينات</h5>
-                                                            <p>توفر مساحة لتخزين الأغراض الشخصية مع لمسة جمالية أنيقة.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        <ul>
+                            <li><strong>البلاستيك الفقاعي:</strong> لحماية الأسطح الحساسة والقطع الزجاجية</li>
+                            <li><strong>الكراتين المقواة:</strong> لتعبئة الأغراض الصغيرة والمتوسطة</li>
+                            <li><strong>البطانيات الواقية:</strong> لحماية الأثاث من الخدوش</li>
+                            <li><strong>الأشرطة اللاصقة القوية:</strong> لتثبيت مواد التغليف</li>
+                        </ul>
 
-                                                <h3>أثاث غرف المعيشة</h3>
-                                                <p>غرف المعيشة هي مركز التفاعل العائلي، لذا يتم التركيز على الراحة والجمال في تصميمها:</p>
+                        <h3>خدمة النقل الآمن</h3>
+                        <p>تستخدم شركات النقل المحترفة أسطولًا من الشاحنات المجهزة خصيصًا لنقل الأثاث:</p>
 
-                                                <ul>
-                                                    <li><strong>الكنب:</strong> متوفر بأشكال L أو U وألوان عصرية تناسب مختلف الأذواق</li>
-                                                    <li><strong>الطاولات:</strong> طاولات قهوة وجانبية من الخشب، الزجاج أو المعدن</li>
-                                                    <li><strong>الوحدات الترفيهية:</strong> حوامل التلفزيون، أرفف الكتب، وأماكن التخزين المدمجة</li>
-                                                </ul>
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-truck"></i> مواصفات شاحنات النقل المحترفة</h4>
+                            <ul>
+                                <li>مبطنة من الداخل لحماية الأثاث من الصدمات</li>
+                                <li>مجهزة بأحزمة تثبيت لمنع حركة الأثاث أثناء النقل</li>
+                                <li>أحجام مختلفة لتناسب جميع أنواع النقل</li>
+                                <li>مكيفة لحماية الأثاث من الحرارة العالية</li>
+                            </ul>
+                        </div>
 
-                                                    <h3>أثاث المطابخ وغرف الطعام</h3>
-                                                    <p>يتم تصميم أثاث المطبخ ليوفر أكبر قدر من الاستخدام العملي دون التضحية بالتصميم:</p>
+                        <h3>خدمة التخزين المؤقت</h3>
+                        <p>توفر العديد من الشركات مستودعات تخزين آمنة ومجهزة لحفظ الأثاث لفترات مؤقتة:</p>
 
-                                                    <div class="highlight-box">
-                                                        <h4><i class="fas fa-utensils"></i> مكونات أساسية لأثاث المطبخ والطعام</h4>
-                                                        <ul>
-                                                            <li>خزائن مطبخ من الخشب أو الألومنيوم</li>
-                                                            <li>أسطح عمل مقاومة للحرارة والرطوبة</li>
-                                                            <li>طاولات طعام بأحجام مختلفة تناسب الأسر الصغيرة والكبيرة</li>
-                                                            <li>كراسي طعام مريحة بخامات متعددة مثل الجلد والقماش</li>
-                                                        </ul>
-                                                    </div>
+                        <ul>
+                            <li><strong>الأمان:</strong> مراقبة بالكاميرات وحراسة على مدار الساعة</li>
+                            <li><strong>التحكم البيئي:</strong> تكييف ومكافحة الرطوبة والحشرات</li>
+                            <li><strong>المرونة:</strong> إمكانية التخزين لفترات قصيرة أو طويلة</li>
+                            <li><strong>سهولة الوصول:</strong> إمكانية الوصول للأثاث عند الحاجة</li>
+                        </ul>
 
-                                                    <h3>أثاث المكاتب المنزلية</h3>
-                                                    <p>ازداد الاعتماد على المكاتب المنزلية مؤخرًا، مما جعل أثاثها عنصرًا أساسيًا في التصميم الداخلي:</p>
+                        <h3>خدمات إضافية متخصصة</h3>
+                        <p>تقدم بعض الشركات خدمات إضافية لتلبية احتياجات خاصة:</p>
 
-                                                    <ul>
-                                                        <li><strong>مكاتب العمل:</strong> متوفرة بأحجام صغيرة ومزود
-                                    ة بأدراج للتخزين</li>
-                                                        <li><strong>كراسي المكتب:</strong> كراسي مريحة مع دعم للظهر، قابلة للتعديل</li>
-                                                        <li><strong>رفوف الكتب:</strong> توفر مساحة لتخزين الكتب والمستندات بشكل منظم</li>
-                                                    </ul>
-                                                </div>
-                         </div>
-                         <!-- governorates -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-snowflake"></i>فك وتركيب المكيفات</h5>
+                                    <p>خدمة متخصصة تتطلب فنيين مؤهلين للتعامل مع أنظمة التكييف.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-broom"></i>خدمة التنظيف</h5>
+                                    <p>تنظيف المنزل القديم والجديد قبل وبعد عملية النقل.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- furniture-types -->
+                <div class="content-section fade-in" id="furniture-types">
+                    <div class="section-header">
+                        <h2><i class="fas fa-couch"></i>أنواع الأثاث والعفش المستخدمة في المنازل</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>يعتبر الأثاث عنصرًا أساسيًا في تصميم أي منزل، فهو لا يضيف فقط الوظائف العملية، بل يعكس أيضًا الذوق والشخصية. تتنوع أنواع الأثاث والعفش لتناسب أنماط الحياة المختلفة والمساحات المتاحة، وتشمل قطعًا مخصصة لكل غرفة حسب الاستخدام والطابع التصميمي.</p>
+
+                        <h3>أثاث غرف النوم</h3>
+                        <p>تعد غرف النوم من أكثر الأماكن خصوصية في المنزل، ولذلك يتم اختيار أثاثها بعناية:</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-bed"></i>الأسرة</h5>
+                                    <p>متوفرة بمقاسات متنوعة من المفرد إلى الكينج، وتشمل تصميمات خشبية ومبطنة.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-warehouse"></i>الدواليب</h5>
+                                    <p>تشمل الدواليب الخشبية، المنزلقة، والمزودة بمرايا لتوفير المساحة.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-magic"></i>التسريحات والكومودينات</h5>
+                                    <p>توفر مساحة لتخزين الأغراض الشخصية مع لمسة جمالية أنيقة.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>أثاث غرف المعيشة</h3>
+                        <p>غرف المعيشة هي مركز التفاعل العائلي، لذا يتم التركيز على الراحة والجمال في تصميمها:</p>
+
+                        <ul>
+                            <li><strong>الكنب:</strong> متوفر بأشكال L أو U وألوان عصرية تناسب مختلف الأذواق</li>
+                            <li><strong>الطاولات:</strong> طاولات قهوة وجانبية من الخشب، الزجاج أو المعدن</li>
+                            <li><strong>الوحدات الترفيهية:</strong> حوامل التلفزيون، أرفف الكتب، وأماكن التخزين المدمجة</li>
+                        </ul>
+
+                        <h3>أثاث المطابخ وغرف الطعام</h3>
+                        <p>يتم تصميم أثاث المطبخ ليوفر أكبر قدر من الاستخدام العملي دون التضحية بالتصميم:</p>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-utensils"></i> مكونات أساسية لأثاث المطبخ والطعام</h4>
+                            <ul>
+                                <li>خزائن مطبخ من الخشب أو الألومنيوم</li>
+                                <li>أسطح عمل مقاومة للحرارة والرطوبة</li>
+                                <li>طاولات طعام بأحجام مختلفة تناسب الأسر الصغيرة والكبيرة</li>
+                                <li>كراسي طعام مريحة بخامات متعددة مثل الجلد والقماش</li>
+                            </ul>
+                        </div>
+
+                        <h3>أثاث المكاتب المنزلية</h3>
+                        <p>ازداد الاعتماد على المكاتب المنزلية مؤخرًا، مما جعل أثاثها عنصرًا أساسيًا في التصميم الداخلي:</p>
+
+                        <ul>
+                            <li><strong>مكاتب العمل:</strong> متوفرة بأحجام صغيرة ومزودة بأدراج للتخزين</li>
+                            <li><strong>كراسي المكتب:</strong> كراسي مريحة مع دعم للظهر، قابلة للتعديل</li>
+                            <li><strong>رفوف الكتب:</strong> توفر مساحة لتخزين الكتب والمستندات بشكل منظم</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- governorates -->
                 <div class="content-section fade-in" id="governorates">
                     <div class="section-header">
                         <h2><i class="fas fa-map-marked-alt"></i>محافظات دولة الكويت</h2>
@@ -630,10 +814,6 @@
                         </div>
                     </div>
                 </div>
-
-
-                <!-- Continue with other sections... -->
-                <!-- For brevity, I'll include a few more key sections -->
 
                 <!-- Cost Factors Section -->
                 <div class="content-section fade-in" id="cost-factors">
@@ -699,299 +879,349 @@
 
                 <!-- choosing-company -->
                 <div class="content-section fade-in" id="choosing-company">
-    <div class="section-header">
-        <h2><i class="fas fa-check-circle"></i>كيفية اختيار شركة نقل العفش المناسبة في الكويت</h2>
-    </div>
-    <div class="section-content">
-        <p>اختيار شركة نقل العفش المناسبة هو خطوة أساسية لضمان تجربة نقل سلسة وآمنة. هناك مجموعة من المعايير التي يجب مراعاتها عند اتخاذ هذا القرار لضمان التعامل مع شركة موثوقة ومهنية.</p>
+                    <div class="section-header">
+                        <h2><i class="fas fa-check-circle"></i>كيفية اختيار شركة نقل العفش المناسبة في الكويت</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>اختيار شركة نقل العفش المناسبة هو خطوة أساسية لضمان تجربة نقل سلسة وآمنة. هناك مجموعة من المعايير التي يجب مراعاتها عند اتخاذ هذا القرار لضمان التعامل مع شركة موثوقة ومهنية.</p>
 
-        <h3>سمعة الشركة وتقييم العملاء</h3>
-        <p>تعتبر تقييمات العملاء وتجاربهم السابقة من أبرز المؤشرات على جودة الخدمة:</p>
+                        <h3>سمعة الشركة وتقييم العملاء</h3>
+                        <p>تعتبر تقييمات العملاء وتجاربهم السابقة من أبرز المؤشرات على جودة الخدمة:</p>
 
-        <div class="row">
-            <div class="col-md-4">
-                <div class="info-card">
-                    <h5><i class="fas fa-star"></i>تقييمات جوجل</h5>
-                    <p>يفضل اختيار شركات ذات تقييم مرتفع (4 نجوم فأكثر) وتعليقات إيجابية حقيقية.</p>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-star"></i>تقييمات جوجل</h5>
+                                    <p>يفضل اختيار شركات ذات تقييم مرتفع (4 نجوم فأكثر) وتعليقات إيجابية حقيقية.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-comments"></i>تجارب العملاء</h5>
+                                    <p>ابحث عن مراجعات موثوقة على مواقع التواصل الاجتماعي أو المنتديات المحلية.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-user-check"></i>السمعة العامة</h5>
+                                    <p>اختر شركة معروفة ولها سجل من الالتزام والمصداقية في التعامل.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>نوعية الخدمات المقدمة</h3>
+                        <p>من المهم التأكد من أن الشركة تقدم الخدمات التي تناسب احتياجاتك:</p>
+                        <ul>
+                            <li><strong>فك وتركيب الأثاث:</strong> هل توفر فنيين متخصصين؟</li>
+                            <li><strong>التغليف الاحترافي:</strong> هل يتم استخدام مواد عالية الجودة؟</li>
+                            <li><strong>خدمة النقل الآمن:</strong> هل الشاحنات مجهزة ومكيفة؟</li>
+                            <li><strong>التخزين المؤقت:</strong> هل تتوفر مستودعات آمنة إن لزم الأمر؟</li>
+                        </ul>
+
+                        <h3>الخبرة والاعتماد</h3>
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-briefcase"></i>أهمية خبرة الشركة</h4>
+                            <ul>
+                                <li><strong>سنوات العمل:</strong> الشركات ذات الخبرة الطويلة غالبًا أكثر كفاءة.</li>
+                                <li><strong>فريق العمل:</strong> هل الفريق مدرّب على التعامل مع العفش بمهنية؟</li>
+                                <li><strong>رخصة التشغيل:</strong> تأكد من أن الشركة مرخصة رسميًا وتعمل بشكل قانوني.</li>
+                                <li><strong>التأمين:</strong> هل توفر الشركة تغطية تأمينية في حال حدوث تلفيات؟</li>
+                            </ul>
+                        </div>
+
+                        <h3>الأسعار والشفافية</h3>
+                        <p>الشفافية في الأسعار من أهم العوامل عند الاختيار:</p>
+                        <ul>
+                            <li><strong>احصل على عرض سعر مكتوب:</strong> يشمل جميع التفاصيل بدون رسوم مخفية.</li>
+                            <li><strong>قارن بين أكثر من شركة:</strong> للموازنة بين الجودة والتكلفة.</li>
+                            <li><strong>تأكد من شمول السعر:</strong> النقل، التغليف، والفك والتركيب إن لزم.</li>
+                        </ul>
+
+                        <div class="bashir-card">
+                            <h5><i class="fas fa-thumbs-up"></i>شركة Bashir Mover - الخيار الأمثل</h5>
+                            <p>إذا كنت تبحث عن شركة تجمع بين الخبرة والجودة والأسعار المنافسة، فإن شركة Bashir Mover تعتبر الخيار الأمثل لك. مع سنوات من الخبرة في السوق الكويتي وآلاف العملاء الراضين، تضمن لك الشركة خدمة متميزة وآمنة.</p>
+                            <div class="text-center mt-3">
+                                <a href="https://www.bashir-mover.com/" target="_blank" class="btn">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                    احصل على عرض سعر مجاني
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="info-card">
-                    <h5><i class="fas fa-comments"></i>تجارب العملاء</h5>
-                    <p>ابحث عن مراجعات موثوقة على مواقع التواصل الاجتماعي أو المنتديات المحلية.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="info-card">
-                    <h5><i class="fas fa-user-check"></i>السمعة العامة</h5>
-                    <p>اختر شركة معروفة ولها سجل من الالتزام والمصداقية في التعامل.</p>
-                </div>
-            </div>
-        </div>
 
-        <h3>نوعية الخدمات المقدمة</h3>
-        <p>من المهم التأكد من أن الشركة تقدم الخدمات التي تناسب احتياجاتك:</p>
-        <ul>
-            <li><strong>فك وتركيب الأثاث:</strong> هل توفر فنيين متخصصين؟</li>
-            <li><strong>التغليف الاحترافي:</strong> هل يتم استخدام مواد عالية الجودة؟</li>
-            <li><strong>خدمة النقل الآمن:</strong> هل الشاحنات مجهزة ومكيفة؟</li>
-            <li><strong>التخزين المؤقت:</strong> هل تتوفر مستودعات آمنة إن لزم الأمر؟</li>
-        </ul>
+                <!-- Competitors Section -->
+                <div class="content-section fade-in" id="competitors">
+                    <div class="section-header competitor-header">
+                        <h2><i class="fas fa-building"></i>الشركات المنافسة في سوق نقل العفش بالكويت</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>يشهد سوق نقل العفش في الكويت منافسة صحية بين عدد من الشركات المحترفة، مما يصب في صالح العملاء من حيث تحسين الخدمات وتنويع الخيارات المتاحة. فيما يلي نظرة على أبرز الشركات المنافسة في هذا المجال:</p>
 
-        <h3>الخبرة والاعتماد</h3>
-        <div class="highlight-box">
-            <h4><i class="fas fa-briefcase"></i>أهمية خبرة الشركة</h4>
-            <ul>
-                <li><strong>سنوات العمل:</strong> الشركات ذات الخبرة الطويلة غالبًا أكثر كفاءة.</li>
-                <li><strong>فريق العمل:</strong> هل الفريق مدرّب على التعامل مع العفش بمهنية؟</li>
-                <li><strong>رخصة التشغيل:</strong> تأكد من أن الشركة مرخصة رسميًا وتعمل بشكل قانوني.</li>
-                <li><strong>التأمين:</strong> هل توفر الشركة تغطية تأمينية في حال حدوث تلفيات؟</li>
-            </ul>
-        </div>
+                        <h3>شركة Primo Moves</h3>
+                        <div class="competitor-card">
+                            <h5><i class="fas fa-truck"></i>شركة Primo Moves</h5>
+                            <p>تعتبر من الشركات الناشئة في سوق نقل العفش، وتركز على تقديم خدمات حديثة وحلول مبتكرة للعملاء. تتميز بـ:</p>
+                            <ul>
+                                <li><strong>التقنيات الحديثة:</strong> استخدام التطبيقات الذكية لتتبع الشحنات</li>
+                                <li><strong>خدمة العملاء:</strong> دعم على مدار الساعة</li>
+                                <li><strong>التسعير التنافسي:</strong> أسعار مدروسة للشرائح المختلفة</li>
+                                <li><strong>الشفافية:</strong> عروض أسعار واضحة وبدون رسوم مخفية</li>
+                            </ul>
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://www.primomoves.com/" target="_blank">www.primomoves.com</a></p>
+                        </div>
 
-        <h3>الأسعار والشفافية</h3>
-        <p>الشفافية في الأسعار من أهم العوامل عند الاختيار:</p>
-        <ul>
-            <li><strong>احصل على عرض سعر مكتوب:</strong> يشمل جميع التفاصيل بدون رسوم مخفية.</li>
-            <li><strong>قارن بين أكثر من شركة:</strong> للموازنة بين الجودة والتكلفة.</li>
-            <li><strong>تأكد من شمول السعر:</strong> النقل، التغليف، والفك والتركيب إن لزم.</li>
-        </ul>
-    </div>
+                        <h3>شركة Meuvex Furniture</h3>
+                        <div class="competitor-card">
+                            <h5><i class="fas fa-couch"></i>شركة Meuvex Furniture</h5>
+                            <p>تتخصص في نقل الأثاث والعفش مع التركيز على الجودة والدقة في التنفيذ. من أبرز مميزاتها:</p>
+                            <ul>
+                                <li><strong>التخصص:</strong> فريق متخصص في التعامل مع الأثاث الراقي</li>
+                                <li><strong>التغليف المتقدم:</strong> استخدام مواد حماية عالية الجودة</li>
+                                <li><strong>الخدمات الشاملة:</strong> من الفك والتركيب إلى التركيب النهائي</li>
+                                <li><strong>الموثوقية:</strong> سجل حافل من العمليات الناجحة</li>
+                            </ul>
+                            <p><strong>الموقع الإلكتروني:</strong> <a href="https://meuvex-furniture.com/" target="_blank">meuvex-furniture.com</a></p>
+                        </div>
+
+                        <h3>مقارنة سريعة بين الشركات</h3>
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-balance-scale"></i>نقاط المقارنة الرئيسية</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6><strong>شركة Bashir Mover</strong></h6>
+                                    <ul>
+                                        <li>خبرة طويلة في السوق</li>
+                                        <li>تغطية شاملة لجميع المحافظات</li>
+                                        <li>أسعار تنافسية</li>
+                                        <li>تأمين شامل</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6><strong>شركة Primo Moves</strong></h6>
+                                    <ul>
+                                        <li>تقنيات حديثة</li>
+                                        <li>خدمة عملاء متميزة</li>
+                                        <li>شفافية في التسعير</li>
+                                        <li>سرعة في التنفيذ</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6><strong>شركة Meuvex</strong></h6>
+                                    <ul>
+                                        <li>تخصص في الأثاث الراقي</li>
+                                        <li>تغليف متقدم</li>
+                                        <li>دقة في التنفيذ</li>
+                                        <li>خدمات شاملة</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>نصائح للاختيار بين الشركات</h3>
+                        <p>عند المقارنة بين هذه الشركات، من المهم مراعاة النقاط التالية:</p>
+                        <ul>
+                            <li><strong>طبيعة الأثاث:</strong> هل تحتاج تعامل خاص مع قطع حساسة أو ثمينة؟</li>
+                            <li><strong>الميزانية:</strong> ما هو النطاق المالي المناسب لك؟</li>
+                            <li><strong>المسافة:</strong> هل النقل محلي أم بين المحافظات؟</li>
+                            <li><strong>الخدمات الإضافية:</strong> هل تحتاج تخزين أو خدمات خاصة؟</li>
+                            <li><strong>التوقيت:</strong> ما مدى مرونة الشركة في المواعيد؟</li>
+                        </ul>
+
+                        <div class="info-card">
+                            <h5><i class="fas fa-lightbulb"></i>نصيحة مهمة</h5>
+                            <p>مهما كانت الشركة التي تختارها، تأكد من الحصول على عرض سعر مكتوب ومفصل، والتأكد من وجود تغطية تأمينية، وقراءة شروط الخدمة بعناية قبل التوقيع على أي عقد.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- benefits -->
-                    <div class="content-section fade-in" id="benefits">
-                        <div class="section-header">
-                            <h2><i class="fas fa-people-carry"></i>فوائد الاستعانة بمحترفين في نقل العفش</h2>
+                <div class="content-section fade-in" id="benefits">
+                    <div class="section-header">
+                        <h2><i class="fas fa-people-carry"></i>فوائد الاستعانة بمحترفين في نقل العفش</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>عند الانتقال من منزل إلى آخر، قد تبدو فكرة نقل العفش بشكل ذاتي مغرية لتوفير المال، لكن الاستعانة بمحترفين تقدم مزايا عديدة تجعل التجربة أكثر أمانًا وراحة وكفاءة.</p>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-shield-alt"></i> حماية الأثاث والممتلكات</h4>
+                            <p>المحترفون يستخدمون أدوات تغليف مخصصة وتقنيات آمنة لضمان سلامة الأثاث من الخدوش أو الكسر أثناء النقل.</p>
                         </div>
-                        <div class="section-content">
-                            <p>عند الانتقال من منزل إلى آخر، قد تبدو فكرة نقل العفش بشكل ذاتي مغرية لتوفير المال، لكن الاستعانة بمحترفين تقدم مزايا عديدة تجعل التجربة أكثر أمانًا وراحة وكفاءة.</p>
 
-                            <div class="highlight-card mb-4">
-                                <h4><i class="fas fa-shield-alt"></i> حماية الأثاث والممتلكات</h4>
-                                <p>المحترفون يستخدمون أدوات تغليف مخصصة وتقنيات آمنة لضمان سلامة الأثاث من الخدوش أو الكسر أثناء النقل.</p>
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-clock"></i> توفير الوقت والجهد</h4>
+                            <p>بدلاً من قضاء أيام في التحضير والنقل، يقوم الفريق المحترف بكل المهام بكفاءة، مما يوفر وقتك وجهدك.</p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-tools"></i> خبرة في الفك والتركيب</h4>
+                            <p>يمتلك الفنيون الخبرة اللازمة لفك وتركيب جميع أنواع الأثاث بأمان، مما يقلل من احتمال التلف أو الفقدان.</p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-truck-moving"></i> شاحنات مجهزة</h4>
+                            <p>توفر شركات النقل المحترفة شاحنات مجهزة ومبطنة ومزودة بأدوات التثبيت التي تضمن استقرار الأثاث أثناء الطريق.</p>
+                        </div>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-user-shield"></i> تغطية تأمينية</h4>
+                            <p>توفر بعض الشركات تغطية تأمينية على الأثاث المنقول، مما يوفر حماية إضافية وراحة بال في حال وقوع أي ضرر غير متوقع.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- planning -->
+                <div class="content-section fade-in" id="planning">
+                    <div class="section-header">
+                        <h2><i class="fas fa-tasks"></i>أهمية التخطيط والإعداد المسبق لنقل العفش</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>يعد التخطيط المسبق لنقل العفش خطوة حاسمة لضمان انتقال منظم وخالٍ من التوتر. كل مرحلة من مراحل التحضير تساعد في تقليل المفاجآت وتجنب التلف أو الفوضى.</p>
+
+                        <div class="timeline">
+                            <div class="timeline-step">
+                                <div class="circle-icon"><i class="fas fa-clipboard-list"></i></div>
+                                <div class="step-content">
+                                    <h5>1. وضع خطة زمنية</h5>
+                                    <p>حدد موعد النقل وابدأ في تنظيم المهام مسبقًا، مثل الحجز مع شركة النقل وتحديد أيام التفرغ.</p>
+                                </div>
                             </div>
 
-                            <div class="highlight-card mb-4">
-                                <h4><i class="fas fa-clock"></i> توفير الوقت والجهد</h4>
-                                <p>بدلاً من قضاء أيام في التحضير والنقل، يقوم الفريق المحترف بكل المهام بكفاءة، مما يوفر وقتك وجهدك.</p>
+                            <div class="timeline-step">
+                                <div class="circle-icon"><i class="fas fa-box-open"></i></div>
+                                <div class="step-content">
+                                    <h5>2. فرز وتصنيف الأثاث</h5>
+                                    <p>قم بتحديد ما سيتم نقله فعليًا، وتخلّص من الأغراض غير الضرورية أو تبرع بها.</p>
+                                </div>
                             </div>
 
-                            <div class="highlight-card mb-4">
-                                <h4><i class="fas fa-tools"></i> خبرة في الفك والتركيب</h4>
-                                <p>يمتلك الفنيون الخبرة اللازمة لفك وتركيب جميع أنواع الأثاث بأمان، مما يقلل من احتمال التلف أو الفقدان.</p>
+                            <div class="timeline-step">
+                                <div class="circle-icon"><i class="fas fa-tags"></i></div>
+                                <div class="step-content">
+                                    <h5>3. وضع علامات على الكراتين</h5>
+                                    <p>استخدم ملصقات أو ألوان لتمييز محتويات كل كرتونة، مما يسهل عملية التفريغ لاحقًا.</p>
+                                </div>
                             </div>
 
-                            <div class="highlight-card mb-4">
-                                <h4><i class="fas fa-truck-moving"></i> شاحنات مجهزة</h4>
-                                <p>توفر شركات النقل المحترفة شاحنات مجهزة ومبطنة ومزودة بأدوات التثبيت التي تضمن استقرار الأثاث أثناء الطريق.</p>
+                            <div class="timeline-step">
+                                <div class="circle-icon"><i class="fas fa-phone"></i></div>
+                                <div class="step-content">
+                                    <h5>4. التنسيق مع شركة النقل</h5>
+                                    <p>تواصل مع الشركة مسبقًا لتأكيد الموعد وتوضيح التفاصيل مثل عدد القطع وحجم الأثاث.</p>
+                                </div>
                             </div>
 
-                            <div class="highlight-card">
-                                <h4><i class="fas fa-user-shield"></i> تغطية تأمينية</h4>
-                                <p>توفر بعض الشركات تغطية تأمينية على الأثاث المنقول، مما يوفر حماية إضافية وراحة بال في حال وقوع أي ضرر غير متوقع.</p>
+                            <div class="timeline-step">
+                                <div class="circle-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div class="step-content">
+                                    <h5>5. تجهيز وثائق التأمين</h5>
+                                    <p>إذا كانت هناك وثائق تأمين على النقل أو الأثاث، جهزها مسبقًا لتفادي أي إشكالات.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- planning -->
-                    <div class="content-section fade-in planning-section" id="planning">
-                        <div class="section-header">
-                            <h2><i class="fas fa-tasks"></i>أهمية التخطيط والإعداد المسبق لنقل العفش</h2>
-                        </div>
-                        <div class="section-content">
-                            <p>يعد التخطيط المسبق لنقل العفش خطوة حاسمة لضمان انتقال منظم وخالٍ من التوتر. كل مرحلة من مراحل التحضير تساعد في تقليل المفاجآت وتجنب التلف أو الفوضى.</p>
+                </div>
 
-                            <div class="timeline">
-                                <div class="timeline-step">
-                                    <div class="circle-icon"><i class="fas fa-clipboard-list"></i></div>
-                                    <div class="step-content">
-                                        <h5>1. وضع خطة زمنية</h5>
-                                        <p>حدد موعد النقل وابدأ في تنظيم المهام مسبقًا، مثل الحجز مع شركة النقل وتحديد أيام التفرغ.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-step">
-                                    <div class="circle-icon"><i class="fas fa-box-open"></i></div>
-                                    <div class="step-content">
-                                        <h5>2. فرز وتصنيف الأثاث</h5>
-                                        <p>قم بتحديد ما سيتم نقله فعليًا، وتخلّص من الأغراض غير الضرورية أو تبرع بها.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-step">
-                                    <div class="circle-icon"><i class="fas fa-tags"></i></div>
-                                    <div class="step-content">
-                                        <h5>3. وضع علامات على الكراتين</h5>
-                                        <p>استخدم ملصقات أو ألوان لتمييز محتويات كل كرتونة، مما يسهل عملية التفريغ لاحقًا.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-step">
-                                    <div class="circle-icon"><i class="fas fa-phone"></i></div>
-                                    <div class="step-content">
-                                        <h5>4. التنسيق مع شركة النقل</h5>
-                                        <p>تواصل مع الشركة مسبقًا لتأكيد الموعد وتوضيح التفاصيل مثل عدد القطع وحجم الأثاث.</p>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-step">
-                                    <div class="circle-icon"><i class="fas fa-shield-alt"></i></div>
-                                    <div class="step-content">
-                                        <h5>5. تجهيز وثائق التأمين</h5>
-                                        <p>إذا كانت هناك وثائق تأمين على النقل أو الأثاث، جهزها مسبقًا لتفادي أي إشكالات.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Myths Section -->
+                <div class="content-section fade-in" id="misconceptions">
+                    <div class="section-header">
+                        <h2><i class="fas fa-exclamation-triangle"></i>المفاهيم الخاطئة حول نقل العفش</h2>
                     </div>
-                    <style>
+                    <div class="section-content">
+                        <p>هناك العديد من المفاهيم الشائعة وغير الدقيقة التي يتداولها الناس حول عملية نقل العفش، مما يؤدي في بعض الأحيان إلى قرارات خاطئة أو خسائر غير متوقعة. فيما يلي أبرز هذه المفاهيم وتصحيحها.</p>
 
-                        .planning-section .timeline {
-                        position: relative;
-                        margin-top: 40px;
-                        padding-right: 20px;
-                        border-right: 3px solid #940000;
-                    }
+                        <h3>نقل العفش يمكن إنجازه دون محترفين</h3>
+                        <p>يعتقد البعض أن بإمكانهم تنفيذ عملية النقل بأنفسهم لتوفير المال، لكن الواقع يثبت أن الاستعانة بمحترفين توفر وقتًا وجهدًا وتحمي الأثاث من التلف.</p>
 
-                    .timeline-step {
-                        display: flex;
-                        align-items: flex-start;
-                        margin-bottom: 35px;
-                        position: relative;
-                    }
-
-                    
-
-                    .circle-icon {
-                        width: 50px;
-                        height: 50px;
-                        background: #940000;
-                        color: white;
-                        border-radius: 50%;
-                        text-align: center;
-                        line-height: 50px;
-                        font-size: 20px;
-                        margin-left: 15px;
-                        flex-shrink: 0;
-                    }
-
-                    .step-content h5 {
-                        margin: 0;
-                        font-size: 18px;
-                        color: #333;
-                        margin-bottom: 8px;
-                    }
-
-                    .step-content p {
-                        color: #555;
-                        font-size: 15px;
-                        margin: 0;
-                    }
-
-                    </style>
-
-                    <!-- Myths Section -->
-                    <div class="content-section fade-in" id="misconceptions">
-                        <div class="section-header">
-                            <h2><i class="fas fa-exclamation-triangle"></i>المفاهيم الخاطئة حول نقل العفش</h2>
-                        </div>
-                        <div class="section-content">
-                            <p>هناك العديد من المفاهيم الشائعة وغير الدقيقة التي يتداولها الناس حول عملية نقل العفش، مما يؤدي في بعض الأحيان إلى قرارات خاطئة أو خسائر غير متوقعة. فيما يلي أبرز هذه المفاهيم وتصحيحها.</p>
-
-                            <h3>نقل العفش يمكن إنجازه دون محترفين</h3>
-                            <p>يعتقد البعض أن بإمكانهم تنفيذ عملية النقل بأنفسهم لتوفير المال، لكن الواقع يثبت أن الاستعانة بمحترفين توفر وقتًا وجهدًا وتحمي الأثاث من التلف.</p>
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="info-card">
-                                        <h5><i class="fas fa-dollar-sign"></i>المفهوم: النقل الذاتي أوفر دائمًا</h5>
-                                        <p>الحقيقة: التكلفة قد ترتفع بسبب الأعطال، التلف، أو الوقت المهدر في غياب المعدات المناسبة.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="info-card">
-                                        <h5><i class="fas fa-boxes"></i>المفهوم: التغليف غير ضروري</h5>
-                                        <p>الحقيقة: التغليف الجيد ضروري لحماية الأثاث من الخدوش والكسر أثناء التحميل والتنزيل.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="info-card">
-                                        <h5><i class="fas fa-user-friends"></i>المفهوم: يمكن الاعتماد على الأصدقاء فقط</h5>
-                                        <p>الحقيقة: رغم النية الطيبة، يفتقر الأصدقاء غالبًا للخبرة في التعامل مع الأثاث الثقيل أو الحساس.</p>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-dollar-sign"></i>المفهوم: النقل الذاتي أوفر دائمًا</h5>
+                                    <p>الحقيقة: التكلفة قد ترتفع بسبب الأعطال، التلف، أو الوقت المهدر في غياب المعدات المناسبة.</p>
                                 </div>
                             </div>
-
-                            <h3>جميع شركات نقل العفش متشابهة</h3>
-                            <p>يظن البعض أن الشركات تقدم نفس الخدمة بأسعار مختلفة فقط، لكن هناك تفاوت كبير في جودة الأداء، الالتزام، والتجهيزات المستخدمة.</p>
-
-                            <div class="highlight-box">
-                                <h4><i class="fas fa-times-circle"></i>مفاهيم أخرى شائعة يجب تصحيحها</h4>
-                                <ul>
-                                    <li><strong>التأمين غير ضروري:</strong> التأمين يحميك من الخسائر المحتملة أثناء النقل.</li>
-                                    <li><strong>النقل لا يحتاج إلى تخطيط مسبق:</strong> الإعداد الجيد يمنع الفوضى والتأخير.</li>
-                                    <li><strong>كل الشركات تلتزم بالمواعيد:</strong> الشركات المحترفة فقط تلتزم بدقة في المواعيد.</li>
-                                    <li><strong>لا حاجة لمعاينة مسبقة:</strong> المعاينة تساعد في تقديم عرض سعر دقيق وتحديد احتياجات النقل.</li>
-                                </ul>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-boxes"></i>المفهوم: التغليف غير ضروري</h5>
+                                    <p>الحقيقة: التغليف الجيد ضروري لحماية الأثاث من الخدوش والكسر أثناء التحميل والتنزيل.</p>
+                                </div>
                             </div>
-
-                            <h3>الخلاصة</h3>
-                            <p>الفهم الخاطئ لعملية نقل العفش قد يكلّفك وقتًا وجهدًا وأموالًا إضافية. لذا من المهم تصحيح هذه المفاهيم والاعتماد على معلومات موثوقة وخبرة المختصين لضمان نقل سلس وآمن.</p>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-user-friends"></i>المفهوم: يمكن الاعتماد على الأصدقاء فقط</h5>
+                                    <p>الحقيقة: رغم النية الطيبة، يفتقر الأصدقاء غالبًا للخبرة في التعامل مع الأثاث الثقيل أو الحساس.</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <h3>جميع شركات نقل العفش متشابهة</h3>
+                        <p>يظن البعض أن الشركات تقدم نفس الخدمة بأسعار مختلفة فقط، لكن هناك تفاوت كبير في جودة الأداء، الالتزام، والتجهيزات المستخدمة.</p>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-times-circle"></i>مفاهيم أخرى شائعة يجب تصحيحها</h4>
+                            <ul>
+                                <li><strong>التأمين غير ضروري:</strong> التأمين يحميك من الخسائر المحتملة أثناء النقل.</li>
+                                <li><strong>النقل لا يحتاج إلى تخطيط مسبق:</strong> الإعداد الجيد يمنع الفوضى والتأخير.</li>
+                                <li><strong>كل الشركات تلتزم بالمواعيد:</strong> الشركات المحترفة فقط تلتزم بدقة في المواعيد.</li>
+                                <li><strong>لا حاجة لمعاينة مسبقة:</strong> المعاينة تساعد في تقديم عرض سعر دقيق وتحديد احتياجات النقل.</li>
+                            </ul>
+                        </div>
+
+                        <h3>الخلاصة</h3>
+                        <p>الفهم الخاطئ لعملية نقل العفش قد يكلّفك وقتًا وجهدًا وأموالًا إضافية. لذا من المهم تصحيح هذه المفاهيم والاعتماد على معلومات موثوقة وخبرة المختصين لضمان نقل سلس وآمن.</p>
                     </div>
+                </div>
 
-                    <!-- Daily Tips Section -->
-                    <div class="content-section fade-in" id="moving-day">
-                        <div class="section-header">
-                            <h2><i class="fas fa-lightbulb"></i>نصائح اليوم لنقل العفش بسهولة وأمان</h2>
-                        </div>
-                        <div class="section-content">
-                            <p>عملية نقل العفش قد تكون مرهقة، لكن ببعض النصائح البسيطة والفعالة يمكنك تقليل التوتر وتفادي المشكلات الشائعة. إليك مجموعة من النصائح اليومية التي تساعدك على جعل يوم الانتقال أكثر سلاسة.</p>
-
-                            <h3>ابدأ التحضير قبل يوم النقل بوقت كافٍ</h3>
-                            <p>التحضير المسبق هو سر النجاح. تأكد من تجهيز كل شيء قبل موعد النقل لتجنب الفوضى والتأخير.</p>
-
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="info-card">
-                                        <h5><i class="fas fa-clipboard-check"></i>جهّز قائمة مهام</h5>
-                                        <p>اكتب كل ما يجب إنجازه خلال أيام النقل، وتابع تنفيذ كل خطوة بشكل منظم.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="info-card">
-                                        <h5><i class="fas fa-box"></i>رتّب أولويات التغليف</h5>
-                                        <p>ابدأ بالأغراض غير الضرورية يوميًا، واترك الأساسيات لليوم الأخير.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="info-card">
-                                        <h5><i class="fas fa-trash-alt"></i>تخلّص من الفائض</h5>
-                                        <p>استغل الفرصة للتخلص من الأثاث أو الأغراض التي لم تعد بحاجة إليها.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h3>استعد ليوم النقل بشكل ذكي</h3>
-                            <p>في يوم النقل، تحتاج إلى تركيز وتنظيم عالٍ. هذه بعض النصائح لتجنب الضغط والانفعال.</p>
-
-                            <div class="highlight-box">
-                                <h4><i class="fas fa-check-double"></i>أهم النصائح ليوم النقل</h4>
-                                <ul>
-                                    <li><strong>ارتدِ ملابس مريحة:</strong> لتتحرك بسهولة طوال اليوم.</li>
-                                    <li><strong>حضّر صندوق الأدوات:</strong> يحتوي على لاصق، سكين، مفكات، ومستلزمات التغليف.</li>
-                                    <li><strong>وفّر وجبات خفيفة وماء:</strong> لفريق العمل أو أفراد العائلة.</li>
-                                    <li><strong>تابع كل غرفة على حدة:</strong> لا تنتقل من غرفة لأخرى قبل الانتهاء من الأولى.</li>
-                                    <li><strong>تأكد من إغلاق الكراتين بإحكام:</strong> وضع ملصقات توضيحية لكل كرتونة.</li>
-                                </ul>
-                            </div>
-
-                            <h3>ما بعد النقل</h3>
-                            <p>بعد الوصول للموقع الجديد، حافظ على نفس التنظيم. ابدأ بتركيب الأساسيات، ثم فك الكراتين تدريجيًا حسب الأهمية.</p>
-                        </div>
+                <!-- Daily Tips Section -->
+                <div class="content-section fade-in" id="moving-day">
+                    <div class="section-header">
+                        <h2><i class="fas fa-lightbulb"></i>نصائح اليوم لنقل العفش بسهولة وأمان</h2>
                     </div>
-               
+                    <div class="section-content">
+                        <p>عملية نقل العفش قد تكون مرهقة، لكن ببعض النصائح البسيطة والفعالة يمكنك تقليل التوتر وتفادي المشكلات الشائعة. إليك مجموعة من النصائح اليومية التي تساعدك على جعل يوم الانتقال أكثر سلاسة.</p>
 
+                        <h3>ابدأ التحضير قبل يوم النقل بوقت كافٍ</h3>
+                        <p>التحضير المسبق هو سر النجاح. تأكد من تجهيز كل شيء قبل موعد النقل لتجنب الفوضى والتأخير.</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-clipboard-check"></i>جهّز قائمة مهام</h5>
+                                    <p>اكتب كل ما يجب إنجازه خلال أيام النقل، وتابع تنفيذ كل خطوة بشكل منظم.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-box"></i>رتّب أولويات التغليف</h5>
+                                    <p>ابدأ بالأغراض غير الضرورية يوميًا، واترك الأساسيات لليوم الأخير.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-card">
+                                    <h5><i class="fas fa-trash-alt"></i>تخلّص من الفائض</h5>
+                                    <p>استغل الفرصة للتخلص من الأثاث أو الأغراض التي لم تعد بحاجة إليها.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>استعد ليوم النقل بشكل ذكي</h3>
+                        <p>في يوم النقل، تحتاج إلى تركيز وتنظيم عالٍ. هذه بعض النصائح لتجنب الضغط والانفعال.</p>
+
+                        <div class="highlight-box">
+                            <h4><i class="fas fa-check-double"></i>أهم النصائح ليوم النقل</h4>
+                            <ul>
+                                <li><strong>ارتدِ ملابس مريحة:</strong> لتتحرك بسهولة طوال اليوم.</li>
+                                <li><strong>حضّر صندوق الأدوات:</strong> يحتوي على لاصق، سكين، مفكات، ومستلزمات التغليف.</li>
+                                <li><strong>وفّر وجبات خفيفة وماء:</strong> لفريق العمل أو أفراد العائلة.</li>
+                                <li><strong>تابع كل غرفة على حدة:</strong> لا تنتقل من غرفة لأخرى قبل الانتهاء من الأولى.</li>
+                                <li><strong>تأكد من إغلاق الكراتين بإحكام:</strong> وضع ملصقات توضيحية لكل كرتونة.</li>
+                            </ul>
+                        </div>
+
+                        <h3>ما بعد النقل</h3>
+                        <p>بعد الوصول للموقع الجديد، حافظ على نفس التنظيم. ابدأ بتركيب الأساسيات، ثم فك الكراتين تدريجيًا حسب الأهمية.</p>
+                    </div>
+                </div>
 
                 <!-- FAQ Section -->
                 <div class="content-section fade-in" id="faq">
@@ -1083,6 +1313,17 @@
 
                         <p>تذكر دائمًا أن الاستعانة بشركة نقل عفش محترفة في الكويت ليست مجرد خيار، بل هي استثمار حكيم في سلامة ممتلكاتك الثمينة وراحة بالك. فالخبرة، الاحترافية، المعدات المتطورة، والخدمات المتكاملة التي تقدمها هذه الشركات تضمن لك تجربة انتقال ناجحة ومريحة.</p>
 
+                        <div class="bashir-card">
+                            <h5><i class="fas fa-handshake"></i>شركة Bashir Mover - شريكك المثالي في الانتقال</h5>
+                            <p>إذا كنت تبحث عن شركة موثوقة وذات خبرة طويلة في مجال نقل العفش، فإن شركة Bashir Mover تقدم لك الحل الأمثل. مع التزامها بأعلى معايير الجودة والأمان، تضمن لك تجربة نقل سلسة وآمنة.</p>
+                            <div class="text-center mt-3">
+                                <a href="https://www.bashir-mover.com/" target="_blank" class="btn">
+                                    <i class="fas fa-phone"></i>
+                                    تواصل معنا الآن
+                                </a>
+                            </div>
+                        </div>
+
                         <div class="text-center mt-4">
                             <div class="alert alert-success" role="alert">
                                 <h5><i class="fas fa-check-circle"></i> نتمنى لك تجربة انتقال موفقة ومريحة!</h5>
@@ -1107,7 +1348,7 @@
                     <h4><i class="fas fa-bookmark"></i> معلومات إضافية</h4>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-check text-warning"></i> دليل شامل يغطي جميع جوانب نقل العفش في الكويت</li>
-                       
+                        <li><i class="fas fa-check text-warning"></i> يتضمن معلومات عن أفضل الشركات في السوق</li>
                         <li><i class="fas fa-check text-warning"></i> يغطي جميع محافظات الكويت</li>
                         <li><i class="fas fa-check text-warning"></i> نصائح عملية ومفيدة</li>
                         <li><i class="fas fa-check text-warning"></i> معلومات محدثة ودقيقة</li>
@@ -1205,4 +1446,3 @@
     </script>
 </body>
 </html>
-

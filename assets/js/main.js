@@ -443,10 +443,10 @@ function typeWriter(element, text, speed = 100) {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(26, 37, 47, 0.98)';
+        navbar.style.background = "var(--petroleum)";
         navbar.style.backdropFilter = 'blur(25px)';
     } else {
-        navbar.style.background = 'rgba(26, 37, 47, 0.95)';
+        navbar.style.background = "var(--petroleum)";
         navbar.style.backdropFilter = 'blur(20px)';
     }
 });
@@ -731,4 +731,8 @@ document.addEventListener('DOMContentLoaded', function() {
         createFooterParticles();
         handleNewsletterSubmit();
     });
+    
+
+
+
     
