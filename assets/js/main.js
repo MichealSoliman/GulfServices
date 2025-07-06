@@ -255,26 +255,26 @@ class GulfServices {
         card.innerHTML = `
             <div class="relative">
                 <img src="${service.image}" alt="${service.name}" class="w-full h-48 object-cover">
-                <div class="absolute top-4 left-4 bg-petroleum text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div style="background-color: #590d3d; color: #e8c468" class="absolute top-4 left-4  text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.location}
                 </div>
-                <div class="absolute top-4 right-4 bg-rose-gold text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div style="background-color: #590d3d; color: #e8c468" class="absolute top-4 right-4 bg-rose-gold text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.category}
                 </div>
-                <div class="absolute bottom-4 right-4 bg-charcoal bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div  class="absolute bottom-4 right-4 bg-charcoal bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.nameCom}
                 </div>
             </div>
             <div class="p-6">
-                <h3 class="text-xl font-bold text-charcoal mb-3 font-luxury">${service.name}</h3>
-                <p class="text-silver-mist mb-4 font-elegant leading-relaxed">${service.description}</p>
+                <h3 class="text-xl font-bold text-yellow-600 mb-3 font-luxury">${service.name}</h3>
+                <p class="text-black/50 mb-4 font-elegant leading-relaxed">${service.description}</p>
                 <div class="flex items-center justify-between">
                     <div class="flex space-x-2 space-x-reverse">
                         <button class="w-10 h-10 bg-rose-gold bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" title="إضافة للمفضلة">
                             <i class="fas fa-heart text-rose-gold hover:text-white"></i>
                         </button>
-                        <button class="w-10 h-10 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" title="مشاركة">
-                            <i class="fas fa-share text-petroleum hover:text-white"></i>
+                        <button style="background-color: #590d3d; color: #e8c468" class="w-10 h-10 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" title="مشاركة">
+                            <i style=" color: #e8c468" class="fas fa-share text-petroleum hover:text-white"></i>
                         </button>
                     </div>
                     <a href="${service.url}" class="rose-btn px-6 py-2 text-sm">
