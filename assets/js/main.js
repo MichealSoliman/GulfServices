@@ -511,6 +511,29 @@ const blogData = {
       author: "فريق النقل السكني",
       link: "./furniture-moving-companies/index.html",
     },
+    {
+      id: 3,
+      title: " نقل الأثاث والعفش في الرياض ",
+      excerpt:
+        "دليل شامل يساعدك في اختيار عملية نقل أثاث في جميع الاماكن تتميز بالأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
+      image:
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop",
+      category: "moving",
+    
+      author: "فريق النقل السكني",
+      link: "./furniture-moving-in-the-Gulf/index.html",
+    },
+    {
+      id: 3,
+      title: " الاثاث والعفش في الخليج",
+      excerpt:"دليلك لاختيار أفضل شركات نقل الأثاث والعفش في الخليج العربي، مع ضمان الأمان الكامل والخدمة السريعة دون متاعب",
+      image:
+        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop",
+      category: "moving",
+    
+      author: "فريق النقل السكني",
+      link: "./furniture-in-the-gulf/index.html",
+    },
   ],
   cleaning: [
     {
