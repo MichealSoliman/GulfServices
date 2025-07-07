@@ -98,7 +98,7 @@ const services = [
     id: 8,
     name: "نقل العفش بجدة",
     description:
-      "نقل أثاث وعفش في جدة بأسلوب حديث، مع ضمان الأمان الكامل للعفش وخدمة عملاء راقية وبأسعار مناسبة.",
+      "نقدم لكم خدمات نقل الأثاث والعفش داخل جدة بأحدث الأساليب، مع ضمان الحماية الكاملة لممتلكاتكم، وفريق خدمة عملاء متميز، وأسعار تنافسية تناسب الجميع.",
     image: "https://meuvex-furniture.com/Artboard%201%20copy.webp",
     url: "https://meuvex-furniture.com/",
     location: "جدة",
@@ -483,8 +483,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop",
       category: "moving",
-      date: "",
-      readTime: "",
+    
       author: "فريق خدمات الخليج",
       link: "./comprehensive-transportation-solutions/index.html",
     },
@@ -496,8 +495,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=300&fit=crop",
       category: "moving",
-      date: "",
-      readTime: "",
+    
       author: "فريق النقل التجاري",
       link: "./furniture-arrangement/index.html",
     },
@@ -509,8 +507,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop",
       category: "moving",
-      date: "",
-      readTime: "",
+    
       author: "فريق النقل السكني",
       link: "./furniture-moving-companies/index.html",
     },
@@ -524,8 +521,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&h=300&fit=crop",
       category: "cleaning",
-      date: "",
-      readTime: "",
+    
       author: "فريق التنظيف",
       link: "./cleaning-companies/index.html",
     },
@@ -537,8 +533,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=500&h=300&fit=crop",
       category: "cleaning",
-      date: "",
-      readTime: "",
+    
       author: "فريق التنظيف التجاري",
       link: "./cleaning-methods-and-services/index.html",
     },
@@ -550,8 +545,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop",
       category: "cleaning",
-      date: "",
-      readTime: "",
+    
       author: "فريق التنظيف السكني",
       link: "./cleaning-services/index.html",
     },
@@ -565,8 +559,7 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&h=300&fit=crop",
       category: "maintenance",
-      date: "",
-      readTime: "",
+    
       author: "فريق الصيانة",
       link: "./air-conditioner-maintenance/index.html",
     },
@@ -579,23 +572,11 @@ const blogData = {
       image:
         "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=500&h=300&fit=crop",
       category: "maintenance",
-      date: "",
-      readTime: "",
+    
       author: "فريق صيانة الأنظمة",
       link: "./fire-fighting/index.html",
     },
-    // {
-    //     id: 9,
-    //     title: 'صيانة الأنظمة الكهربائية في مول تجاري',
-    //     excerpt: 'مشروع صيانة وتحديث الأنظمة الكهربائية في مول تجاري كبير بالكويت. تم العمل على مدار 3 أيام دون توقف العمليات التجارية.',
-    //     image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=300&fit=crop',
-    //     category: 'maintenance',
-    //     date: '2023-12-28',
-    //     readTime: '5 دقائق',
-    //     author: 'فريق الصيانة الكهربائية',
-    //     link: '#'
-
-    // }
+  
   ],
 };
 
@@ -679,12 +660,7 @@ class BlogManager {
     }</span>
         <h3 class="blog-card-title">${post.title}</h3>
         <p class="blog-card-excerpt">${post.excerpt}</p>
-        <div class="blog-card-meta">
-            <span><i class="fas fa-calendar ml-1"></i> ${this.formatDate(
-              post.date
-            )}</span>
-            <span><i class="fas fa-clock ml-1"></i> ${post.readTime}</span>
-        </div>
+        
         <a href="${post.link}" class="blog-card-button">
             <i class="fas fa-arrow-left ml-2"></i>
             عرض التفاصيل
