@@ -549,6 +549,17 @@ const blogData = {
       author: "فريق التنظيف السكني",
       link: "./cleaning-services/index.html",
     },
+    {
+      id: 6,
+      title: " النظافة في الخليج العربي",
+      excerpt:" دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب",
+      image:
+        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop",
+      category: "cleaning",
+    
+      author: " التنظيف الخليجي",
+      link: "./cleanliness-in-the-Gulf/index.html",
+    },
   ],
   maintenance: [
     {
