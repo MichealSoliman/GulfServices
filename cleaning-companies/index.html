@@ -24,7 +24,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <style>
           @font-face {
             font-family: "Lama-sans";
@@ -1140,51 +1142,131 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="footer-section">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Footer Section -->
+    <footer style="background-color: #16a34a ;" class="footer-gradient relative overflow-hidden">
+        <div class="footer-particles" id="footerParticles"></div>
+        
+        <div class="container mx-auto px-4 py-12 relative z-10">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <h2 class="company-logo">خدمات الخليج</h2>
+                <p class="company-tagline">شريكك الموثوق في الخدمات المنزلية الفاخرة</p>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Contact Information -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">نقاء كلين</h3>
-                    <p class="mb-4">
-                        شركة رائدة في مجال التنظيف والنظافة في المملكة العربية السعودية. 
-                        نقدم خدمات تنظيف احترافية ومبتكرة تلبي أعلى معايير الجودة.
-                    </p>
-                    <a href="https://naqaa-clean.com/" class="text-green-400 hover:text-green-300">
-                        زر موقعنا الرسمي
+                    <h3 class="footer-section-title">معلومات الاتصال</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>0565265233</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@gulfservices.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>الرياض، المملكة العربية السعودية</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 خدمة على مدار الساعة</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="footer-section-title">روابط سريعة</h3>
+                    <a href="index.html" class="footer-link">
+                        <i class="fas fa-home"></i>
+                        الرئيسية
+                    </a>
+                    <a href="#services" class="footer-link">
+                        <i class="fas fa-cogs"></i>
+                        خدماتنا
+                    </a>
+                    <a href="#about" class="footer-link">
+                        <i class="fas fa-users"></i>
+                        من نحن
+                    </a>
+                    <a href="#blogs" class="footer-link">
+                        <i class="fas fa-blog"></i>
+                        المدونة
+                    </a>
+                    <a href="tel:0565265233" class="footer-link">
+                        <i class="fas fa-phone-alt"></i>
+                        اتصل بنا
                     </a>
                 </div>
+
+                <!-- Services -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">خدماتنا</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">تنظيف المنازل</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">تنظيف المكاتب</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">التعقيم والتطهير</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">مكافحة الحشرات</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">تنظيف الخزانات</a></li>
-                    </ul>
+                    <h3 class="footer-section-title">خدماتنا</h3>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-truck"></i>
+                        نقل العفش
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-broom"></i>
+                        خدمات التنظيف
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-tools"></i>
+                        الصيانة العامة
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-paint-roller"></i>
+                        أعمال الدهان
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-leaf"></i>
+                        تنسيق الحدائق
+                    </a>
                 </div>
+
+                <!-- Newsletter & Social Media -->
                 <div>
-                    <h3 class="text-xl font-bold mb-4">مناطق الخدمة</h3>
-                    <ul class="space-y-2">
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">جدة</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">مكة المكرمة</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">المدينة المنورة</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">الطائف</a></li>
-                        <li><a href="https://naqaa-clean.com/" class="text-gray-300 hover:text-green-400">ينبع ورابغ</a></li>
-                    </ul>
+                    <h3 class="footer-section-title">ابق على تواصل</h3>
+                    <p class="text-white/80 mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
+                    
+                    
+
+                    <div class="flex gap-3 justify-center lg:justify-start">
+                        <a href="https://www.facebook.com/golden.moon.compa?mibextid=qi2Omg&rdid=9UEujZC…ttps%3A%2F%2Fwww.facebook.com%2Fshare%2F19EWAR5kSM%2F%3Fmibextid%3Dqi2Omg#" class="social-icon facebook" title="فيسبوك">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/Golden_Moon2024" class="social-icon twitter" title="تويتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/golden_moon_company" class="social-icon instagram" title="إنستغرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@golden.moon.company" class="social-icon tiktok" title="تيك توك">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/966565265233" class="social-icon whatsapp" title="واتساب">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-600 mt-8 pt-6 text-center">
-                <p>&copy; 2025 نقاء كلين. جميع الحقوق محفوظة | 
-                    <a href="https://naqaa-clean.com/" class="text-green-400 hover:text-green-300">naqaa-clean.com</a>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 خدمات الخليج. جميع الحقوق محفوظة.</p>
+                <p>
+                    <a href="#">سياسة الخصوصية</a> | 
+                    <a href="#">شروط الاستخدام</a> | 
+                    <a href="#">سياسة الاسترداد</a>
                 </p>
-                <p class="mt-2">
-                    <i class="fas fa-heart text-red-500"></i> 
-                    صُنع بحب لخدمة المجتمع السعودي
+                <p class="mt-2 text-sm">
+                    تم التطوير بواسطة <a href="#" class="text-petroleum hover:text-rose-gold">فريق التطوير</a>
                 </p>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>

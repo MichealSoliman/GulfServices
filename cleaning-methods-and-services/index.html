@@ -28,7 +28,9 @@
     
     <!-- Bootstrap RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- Font Awesome Icons -->
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
     
@@ -525,9 +527,7 @@
             font-size: 1.05rem;
         }
         
-        .footer-link:hover {
-            color: var(--lamaa-green);
-        }
+       
         
         .copyright {
             border-top: 1px solid rgba(255,255,255,0.3);
@@ -639,6 +639,7 @@
             body {
                 background: white;
             }
+            
         }
     </style>
 </head>
@@ -1891,31 +1892,135 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 شركة لمعة للنظافة. جميع الحقوق محفوظة.</p>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/getlamaaclean" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/getlamaaclean" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://wa.me/966563009155" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <a href="#introduction">مقدمة</a>
-            <a href="#health-benefits">فوائد التنظيف للصحة</a>
-            <a href="#cleaning-challenges">تحديات التنظيف وحلولها</a>
-            <a href="#eco-friendly">التنظيف الصديق للبيئة</a>
-            <a href="#advanced-techniques">تقنيات التنظيف المتقدمة</a>
-            <a href="#professional-importance">أهمية الخدمات الاحترافية</a>
-            <a href="#sustainable-practices">الممارسات المستدامة</a>
-            <a href="#scheduling">جداول التنظيف والتخطيط</a>
-            <a href="#conclusion">خلاصة</a>
-        </div>
-    </footer> -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js
+    </div>
+  <!-- Footer Section -->
+    <footer style="background-color: #213d94 !important;  " class="footer-gradient relative overflow-hidden">
+        <div class="footer-particles" id="footerParticles"></div>
+        
+        <div class="container mx-auto px-4 py-12 relative z-10">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <h2 class="company-logo">خدمات الخليج</h2>
+                <p class="company-tagline">شريكك الموثوق في الخدمات المنزلية الفاخرة</p>
+            </div>
 
-" integrity="sha256-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJw=" crossorigin="anonymous"></script>
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="footer-section-title">معلومات الاتصال</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>0565265233</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@gulfservices.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>الرياض، المملكة العربية السعودية</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 خدمة على مدار الساعة</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="footer-section-title">روابط سريعة</h3>
+                    <a href="index.html" class="footer-link">
+                        <i class="fas fa-home"></i>
+                        الرئيسية
+                    </a>
+                    <a href="#services" class="footer-link">
+                        <i class="fas fa-cogs"></i>
+                        خدماتنا
+                    </a>
+                    <a href="#about" class="footer-link">
+                        <i class="fas fa-users"></i>
+                        من نحن
+                    </a>
+                    <a href="#blogs" class="footer-link">
+                        <i class="fas fa-blog"></i>
+                        المدونة
+                    </a>
+                    <a href="tel:0565265233" class="footer-link">
+                        <i class="fas fa-phone-alt"></i>
+                        اتصل بنا
+                    </a>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="footer-section-title">خدماتنا</h3>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-truck"></i>
+                        نقل العفش
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-broom"></i>
+                        خدمات التنظيف
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-tools"></i>
+                        الصيانة العامة
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-paint-roller"></i>
+                        أعمال الدهان
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-leaf"></i>
+                        تنسيق الحدائق
+                    </a>
+                </div>
+
+                <!-- Newsletter & Social Media -->
+                <div>
+                    <h3 class="footer-section-title">ابق على تواصل</h3>
+                    <p class="text-white/80 mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
+                    
+                    
+
+                    <div class="flex gap-3 justify-center lg:justify-start">
+                        <a href="https://www.facebook.com/golden.moon.compa?mibextid=qi2Omg&rdid=9UEujZC…ttps%3A%2F%2Fwww.facebook.com%2Fshare%2F19EWAR5kSM%2F%3Fmibextid%3Dqi2Omg#" class="social-icon facebook" title="فيسبوك">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/Golden_Moon2024" class="social-icon twitter" title="تويتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/golden_moon_company" class="social-icon instagram" title="إنستغرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@golden.moon.company" class="social-icon tiktok" title="تيك توك">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/966565265233" class="social-icon whatsapp" title="واتساب">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 خدمات الخليج. جميع الحقوق محفوظة.</p>
+                <p>
+                    <a href="#">سياسة الخصوصية</a> | 
+                    <a href="#">شروط الاستخدام</a> | 
+                    <a href="#">سياسة الاسترداد</a>
+                </p>
+                <p class="mt-2 text-sm">
+                    تم التطوير بواسطة <a href="#" class="text-petroleum hover:text-rose-gold">فريق التطوير</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJw=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+4+Y5n8z5h5p6b5l5d5f5d5f5d5f5d5f5f5f5f5f5f5f5f" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap    
 .min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8z5p6b5l5d5f5d5f5d5f5f5f5f5f5f5f5f5f" crossorigin="anonymous"></script>
