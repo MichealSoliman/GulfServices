@@ -28,645 +28,88 @@
     
     <!-- Bootstrap RTL CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+   
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 
     <!-- Font Awesome Icons -->
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts - Arabic (Cairo & Tajawal for better match) -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet"> -->
+
     
     <style>
-        @font-face {
+           @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/LamaSans-Black.woff") format("woff");
-          
-
-        }
-        :root {
-            --primary-color: #213d94;
-            --secondary-color: #213d94;
-            --accent-color: #213d94;
-            --light-blue: #dbeafe;
-            --dark-blue: #1e3a8a;
-            --text-dark: #1f2937;
-            --text-light: #6b7280;
-            --border-color: #e5e7eb;
-            --success-color: #213d94;
-            --warning-color: #f59e0b;
-            --danger-color: #6582da;
-            --lamaa-green: #213d94;
-            --lamaa-blue: #0ea5e9;
-           
-        }
-        
-        * {
-
-
-            /* font-family: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
-        }
-        
-        body {
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            color: var(--text-dark);
-            line-height: 1.8;
-            font-size: 16px;
-            padding: 0;
-            margin: 0;
-         font-family: "Lama-sans";
-        }
-
-        /* Company Header Bar */
-        .company-header {
-            background: var(--primary-color);
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .company-header h3 {
-            margin: 0;
-            font-weight: 700;
-            font-size: 1.3rem;
-            font-family: 'Lama-sans';
-        }
-
-        .company-header .contact-info {
-            margin-top: 8px;
-            font-size: 0.95rem;
-        }
-
-        .company-header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: all 0.3s ease;
-        }
-
-        .company-header a:hover {
-            color: #fef3c7;
-            transform: scale(1.05);
-        }
-
-        /* Floating Contact Buttons */
-        .floating-contacts {
-            position: fixed;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 999;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .contact-btn.phone {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-        }
-
-        .contact-btn.whatsapp {
-            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-        }
-
-        .contact-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.3);
-            color: white;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: var(--primary-color);
-            color: white;
-            padding: 100px 0 80px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero-title {
-            font-size: 3.8rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.4rem;
-            font-weight: 400;
-            opacity: 0.95;
-            margin-bottom: 2rem;
-        }
-
-        .company-badge {
-            background: rgba(255,255,255,0.2);
-            padding: 15px 25px;
-            border-radius: 25px;
-            display: inline-block;
-            margin-top: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-
-        .company-badge a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        /* Navigation */
-        .table-of-contents {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-            padding: 2.5rem;
-            margin: -60px 0 60px 0;
-            position: relative;
-            z-index: 3;
-            border: 3px solid var(--lamaa-green);
-        }
-        
-        .toc-title {
-            color: var(--primary-color);
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            border-bottom: 4px solid var(--lamaa-green);
-            padding-bottom: 1rem;
-        }
-        
-        .toc-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .toc-item {
-            margin-bottom: 1rem;
-        }
-        
-        .toc-link {
-            color: var(--text-dark);
-            text-decoration: none;
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
-            display: block;
-            transition: all 0.3s ease;
-            border-right: 4px solid transparent;
-            font-weight: 500;
-        }
-        
-        .toc-link:hover {
-            background: var(--light-blue);
-            color: var(--primary-color);
-            border-right-color: var(--lamaa-green);
-            transform: translateX(-8px);
-        }
-        
-        .toc-link i {
-            margin-left: 0.8rem;
-            color: var(--lamaa-blue);
-            font-size: 1.1rem;
-        }
-        
-        /* Content Sections */
-        .content-section {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-            margin-bottom: 3.5rem;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 5px solid var(--lamaa-green);
-        }
-        
-        .content-section:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        }
-        
-        .section-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 2.5rem;
-            position: relative;
-        }
-        
-        .section-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: var(--lamaa-green);
-        }
-        
-        .section-title {
-            font-size: 2.4rem;
-            font-weight: 700;
-            margin: 0;
-            display: flex;
-            align-items: center;
-        }
-        
-        .section-title i {
-            margin-left: 1.2rem;
-            font-size: 2.2rem;
-        }
-        
-        .section-content {
-            padding: 3rem;
-        }
-        
-        .section-content h3 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 2.5rem 0 1.2rem 0;
-            padding-bottom: 0.8rem;
-            border-bottom: 3px solid var(--light-blue);
-        }
-        
-        .section-content h4 {
-            color: var(--lamaa-blue);
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin: 2rem 0 1rem 0;
-        }
-        
-        .section-content p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-        
-        .section-content ul, .section-content ol {
-            margin-bottom: 2rem;
-            padding-right: 2rem;
-        }
-        
-        .section-content li {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-            font-size: 1.05rem;
-        }
-
-        /* Company Promotion Boxes */
-        .company-promo {
-            background: linear-gradient(135deg, var(--lamaa-green) 0%, var(--lamaa-blue) 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 15px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .company-promo h4 {
-            color: white;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-        }
-
-        .company-promo .btn {
-            background: white;
-            color: var(--lamaa-green);
-            border: none;
-            padding: 12px 30px;
-            border-radius: 25px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-        }
-
-        .company-promo .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        /* Special Elements */
-        .highlight-box {
-            background: linear-gradient(135deg, var(--light-blue) 0%, #f0f9ff 100%);
-            border: 2px solid var(--border-color);
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-right: 6px solid var(--lamaa-green);
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #f0fff4 0%, #e6fffa 100%);
-            border: 2px solid #c6f6d5;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-right: 6px solid var(--success-color);
-        }
-        
-        .warning-box {
-            background: linear-gradient(135deg, #fffaf0 0%, #fef5e7 100%);
-            border: 2px solid #fbd38d;
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-right: 6px solid var(--warning-color);
-        }
-        
-        .info-icon {
-            color: var(--lamaa-blue);
-            margin-left: 0.8rem;
-        }
-        
-        .success-icon {
-            color: var(--success-color);
-            margin-left: 0.8rem;
-        }
-        
-        .warning-icon {
-            color: var(--warning-color);
-            margin-left: 0.8rem;
-        }
-        
-        /* Statistics Cards */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 2.5rem 0;
-        }
-        
-        .stat-card {
-            background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            border-top: 4px solid var(--lamaa-green);
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--primary-color);
-            margin-bottom: 0.8rem;
-        }
-        
-        .stat-label {
-            color: var(--text-light);
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        /* Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        th {
-            background: linear-gradient(135deg, var(--lamaa-green) 0%, var(--lamaa-blue) 100%);
-            color: white;
-            padding: 15px;
-            font-weight: 600;
-        }
-
-        td {
-            padding: 15px;
-            border-bottom: 1px solid var(--border-color);
-            font-size: 1.05rem;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9fafb;
-        }
-        
-        /* Footer */
-        .footer {
-            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-color) 100%);
-            color: white;
-            padding: 4rem 0 2rem 0;
-            margin-top: 5rem;
-        }
-        
-        .footer-content {
-            text-align: center;
-        }
-        
-        .footer-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-        }
-        
-        .footer-text {
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 2.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .footer-link {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
-            font-size: 1.05rem;
-        }
-        
-       
-        
-        .copyright {
-            border-top: 1px solid rgba(255,255,255,0.3);
-            padding-top: 2rem;
-            opacity: 0.8;
-            font-size: 1rem;
-        }
-
-        .company-info {
-            background: var(--lamaa-green);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            color: white;
-            text-align: center;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.8rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .section-content {
-                padding: 2rem;
-            }
-            
-            .table-of-contents {
-                margin: -40px 0 40px 0;
-                padding: 2rem;
-            }
-
-            .floating-contacts {
-                position: relative;
-                left: auto;
-                top: auto;
-                transform: none;
-                flex-direction: row;
-                justify-content: center;
-                margin: 20px 0;
-            }
-
-            .company-header h3 {
-                font-size: 1.1rem;
-            }
-
-            .company-header .contact-info {
-                font-size: 0.85rem;
-            }
-        }
-        
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: var(--lamaa-green);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 55px;
-            height: 55px;
-            font-size: 1.3rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            opacity: 0;
-            visibility: hidden;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .back-to-top:hover {
-            background: var(--lamaa-blue);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-
-        /* Print/PDF optimizations */
-        @media print {
-            .floating-contacts,
-            .back-to-top,
-            .company-header {
-                display: none !important;
-            }
-            
-            .content-section {
-                break-inside: avoid;
-                page-break-inside: avoid;
-            }
-            
-            body {
-                background: white;
-            }
-            
         }
     </style>
+  
 </head>
 <body>
+    
     <!-- Company Header -->
-    <div class="company-header">
-        <div class="container">
-            <h3>
-                <i class="fas fa-star"></i>
-                شركة لمعة للنظافة - أفضل شركة تنظيف معتمدة في الرياض
-            </h3>
-            <div class="contact-info">
-                <a href="tel:0563009155">
-                    <i class="fas fa-phone"></i>
-                    0563009155
-                </a>
-                <a href="https://wa.me/966563009155" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                    واتساب
-                </a>
-                <a href="https://getlamaaclean.com/" target="_blank">
-                    <i class="fas fa-globe"></i>
-                    الموقع الرسمي
-                </a>
-            </div>
+
+   <navbar>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
+        </div>
+        <div class="mt-8">
+            <a href="tel:0565265233">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
+            </button>
+            </a>
         </div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
+                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
+                        
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ml-5">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="../index.html" class="nav-link active">الرئيسية</a>
+                    <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
+                    
+                   
+                </div>
+                <a href="tel:0565265233">
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                    </a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </nav>
+</navbar>
+    
 
     <!-- Floating Contact Buttons -->
     <div class="floating-contacts">
@@ -681,7 +124,7 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container">
+        <div class="container pt-5">
             <div class="hero-content text-center">
                 <h1 class="hero-title">
                     <i class="fas fa-sparkles"></i>
@@ -1894,7 +1337,7 @@
     </main>
     </div>
   <!-- Footer Section -->
-    <footer style="background-color: #213d94 !important;  " class="footer-gradient relative overflow-hidden">
+    <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
         <div class="footer-particles" id="footerParticles"></div>
         
         <div class="container mx-auto px-4 py-12 relative z-10">
@@ -1931,19 +1374,19 @@
                 <!-- Quick Links -->
                 <div>
                     <h3 class="footer-section-title">روابط سريعة</h3>
-                    <a href="index.html" class="footer-link">
+                    <a href="../index.html" class="footer-link">
                         <i class="fas fa-home"></i>
                         الرئيسية
                     </a>
-                    <a href="#services" class="footer-link">
+                    <a href="../index.html#services" class="footer-link">
                         <i class="fas fa-cogs"></i>
                         خدماتنا
                     </a>
-                    <a href="#about" class="footer-link">
+                    <a href="../index.html#about" class="footer-link">
                         <i class="fas fa-users"></i>
                         من نحن
                     </a>
-                    <a href="#blogs" class="footer-link">
+                    <a href="../blogs/index.html" class="footer-link">
                         <i class="fas fa-blog"></i>
                         المدونة
                     </a>
@@ -1956,26 +1399,19 @@
                 <!-- Services -->
                 <div>
                     <h3 class="footer-section-title">خدماتنا</h3>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-truck"></i>
                         نقل العفش
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-broom"></i>
                         خدمات التنظيف
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-tools"></i>
                         الصيانة العامة
                     </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-paint-roller"></i>
-                        أعمال الدهان
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-leaf"></i>
-                        تنسيق الحدائق
-                    </a>
+                   
                 </div>
 
                 <!-- Newsletter & Social Media -->
@@ -2036,6 +1472,7 @@
             });
         });
         </script>
+        <script src="../assets/js/main.js"></script>
 </body>
 </html>
        
