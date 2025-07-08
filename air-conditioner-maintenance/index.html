@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
     
     <style>
         @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+             src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
         }
 
         :root {
@@ -23,7 +24,7 @@
         }
 
         body {
-            font-family: "Lama-sans", "Tajawal", Arial, sans-serif;
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
             color: var(--text-dark);
             line-height: 1.6;
         }
@@ -255,32 +256,67 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
-    <header class="primary-bg text-white sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4 space-x-reverse">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-                        </svg>
+<navbar>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
+        </div>
+        <div class="mt-8">
+            <a href="tel:0565265233">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
+                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
+                        
                     </div>
-                    <div>
-                        <h1 class="text-2xl font-bold">صيانة المكيفات</h1>
-                        <p class="text-secondary">دليلك الشامل للحفاظ على برودة منزلك</p>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="../index.html" class="nav-link active">الرئيسية</a>
+                    <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
+                    
+                   
+                </div>
+                <a href="tel:0565265233">
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                    </a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
-                <nav class="hidden md:flex space-x-6 space-x-reverse">
-                    <a href="#home" class="hover:text-secondary transition-colors">الرئيسية</a>
-                    <a href="#importance" class="hover:text-secondary transition-colors">أهمية الصيانة</a>
-                    <a href="#types" class="hover:text-secondary transition-colors">أنواع المكيفات</a>
-                    <a href="#problems" class="hover:text-secondary transition-colors">الأعطال الشائعة</a>
-                    <a href="#tips" class="hover:text-secondary transition-colors">نصائح ذهبية</a>
-                    <a href="#modifications" class="hover:text-secondary transition-colors">التعديلات</a>
-                </nav>
             </div>
         </div>
-    </header>
+       
+    </nav>
+</navbar>
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center primary-bg">
@@ -1186,8 +1222,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="primary-bg relative overflow-hidden">
+   <!-- Footer Section -->
+    <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
+        <div class="footer-particles" id="footerParticles"></div>
+        
         <div class="container mx-auto px-4 py-12 relative z-10">
             <!-- Logo Section -->
             <div class="logo-section">
@@ -1222,19 +1260,19 @@
                 <!-- Quick Links -->
                 <div>
                     <h3 class="footer-section-title">روابط سريعة</h3>
-                    <a href="index.html" class="footer-link">
+                    <a href="../index.html" class="footer-link">
                         <i class="fas fa-home"></i>
                         الرئيسية
                     </a>
-                    <a href="#services" class="footer-link">
+                    <a href="../index.html#services" class="footer-link">
                         <i class="fas fa-cogs"></i>
                         خدماتنا
                     </a>
-                    <a href="#about" class="footer-link">
+                    <a href="../index.html#about" class="footer-link">
                         <i class="fas fa-users"></i>
                         من نحن
                     </a>
-                    <a href="#blogs" class="footer-link">
+                    <a href="../blogs/index.html" class="footer-link">
                         <i class="fas fa-blog"></i>
                         المدونة
                     </a>
@@ -1247,33 +1285,28 @@
                 <!-- Services -->
                 <div>
                     <h3 class="footer-section-title">خدماتنا</h3>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-truck"></i>
                         نقل العفش
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-broom"></i>
                         خدمات التنظيف
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-tools"></i>
                         الصيانة العامة
                     </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-paint-roller"></i>
-                        أعمال الدهان
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-leaf"></i>
-                        تنسيق الحدائق
-                    </a>
+                   
                 </div>
 
                 <!-- Newsletter & Social Media -->
                 <div>
                     <h3 class="footer-section-title">ابق على تواصل</h3>
-                    <p class="text-white mb-4">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
+                    <p class="text-white mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
                     
+                    
+
                     <div class="flex gap-3 justify-center lg:justify-start">
                         <a href="https://www.facebook.com/golden.moon.compa?mibextid=qi2Omg&rdid=9UEujZC…ttps%3A%2F%2Fwww.facebook.com%2Fshare%2F19EWAR5kSM%2F%3Fmibextid%3Dqi2Omg#" class="social-icon facebook" title="فيسبوك">
                             <i class="fab fa-facebook-f"></i>
@@ -1303,7 +1336,7 @@
                     <a href="#">سياسة الاسترداد</a>
                 </p>
                 <p class="mt-2 text-sm">
-                    تم التطوير بواسطة <a href="#" class="text-secondary hover:text-white">فريق التطوير</a>
+                    تم التطوير بواسطة <a href="#" class="text-petroleum hover:text-rose-gold">فريق التطوير</a>
                 </p>
             </div>
         </div>
@@ -1370,5 +1403,6 @@
             observer.observe(el);
         });
     </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

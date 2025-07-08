@@ -24,8 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 
-    <style>
+   <style>
             @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/LamaSans-Black.woff") format("woff");
@@ -35,33 +36,73 @@
         body {
              font-family: "Lama-sans";
         }
-        .gradient-bg {
-            background: #A33642;
-        }
-        .fire-animation {
-            animation: none;
-        }
-        .scroll-smooth {
-            scroll-behavior: smooth;
-        }
-        .section-divider {
-            background: #A33642;
-            height: 2px;
-        }
-        .company-highlight {
-           background: #A33642;
-        }
-        .hover-lift {
-            transition: transform 0.3s ease;
-        }
-        .hover-lift:hover {
-            transform: translateY(-5px);
-        }
-    </style>
+   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+           <navbar class="">
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
+        </div>
+        <div class="mt-8">
+            <a href="tel:0565265233">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
+                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
+                        
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ml-5">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="../index.html" class="nav-link active">الرئيسية</a>
+                    <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
+                    
+                   
+                </div>
+                <a href="tel:0565265233">
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                    </a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </nav>
+</navbar>
     <!-- Header -->
-    <header class="gradient-bg text-white shadow-2xl">
+    <header class="gradient-bg text-white shadow-2xl py-20">
         <div class="container mx-auto px-6 py-8">
             <div class="text-center">
                 <div class="text-6xl mb-4">🛡️</div>
@@ -86,7 +127,7 @@
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-center">
@@ -102,7 +143,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12">
@@ -111,7 +152,7 @@
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🚨</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">مقدمة: أهمية مكافحة الحرائق في عصرنا الحديث</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">مقدمة: أهمية مكافحة الحرائق في عصرنا الحديث</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -134,7 +175,7 @@
         <section id="fire-basics" class="mb-16">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🔬</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">فهم الحريق: مثلث النار وأنواع الحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">فهم الحريق: مثلث النار وأنواع الحرائق</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="bg-white bg-opacity-10 rounded-xl p-6">
@@ -187,10 +228,10 @@
 
         <!-- Prevention Section -->
         <section id="prevention" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class="bg-white text-black rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🛡️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">الوقاية من الحرائق: تدابير وإرشادات السلامة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">الوقاية من الحرائق: تدابير وإرشادات السلامة</h2>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8">
                     <div>
@@ -254,7 +295,7 @@
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">📜</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">تاريخ مكافحة الحرائق وتطورها عبر العصور</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">تاريخ مكافحة الحرائق وتطورها عبر العصور</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -272,13 +313,13 @@
 
 
 <section id="regulations" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" text-black rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">⚖️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">دور التشريعات والمعايير في السلامة من الحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">دور التشريعات والمعايير في السلامة من الحرائق</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
-                    <p class="text-xl mb-6 opacity-90">
+                <div class="prose prose-lg max-w-none  leading-relaxed">
+                    <p class="text-xl mb-6 ">
                         تُشكل التشريعات والمعايير الدولية والمحلية حجر الزاوية في بناء بيئة آمنة ومقاومة للحرائق. فبدون أطر قانونية واضحة ومواصفات فنية دقيقة، يصعب ضمان التزام الأفراد والمؤسسات بمتطلبات السلامة الضرورية. هذه التشريعات لا تقتصر على تحديد أنواع أنظمة الإطفاء الواجب تركيبها، بل تمتد لتشمل مواصفات مواد البناء، تصميم مخارج الطوارئ، وتدريب شاغلي المباني.
                     </p>
                     <p class="mb-6">
@@ -296,7 +337,7 @@
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🧯</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">أنواع طفايات الحريق واستخداماتها الصحيحة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أنواع طفايات الحريق واستخداماتها الصحيحة</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -336,12 +377,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="evacuation" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" text-black rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏃‍♀️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">خطط الإخلاء في حالات الطوارئ</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">خطط الإخلاء في حالات الطوارئ</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none  leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد خطة الإخلاء الفعالة عنصرًا حيويًا في أي استراتيجية للسلامة من الحرائق. ففي لحظات الذعر والارتباك التي قد تُصاحب اندلاع حريق، تُصبح المعرفة المسبقة بمسارات الإخلاء ونقاط التجمع أمرًا بالغ الأهمية لإنقاذ الأرواح. يجب أن تكون خطط الإخلاء واضحة، سهلة الفهم، ومُتدرب عليها بانتظام.
                     </p>
@@ -360,7 +401,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">⚙️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">صيانة أنظمة مكافحة الحرائق وأهميتها</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">صيانة أنظمة مكافحة الحرائق وأهميتها</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -381,7 +422,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🎓</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">أهمية التدريب والتوعية في مكافحة الحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أهمية التدريب والتوعية في مكافحة الحرائق</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-white leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
@@ -402,7 +443,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏭</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">الحرائق الصناعية: مخاطرها وطرق مكافحتها</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">الحرائق الصناعية: مخاطرها وطرق مكافحتها</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -420,12 +461,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="electrical-fires" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">⚡</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">الحرائق الكهربائية: أسبابها والوقاية منها</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">الحرائق الكهربائية: أسبابها والوقاية منها</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد الحرائق الكهربائية من أكثر أنواع الحرائق شيوعًا وخطورة، حيث يمكن أن تنشأ من مجموعة متنوعة من الأسباب المتعلقة بالتركيبات الكهربائية غير الصحيحة، أو المعدات المعيبة، أو سوء الاستخدام. تُشكل هذه الحرائق تهديدًا كبيرًا للمنازل والمنشآت التجارية والصناعية على حد سواء.
                     </p>
@@ -444,7 +485,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🧪</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">الحرائق الكيميائية: أنواعها ومخاطرها وطرق مكافحتها</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">الحرائق الكيميائية: أنواعها ومخاطرها وطرق مكافحتها</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -465,7 +506,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏙️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">أمان الحريق في الأماكن العامة: مسؤولية مشتركة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أمان الحريق في الأماكن العامة: مسؤولية مشتركة</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-white leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
@@ -486,7 +527,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏡</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">أمان الحريق في المباني السكنية: نصائح لكل منزل</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أمان الحريق في المباني السكنية: نصائح لكل منزل</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -504,12 +545,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="smoke-management" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🌫️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">إدارة الدخان والتحكم فيه: عنصر حيوي في السلامة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">إدارة الدخان والتحكم فيه: عنصر حيوي في السلامة</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         في سيناريو الحريق، لا يُعد اللهب هو الخطر الوحيد؛ فالدخان والغازات السامة الناتجة عن الاحتراق تُشكل تهديدًا أكبر على الأرواح. تُشير الإحصائيات إلى أن معظم الوفيات في الحرائق تُعزى إلى استنشاق الدخان وليس إلى الحروق المباشرة. لذا، تُعد أنظمة إدارة الدخان والتحكم فيه عنصرًا حيويًا في استراتيجيات السلامة من الحرائق، خاصة في المباني الكبيرة والمعقدة.
                     </p>
@@ -528,7 +569,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">💰</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">دور التأمين في الحماية من مخاطر الحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">دور التأمين في الحماية من مخاطر الحرائق</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -549,7 +590,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">📡</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">تقنيات الكشف المبكر عن الحرائق: خط الدفاع الأول</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">تقنيات الكشف المبكر عن الحرائق: خط الدفاع الأول</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-white leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
@@ -570,7 +611,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">👨‍🚒</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">دور المطافئ المدنية والمتطوعين في مكافحة الحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">دور المطافئ المدنية والمتطوعين في مكافحة الحرائق</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -588,12 +629,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="fire-resistant-materials" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🧱</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">المواد المقاومة للحريق في البناء: أساس السلامة الهيكلية</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">المواد المقاومة للحريق في البناء: أساس السلامة الهيكلية</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد المواد المقاومة للحريق عنصرًا أساسيًا في تصميم وبناء المباني الحديثة، حيث تُسهم بشكل كبير في احتواء الحرائق، إبطاء انتشارها، وتوفير وقت ثمين للإخلاء الآمن. لا تقتصر مقاومة الحريق على منع الاشتعال فحسب، بل تشمل أيضًا قدرة المادة على الحفاظ على سلامتها الهيكلية ووظيفتها تحت تأثير درجات الحرارة العالية.
                     </p>
@@ -612,7 +653,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">✈️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">أمان الحريق في وسائل النقل: جوًا، بحرًا، وبرًا</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أمان الحريق في وسائل النقل: جوًا، بحرًا، وبرًا</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -633,7 +674,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">💾</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">أمان الحريق في مراكز البيانات: حماية البنية التحتية الرقمية</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أمان الحريق في مراكز البيانات: حماية البنية التحتية الرقمية</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-white leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
@@ -651,12 +692,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="wildfires" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🌳</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">الحرائق في الغابات والمناطق الطبيعية: تحديات بيئية</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">الحرائق في الغابات والمناطق الطبيعية: تحديات بيئية</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد حرائق الغابات والمناطق الطبيعية من الكوارث البيئية المدمرة التي تُهدد التنوع البيولوجي، تُسبب خسائر اقتصادية فادحة، وتُؤثر على جودة الهواء والمناخ. تُفاقم التغيرات المناخية من حدة هذه الحرائق وتُزيد من تكرارها، مما يُشكل تحديًا عالميًا يتطلب استراتيجيات متكاملة للوقاية والمكافحة.
                     </p>
@@ -675,7 +716,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🕵️‍♀️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">التحقيق الجنائي في الحرائق: كشف الأسباب وتحديد المسؤوليات</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">التحقيق الجنائي في الحرائق: كشف الأسباب وتحديد المسؤوليات</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -693,12 +734,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="oil-gas-safety" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🛢️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">السلامة من الحرائق في المنشآت النفطية والغازية: مخاطر فريدة وحلول متخصصة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المنشآت النفطية والغازية: مخاطر فريدة وحلول متخصصة</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد المنشآت النفطية والغازية، بما في ذلك المصافي، محطات التخزين، ومنصات الحفر البحرية، من البيئات عالية الخطورة فيما يتعلق بالحرائق والانفجارات. يُعزى ذلك إلى وجود كميات هائلة من المواد الهيدروكربونية القابلة للاشتعال، والضغوط العالية، والعمليات المعقدة التي تُزيد من احتمالية وقوع الحوادث. لذا، تُطبق في هذه المنشآت أعلى معايير السلامة وأنظمة مكافحة الحرائق المتخصصة.
                     </p>
@@ -717,7 +758,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">📊</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">دور التكنولوجيا الحديثة في تحليل الحرائق والنمذجة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">دور التكنولوجيا الحديثة في تحليل الحرائق والنمذجة</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -735,12 +776,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="hvac-fire-safety" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🌬️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">أهمية فحص وصيانة أنظمة التدفئة والتهوية وتكييف الهواء (HVAC) للوقاية من الحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أهمية فحص وصيانة أنظمة التدفئة والتهوية وتكييف الهواء (HVAC) للوقاية من الحرائق</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد أنظمة التدفئة والتهوية وتكييف الهواء (HVAC) جزءًا لا يتجزأ من أي مبنى حديث، حيث تُوفر الراحة الحرارية وتُحسن جودة الهواء الداخلي. ومع ذلك، يمكن أن تُشكل هذه الأنظمة، إذا لم تُصمم وتُصان بشكل صحيح، مصدرًا محتملاً للحرائق أو تُساهم في انتشارها بسرعة داخل المبنى. لذا، تُعد السلامة من الحرائق في أنظمة HVAC أمرًا بالغ الأهمية.
                     </p>
@@ -759,7 +800,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🧠</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">دور الذكاء الاصطناعي في التنبؤ بالحرائق والوقاية منها</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">دور الذكاء الاصطناعي في التنبؤ بالحرائق والوقاية منها</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-white leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
@@ -780,7 +821,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🌍</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">تأثير التغير المناخي على مخاطر الحرائق: تحديات متزايدة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">تأثير التغير المناخي على مخاطر الحرائق: تحديات متزايدة</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -798,12 +839,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="urban-planning" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏗️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">أهمية التخطيط العمراني المقاوم للحرائق</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">أهمية التخطيط العمراني المقاوم للحرائق</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         لا تقتصر مكافحة الحرائق على الاستجابة السريعة وإخماد النيران فحسب، بل تمتد لتشمل مرحلة التخطيط العمراني، حيث يُعد التصميم الحضري السليم للمدن والمجتمعات عاملًا حاسمًا في تقليل مخاطر الحرائق والحد من انتشارها. يُمكن للتخطيط العمراني المقاوم للحرائق أن يُحدث فرقًا كبيرًا في سلامة الأرواح والممتلكات.
                     </p>
@@ -822,7 +863,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏥</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">السلامة من الحرائق في المستشفيات والمرافق الصحية: تحديات خاصة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المستشفيات والمرافق الصحية: تحديات خاصة</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -840,12 +881,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="volunteer-firefighters" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🤝</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">دور المتطوعين في مكافحة الحرائق: قوة مجتمعية</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">دور المتطوعين في مكافحة الحرائق: قوة مجتمعية</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         في العديد من المجتمعات حول العالم، يُشكل المتطوعون جزءًا لا يتجزأ من منظومة مكافحة الحرائق، حيث يُقدمون دعمًا حيويًا لفرق الإطفاء المحترفة، خاصة في المناطق الريفية أو التي تُعاني من نقص الموارد. يُعكس عملهم روح التضحية، التعاون، والتكافل المجتمعي، ويُسهمون بشكل كبير في تعزيز قدرة المجتمع على الاستجابة لحالات الطوارئ.
                     </p>
@@ -864,7 +905,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏫</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">السلامة من الحرائق في المدارس والمؤسسات التعليمية: حماية مستقبلنا</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المدارس والمؤسسات التعليمية: حماية مستقبلنا</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -885,7 +926,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🍽️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">السلامة من الحرائق في المطاعم والمطابخ التجارية: تحديات فريدة</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المطاعم والمطابخ التجارية: تحديات فريدة</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-white leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
@@ -906,7 +947,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🖼️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">السلامة من الحرائق في المتاحف والمعارض الفنية: حماية التراث</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المتاحف والمعارض الفنية: حماية التراث</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -924,12 +965,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="sports-safety" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏟️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">السلامة من الحرائق في المنشآت الرياضية الكبرى: تحديات الحشود</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المنشآت الرياضية الكبرى: تحديات الحشود</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد المنشآت الرياضية الكبرى، مثل الملاعب والصالات الرياضية، أماكن تُشهد تجمعات حاشدة من الجماهير، مما يجعل السلامة من الحرائق فيها تحديًا فريدًا ومعقدًا. ففي حالات الطوارئ، تُصبح إدارة الحشود وتوجيهها نحو مخارج آمنة أمرًا بالغ الأهمية لضمان سلامة الآلاف من الأشخاص.
                     </p>
@@ -948,7 +989,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏨</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">السلامة من الحرائق في الفنادق والمنتجعات: ضمان راحة النزلاء</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في الفنادق والمنتجعات: ضمان راحة النزلاء</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -966,12 +1007,12 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
 
 
 <section id="heritage-safety" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
+            <div class=" rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🏛️</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">السلامة من الحرائق في المواقع التاريخية والتراثية: تحديات الحفاظ</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">السلامة من الحرائق في المواقع التاريخية والتراثية: تحديات الحفاظ</h2>
                 </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
+                <div class="prose prose-lg max-w-none text-black leading-relaxed">
                     <p class="text-xl mb-6 opacity-90">
                         تُعد المواقع التاريخية والتراثية كنوزًا ثقافية لا تُقدر بثمن، تُروي قصص الأجيال الماضية وتُشكل جزءًا لا يتجزأ من هويتنا. أي حريق في هذه المواقع يمكن أن يُسبب خسائر لا تُعوض، مما يجعل السلامة من الحرائق فيها أمرًا بالغ الأهمية ويتطلب تدابير خاصة ومتقدمة تُراعي طبيعة هذه المباني ومحتوياتها.
                     </p>
@@ -990,7 +1031,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
                 <div class="flex items-center mb-8">
                     <div class="text-4xl ml-4">🌟</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">خدماتنا في نظرة الإبداع</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#590d3d]">خدماتنا في نظرة الإبداع</h2>
                 </div>
                 <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                     <p class="text-xl mb-6 text-gray-600 font-medium">
@@ -1017,37 +1058,6 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             </div>
         </section>
 
-        <!-- Contact Us Section -->
-        <section id="contact-us" class="mb-16">
-            <div class="bg-gradient-to-r from-primary-color to-dark-color text-white rounded-2xl shadow-xl p-8 md:p-12 hover-lift">
-                <div class="flex items-center mb-8">
-                    <div class="text-4xl ml-4">📞</div>
-                    <h2 class="text-3xl md:text-4xl font-bold">تواصل معنا</h2>
-                </div>
-                <div class="prose prose-lg max-w-none text-white leading-relaxed">
-                    <p class="text-xl mb-6 opacity-90">
-                        هل لديك استفسارات أو تحتاج إلى استشارة حول أنظمة السلامة ومكافحة الحرائق؟ فريقنا المتخصص في شركة نظرة الإبداع على استعداد دائم لتقديم الدعم والمساعدة.
-                    </p>
-                    <p class="mb-6">
-                        يمكنك التواصل معنا عبر الطرق التالية:
-                    </p>
-                    <ul class="list-disc list-inside space-y-2 mb-6">
-                        <li>الهاتف: <a href="tel:+966500000000" class="text-white underline hover:text-light-color">+966 50 000 0000</a></li>
-                        <li>البريد الإلكتروني: <a href="mailto:info@nazretelebdaa.com" class="text-white underline hover:text-light-color">info@nazretelebdaa.com</a></li>
-                        <li>العنوان: الرياض، المملكة العربية السعودية</li>
-                    </ul>
-                    <p class="text-xl mb-6 opacity-90">
-                        أو يمكنك زيارة صفحة الاتصال بنا مباشرة على موقعنا الرئيسي:
-                    </p>
-                    <div class="text-center">
-                        <a href="https://nazretelebdaa.com/contact" target="_blank" class="inline-flex items-center bg-white text-primary-color px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            <span class="ml-2">✉️</span>
-                            صفحة الاتصال
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Company Highlight Section -->
         <section id="nazret-elebdaa" class="mb-16">
@@ -1148,8 +1158,8 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
         </section>
     </main>
 
-   <!-- Footer Section -->
-    <footer style="background-color: #A33642  " class="footer-gradient relative overflow-hidden">
+         <!-- Footer Section -->
+    <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
         <div class="footer-particles" id="footerParticles"></div>
         
         <div class="container mx-auto px-4 py-12 relative z-10">
@@ -1186,19 +1196,19 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
                 <!-- Quick Links -->
                 <div>
                     <h3 class="footer-section-title">روابط سريعة</h3>
-                    <a href="index.html" class="footer-link">
+                    <a href="../index.html" class="footer-link">
                         <i class="fas fa-home"></i>
                         الرئيسية
                     </a>
-                    <a href="#services" class="footer-link">
+                    <a href="../index.html#services" class="footer-link">
                         <i class="fas fa-cogs"></i>
                         خدماتنا
                     </a>
-                    <a href="#about" class="footer-link">
+                    <a href="../index.html#about" class="footer-link">
                         <i class="fas fa-users"></i>
                         من نحن
                     </a>
-                    <a href="#blogs" class="footer-link">
+                    <a href="../blogs/index.html" class="footer-link">
                         <i class="fas fa-blog"></i>
                         المدونة
                     </a>
@@ -1211,32 +1221,25 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
                 <!-- Services -->
                 <div>
                     <h3 class="footer-section-title">خدماتنا</h3>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-truck"></i>
                         نقل العفش
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-broom"></i>
                         خدمات التنظيف
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-tools"></i>
                         الصيانة العامة
                     </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-paint-roller"></i>
-                        أعمال الدهان
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-leaf"></i>
-                        تنسيق الحدائق
-                    </a>
+                   
                 </div>
 
                 <!-- Newsletter & Social Media -->
                 <div>
                     <h3 class="footer-section-title">ابق على تواصل</h3>
-                    <p class="text-white/80 mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
+                    <p class="text-white mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
                     
                     
 
@@ -1340,6 +1343,7 @@ PASS (Pull, Aim, Squeeze, Sweep) لضمان الفعالية القصوى في �
             observer.observe(section);
         });
     </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
 

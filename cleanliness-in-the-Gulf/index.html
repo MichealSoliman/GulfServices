@@ -6,12 +6,12 @@
     <title>النظافة في الخليج العربي: دليل شامل مع خدمات فريش كلين</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 
     <style>
-        body {
+         body {
              font-family: "Lama-sans";
             background-color: #faf9f7;
             color: #2d3748;
@@ -24,500 +24,77 @@
           
 
         }
-        .primary-color {
-            color: #590d3d;
-        }
-        .secondary-color {
-            color: #e8c468;
-        }
-        .bg-primary {
-            background-color: #590d3d;
-        }
-        .bg-primary-light {
-            background-color: #7d2456;
-        }
-        .bg-primary-lighter {
-            background-color: #a13b6f;
-        }
-        .bg-primary-lightest {
-            background-color: #c55288;
-        }
-        .bg-secondary {
-            background-color: #e8c468;
-        }
-        .border-primary {
-            border-color: #590d3d;
-        }
-        .border-secondary {
-            border-color: #e8c468;
-        }
-        .shadow-primary {
-            box-shadow: 0 4px 6px -1px rgba(89, 13, 61, 0.1), 0 2px 4px -1px rgba(89, 13, 61, 0.06);
-        }
-        .hover-primary:hover {
-            background-color: #590d3d;
-            color: white;
-        }
-        .article-content h2 {
-            color: #590d3d;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            margin-top: 3rem;
-            border-bottom: 3px solid #e8c468;
-            padding-bottom: 0.5rem;
-        }
-        .article-content h3 {
-            color: #590d3d;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-        }
-        .article-content h4 {
-            color: #7d2456;
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            margin-top: 1.5rem;
-        }
-        .article-content p {
-            margin-bottom: 1.5rem;
-            text-align: justify;
-        }
-        .article-content ul, .article-content ol {
-            margin-bottom: 1.5rem;
-            padding-right: 2rem;
-        }
-        .article-content li {
-            margin-bottom: 0.5rem;
-        }
-        .highlight-box {
-            background-color: #fef7e0;
-            border-right: 4px solid #e8c468;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0.5rem;
-        }
-        .service-card {
-            background: white;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(89, 13, 61, 0.1);
-            border: 1px solid #f1f5f9;
-            transition: all 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px -10px rgba(89, 13, 61, 0.15);
-        }
-        .icon-circle {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            background-color: #590d3d;
-            color: #e8c468;
-            font-size: 2rem;
-        }
-        .stats-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #590d3d;
-            line-height: 1;
-        }
-        .quote-box {
-            background: #590d3d;
-            color: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            margin: 2rem 0;
-            position: relative;
-        }
-        .quote-box::before {
-            content: '"';
-            font-size: 4rem;
-            color: #e8c468;
-            position: absolute;
-            top: -10px;
-            right: 20px;
-        }
-        .fresh-clean-highlight {
-            background: linear-gradient(135deg, #590d3d, #7d2456);
-            color: white;
-            padding: 3rem;
-            border-radius: 1rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-        .fresh-clean-highlight h3 {
-            color: #e8c468;
-            margin-bottom: 1rem;
-        }
-        .fresh-clean-highlight p {
-            color: #f8f9fa;
-            margin-bottom: 1.5rem;
-        }
-        .fresh-clean-highlight a {
-            background-color: #e8c468;
-            color: #590d3d;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin-top: 1rem;
-            transition: all 0.3s ease;
-        }
-        .fresh-clean-highlight a:hover {
-            background-color: #d4af5a;
-            transform: translateY(-2px);
-        }
-        .timeline-item {
-            position: relative;
-            padding-right: 2rem;
-            margin-bottom: 2rem;
-            border-right: 2px solid #e8c468;
-        }
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            right: -8px;
-            top: 0;
-            width: 16px;
-            height: 16px;
-            background-color: #590d3d;
-            border-radius: 50%;
-        }
-        .benefit-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        .benefit-item {
-            background: white;
-            padding: 2rem;
-            border-radius: 1rem;
-            border: 1px solid #e8c468;
-            transition: all 0.3s ease;
-        }
-        .benefit-item:hover {
-            background-color: #fef7e0;
-            transform: translateY(-3px);
-        }
-        .toc {
-            background: white;
-            border: 2px solid #e8c468;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 2rem 0;
-            position: sticky;
-            top: 2rem;
-        }
-        .toc h3 {
-            color: #590d3d;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-        .toc ul {
-            list-style: none;
-            padding: 0;
-        }
-        .toc li {
-            margin-bottom: 0.5rem;
-        }
-        .toc a {
-            color: #590d3d;
-            text-decoration: none;
-            display: block;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            transition: all 0.3s ease;
-        }
-        .toc a:hover {
-            background-color: #590d3d;
-            color: white;
-        }
-        .section-divider {
-            height: 4px;
-            background-color: #e8c468;
-            margin: 4rem 0;
-            border-radius: 2px;
-        }
-        .feature-comparison {
-            background: white;
-            border-radius: 1rem;
-            overflow: hidden;
-            box-shadow: 0 10px 25px -5px rgba(89, 13, 61, 0.1);
-            margin: 2rem 0;
-        }
-        .feature-comparison table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .feature-comparison th {
-            background-color: #590d3d;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .feature-comparison td {
-            padding: 1rem;
-            border-bottom: 1px solid #e2e8f0;
-            text-align: center;
-        }
-        .feature-comparison tr:nth-child(even) {
-            background-color: #fef7e0;
-        }
-        .checkmark {
-            color: #10b981;
-            font-size: 1.2rem;
-        }
-        .crossmark {
-            color: #ef4444;
-            font-size: 1.2rem;
-        }
-        .step-number {
-            background-color: #590d3d;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            margin-left: 1rem;
-            flex-shrink: 0;
-        }
-        .step-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px -1px rgba(89, 13, 61, 0.1);
-        }
-        .testimonial-card {
-            background: white;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 1rem 0;
-            border-right: 4px solid #e8c468;
-            box-shadow: 0 4px 6px -1px rgba(89, 13, 61, 0.1);
-        }
-        .testimonial-rating {
-            color: #e8c468;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .cta-section {
-            background: #590d3d;
-            color: white;
-            padding: 4rem 2rem;
-            border-radius: 1rem;
-            text-align: center;
-            margin: 4rem 0;
-        }
-        .cta-section h2 {
-            color: #e8c468;
-            margin-bottom: 2rem;
-        }
-        .cta-button {
-            background-color: #e8c468;
-            color: #590d3d;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-block;
-            margin: 0.5rem;
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            background-color: #d4af5a;
-            transform: translateY(-2px);
-        }
-        .environmental-impact {
-            background: #f0f9ff;
-            border: 2px solid #0284c7;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-        .environmental-impact h3 {
-            color: #0284c7;
-            margin-bottom: 1rem;
-        }
-        .health-benefits {
-            background: #f0fdf4;
-            border: 2px solid #16a34a;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-        .health-benefits h3 {
-            color: #16a34a;
-            margin-bottom: 1rem;
-        }
-        .technology-showcase {
-            background: #fef3c7;
-            border: 2px solid #f59e0b;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-        .technology-showcase h3 {
-            color: #f59e0b;
-            margin-bottom: 1rem;
-        }
-        .faq-item {
-            background: white;
-            border-radius: 1rem;
-            border: 1px solid #e2e8f0;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        .faq-question {
-            background-color: #590d3d;
-            color: white;
-            padding: 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .faq-question:hover {
-            background-color: #7d2456;
-        }
-        .faq-answer {
-            padding: 1.5rem;
-            background-color: #fef7e0;
-        }
-        /* .contact-info {
-            background: white;
-            border-radius: 1rem;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 4px 6px -1px rgba(89, 13, 61, 0.1);
-        } */
-        .contact-info h3 {
-            color: #590d3d;
-            margin-bottom: 1rem;
-        }
-        .contact-info a {
-            color: #590d3d;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .contact-info a:hover {
-            color: #7d2456;
-        }
-        .blog-meta {
-            background: #f8f9fa;
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        .blog-meta h1 {
-            color: #590d3d;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .blog-meta p {
-            color: #6b7280;
-            margin-bottom: 0.5rem;
-        }
-        .author-info {
-            background: white;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 2rem 0;
-            border: 1px solid #e2e8f0;
-        }
-        .author-info h3 {
-            color: #590d3d;
-            margin-bottom: 1rem;
-        }
-        .reading-time {
-            color: #e8c468;
-            font-weight: 600;
-            background-color: #590d3d;
-            padding: 0.5rem 1rem;
-            border-radius: 2rem;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-        .category-tag {
-            background-color: #e8c468;
-            color: #590d3d;
-            padding: 0.25rem 0.75rem;
-            border-radius: 1rem;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-left: 0.5rem;
-        }
-        .section-header {
-            text-align: center;
-            margin: 4rem 0 2rem 0;
-        }
-        .section-header h2 {
-            color: #590d3d;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        .section-header p {
-            color: #6b7280;
-            font-size: 1.125rem;
-        }
-        .fresh-clean-logo {
-            color: #e8c468;
-            font-weight: 700;
-            font-size: 1.5rem;
-        }
-        .footer-section {
-            background-color: #590d3d;
-            color: white;
-            padding: 4rem 2rem 2rem;
-            text-align: center;
-            margin-top: 4rem;
-        }
-        .footer-section h3 {
-            color: #e8c468;
-            margin-bottom: 1rem;
-        }
-        .footer-section a {
-            color: #e8c468;
-            text-decoration: none;
-        }
-        .footer-section a:hover {
-            color: #d4af5a;
-        }
-        .progress-bar {
-            background-color: #e8c468;
-            height: 4px;
-            border-radius: 2px;
-            margin: 1rem 0;
-        }
-        .progress-fill {
-            background-color: #590d3d;
-            height: 100%;
-            border-radius: 2px;
-            transition: width 0.3s ease;
-        }
     </style>
 </head>
 <body>
+
+
+       <navbar>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
+        </div>
+        <div class="mt-8">
+            <a href="tel:0565265233">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
+                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
+                        
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ml-5">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="../index.html" class="nav-link active">الرئيسية</a>
+                    <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
+                    
+                   
+                </div>
+                <a href="tel:0565265233">
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                    </a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </nav>
+</navbar>
     <!-- Header -->
-    <header class="bg-primary text-white py-8">
-        <div class="container mx-auto px-4">
+    <header class="bg-primary text-white py-20">
+        <div class="container mx-auto px-4 ">
             <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">
+                <h1 class="text-4xl font-bold mb-4 pt-5">
                     <i class="fas fa-sparkles secondary-color mr-3"></i>
                     النظافة في الخليج العربي
                 </h1>
@@ -2205,5 +1782,6 @@
             }
         });
     </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

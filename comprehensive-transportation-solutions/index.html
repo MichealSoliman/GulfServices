@@ -10,452 +10,89 @@
     
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+ 
      <!-- Tailwind CSS footer -->
      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Google Fonts - Arabic -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     
-    <style>
-          @font-face {
+   <style>
+       @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/LamaSans-Black.woff") format("woff");
           
 
         }
-        :root {
-            --primary-color: #940000;
-            --secondary-color: #ee200e;
-            --accent-color: #e74c3c;
-            --text-dark: #50392c;
-            --text-light: #7f8c8d;
-            --bg-light: #faf8f8;
-            --bg-white: #ffffff;
-            --border-color: #e6dede;
-            --success-color: #ae4627;
-            --bashir-color: #940000;
-            --competitor-color: #8b4513;
-        }
-        
-        * {
-           font-family: "Lama-sans";
-        }
-        
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.8;
-        }
-        
-        .hero-section {
-            background:var(--primary-color);
-            color: white;
-            padding: 80px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="1" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            opacity: 0.3;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.3rem;
-            font-weight: 300;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-        }
-        
-        .content-section {
-            background: var(--bg-white);
-            margin: 2rem 0;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .content-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        
-        .section-header {
-            background: linear-gradient(135deg, var(--primary-color));
-            color: white;
-            padding: 1.5rem 2rem;
-            margin: 0;
-            position: relative;
-        }
-        
-        .section-header.bashir-header {
-            background: var(--bashir-color);
-        }
-        
-        .section-header.competitor-header {
-            background:  var(--competitor-color);
-        }
-        
-        .section-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--secondary-color);
-        }
-        
-        .section-header h2 {
-            margin: 0;
-            font-size: 1.8rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .section-header i {
-            font-size: 1.5rem;
-            opacity: 0.9;
-        }
-        
-        .section-content {
-            padding: 2.5rem;
-        }
-        
-        .section-content h3 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-            border-right: 4px solid var(--secondary-color);
-            padding-right: 15px;
-        }
-        
-        .section-content h4 {
-            color: var(--text-dark);
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            font-size: 1.2rem;
-        }
-        
-        .section-content p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-            color: var(--text-dark);
-        }
-        
-        .section-content ul {
-            margin-bottom: 1.5rem;
-        }
-        
-        .section-content li {
-            margin-bottom: 0.8rem;
-            color: var(--text-dark);
-        }
-        
-        .section-content strong {
-            color: var(--primary-color);
-            font-weight: 600;
-        }
-        
-        .table-of-contents {
-            background: var(--bg-white);
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            position: sticky;
-            top: 20px;
-        }
-        
-        .table-of-contents h3 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-size: 1.3rem;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-        }
-        
-        .toc-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .toc-list li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .toc-list a {
-            color: var(--text-dark);
-            text-decoration: none;
-            display: block;
-            padding: 8px 15px;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        
-        .toc-list a:hover {
-            background: var(--primary-color);
-            color: white;
-            transform: translateX(-5px);
-        }
-        
-        .toc-list a i {
-            margin-left: 10px;
-            color: var(--secondary-color);
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-right: 5px solid var(--accent-color);
-        }
-        
-        .highlight-box h4 {
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-        }
-        
-        .info-card {
-            background: var(--bg-white);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .info-card:hover {
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
-        }
-        
-        .info-card h5 {
-            color: var(--primary-color);
-            font-weight: 600;
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .info-card i {
-            color: var(--secondary-color);
-        }
-        
-        .bashir-card {
-            background: linear-gradient(135deg, #f8fff8, #e8f5e8);
-            border: 2px solid var(--bashir-color);
-            border-radius: 15px;
-            padding: 2rem;
-            margin: 1.5rem 0;
-            box-shadow: 0 5px 20px rgba(44, 85, 48, 0.1);
-        }
-        
-        .bashir-card h5 {
-            color: var(--bashir-color);
-            font-weight: 700;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .bashir-card .btn {
-            background: var(--bashir-color);
-            border: none;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-        
-        .bashir-card .btn:hover {
-            background: #1e3c24;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(44, 85, 48, 0.3);
-        }
-        
-        .competitor-card {
-            background: linear-gradient(135deg, #fdf8f0, #f4ede0);
-            border: 2px solid var(--competitor-color);
-            border-radius: 15px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            box-shadow: 0 3px 15px rgba(139, 69, 19, 0.1);
-        }
-        
-        .competitor-card h5 {
-            color: var(--competitor-color);
-            font-weight: 600;
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .competitor-card a {
-            color: var(--competitor-color);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .competitor-card a:hover {
-            color: #654321;
-            text-decoration: underline;
-        }
-        
-        .footer {
-            background: linear-gradient(135deg, var(--text-dark), #34495e);
-            color: white;
-            padding: 3rem 0;
-            margin-top: 4rem;
-        }
-        
-        .footer h4 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .footer p {
-            opacity: 0.8;
-            line-height: 1.6;
-        }
-        
-        .scroll-to-top {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: var(--primary-color);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-        
-        .scroll-to-top:hover {
-            background: var(--secondary-color);
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        }
-        
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .section-content {
-                padding: 1.5rem;
-            }
-            
-            .table-of-contents {
-                position: static;
-                margin-bottom: 1rem;
-            }
-        }
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .timeline {
-            position: relative;
-            margin-top: 40px;
-            padding-right: 20px;
-            border-right: 3px solid #940000;
-        }
-
-        .timeline-step {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 35px;
-            position: relative;
-        }
-
-        .circle-icon {
-            width: 50px;
-            height: 50px;
-            background: #940000;
-            color: white;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 50px;
-            font-size: 20px;
-            margin-left: 15px;
-            flex-shrink: 0;
-        }
-
-        .step-content h5 {
-            margin: 0;
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 8px;
-        }
-
-        .step-content p {
-            color: #555;
-            font-size: 15px;
-            margin: 0;
-        }
-    </style>
+   </style>
 </head>
 <body>
+
+            <navbar class="">
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
+        </div>
+        <div class="mt-8">
+            <a href="tel:0565265233">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
+            </button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
+                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
+                        
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ml-5">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="../index.html" class="nav-link active">الرئيسية</a>
+                    <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
+                    
+                   
+                </div>
+                <a href="tel:0565265233">
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                    </a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </nav>
+</navbar>
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
+    <section class="hero-section ">
+        <div class="container py-20">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center hero-content">
                     <h1 class="hero-title">
@@ -480,11 +117,11 @@
 
     <!-- Main Content -->
     <div class="container my-5" id="content">
-        <div class="row">
+        <div class="row ">
             <!-- Table of Contents -->
             <div class="col-lg-3">
-                <div class="table-of-contents">
-                    <h3><i class="fas fa-list"></i> فهرس المحتويات</h3>
+                <div class="table-of-contents ">
+                    <h3><i class="fas fa-list "></i> فهرس المحتويات</h3>
                     <ul class="toc-list">
                         <li><a href="#introduction"><i class="fas fa-home"></i>المقدمة</a></li>
                         <li><a href="#bashir-company"><i class="fas fa-star"></i>شركة Bashir Mover</a></li>
@@ -507,7 +144,7 @@
             <!-- Main Content -->
             <div class="col-lg-9">
                 <!-- Introduction Section -->
-                <div class="content-section fade-in" id="introduction">
+                <div class="content-section fade-in " id="introduction">
                     <div class="section-header">
                         <h2><i class="fas fa-home"></i>مقدمة: أهمية نقل العفش الاحترافي في الكويت</h2>
                     </div>
@@ -1345,8 +982,8 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer style="background-color: #580909  " class="footer-gradient relative overflow-hidden">
+        <!-- Footer Section -->
+    <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
         <div class="footer-particles" id="footerParticles"></div>
         
         <div class="container mx-auto px-4 py-12 relative z-10">
@@ -1383,19 +1020,19 @@
                 <!-- Quick Links -->
                 <div>
                     <h3 class="footer-section-title">روابط سريعة</h3>
-                    <a href="index.html" class="footer-link">
+                    <a href="../index.html" class="footer-link">
                         <i class="fas fa-home"></i>
                         الرئيسية
                     </a>
-                    <a href="#services" class="footer-link">
+                    <a href="../index.html#services" class="footer-link">
                         <i class="fas fa-cogs"></i>
                         خدماتنا
                     </a>
-                    <a href="#about" class="footer-link">
+                    <a href="../index.html#about" class="footer-link">
                         <i class="fas fa-users"></i>
                         من نحن
                     </a>
-                    <a href="#blogs" class="footer-link">
+                    <a href="../blogs/index.html" class="footer-link">
                         <i class="fas fa-blog"></i>
                         المدونة
                     </a>
@@ -1408,32 +1045,25 @@
                 <!-- Services -->
                 <div>
                     <h3 class="footer-section-title">خدماتنا</h3>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-truck"></i>
                         نقل العفش
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-broom"></i>
                         خدمات التنظيف
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-tools"></i>
                         الصيانة العامة
                     </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-paint-roller"></i>
-                        أعمال الدهان
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-leaf"></i>
-                        تنسيق الحدائق
-                    </a>
+                   
                 </div>
 
                 <!-- Newsletter & Social Media -->
                 <div>
                     <h3 class="footer-section-title">ابق على تواصل</h3>
-                    <p class="text-white/80 mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
+                    <p class="text-white mb-4 font-montserrat">اشترك في نشرتنا الإخبارية للحصول على آخر العروض والنصائح</p>
                     
                     
 
@@ -1553,5 +1183,6 @@
             });
         });
     </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

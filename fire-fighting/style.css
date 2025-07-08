@@ -1,0 +1,35 @@
+ <style>
+            @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+           
+            
+          
+
+        }
+        body {
+             font-family: "Lama-sans";
+        }
+        .gradient-bg {
+            background: #590d3d;
+        }
+        .fire-animation {
+            animation: none;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        .section-divider {
+            background:rgb(121, 111, 113);
+            height: 2px;
+        }
+        .company-highlight {
+           background:rgb(139, 131, 132);
+        }
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+    </style>
