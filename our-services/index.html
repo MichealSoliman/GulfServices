@@ -52,18 +52,17 @@
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <style>
-         @font-face {
+   <style>
+      @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+            src: url("./assets/font/LamaSans-Black.woff") format("woff");
             
 
         }
        *{
         font-family: "Lama-sans";
-        src: url("../assets/font/LamaSans-Black.woff") format("woff");
+        src: url("./assets/font/LamaSans-Black.woff") format("woff");
        }
         
    </style>
@@ -77,9 +76,8 @@
     <div class="mobile-menu" id="mobileMenu">
         <div class="space-y-6">
             <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
-            <a href="../index.html#services"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
             <a href="../index.html#about" style=" color: #e8c468" class="block text-silver-mist hover:text-pure-white transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20"> من نحن</a>
-        
         </div>
         <div class="mt-8">
             <a href="tel:0565265233">
@@ -105,8 +103,8 @@
                 
                 <div class="hidden lg:flex space-x-8 space-x-reverse">
                     <a href="../index.html" class="nav-link active">الرئيسية</a>
-                    <a href="../index.html#services" class="nav-link">خدماتنا</a>
-                    
+                   
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
                     <a href="../index.html#about" class="nav-link"> من نحن</a>
                    
                 </div>
@@ -134,58 +132,75 @@
 
 
 
-    <!-- Blog Section -->
-    <section id="blogs" class="section-padding bg-gradient-to-br from-light-silver to-pure-white relative overflow-hidden">
-        <div class="blog-particles" id="blogParticles"></div>
-        <div class="container-custom relative z-10">
-            <!-- Blog Header -->
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold text-luxury mb-6 font-luxury">مدونة المشاريع</h2>
-                <p class="text-xl text-yellow-600 opacity-80 max-w-3xl mx-auto font-elegant leading-relaxed">
-                    اكتشف قصص نجاح مشاريعنا ونصائح الخبراء في عالم الخدمات المنزلية الفاخرة
-                </p>
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-light-silver m-5">
+          <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-charcoal mb-6 font-luxury">
+                    خدماتنا <span class="text-[#590d3d]">المميزة</span>
+                </h2>
+                <p class="text-black text-xl font-bold">نقدم مجموعة متنوعة من الخدمات المنزلية والتجارية بأعلى معايير الجودة والاحترافية مع لمسة من الفخامة</p>
             </div>
-
-            <!-- Moving Services Section -->
-            <div class="blog-section">
-                <div class="section-header">
-                    <h3><i class="fas fa-truck ml-2"></i>خدمات نقل العفش</h3>
-                    <p>مشاريع نقل العفش المتميزة وقصص النجاح في جميع أنحاء الخليج</p>
-                </div>
-                <div class="cards-grid" id="movingCards">
-                    <!-- Moving service cards will be inserted here -->
-                </div>
+        <div class="container-custom p-5">
+          
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="servicesGrid">
+                <!-- Services will be loaded here by JavaScript -->
             </div>
-
-            <!-- Cleaning Services Section -->
-            <div class="blog-section">
-                <div class="section-header">
-                    <h3><i class="fas fa-broom ml-2"></i>خدمات التنظيف</h3>
-                    <p>مشاريع التنظيف الشاملة والتقنيات الحديثة المستخدمة</p>
-                </div>
-                <div class="cards-grid" id="cleaningCards">
-                    <!-- Cleaning service cards will be inserted here -->
-                </div>
-            </div>
-
-            <!-- Maintenance Services Section -->
-            <div class="blog-section">
-                <div class="section-header">
-                    <h3><i class="fas fa-tools ml-2"></i>خدمات الصيانة</h3>
-                    <p>مشاريع الصيانة المتخصصة والحلول التقنية المبتكرة</p>
-                </div>
-                <div class="cards-grid" id="maintenanceCards">
-                    <!-- Maintenance service cards will be inserted here -->
-                </div>
+            
+            <div class="text-center mt-12">
+                <button class="rose-btn text-lg px-8 py-4" id="loadMoreServices">
+                    <i class="fas fa-plus ml-2"></i>
+                    عرض المزيد من الخدمات الفاخرة
+                </button>
             </div>
         </div>
     </section>
+
+
+
+
 
    
 
 
     
-  
+    <!-- Contact Section -->
+    <section class="section-padding bg-pure-white">
+        <div class="container-custom">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-yellow-600 mb-6 font-luxury">
+                    تواصل <span class="text-luxury">معنا</span>
+                </h2>
+                <p class="text-silver-mist text-xl font-elegant">نحن هنا لخدمتك في أي وقت بأعلى معايير الفخامة</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">اتصل بنا</h3>
+                    <p class="text-silver-mist text-lg font-elegant">0565265233</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">راسلنا</h3>
+                    <p class="text-silver-mist text-lg font-elegant">info@gulf-services.com</p>
+                </div>
+                
+                <div class="luxury-card text-center p-8">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">موقعنا</h3>
+                    <p class="text-silver-mist text-lg font-elegant">جميع دول الخليج العربي</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
       <!-- Footer Section -->
     <footer class="footer-gradient relative overflow-hidden">
@@ -312,9 +327,9 @@
                 </p>
             </div>
         </div>
-        
-
-    <script src="./blog.js"></script>
+    </footer>
+<img src="../assets/images/" alt="">
+    <script src="./services.js"></script>
 </body>
 </html>
 

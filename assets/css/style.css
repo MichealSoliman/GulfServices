@@ -9,7 +9,13 @@
             --light-silver: #ECF0F1;
             --deep-petroleum: #590d3d;
             --warm-rose: #e8c468;
-              
+
+  
+        }
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
          @font-face {
             font-family: "Lama-sans";
@@ -317,29 +323,8 @@
      
 /* blogs */
      <style>
-        :root {
-            --charcoal: #2C3E50;
-            --silver-mist: #BDC3C7;
-            --petroleum: #1ABC9C;
-            --deep-petroleum: #16A085;
-            --rose-gold: #E74C3C;
-            --warm-rose: #C0392B;
-            --light-silver: #ECF0F1;
-            --pure-white: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background: linear-gradient(135deg, var(--light-silver), var(--pure-white));
-            min-height: 100vh;
-            color: var(--charcoal);
-        }
+ 
+   
 
         .container-custom {
             max-width: 1200px;
@@ -596,36 +581,17 @@
                 font-size: 1rem;
             }
         }
-    </styl>
+    </style>
 
 
 
+   
+        
+      
 
-    <!-- footer -->
-        <style>
-        :root {
-            --charcoal: #2C3E50;
-            --silver-mist: #BDC3C7;
-            --petroleum: #1ABC9C;
-            --deep-petroleum: #16A085;
-            --rose-gold: #E74C3C;
-            --warm-rose: #C0392B;
-            --light-silver: #ECF0F1;
-            --pure-white: #FFFFFF;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Tajawal', sans-serif;
-            background: linear-gradient(135deg, var(--light-silver), var(--pure-white));
-            min-height: 100vh;
-            color: var(--charcoal);
-        }
+      
+   style {
+          }
 
         .footer-gradient {
             background:  var(--deep-petroleum);

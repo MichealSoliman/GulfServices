@@ -1,0 +1,244 @@
+
+          @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+          
+
+        }
+        * {
+            font-family: "Lama-sans";
+        }
+        
+        .hero-section {
+            background: #590d3d;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .primary-color {
+            color: #590d3d;
+        }
+        
+        .bg-primary {
+            background-color: #590d3d;
+        }
+        
+        .border-primary {
+            border-color: #590d3d;
+        }
+        
+        .hover-primary:hover {
+            background-color: #590d3d;
+        }
+        
+        .btn-primary {
+            background-color: #590d3d;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #590d3d;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            color: #590d3d;
+            font-weight: 700;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #590d3d;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .card-custom {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 2px solid #f3f4f6;
+            transition: all 0.3s ease;
+        }
+        
+        .card-custom:hover {
+            border-color: #590d3d;
+            transform: translateY(-5px);
+        }
+        
+        .icon-box {
+            background: #590d3d;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+        }
+        
+        .stats-card {
+            background: #590d3d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .highlight-box {
+            background: #590d3d;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            color: white;
+        }
+        
+        .quote-box {
+            background: #f9fafb;
+            border-right: 5px solid #590d3d;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            border-radius: 8px;
+        }
+        
+        .naqaa-link {
+            color: #590d3d;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .naqaa-link:hover {
+            border-bottom-color: #590d3d;
+        }
+        
+        .chapter-header {
+            background: #590d3d;
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 50px 0 30px 0;
+            text-align: center;
+        }
+        
+        .sub-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .list-custom {
+            list-style: none;
+            padding-right: 0;
+        }
+        
+        .list-custom li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f3f4f6;
+            position: relative;
+            padding-right: 30px;
+        }
+        
+        .list-custom li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #590d3d;
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+        
+        .footer-section {
+            background: #1f2937;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .table-custom th,
+        .table-custom td {
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            text-align: right;
+        }
+        
+        .table-custom th {
+            background: #590d3d;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .importance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .importance-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid #f3f4f6;
+            transition: all 0.3s ease;
+        }
+        
+        .importance-item:hover {
+            border-color: #590d3d;
+            transform: translateY(-5px);
+        }
+        
+        .company-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 2px solid #f3f4f6;
+            transition: all 0.3s ease;
+        }
+        
+        .company-card:hover {
+            border-color: #590d3d;
+            transform: translateY(-3px);
+        }
+        
+        .naqaa-banner {
+            background: #590d3d;
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+    
