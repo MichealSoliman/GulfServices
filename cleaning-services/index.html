@@ -34,7 +34,7 @@
     <meta name="twitter:site" content="@YourTwitterHandle">
         <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <!-- Tailwind CSS footer -->
@@ -43,10 +43,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="./style.css">
     <style>
-          @font-face {
+         @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/LamaSans-Black.woff") format("woff");
           
@@ -55,365 +54,75 @@
         * {
              font-family: "Lama-sans";
         }
-        
-        body {
-            line-height: 1.8;
-            color: #2c3e50;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-        
-        .section-title {
-            color: #2c3e50;
-            font-weight: 700;
-            margin-bottom: 30px;
-            position: relative;
-            padding-bottom: 15px;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            transform: translateX(50%);
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(45deg, #0D9488, #55d4c9);
-        }
-        
-        .content-section {
-            padding: 60px 0;
-        }
-        
-        .content-section:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        
-        .feature-box {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .feature-box:hover {
-            transform: translateY(-10px);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            color: #0D9488;
-            margin-bottom: 20px;
-        }
-        
-        .stats-box {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            color: white;
-            border-radius: 15px;
-            padding: 40px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .stats-number {
-            font-size: 3rem;
-            font-weight: 900;
-            display: block;
-        }
-        
-        .highlight-text {
-            background: linear-gradient(135deg, #0D9488, #55d4c9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-        }
-        
-        .quote-box {
-            background: #f8f9fa;
-            border-right: 5px solid #0D9488;
-            padding: 30px;
-            margin: 30px 0;
-            border-radius: 10px;
-            font-style: italic;
-            font-size: 1.1rem;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-card-header {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-        
-        .service-card-body {
-            padding: 30px;
-        }
-        
-        .environmental-section {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            color: white;
-            padding: 80px 0;
-        }
-        
-        .navbar-custom {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            color: #667eea !important;
-        }
-        
-        .btn-custom {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            border: none;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
-            font-weight: 600;
-            transition: transform 0.3s ease;
-        }
-        
-        .btn-custom:hover {
-            transform: translateY(-2px);
-            color: white;
-        }
-        
-        .table-custom {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .table-custom thead {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            color: white;
-        }
-        
-        .accordion-custom .accordion-button {
-            background: #f8f9fa;
-            border: none;
-            border-radius: 10px !important;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-        
-        .accordion-custom .accordion-button:not(.collapsed) {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            color: white;
-        }
-        
-        .accordion-custom .accordion-body {
-            background: white;
-            border-radius: 0 0 10px 10px;
-        }
-        
-        .timeline {
-            position: relative;
-            padding: 20px 0;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            right: 50%;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #0D9488;
-        }
-        
-        .timeline-item {
-            position: relative;
-            margin: 30px 0;
-        }
-        
-        .timeline-content {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            width: 45%;
-        }
-        
-        .timeline-item:nth-child(odd) .timeline-content {
-            margin-right: 55%;
-        }
-        
-        .timeline-item:nth-child(even) .timeline-content {
-            margin-left: 55%;
-        }
-        
-        .timeline-icon {
-            position: absolute;
-            right: 50%;
-            top: 50%;
-            transform: translate(50%, -50%);
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-        }
-        
-        .progress-custom {
-            height: 10px;
-            border-radius: 5px;
-            background: #e9ecef;
-        }
-        
-        .progress-bar-custom {
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            border-radius: 5px;
-        }
-        
-        .footer-custom {
-            background: #2c3e50;
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-section h5 {
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-section ul li a {
-            color: #bdc3c7;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-section ul li a:hover {
-            color: white;
-        }
-        
-        .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background: #0D9488;
-            color: white;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 50%;
-            margin-left: 10px;
-            transition: transform 0.3s ease;
-        }
-        
-        .social-icons a:hover {
-            transform: translateY(-3px);
-            color: white;
-        }
-
-        /* إضافة أنماط للشركات ذات الصلة */
-        .partner-card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-        
-        .partner-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .partner-logo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #0D9488 0%, #55d4c9 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            color: white;
-            font-size: 2rem;
-        }
-        
-        @media (max-width: 768px) {
-            .timeline::before {
-                right: 30px;
-            }
-            
-            .timeline-content {
-                width: 80%;
-                margin-right: 60px !important;
-                margin-left: 60px !important;
-            }
-            
-            .timeline-icon {
-                right: 30px;
-                transform: translate(50%, -50%);
-            }
-        }
     </style>
+   
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-spray-can"></i> خدمات التنظيف الرياض</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+   <navbar>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="space-y-6">
+            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
+            <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
+            <a href="../Blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
+        </div>
+        <div class="mt-8">
+            <a href="tel:0565265233">
+            <button class="luxury-btn w-full">
+                <i class="fas fa-phone ml-2"></i>
+                اتصل بنا الآن
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#main-site">الموقع الرئيسي</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#our-services">خدماتنا</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">خدمات شاملة</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#partners">شركاء النجاح</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#importance">الأهمية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#environment">البيئة</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#government">الدعم الحكومي</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">اتصل بنا</a></li>
-                </ul>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 w-full z-50">
+        <div class="container-custom">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
+                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
+                        
+                    </div>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ml-5">خدمات الخليج</a>
+                </div>
+                
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="../index.html" class="nav-link active">الرئيسية</a>
+                    <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                    <a href="../Blogs/index.html" class="nav-link"> مدونة </a>
+                    
+                   
+                </div>
+                <a href="tel:0565265233">
+                <div class="hidden lg:block">
+                    <button class="luxury-btn">
+                        <i class="fas fa-phone ml-2"></i>
+                        اتصل بنا
+                    </button>
+                    </a>
+                </div>
+                
+                <div class="lg:hidden">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
+       
     </nav>
+</navbar>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container">
+        <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="display-3 fw-bold mb-4">خدمات التنظيف المهنية في الرياض</h1>
@@ -1013,8 +722,8 @@
                         <div class="row">
                             <div class="col-md-6 mb-4">
                                 <h5><i class="fas fa-phone text-primary me-2"></i>الهاتف</h5>
-                                <p>+966 11 123 4567</p>
-                                <p>+966 50 123 4567</p>
+                                <p>0565265233</p>
+                                <p>0563009155</p>
                             </div>
                             
                             <div class="col-md-6 mb-4">
@@ -1034,21 +743,13 @@
                             </div>
                         </div>
                         
-                        <div class="text-center mt-4">
-                            <div class="social-icons">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                            </div>
-                        </div>
+                        
                         
                         <div class="text-center mt-4">
                             <a href="https://cleanplusteam.com/" target="_blank" class="btn btn-custom btn-lg me-3">
                                 <i class="fas fa-external-link-alt me-2"></i>زيارة الموقع الرئيسي
                             </a>
-                            <a href="#home" class="btn btn-outline-primary btn-lg">
+                            <a href="#home" class="btn btn-custom btn-lg">
                                 <i class="fas fa-arrow-up me-2"></i>العودة للأعلى
                             </a>
                         </div>
@@ -1059,7 +760,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer style="background-color: #0D9488  " class="footer-gradient relative overflow-hidden">
+    <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
         <div class="footer-particles" id="footerParticles"></div>
         
         <div class="container mx-auto px-4 py-12 relative z-10">
@@ -1096,19 +797,19 @@
                 <!-- Quick Links -->
                 <div>
                     <h3 class="footer-section-title">روابط سريعة</h3>
-                    <a href="index.html" class="footer-link">
+                    <a href="../index.html" class="footer-link">
                         <i class="fas fa-home"></i>
                         الرئيسية
                     </a>
-                    <a href="#services" class="footer-link">
+                    <a href="../index.html#services" class="footer-link">
                         <i class="fas fa-cogs"></i>
                         خدماتنا
                     </a>
-                    <a href="#about" class="footer-link">
+                    <a href="../index.html#about" class="footer-link">
                         <i class="fas fa-users"></i>
                         من نحن
                     </a>
-                    <a href="#blogs" class="footer-link">
+                    <a href="../blogs/index.html" class="footer-link">
                         <i class="fas fa-blog"></i>
                         المدونة
                     </a>
@@ -1121,26 +822,19 @@
                 <!-- Services -->
                 <div>
                     <h3 class="footer-section-title">خدماتنا</h3>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-truck"></i>
                         نقل العفش
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-broom"></i>
                         خدمات التنظيف
                     </a>
-                    <a href="#" class="footer-link">
+                    <a href="../index.html#blogs" class="footer-link">
                         <i class="fas fa-tools"></i>
                         الصيانة العامة
                     </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-paint-roller"></i>
-                        أعمال الدهان
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-leaf"></i>
-                        تنسيق الحدائق
-                    </a>
+                   
                 </div>
 
                 <!-- Newsletter & Social Media -->
@@ -1224,6 +918,7 @@
             });
         });
     </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>
 
