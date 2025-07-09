@@ -3,260 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صيانة وتعديل المكيفات - دليلك الشامل</title>
+    <title>دليل شامل لصيانة وتعديل المكيفات - آيرون كول</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    
-    <style>
-        @font-face {
-            font-family: "Lama-sans";
-             src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
-        }
-
-        :root {
-            --primary-color: #590d3d;
-            --secondary-color: #e8c468;
-            --text-dark: #2d3748;
-            --text-light: #718096;
-            --background-light: #590d3d;
-        }
-
-        body {
-            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        .primary-bg {
-            background-color: var(--primary-color);
-        }
-
-        .secondary-bg {
-            background-color: var(--secondary-color);
-        }
-
-        .primary-color {
-            color: var(--primary-color);
-        }
-
-        .secondary-color {
-            color: var(--secondary-color);
-        }
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-3px);
-        }
-
-        .fade-in {
-            animation: fadeIn 0.6s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
-
-        @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #4a0b31;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            transition: all 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background-color: #ddb355;
-            transform: translateY(-2px);
-        }
-
-        .section-divider {
-            background-color: #e2e8f0;
-            height: 1px;
-            margin: 3rem 0;
-        }
-
-        .text-primary {
-            color: var(--primary-color);
-        }
-
-        .text-secondary {
-            color: var(--secondary-color);
-        }
-
-        .border-primary {
-            border-color: var(--primary-color);
-        }
-
-        .border-secondary {
-            border-color: var(--secondary-color);
-        }
-
-        .bg-primary-light {
-            background-color: rgba(89, 13, 61, 0.1);
-        }
-
-        .bg-secondary-light {
-            background-color: rgba(232, 196, 104, 0.1);
-        }
-
-        .logo-section {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .company-logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .company-tagline {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 1.1rem;
-        }
-
-        .footer-section-title {
-            color: var(--secondary-color);
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.75rem;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .contact-info i {
-            color: var(--secondary-color);
-            margin-left: 0.75rem;
-            width: 1.25rem;
-        }
-
-        .footer-link {
-            display: flex;
-            align-items: center;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            margin-bottom: 0.5rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-link:hover {
-            color: var(--secondary-color);
-        }
-
-        .footer-link i {
-            margin-left: 0.5rem;
-            width: 1rem;
-        }
-
-        .social-icon {
-            width: 2.5rem;
-            height: 2.5rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .social-icon.facebook {
-            background-color: #1877f2;
-            color: white;
-        }
-
-        .social-icon.twitter {
-            background-color: #1da1f2;
-            color: white;
-        }
-
-        .social-icon.instagram {
-            background-color: #e4405f;
-            color: white;
-        }
-
-        .social-icon.tiktok {
-            background-color: #000000;
-            color: white;
-        }
-
-        .social-icon.whatsapp {
-            background-color: #25d366;
-            color: white;
-        }
-
-        .social-icon:hover {
-            transform: translateY(-2px);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 2rem;
-            padding-top: 2rem;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .footer-bottom a {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
-
-        .footer-bottom a:hover {
-            color: white;
-        }
-
-        @media print {
-            * {
-                print-color-adjust: exact !important;
-                -webkit-print-color-adjust: exact !important;
-            }
-            
-            body {
-                font-size: 12px;
-            }
-            
-            .floating {
-                animation: none;
-            }
-            
-            .card-hover:hover {
-                transform: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+   
 </head>
 <body class="bg-gray-50">
-<navbar>
+    <navbar>
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     
@@ -317,63 +71,130 @@
        
     </nav>
 </navbar>
-
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center primary-bg">
-        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-            <div class="floating">
-                <svg class="w-24 h-24 mx-auto mb-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-                </svg>
-            </div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">
-                صيانة وتعديل المكيفات
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 text-secondary fade-in">
-                دليلك الشامل للحفاظ على برودة منزلك وكفاءة جهازك
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
-                <button class="btn-primary px-8 py-4 rounded-full text-lg font-semibold">
-                    ابدأ القراءة
-                </button>
-            </div>
-        </div>
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-            </svg>
-        </div>
-    </section>
-
-    <!-- Introduction -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">مقدمة</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-            </div>
-            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <p class="text-xl mb-8 text-center text-gray-600">
-                    في عالمنا اليوم، حيث أصبحت درجات الحرارة ترتفع بشكل ملحوظ، لم يعد تكييف الهواء مجرد رفاهية، بل أصبح ضرورة ملحة في كل منزل ومكتب.
-                </p>
-                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
-                    <div>
-                        <p class="mb-6">
-                            ومع الاعتماد المتزايد على أجهزة التكييف، تبرز أهمية الصيانة الدورية والتعديلات اللازمة لضمان أدائها الأمثل، إطالة عمرها الافتراضي، وتوفير الطاقة. فالمكيف الذي يعمل بكفاءة لا يضمن لك بيئة مريحة ومنعشة فحسب، بل يساهم أيضاً في تقليل فواتير الكهرباء وحماية البيئة.
-                        </p>
-                        <p>
-                            هذا الدليل الشامل سيأخذك في رحلة متعمقة لاستكشاف كل ما يتعلق بصيانة وتعديل المكيفات، بدءاً من أساسيات عملها، مروراً بأنواعها المختلفة، وصولاً إلى الأعطال الشائعة وكيفية التعامل معها.
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <img src="https://ironcool.net/img/carousel-2.jpg" alt="صيانة المكيفات" class="rounded-lg w-full h-64 object-cover">
-                    </div>
+    Header
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">الدليل الشامل لصيانة وتعديل المكيفات</h1>
+                <p class="text-xl mb-6">خدمات متخصصة وحلول احترافية لأنظمة التكييف في المملكة العربية السعودية</p>
+                <div class="flex justify-center items-center space-x-4 space-x-reverse">
+                    <i class="fas fa-snowflake text-secondary text-3xl"></i>
+                    <a href="https://ironcool.net/">
+                        <span class="text-lg hover:underline hover:text-blue-400"> 
+                        آيرون كول</span>
+                    </a>
+                        </a>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Importance Section -->
+    
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        
+        <!-- Introduction Section -->
+        <section id="intro" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">صيانة وتعديل المكيفات في المملكة العربية السعودية</h2>
+                
+                <p class="text-lg mb-6 leading-relaxed">
+                    تشهد المملكة العربية السعودية تطوراً مستمراً في مجال خدمات التكييف والتبريد، حيث أصبحت الشركات المتخصصة توفر حلولاً متكاملة تلبي احتياجات المواطنين والمقيمين في ظل الظروف المناخية القاسية. تعتبر خدمات صيانة وتعديل المكيفات من أهم الخدمات التي يحتاجها أي منزل أو منشأة في المملكة لضمان الراحة والكفاءة العالية.
+                </p>
+                
+                <p class="text-lg mb-6 leading-relaxed">
+                    في هذا الدليل الشامل، سنتناول بالتفصيل جميع المعلومات التي تحتاج إلى معرفتها عن صيانة وتعديل المكيفات، بما في ذلك أفضل الممارسات، النصائح المهمة، والشركات الرائدة في هذا المجال. سواء كنت تبحث عن صيانة دورية لمكيفك، أو تعديل نظام التكييف الحالي، أو تركيب نظام جديد، ستجد في هذا الدليل كل ما تحتاج إليه من معلومات وإرشادات عملية.
+                </p>
+                
+                <div class="highlight-box">
+                    <h3 class="text-xl font-bold text-primary mb-3">لماذا تحتاج إلى خدمات صيانة مكيفات احترافية؟</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                            <span><strong>الكفاءة والأداء:</strong> تضمن الصيانة الدورية عمل المكيف بأعلى كفاءة وتوفير استهلاك الطاقة</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                            <span><strong>إطالة العمر الافتراضي:</strong> تساعد الصيانة المنتظمة في إطالة عمر المكيف وتجنب الأعطال المفاجئة</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                            <span><strong>جودة الهواء:</strong> تحافظ على جودة الهواء الداخلي وتقلل من الغبار والبكتيريا</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                            <span><strong>توفير التكاليف:</strong> تساعد في تجنب الإصلاحات المكلفة والاستبدال المبكر</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p class="text-lg leading-relaxed">
+                    تعد خدمات صيانة وتعديل المكيفات جزءاً أساسياً من جودة الحياة في المملكة العربية السعودية، ومع الارتفاع المستمر في درجات الحرارة، أصبح الاعتماد على شركات متخصصة مثل آيرون كول هو الخيار الأمثل لضمان خدمة احترافية وموثوقة.
+                </p>
+            </div>
+        </section>
+
+        <!-- Importance Section -->
+        <section id="importance" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">أهمية أنظمة التكييف في المناخ السعودي</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="feature-card">
+                        <div class="icon-box bg-primary text-white">
+                            <i class="fas fa-thermometer-half text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">التحكم في درجة الحرارة</h3>
+                        <p class="text-gray-700">
+                            مع درجات الحرارة التي تتجاوز 45 درجة مئوية في فصل الصيف، تصبح أنظمة التكييف ضرورية للحفاظ على بيئة داخلية مريحة وصحية للسكان.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-box bg-secondary text-white">
+                            <i class="fas fa-leaf text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">جودة الهواء</h3>
+                        <p class="text-gray-700">
+                            تساعد أنظمة التكييف المتطورة في تنقية الهواء من الغبار والملوثات والرطوبة الزائدة، مما يحسن من جودة الهواء الداخلي بشكل كبير.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-box bg-primary text-white">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">حماية الممتلكات</h3>
+                        <p class="text-gray-700">
+                            تحمي أنظمة التكييف الأثاث والأجهزة الإلكترونية من التلف بسبب الحرارة العالية والرطوبة، مما يطيل عمرها الافتراضي.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-box bg-secondary text-white">
+                            <i class="fas fa-bolt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">كفاءة الطاقة</h3>
+                        <p class="text-gray-700">
+                            الأنظمة الحديثة توفر تكنولوجيا متقدمة لتوفير الطاقة، مما يقلل من فواتير الكهرباء ويساهم في الحفاظ على البيئة.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="quote-box">
+                    <p class="text-lg italic">
+                        تستهلك أنظمة التكييف حوالي 70% من الطاقة الكهربائية في المنازل السعودية خلال أشهر الصيف، مما يجعل الصيانة الدورية والتعديلات اللازمة أمراً ضرورياً لتحسين الكفاءة وتوفير التكاليف.
+                    </p>
+                    <div class="text-right mt-4">
+                        <strong>- تقرير هيئة تنظيم المياه والكهرباء</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+          <!-- Importance Section -->
     <section id="importance" class="py-20 bg-primary-light">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -460,7 +281,190 @@
         </div>
     </section>
 
-    <!-- AC Types Section -->
+
+        <!-- Types of AC Systems -->
+        <section id="types" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">أنواع أنظمة التكييف وخصائصها</h2>
+                
+                <div class="space-y-8">
+                    <div class="border-r-4 border-secondary bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-primary mb-4">
+                            <i class="fas fa-snowflake text-secondary ml-2"></i>
+                            مكيفات السبليت (Split AC)
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            أكثر أنواع المكيفات انتشاراً في المنازل والمكاتب، وتتكون من وحدتين منفصلتين: داخلية وخارجية. تتميز بسهولة التركيب والصيانة مع كفاءة عالية في التبريد.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">المزايا:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• تشغيل هادئ وموثوق</li>
+                                    <li>• سهولة التحكم عن بعد</li>
+                                    <li>• كفاءة في استهلاك الطاقة</li>
+                                    <li>• تصميم عصري وأنيق</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">القدرات المتاحة:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• 9000 وحدة (¾ طن)</li>
+                                    <li>• 12000 وحدة (1 طن)</li>
+                                    <li>• 18000 وحدة (1.5 طن)</li>
+                                    <li>• 24000 وحدة (2 طن)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-r-4 border-secondary bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-primary mb-4">
+                            <i class="fas fa-home text-secondary ml-2"></i>
+                            المكيفات المركزية (Central AC)
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            تستخدم في المباني الكبيرة والفلل، وتعمل على توزيع الهواء المبرد عبر شبكة من القنوات لتغطية جميع المساحات بكفاءة عالية.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">المزايا:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• تبريد موحد للمبنى كاملاً</li>
+                                    <li>• تحكم مركزي متقدم</li>
+                                    <li>• مناسب للمساحات الكبيرة</li>
+                                    <li>• تنقية هواء متطورة</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">التطبيقات:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• الفلل والقصور</li>
+                                    <li>• المكاتب الكبيرة</li>
+                                    <li>• المراكز التجارية</li>
+                                    <li>• المستشفيات والمدارس</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="border-r-4 border-secondary bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-primary mb-4">
+                            <i class="fas fa-eye-slash text-secondary ml-2"></i>
+                            المكيفات المخفية (Concealed AC)
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            تتميز بإخفاء الوحدة الداخلية في السقف المستعار، مما يعطي مظهراً جمالياً متميزاً مع الحفاظ على الكفاءة العالية في التبريد.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">الخصائص:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• مظهر جمالي بدون وحدة ظاهرة</li>
+                                    <li>• توزيع هواء متساوٍ</li>
+                                    <li>• تشغيل صامت تماماً</li>
+                                    <li>• مناسب للديكورات الحديثة</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary mb-2">الاستخدامات:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• غرف المعيشة الفخمة</li>
+                                    <li>• المكاتب التنفيذية</li>
+                                    <li>• الصالات والردهات</li>
+                                    <li>• المطاعم والفنادق</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance Services -->
+        <section id="maintenance" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">خدمات الصيانة والتعديل المتخصصة</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover-transform">
+                        <i class="fas fa-tools service-icon"></i>
+                        <h3 class="text-xl font-bold text-primary mb-3">الصيانة الدورية</h3>
+                        <p class="text-gray-700">
+                            فحص شامل وصيانة دورية لضمان الأداء الأمثل وتجنب الأعطال المفاجئة
+                        </p>
+                    </div>
+                    
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover-transform">
+                        <i class="fas fa-wrench service-icon"></i>
+                        <h3 class="text-xl font-bold text-primary mb-3">الإصلاحات الطارئة</h3>
+                        <p class="text-gray-700">
+                            خدمة إصلاح سريعة على مدار الساعة لحل جميع مشاكل التكييف
+                        </p>
+                    </div>
+                    
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover-transform">
+                        <i class="fas fa-cog service-icon"></i>
+                        <h3 class="text-xl font-bold text-primary mb-3">التعديل والتطوير</h3>
+                        <p class="text-gray-700">
+                            تطوير وتعديل الأنظمة الحالية لتحسين الكفاءة وتوفير الطاقة
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-4">خدمات الصيانة الأساسية</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-primary mb-3">الصيانة الوقائية:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>تنظيف وتعقيم المرشحات والمبخرات</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>فحص وشحن غاز التبريد (الفريون)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>فحص الدورة الكهربائية والتوصيلات</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>تنظيف وحدة التكثيف الخارجية</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-primary mb-3">الصيانة العلاجية:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>إصلاح تسريبات الغاز والماء</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>استبدال القطع التالفة والمستهلكة</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>إصلاح أعطال الضاغط والمروحة</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-secondary mt-1 ml-2"></i>
+                                    <span>معالجة مشاكل التحكم والتشغيل</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+         <!-- AC Types Section -->
     <section id="types" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -611,618 +615,477 @@
         </div>
     </section>
 
-    <!-- Common Problems Section -->
-    <section id="problems" class="py-20 bg-primary-light">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">الأعطال الشائعة وحلولها</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    معرفة الأعطال الشائعة وكيفية التعامل معها يمكن أن يوفر عليك الوقت والمال
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-8">
-                <!-- Problem 1 -->
-                <div class="bg-white rounded-xl p-8 card-hover border-r-4 border-primary">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">ضعف التبريد أو عدم التبريد</h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الأسباب المحتملة:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• فلاتر الهواء المتسخة</li>
-                                <li>• نقص غاز التبريد (الفريون)</li>
-                                <li>• ملفات المبخر أو المكثف المتسخة</li>
-                                <li>• مشكلة في الضاغط</li>
-                            </ul>
-                        </div>
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الحلول:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• تنظيف أو استبدال الفلاتر</li>
-                                <li>• فحص وإصلاح تسرب الفريون</li>
-                                <li>• تنظيف الملفات بعناية</li>
-                                <li>• استدعاء فني متخصص للضاغط</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Problem 2 -->
-                <div class="bg-white rounded-xl p-8 card-hover border-r-4 border-primary">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">تسرب المياه من الوحدة</h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الأسباب المحتملة:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• انسداد خط الصرف</li>
-                                <li>• تلف حوض التصريف</li>
-                                <li>• تجمد ملف المبخر</li>
-                                <li>• مشكلة في التركيب</li>
-                            </ul>
-                        </div>
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الحلول:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• تنظيف خط الصرف</li>
-                                <li>• استبدال حوض التصريف</li>
-                                <li>• معالجة أسباب التجمد</li>
-                                <li>• فحص التركيب والميول</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Problem 3 -->
-                <div class="bg-white rounded-xl p-8 card-hover border-r-4 border-primary">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">أصوات غريبة من المكيف</h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الأسباب المحتملة:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• ارتخاء الأجزاء الميكانيكية</li>
-                                <li>• مشكلة في المروحة</li>
-                                <li>• تآكل في المحرك</li>
-                                <li>• وجود عوائق في المروحة</li>
-                            </ul>
-                        </div>
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الحلول:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• إحكام البراغي والوصلات</li>
-                                <li>• فحص وتنظيف المروحة</li>
-                                <li>• تشحيم المحرك</li>
-                                <li>• إزالة العوائق</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Problem 4 -->
-                <div class="bg-white rounded-xl p-8 card-hover border-r-4 border-primary">
-                    <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">عدم استجابة الريموت كنترول</h3>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الأسباب المحتملة:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• بطاريات الريموت فارغة</li>
-                                <li>• مشكلة في لوحة التحكم</li>
-                                <li>• انقطاع التيار الكهربائي</li>
-                                <li>• تلف في الدائرة الكهربائية</li>
-                            </ul>
-                        </div>
-                        <div class="bg-secondary-light rounded-lg p-4">
-                            <h4 class="font-semibold text-primary mb-2">الحلول:</h4>
-                            <ul class="text-sm text-gray-700 space-y-1">
-                                <li>• استبدال بطاريات الريموت</li>
-                                <li>• فحص لوحة التحكم</li>
-                                <li>• فحص قاطع الدائرة</li>
-                                <li>• استدعاء فني كهربائي</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="mt-12 bg-primary rounded-xl p-8 text-white text-center">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-8 h-8 ml-3" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92z"/>
-                    </svg>
-                    <h3 class="text-2xl font-bold">تحذير هام</h3>
-                </div>
-                <p class="text-lg">
-                    في حال عدم قدرتك على تحديد المشكلة أو إصلاحها بنفسك، أو إذا كانت المشكلة تتعلق بالغاز أو الكهرباء، 
-                    فمن الأفضل دائماً الاستعانة بفني تكييف متخصص لتجنب تفاقم المشكلة أو التعرض للخطر.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Golden Tips Section -->
-    <section id="tips" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">نصائح ذهبية للحفاظ على كفاءة المكيف</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    لضمان أن يعمل مكيف الهواء الخاص بك بأقصى كفاءة ممكنة ولأطول فترة زمنية
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="bg-secondary-light rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3 text-gray-800">تنظيف الفلاتر شهرياً</h3>
-                    <p class="text-gray-600 text-center text-sm">
-                        قم بتنظيف فلاتر الهواء مرة واحدة على الأقل شهرياً لضمان تدفق الهواء الأمثل وتحسين جودة الهواء الداخلي.
-                    </p>
-                </div>
-
-                <div class="bg-secondary-light rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3 text-gray-800">ضبط درجة الحرارة المثلى</h3>
-                    <p class="text-gray-600 text-center text-sm">
-                        اضبط الترموستات على درجة حرارة بين 24-26 مئوية لتوفير الطاقة والحصول على راحة مثالية.
-                    </p>
-                </div>
-
-                <div class="bg-secondary-light rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3 text-gray-800">عزل الغرفة جيداً</h3>
-                    <p class="text-gray-600 text-center text-sm">
-                        تأكد من إغلاق النوافذ والأبواب بإحكام واستخدم الستائر السميكة لمنع تسرب الهواء البارد.
-                    </p>
-                </div>
-
-                <div class="bg-secondary-light rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3 text-gray-800">صيانة احترافية سنوية</h3>
-                    <p class="text-gray-600 text-center text-sm">
-                        قم بجدولة زيارة فني مؤهل مرة واحدة سنوياً لإجراء فحص شامل وصيانة وقائية للمكيف.
-                    </p>
-                </div>
-
-                <div class="bg-secondary-light rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3 text-gray-800">تنظيف الوحدة الخارجية</h3>
-                    <p class="text-gray-600 text-center text-sm">
-                        قم بتنظيف الوحدة الخارجية من الأتربة والأوراق المتراكمة بانتظام لضمان التهوية الجيدة.
-                    </p>
-                </div>
-
-                <div class="bg-secondary-light rounded-xl p-6 card-hover">
-                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4 mx-auto">
-                        <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg font-bold text-center mb-3 text-gray-800">فحص خط الصرف</h3>
-                    <p class="text-gray-600 text-center text-sm">
-                        تأكد من عدم وجود انسداد في خط الصرف وقم بتنظيفه بالخل المخفف كل بضعة أشهر.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Energy Saving Tips -->
-            <div class="bg-primary rounded-2xl p-8 text-white">
-                <div class="text-center mb-8">
-                    <h3 class="text-3xl font-bold mb-4">نصائح توفير الطاقة</h3>
-                    <p class="text-lg">اتبع هذه النصائح لتقليل استهلاك الكهرباء وتوفير المال</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
-                            <span class="text-2xl font-bold text-primary">24°</span>
-                        </div>
-                        <h4 class="font-semibold text-black mb-2">درجة الحرارة المثلى</h4>
-                        <p class="text-sm">اضبط المكيف على 24-26 درجة مئوية</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-black mb-2">استخدم المراوح</h4>
-                        <p class="text-sm">المراوح تساعد في توزيع الهواء البارد</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-black mb-2">أغلق الستائر</h4>
-                        <p class="text-sm">منع دخول أشعة الشمس المباشرة</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4 mx-auto">
-                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold text-black mb-2">صيانة دورية</h4>
-                        <p class="text-sm">المكيف النظيف يستهلك طاقة أقل</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modifications Section -->
-    <section id="modifications" class="py-20 bg-[#590d3d]">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">تعديل المكيفات: متى ولماذا؟</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    تعديل المكيفات يشير إلى إجراء تحسينات أو تعديلات على النظام الحالي لزيادة كفاءته وتحسين أدائه
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 mb-16">
-                <div class="space-y-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">متى تحتاج إلى تعديل مكيفك؟</h3>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white font-bold text-sm">1</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">ضعف التبريد المستمر</h4>
-                                <p class="text-gray-600 text-sm">إذا كان المكيف لا يبرد الغرفة بشكل كافٍ على الرغم من الصيانة الدورية</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white font-bold text-sm">2</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">ارتفاع فواتير الكهرباء</h4>
-                                <p class="text-gray-600 text-sm">إذا لاحظت ارتفاعاً غير مبرر في فواتير الكهرباء بسبب عدم كفاءة المكيف</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white font-bold text-sm">3</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">تغير حجم الغرفة</h4>
-                                <p class="text-gray-600 text-sm">إذا قمت بتوسيع الغرفة أو تغير استخدامها مما يتطلب قدرة تبريد أكبر</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white font-bold text-sm">4</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">تحسين جودة الهواء</h4>
-                                <p class="text-gray-600 text-sm">إذا كنت تعاني من مشاكل في جودة الهواء الداخلي أو الحساسية</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4 space-x-reverse">
-                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                <span class="text-white font-bold text-sm">5</span>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-2">التحكم الذكي</h4>
-                                <p class="text-gray-600 text-sm">إذا كنت ترغب في دمج مكيفك مع أنظمة المنزل الذكي</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="space-y-8">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">أنواع التعديلات الشائعة</h3>
-                    
-                    <div class="grid gap-6">
-                        <div class="bg-white rounded-lg p-6 card-hover">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-semibold text-gray-800">ترقية الترموستات</h4>
-                            </div>
-                            <p class="text-gray-600 text-sm">استبدال الترموستات القديم بترموستات ذكي قابل للبرمجة والتحكم عن بعد</p>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-6 card-hover">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-semibold text-gray-800">ترقية الفلاتر</h4>
-                            </div>
-                            <p class="text-gray-600 text-sm">استبدال الفلاتر القياسية بفلاتر HEPA عالية الكفاءة لتحسين جودة الهواء</p>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-6 card-hover">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-semibold text-gray-800">تحسين العزل</h4>
-                            </div>
-                            <p class="text-gray-600 text-sm">إضافة عزل للجدران والأسقف وتحسين إغلاق النوافذ والأبواب</p>
-                        </div>
-
-                        <div class="bg-white rounded-lg p-6 card-hover">
-                            <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-secondary-light rounded-full flex items-center justify-center ml-4">
-                                    <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                                    </svg>
-                                </div>
-                                <h4 class="font-semibold text-gray-800">إضافة مراوح مساعدة</h4>
-                            </div>
-                            <p class="text-gray-600 text-sm">تركيب مراوح سقف أو مراوح مساعدة لتحسين توزيع الهواء المبرد</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-primary rounded-xl p-8 text-white text-center">
-                <div class="flex items-center justify-center mb-4">
-                    <svg class="w-8 h-8 ml-3" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <h3 class="text-2xl font-bold">نصيحة مهمة</h3>
-                </div>
-                <p class="text-lg">
-                    أي تعديل كبير على نظام التكييف يجب أن يتم بواسطة فني متخصص لضمان السلامة والكفاءة وتجنب إتلاف الجهاز. 
-                    استشر دائماً الخبراء قبل إجراء أي تعديلات جوهرية.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ironcool Company Section -->
-    <section class="py-20 bg-gray-800 text-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-6">شركة ايرو كول: حلول متكاملة لراحة منزلك</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Work Steps -->
+        <section id="steps" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">خطوات العمل في صيانة وتعديل المكيفات</h2>
+                
                 <div class="space-y-6">
-                    <p class="text-lg text-gray-300 leading-relaxed">
-                        في سعينا الدائم نحو توفير بيئة منزلية مريحة ومنعشة، تبرز أهمية اختيار الشريك المناسب لخدمات تكييف الهواء. 
-                        هنا يأتي دور شركة <strong class="text-secondary">ايرو كول (Ironcool)</strong>، التي تقدم مجموعة متكاملة من الحلول والخدمات الاحترافية 
-                        في مجال صيانة وتركيب وتعديل المكيفات.
-                    </p>
+                    <div class="flex items-start">
+                        <div class="step-number">1</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-primary mb-2">فحص ومعاينة النظام</h3>
+                            <p class="text-gray-700 mb-3">
+                                يتم إجراء فحص شامل للنظام لتحديد حالة المكيف وتشخيص أي مشاكل محتملة. يشمل ذلك قياس درجات الحرارة والضغوط، وفحص التوصيلات الكهربائية والميكانيكية.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">يشمل الفحص:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• قياس كفاءة التبريد والتسخين</li>
+                                    <li>• فحص مستوى غاز التبريد</li>
+                                    <li>• تقييم حالة المرشحات والمبخرات</li>
+                                    <li>• فحص التوصيلات الكهربائية</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <p class="text-gray-300 leading-relaxed">
-                        تتميز شركة ايرو كول بفريق عمل محترف ومدرب على أعلى مستوى، يمتلك الخبرة والكفاءة اللازمة للتعامل مع جميع أنواع أنظمة التكييف، 
-                        بدءاً من مكيفات السبليت وصولاً إلى الأنظمة المركزية المعقدة.
-                    </p>
-
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <div class="bg-gray-700 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-3">
-                                <svg class="w-6 h-6 text-[#590d3d]" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
+                    <div class="flex items-start">
+                        <div class="step-number">2</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-primary mb-2">تنظيف المكونات الداخلية</h3>
+                            <p class="text-gray-700 mb-3">
+                                تنظيف شامل لجميع المكونات الداخلية باستخدام مواد آمنة وأدوات متخصصة. يشمل ذلك تنظيف المبخر، المروحة، والمرشحات لضمان تدفق هواء نظيف وصحي.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">عملية التنظيف:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• تنظيف المبخر بالبخار المضغوط</li>
+                                    <li>• غسيل وتعقيم المرشحات</li>
+                                    <li>• تنظيف المروحة ومجرى الهواء</li>
+                                    <li>• تطهير نظام التصريف</li>
+                                </ul>
                             </div>
-                            <h4 class="font-semibold mb-2">صيانة دورية ووقائية</h4>
-                            <p class="text-sm text-gray-300">لضمان أداء مثالي وإطالة العمر الافتراضي</p>
-                        </div>
-
-                        <div class="bg-gray-700 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-3">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                                </svg>
-                            </div>
-                            <h4 class="font-semibold mb-2">إصلاح الأعطال</h4>
-                            <p class="text-sm text-gray-300">تشخيص دقيق وإصلاح سريع بقطع غيار أصلية</p>
-                        </div>
-
-                        <div class="bg-gray-700 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-3">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 2L3 7v11a2 2 0 002 2h4v-6h2v6h4a2 2 0 002-2V7l-7-5z"/>
-                                </svg>
-                            </div>
-                            <h4 class="font-semibold mb-2">تركيب المكيفات</h4>
-                            <p class="text-sm text-gray-300">تركيب احترافي مع ضمان الأداء الأمثل</p>
-                        </div>
-
-                        <div class="bg-gray-700 rounded-lg p-4">
-                            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-3">
-                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                                </svg>
-                            </div>
-                            <h4 class="font-semibold mb-2">تعديل وتحسين</h4>
-                            <p class="text-sm text-gray-300">حلول مبتكرة لتحسين الكفاءة وتوفير الطاقة</p>
                         </div>
                     </div>
-
-                    <div class="mt-8">
-                        <a href="https://ironcool.net/" target="_blank" class="inline-flex items-center bg-primary hover:bg-purple-800 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105">
-                            زيارة موقع ايرو كول
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                            </svg>
-                        </a>
+                    
+                    <div class="flex items-start">
+                        <div class="step-number">3</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-primary mb-2">فحص وشحن غاز التبريد</h3>
+                            <p class="text-gray-700 mb-3">
+                                فحص دقيق لمستوى غاز التبريد وضغط النظام، مع شحن الغاز إذا لزم الأمر. يتم استخدام أجهزة قياس متطورة لضمان الدقة والأمان.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">خطوات الشحن:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• قياس الضغط العالي والمنخفض</li>
+                                    <li>• فحص التسريبات بأجهزة إلكترونية</li>
+                                    <li>• تفريغ الهواء من النظام</li>
+                                    <li>• شحن الغاز بالكمية المطلوبة</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="relative">
-                    <img src="https://ironcool.net/img/carousel-1.jpg" alt="خدمات ايرو كول" class="rounded-2xl w-full h-96 object-cover">
-                    <div class="absolute bottom-6 left-6 right-6">
-                        <div class="bg-white rounded-lg p-4">
-                            <h4 class="font-bold text-gray-800 mb-2">شريكك الموثوق</h4>
-                            <p class="text-gray-600 text-sm">لجميع احتياجات تكييف الهواء الخاصة بك</p>
+                    
+                    <div class="flex items-start">
+                        <div class="step-number">4</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-primary mb-2">فحص النظام الكهربائي</h3>
+                            <p class="text-gray-700 mb-3">
+                                فحص شامل لجميع المكونات الكهربائية بما في ذلك الضاغط، المروحة، والتحكم الإلكتروني. يتم قياس الجهد والتيار للتأكد من سلامة التشغيل.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">الفحص الكهربائي:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• فحص الضاغط والمروحة</li>
+                                    <li>• اختبار الترموستات والحساسات</li>
+                                    <li>• فحص التوصيلات والكابلات</li>
+                                    <li>• اختبار أنظمة الحماية</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="step-number">5</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-primary mb-2">التشغيل والاختبار النهائي</h3>
+                            <p class="text-gray-700 mb-3">
+                                تشغيل النظام واختبار جميع وظائفه للتأكد من الأداء الأمثل. يتم قياس درجة الحرارة، تدفق الهواء، ومستوى الضوضاء لضمان المعايير المطلوبة.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">الاختبارات النهائية:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• قياس درجة حرارة التبريد</li>
+                                    <li>• اختبار تدفق الهواء</li>
+                                    <li>• فحص مستوى الضوضاء</li>
+                                    <li>• اختبار جميع أوضاع التشغيل</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="step-number">6</div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-primary mb-2">التسليم والمتابعة</h3>
+                            <p class="text-gray-700 mb-3">
+                                تسليم النظام للعميل مع تقديم تقرير شامل عن الأعمال المنجزة والضمانات المقدمة. يتم تحديد مواعيد المتابعة والصيانة الدورية القادمة.
+                            </p>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-bold text-primary mb-2">خدمات ما بعد التسليم:</h4>
+                                <ul class="text-sm space-y-1">
+                                    <li>• تقرير مفصل عن الأعمال</li>
+                                    <li>• ضمان على الخدمة والقطع</li>
+                                    <li>• جدولة الصيانة القادمة</li>
+                                    <li>• دعم فني على مدار الساعة</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">الأسئلة الشائعة</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    إجابات على أكثر الأسئلة شيوعاً حول صيانة وتعديل المكيفات
-                </p>
-            </div>
-
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="bg-white rounded-xl overflow-hidden">
-                    <div class="p-6 border-r-4 border-primary">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">كم مرة يجب أن أقوم بصيانة مكيفي؟</h3>
-                        <p class="text-gray-600">
-                            يوصى بإجراء صيانة دورية للمكيف مرة واحدة على الأقل سنوياً من قبل فني متخصص، ويفضل أن يكون ذلك قبل بداية موسم الصيف. 
-                            بالإضافة إلى ذلك، يجب تنظيف فلاتر الهواء كل شهر إلى ثلاثة أشهر حسب الاستخدام.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl overflow-hidden">
-                    <div class="p-6 border-r-4 border-primary">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">ما هي علامات نقص غاز الفريون في المكيف؟</h3>
-                        <p class="text-gray-600">
-                            علامات نقص الفريون تشمل: ضعف التبريد، خروج هواء غير بارد من المكيف، تجمد ملف المبخر (تراكم الثلج على الأنابيب)، 
-                            وزيادة في فاتورة الكهرباء بسبب عمل المكيف بجهد أكبر.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl overflow-hidden">
-                    <div class="p-6 border-r-4 border-primary">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">ما هي درجة الحرارة المثلى لضبط المكيف عليها؟</h3>
-                        <p class="text-gray-600">
-                            درجة الحرارة المثلى لضبط المكيف عليها في الصيف تتراوح عادة بين 24 إلى 26 درجة مئوية. 
-                            هذه الدرجة توفر راحة جيدة وتساعد على توفير الطاقة.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl overflow-hidden">
-                    <div class="p-6 border-r-4 border-primary">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">هل يمكنني تنظيف المكيف بنفسي؟</h3>
-                        <p class="text-gray-600">
-                            نعم، يمكنك تنظيف فلاتر الهواء والوحدة الخارجية من الأتربة بنفسك. ومع ذلك، فإن التنظيف العميق للملفات الداخلية 
-                            وفحص غاز التبريد والمكونات الكهربائية يتطلب فني متخصص.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl overflow-hidden">
-                    <div class="p-6 border-r-4 border-primary">
-                        <h3 class="text-lg font-bold text-gray-800 mb-3">ما هو العمر الافتراضي للمكيف؟</h3>
-                        <p class="text-gray-600">
-                            يختلف العمر الافتراضي للمكيف باختلاف النوع وجودة التصنيع والصيانة. بشكل عام، يتراوح العمر الافتراضي للمكيفات 
-                            بين 10 إلى 15 عاماً. الصيانة الدورية تلعب دوراً كبيراً في إطالة هذا العمر.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Conclusion -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-primary mb-6">الخاتمة</h2>
-                <div class="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-            </div>
-            
-            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <p class="text-xl mb-8 text-center text-gray-600">
-                    في الختام، يمكننا القول بأن صيانة وتعديل المكيفات ليست مجرد مهام تقنية، بل هي جزء لا يتجزأ من الحفاظ على بيئة معيشية صحية ومريحة.
+        <!-- Pricing Section -->
+        <section id="prices" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">أسعار خدمات صيانة وتعديل المكيفات</h2>
+                
+                <p class="text-gray-700 mb-6">
+                    تختلف أسعار خدمات صيانة وتعديل المكيفات باختلاف نوع الخدمة، نوع المكيف، ومستوى التعقيد. فيما يلي جدول بالأسعار التقديرية في السوق السعودي:
                 </p>
                 
-                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
-                    <div>
-                        <p class="mb-6">
-                            من خلال فهم أساسيات عمل المكيفات، والتعرف على أنواعها المختلفة، ومعرفة كيفية التعامل مع الأعطال الشائعة، 
-                            وتطبيق النصائح الذهبية للحفاظ على كفاءتها، يمكنك ضمان أن يعمل جهازك بأفضل أداء ممكن لسنوات عديدة قادمة.
-                        </p>
-                        <p class="mb-6">
-                            تذكر دائماً أن الصيانة الوقائية هي المفتاح لتجنب الأعطال المكلفة وإطالة العمر الافتراضي لجهازك. 
-                            ولا تتردد في الاستعانة بالخبراء والمتخصصين عندما تتطلب الأمور تدخلاً احترافياً.
-                        </p>
-                        <p>
-                            فمع العناية الصحيحة، سيظل مكيفك يوفر لك البرودة والانتعاش الذي تحتاجه، مما يضمن لك الراحة والهدوء في منزلك أو مكان عملك.
-                        </p>
-                    </div>
-                    <div class="relative">
-                        <img src="https://ironcool.net/img/air3.jpg" alt="صيانة المكيفات" class="rounded-lg w-full h-64 object-cover">
+                <div class="overflow-x-auto">
+                    <table class="table-custom w-full">
+                        <thead>
+                            <tr>
+                                <th>نوع الخدمة</th>
+                                <th>مكيف سبليت</th>
+                                <th>مكيف شباك</th>
+                                <th>مكيف مركزي</th>
+                                <th>ملاحظات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">الصيانة الدورية</td>
+                                <td>150 - 300 ريال</td>
+                                <td>100 - 200 ريال</td>
+                                <td>500 - 1,200 ريال</td>
+                                <td>تشمل التنظيف والفحص الشامل</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">تنظيف عميق</td>
+                                <td>200 - 400 ريال</td>
+                                <td>150 - 250 ريال</td>
+                                <td>800 - 1,500 ريال</td>
+                                <td>تنظيف بالبخار والمواد المتخصصة</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">شحن الفريون</td>
+                                <td>200 - 500 ريال</td>
+                                <td>150 - 300 ريال</td>
+                                <td>600 - 1,000 ريال</td>
+                                <td>يشمل كشف التسريب والشحن</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">إصلاح التسريبات</td>
+                                <td>300 - 600 ريال</td>
+                                <td>200 - 400 ريال</td>
+                                <td>800 - 1,500 ريال</td>
+                                <td>حسب موقع ونوع التسريب</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">استبدال الضاغط</td>
+                                <td>800 - 1,500 ريال</td>
+                                <td>600 - 1,000 ريال</td>
+                                <td>2,000 - 4,000 ريال</td>
+                                <td>يشمل قطع الغيار والعمالة</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">تعديل النظام</td>
+                                <td>500 - 1,000 ريال</td>
+                                <td>300 - 600 ريال</td>
+                                <td>1,500 - 3,000 ريال</td>
+                                <td>لتحسين الكفاءة وتوفير الطاقة</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">فك وتركيب</td>
+                                <td>300 - 600 ريال</td>
+                                <td>200 - 400 ريال</td>
+                                <td>1,000 - 2,000 ريال</td>
+                                <td>لنقل المكيف لموقع جديد</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">عقد صيانة سنوي</td>
+                                <td>400 - 800 ريال</td>
+                                <td>300 - 600 ريال</td>
+                                <td>1,500 - 3,000 ريال</td>
+                                <td>يشمل 3-4 زيارات سنوية</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-6 p-4 bg-yellow-50 border-r-4 border-yellow-400 rounded-lg">
+                    <p class="text-sm text-gray-700">
+                        <strong>ملاحظة:</strong> الأسعار المذكورة تقديرية وقد تختلف حسب المنطقة، حالة المكيف، ونوع القطع المطلوبة. يُنصح بالحصول على عروض أسعار من شركات متخصصة قبل اتخاذ القرار.
+                    </p>
+                </div>
+                
+                <div class="mt-6 bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-primary mb-4">عوامل تحديد السعر:</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-secondary text-xs mt-2 ml-2"></i>
+                                <span>نوع وحجم المكيف</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-secondary text-xs mt-2 ml-2"></i>
+                                <span>مستوى التعقيد في الخدمة</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-secondary text-xs mt-2 ml-2"></i>
+                                <span>نوع وجودة قطع الغيار</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-secondary text-xs mt-2 ml-2"></i>
+                                <span>الموقع الجغرافي</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-secondary text-xs mt-2 ml-2"></i>
+                                <span>الوقت المطلوب للإنجاز</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-circle text-secondary text-xs mt-2 ml-2"></i>
+                                <span>مستوى الضمان المطلوب</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-   <!-- Footer Section -->
+        <!-- Iron Cool Section -->
+        <section id="ironcool" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">شركة آيرون كول - خبراء صيانة وتعديل المكيفات</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            تعتبر <a href="https://ironcool.net/" class="text-primary font-bold hover:underline">شركة آيرون كول</a> من الشركات الرائدة في مجال صيانة وتعديل المكيفات في المملكة العربية السعودية. تقدم الشركة خدمات متكاملة تشمل الصيانة الدورية، الإصلاحات الطارئة، وتعديل الأنظمة لتحسين الكفاءة والأداء.
+                        </p>
+                        
+                        <p class="text-lg mb-4 leading-relaxed">
+                            بفضل خبرتها الطويلة وفريق العمل المتخصص، تضمن آيرون كول تقديم خدمات عالية الجودة مع استخدام أحدث التقنيات والأدوات المتطورة. كما تلتزم الشركة بتطبيق أعلى معايير الأمان والجودة في جميع خدماتها.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-primary mb-4">خدمات آيرون كول المتميزة:</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                                <span>صيانة دورية لجميع أنواع المكيفات</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                                <span>إصلاح الأعطال الطارئة على مدار الساعة</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                                <span>تنظيف وتعقيم المكيفات بأحدث التقنيات</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                                <span>تعديل الأنظمة لتحسين الكفاءة</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                                <span>فك وتركيب المكيفات بأمان</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-secondary mt-1 ml-2"></i>
+                                <span>توفير قطع غيار أصلية ومضمونة</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-primary text-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">لماذا تختار آيرون كول؟</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold mb-2">الخبرة والاحترافية:</h4>
+                            <p class="text-sm mb-4">
+                                فريق متخصص من الفنيين المدربين على أعلى مستوى مع خبرة تزيد عن 10 سنوات في مجال التكييف والتبريد.
+                            </p>
+                            
+                            <h4 class="font-bold mb-2">الجودة والضمان:</h4>
+                            <p class="text-sm">
+                                نقدم ضمان شامل على جميع خدماتنا مع استخدام قطع غيار أصلية ومواد عالية الجودة.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2">الاستجابة السريعة:</h4>
+                            <p class="text-sm mb-4">
+                                نصل إليك في أسرع وقت ممكن مع خدمة طوارئ على مدار الساعة لحل جميع مشاكل التكييف.
+                            </p>
+                            
+                            <h4 class="font-bold mb-2">الأسعار التنافسية:</h4>
+                            <p class="text-sm">
+                                نقدم أفضل الأسعار في السوق مع خيارات دفع مرنة وعروض مميزة للعملاء.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <h3 class="text-2xl font-bold text-primary mb-4">اتصل بنا الآن للحصول على خدمة متميزة</h3>
+                    <div class="bg-secondary text-white inline-block px-8 py-4 rounded-lg">
+                        <p class="text-lg font-bold">للاستفسار والحجز: 0563009155</p>
+                    </div>
+                    <p class="mt-4 text-gray-600">
+                        زيارة موقعنا الإلكتروني: <a href="https://ironcool.net/" class="text-primary font-bold hover:underline">ironcool.net</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <!-- Tips Section -->
+        <section id="tips" class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">نصائح مهمة للحفاظ على كفاءة المكيفات</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-4">الصيانة الدورية</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>قم بتنظيف الفلاتر كل شهر أو حسب الحاجة</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>افحص الوحدة الخارجية وأزل أي أوساخ أو أوراق</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>احرص على الصيانة الدورية كل 6 أشهر</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>تأكد من تصريف المياه بشكل صحيح</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-4">التشغيل الأمثل</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>اضبط درجة الحرارة على 24-26 درجة مئوية</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>استخدم المروحة لتوزيع الهواء البارد</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>أغلق الأبواب والنوافذ أثناء التشغيل</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-secondary mt-1 ml-2"></i>
+                                <span>استخدم الستائر لتقليل الحرارة الخارجية</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                    <h3 class="text-xl font-bold text-primary mb-4">علامات تستدعي الصيانة الفورية</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <i class="fas fa-exclamation-triangle text-red-500 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-primary mb-2">ضعف التبريد</h4>
+                            <p class="text-sm text-gray-700">عدم وصول الهواء البارد للدرجة المطلوبة</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-volume-up text-red-500 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-primary mb-2">أصوات غريبة</h4>
+                            <p class="text-sm text-gray-700">أصوات طقطقة أو صرير من الوحدة</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-tint text-red-500 text-2xl mb-2"></i>
+                            <h4 class="font-bold text-primary mb-2">تسرب الماء</h4>
+                            <p class="text-sm text-gray-700">تسرب الماء من الوحدة الداخلية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="highlight-box">
+                    <h3 class="text-xl font-bold text-primary mb-3">نصيحة من الخبراء</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        الصيانة الدورية ليست مجرد عملية تنظيف، بل استثمار في إطالة عمر المكيف وتوفير فواتير الكهرباء. 
+                        المكيف المُصان بانتظام يستهلك طاقة أقل بنسبة 15-20% ويدوم لفترة أطول بمعدل 3-5 سنوات إضافية.
+                    </p>
+                </div>
+                
+                <div class="mt-8 bg-primary text-white p-6 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">أسئلة شائعة حول صيانة المكيفات</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold mb-2">كم مرة يجب تنظيف فلتر المكيف؟</h4>
+                            <p class="text-sm">يُنصح بتنظيف فلتر المكيف كل 2-4 أسابيع خلال فترة الاستخدام المكثف، وكل شهرين في الاستخدام العادي.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">متى يجب استبدال غاز التبريد؟</h4>
+                            <p class="text-sm">غاز التبريد لا يُستبدل بل يُعاد شحنه عند الحاجة. إذا كان هناك تسريب، يجب إصلاحه أولاً ثم إعادة الشحن.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">ما هي أفضل درجة حرارة للتشغيل؟</h4>
+                            <p class="text-sm">تُعتبر درجة حرارة 24-26 مئوية مثالية لتوفير الراحة مع الحفاظ على كفاءة استهلاك الطاقة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Conclusion -->
+        <section class="content-section">
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-3xl font-bold text-primary mb-6">خلاصة الدليل</h2>
+                
+                <p class="text-lg mb-4 leading-relaxed">
+                    تعتبر صيانة وتعديل المكيفات استثماراً ضرورياً لضمان الراحة والكفاءة في البيئة الداخلية. من خلال الاهتمام بالصيانة الدورية والاستعانة بشركات متخصصة مثل آيرون كول، يمكنك الحفاظ على مكيفك في أفضل حالاته وتوفير تكاليف الطاقة على المدى الطويل.
+                </p>
+                
+                <p class="text-lg mb-6 leading-relaxed">
+                    تذكر أن الصيانة الوقائية أفضل وأوفر من الصيانة العلاجية. لا تنتظر حتى يتعطل المكيف، بل احرص على الصيانة الدورية لتضمن أداءً مثالياً طوال العام.
+                </p>
+                
+                <div class="bg-gradient-to-r from-primary to-purple-800 text-white p-6 rounded-lg text-center">
+                    <h3 class="text-2xl font-bold mb-2">هل تحتاج إلى خدمة صيانة مكيفات؟</h3>
+                    <p class="mb-4">تواصل مع آيرون كول الآن للحصول على خدمة احترافية وموثوقة</p>
+                    <div class="text-secondary font-bold text-xl">
+                        <a href="tel:0563009155" class="hover:underline">0563009155</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">© 2024 دليل صيانة وتعديل المكيفات - آيرون كول</p>
+            <p class="text-sm">للحصول على خدمات متخصصة في صيانة المكيفات، زيارة: <a href="https://ironcool.net/" class="text-secondary hover:underline">ironcool.net</a></p>
+        </div>
+    </footer>
+        <!-- Footer Section -->
     <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
         <div class="footer-particles" id="footerParticles"></div>
         
@@ -1342,13 +1205,6 @@
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="fixed bottom-8 left-8 bg-primary text-white p-3 rounded-full opacity-0 invisible transition-all duration-300 hover:scale-110">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
-        </svg>
-    </button>
-
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1364,27 +1220,7 @@
             });
         });
 
-        // Scroll to top functionality
-        const scrollToTopBtn = document.getElementById('scrollToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
-                scrollToTopBtn.classList.add('opacity-100', 'visible');
-            } else {
-                scrollToTopBtn.classList.add('opacity-0', 'invisible');
-                scrollToTopBtn.classList.remove('opacity-100', 'visible');
-            }
-        });
-
-        scrollToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Add fade-in animation to elements when they come into view
+        // Add fade-in animation for sections
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1393,14 +1229,18 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        // Observe all cards and sections
-        document.querySelectorAll('.card-hover, section').forEach(el => {
-            observer.observe(el);
+        // Observe all content sections
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
         });
     </script>
     <script src="../assets/js/main.js"></script>

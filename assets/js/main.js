@@ -283,17 +283,20 @@ class GulfServices {
                 </div>
             </div>
             <div class="p-6">
-                <h3 class="text-xl font-bold text-yellow-600 mb-3 font-luxury">${service.name}</h3>
+                 <h3 class="text-xl font-bold text-yellow-600 mb-3 font-luxury">
+                    <a href="${service.url}" class="hover:underline hover:text-yellow-700 transition-colors duration-300">
+                        ${service.name} ←
+                    </a>
+                </h3>
                 <p class="text- black mb-4 font-elegant leading-relaxed">${service.description}</p>
                 <div class="flex items-center justify-between">
-                    <div class="flex space-x-2 space-x-reverse">
-                        <button class="w-10 h-10 bg-rose-gold bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" title="إضافة للمفضلة">
-                            <i class="fas fa-heart text-rose-gold hover:text-white"></i>
-                        </button>
-                        <button style="background-color: #590d3d; color: #e8c468" class="w-10 h-10 bg-petroleum bg-opacity-20 hover:bg-opacity-100 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110" title="مشاركة">
-                            <i style=" color: #e8c468" class="fas fa-share text-petroleum hover:text-white"></i>
-                        </button>
-                    </div>
+                    <div class="flex">
+                      <a href="https://wa.me/966565265233" target="_blank" title="تواصل واتساب"
+                        class="w-12 h-12 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
+                          <i class="fab fa-whatsapp text-white text-2xl"></i>
+                      </a>
+                  </div>
+
                     <a href="${service.url}" class="rose-btn px-6 py-2 text-sm">
                         <i class="fas fa-external-link-alt ml-2"></i>
                         زيارة الموقع

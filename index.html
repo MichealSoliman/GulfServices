@@ -101,7 +101,7 @@
                         <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
                         
                     </div>
-                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity">خدمات الخليج</a>
+                    <a href="index.html" class="text-3xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ">خدمات الخليج</a>
                 </div>
                 
                 <div class="hidden lg:flex space-x-8 space-x-reverse">
@@ -134,7 +134,7 @@
 </navbar>
 
     <!-- Hero Section -->
-    <section class="luxury-gradient pt-40 pb-16 relative overflow-hidden">
+    <!-- <section class="luxury-gradient pt-40 pb-16 relative overflow-hidden">
         <div class="particles" id="particles"></div>
         <div class="container-custom relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -169,7 +169,189 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+  <section class="luxury-hero-section relative overflow-hidden mt-20">
+    <!-- ضباب شفاف فوق الخلفية -->
+    <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-0"></div>
+
+   
+    <div class="container-custom relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-pure-white">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 font-luxury text-[#e8c468] text-center lg:text-right">
+                أفضل الخدمات المنزلية في دول الخليج
+                </h1>
+
+                <p class="text-xl mb-8 opacity-90 leading-relaxed font-elegant">
+                    نقدم لك مجموعة شاملة من الخدمات المنزلية عالية الجودة في جميع أنحاء دول الخليج العربي. من نقل العفش إلى خدمات التنظيف، نحن هنا لخدمتك بأعلى معايير الفخامة والجودة.
+                </p>
+               <div class="flex flex-col sm:flex-row gap-4">
+                <button class="rose-btn text-lg px-8 py-4 w-full sm:w-auto" onclick="scrollToServices()">
+                    <i class="fas fa-search ml-2"></i>
+                    استكشف خدماتنا
+                </button>
+                <div class="flex justify-center sm:justify-start w-full sm:w-auto">
+                    <a href="tel:0565265233" class="w-full sm:w-auto">
+                        <button class="luxury-btn text-lg px-8 py-4 w-full sm:w-auto">
+                            <i class="fas fa-phone ml-2"></i>
+                            اتصل بنا الآن
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            </div>
+
+           
+            <div class="luxury-card p-8 text-center hidden sm:block">
+    <div class="flex justify-center mb-4">
+        <div class="w-20 h-20 rounded-full bg-yellow-600 bg-opacity-20 flex items-center justify-center shadow-lg">
+            <i class="fas fa-globe text-yellow-600 text-4xl"></i>
+        </div>
+    </div>
+    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">خدماتنا في الخليج</h3>
+    <p class="text-silver-mist font-elegant mb-2">نقدم حلولاً متكاملة للمنازل والشركات، تشمل:</p>
+    <ul class="text-silver-mist text-right leading-relaxed text-lg space-y-2 font-elegant">
+        <li><i class="fas fa-truck-moving ml-2 text-yellow-600"></i> نقل الأثاث والعفش بأمان</li>
+        <li><i class="fas fa-broom ml-2 text-yellow-600"></i> خدمات التنظيف الشاملة</li>
+        <li><i class="fas fa-tools ml-2 text-yellow-600"></i> صيانة منزلية احترافية</li>
+        <li><i class=" ml-2 text-yellow-600"></i> والمزيد من الخدمات....</li>
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .luxury-hero-section {
+        background-image: url('./assets/images/pexels-matilda-wormwood-4099091.jpg' ); /* Placeholder for a random luxury home services image */
+        background-size: cover;
+        background-position: center;
+        background-clip: padding-box;
+        
+        padding-top: 5rem; /* Adjust as needed */
+        padding-bottom: 4rem; /* Adjust as needed */
+        min-height: 90vh; /* Ensure it takes up a good portion of the viewport height */
+        display: flex;
+        align-items: center;
+        
+    }
+.luxury-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black/50; /* شفافية خلفية */
+    backdrop-filter: blur(6px); /* ضباب */
+    z-index: 0;
+}
+
+    @media (max-width: 768px) {
+        .luxury-hero-section {
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+            min-height: 60vh;
+        }
+    }
+
+    /* Add any other custom styles for .container-custom, .text-pure-white, .font-luxury, .font-elegant, .rose-btn, .luxury-btn, .luxury-card, .service-icon, .text-silver-mist if they are not defined elsewhere */
+</style>
+
+
+<section class="bg-gray-50 py-12 md:py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap -mx-4 items-center">
+      
+      <!-- Right Side: Text Content -->
+      <div class="w-full md:w-1/2 px-4 text-right">
+        <h2 class="text-4xl font-bold mb-6" style="color: #590d3d;">من نحن</h2>
+        
+        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+          مرحباً بك في دليلك الأول والأشمل لأفضل شركات الخدمات المنزلية والتجارية في منطقة الخليج العربي. 
+          نحن منصة متخصصة تجمع لك نخبة مختارة من مقدمي الخدمات الموثوقين والمعتمدين في مجالات متعددة ومتنوعة.
+        </p>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          نفخر بتقديم خدمات عالية الجودة تشمل التنظيف الشامل للمنازل والمكاتب، أعمال الصيانة العامة والمتخصصة، 
+          خدمات نقل العفش الآمن والمضمون، بالإضافة إلى العديد من الخدمات الأخرى التي تلبي جميع احتياجاتك.
+        </p>
+
+        <!-- Keyword Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="bg-white rounded-lg shadow-md p-4 border-r-4 hover:shadow-lg transition-shadow" style="border-color: #590d3d;">
+            <div class="flex items-center mb-2">
+              <svg class="w-6 h-6 ml-2" style="color: #590d3d;" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.36 2.72L20.78 4.14L15.06 9.85C16.13 11.39 16.28 13.24 15.38 14.44L9.06 8.12C10.26 7.22 12.11 7.37 13.65 8.44L19.36 2.72M5.93 17.57C3.92 15.56 2.69 13.16 2.35 10.92L7.23 8.83C8.74 11.13 7.81 14.19 5.93 17.57M9.75 5.75C11.75 7.75 13.16 10.16 13.92 12.35L11.83 17.23C9.56 16.69 7.75 15.56 5.75 13.56L9.75 5.75Z"/>
+              </svg>
+              <h3 class="font-bold text-lg" style="color: #590d3d;">
+                <a href="https://naqaa-clean.com/" class="hover:text-blue-500 transition-colors duration-300 hover:underline">النظافةالشاملة ←</a>
+                 </h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">خدمات تنظيف احترافية للمنازل والمكاتب</p>
+            <span  class="text-sm font-medium " style="color: #590d3d;"> نقاء كلين</span>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-4 border-r-4 hover:shadow-lg transition-shadow" style="border-color: #590d3d;">
+            <div class="flex items-center mb-2">
+              <svg class="w-6 h-6 ml-2" style="color: #590d3d;" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.7 19L13.6 9.9C14.5 7.6 14 4.9 12.1 3C10.1 1 7.1 0.6 4.7 1.7L9 6L6 9L1.6 4.7C0.4 7.1 0.9 10.1 2.9 12.1C4.8 14 7.5 14.5 9.8 13.6L18.9 22.7C19.3 23.1 19.9 23.1 20.3 22.7L22.6 20.4C23.1 20 23.1 19.3 22.7 19Z"/>
+              </svg>
+              <h3 class="font-bold text-lg" style="color: #590d3d;">
+                <a href="https://ironcool.net/" class="hover:text-blue-500 transition-colors duration-300 hover:underline"> صيانة المكيفات ←</a>
+                 </h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">إصلاح وصيانة جميع الأعطال المنزلية</p>
+            <span  class="text-sm font-medium " style="color: #590d3d;"> ايرون كول </span>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md p-4 border-r-4 hover:shadow-lg transition-shadow" style="border-color: #590d3d;">
+            <div class="flex items-center mb-2">
+              <svg class="w-6 h-6 ml-2" style="color: #590d3d;" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 7H16V6A4 4 0 0 0 8 6V7H5A1 1 0 0 0 4 8V19A3 3 0 0 0 7 22H17A3 3 0 0 0 20 19V8A1 1 0 0 0 19 7M10 6A2 2 0 0 1 14 6V7H10M18 19A1 1 0 0 1 17 20H7A1 1 0 0 1 6 19V9H8V10A1 1 0 0 0 10 10A1 1 0 0 0 10 8V9H14V10A1 1 0 0 0 16 10A1 1 0 0 0 16 8V9H18Z"/>
+              </svg>
+              <h3 class="font-bold text-lg" style="color: #590d3d;">
+                <a href="https://www.bashir-mover.com/" class="hover:text-blue-500 transition-colors duration-300 hover:underline">نقل العفش ←</a>
+                 </h3>
+            </div>
+            <p class="text-sm text-gray-600 mb-3">نقل آمن ومضمون لجميع أنواع الأثاث</p>
+            <a href="#" class="text-sm font-medium =" style="color: #590d3d;"> بشاير الخير </a>
+          </div>
+        </div>
+
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+          مهمتنا الأساسية هي تسهيل حياتك اليومية من خلال توفير وصول سريع ومباشر إلى 
+          <a href="#" class="font-bold hover:underline transition-colors" style="color: #590d3d;">أفضل الشركات</a> 
+          التي تتميز بالجودة العالية والاحترافية المتميزة. اعتمد علينا دائماً لتجد أفضل الحلول المبتكرة لجميع احتياجاتك المنزلية والتجارية.
+        </p>
+
+        <!-- Centered Buttons -->
+        <div class="flex justify-center gap-4">
+          <a href="tel:0565265233" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white hover:opacity-90 hover:transform hover:scale-105 transition-all duration-200 shadow-lg" style="background-color: #590d3d;">
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            اتصل بنا الآن
+          </a>
+          
+          <a href="https://wa.me/966565265233" target="_blank" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-gray-800 hover:opacity-90 hover:transform hover:scale-105 transition-all duration-200 shadow-lg" style="background-color: #e8c468;">
+            <svg class="w-6 h-6 ml-2" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.891-11.893 11.891-1.995 0-3.905-.571-5.592-1.594l-6.323 1.654zm6.225-6.148l.354-.179a9.875 9.875 0 004.89 1.316c5.454 0 9.888-4.434 9.889-9.889.001-5.454-4.435-9.888-9.889-9.888-5.455 0-9.888 4.434-9.889 9.889.001 2.024.6 3.933 1.697 5.63l.215.324-.966 3.525 3.612-.955z"/>
+            </svg>
+            تواصل واتساب
+          </a>
+        </div>
+      </div>
+
+      <!-- Left Side: Image -->
+      <div class="w-full md:w-1/2 px-4 mt-10 md:mt-0">
+        <img src="https://images.pexels.com/photos/4239031/pexels-photo-4239031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="فريق عمل خدمات منزلية محترف" class="rounded-lg shadow-xl w-full h-auto hover:shadow-2xl transition-shadow duration-300">
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Services Section -->
     <section id="services" class="section-padding bg-light-silver">
@@ -189,90 +371,68 @@
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="section-padding luxury-gradient" id="about">
-    <div class="container-custom">
-        <div class="text-center text-pure-white mb-16">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-6 font-luxury">
-                نحن <span class="text-yellow-600">شريككم الموثوق</span> في الخليج
-            </h2>
-            <p class="text-xl font-elegant max-w-3xl mx-auto">
-                بخبرة تمتد لسنوات في سوق الخليج، نلتزم بتقديم حلول متكاملة ومبتكرة تلبي أعلى معايير الجودة والاحترافية. فريقنا المتخصص يسعى دائمًا لتجاوز توقعاتكم، مقدمين خدمات مصممة خصيصًا لتناسب احتياجاتكم الفريدة.
-            </p>
-        </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- بطاقة خدمة: النظافة العامة -->
-            <div class="luxury-card p-8 flex flex-col items-center text-center">
-                <div class="service-icon mb-6">
-                    <i class="fas fa-broom fa-3x text-rose-gold"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">خدمات النظافة الشاملة</h3>
-                <p class="text- black font-elegant">
-                    نقدم حلول نظافة متكاملة للمنازل، المكاتب، والمنشآت التجارية والصناعية. نستخدم أحدث التقنيات والمواد الصديقة للبيئة لضمان بيئة صحية ونظيفة، مع فريق مدرب على أعلى مستوى لتقديم خدمة لا تضاهى في جميع أنحاء الخليج. [7, 15, 18, 19]
-                </p>
-            </div>
 
-            <!-- بطاقة خدمة: التكييف والتبريد -->
-            <div class="luxury-card p-8 flex flex-col items-center text-center">
-                <div class="service-icon mb-6">
-                    <i class="fas fa-snowflake fa-3x text-rose-gold"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">صيانة وتركيب التكييف</h3>
-                <p class="text- black  font-elegant">
-                    متخصصون في جميع أعمال التكييف والتبريد، من التركيب والصيانة الدورية إلى التعديلات والإصلاحات. فريقنا الفني يمتلك الخبرة اللازمة للتعامل مع كافة أنواع الأنظمة لضمان أقصى درجات الراحة والكفاءة في مناخ الخليج الحار. [4, 8, 9, 10, 12]
-                </p>
-            </div>
-
-            <!-- بطاقة خدمة: مكافحة الحرائق -->
-            <div class="luxury-card p-8 flex flex-col items-center text-center">
-                <div class="service-icon mb-6">
-                    <i class="fas fa-fire-extinguisher fa-3x text-rose-gold"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">حلول متكاملة لمكافحة الحرائق</h3>
-                <p class="text- black  font-elegant">
-                    نقدم استشارات، توريد، تركيب، وصيانة لأنظمة مكافحة الحرائق المتطورة. نلتزم بأعلى معايير السلامة العالمية والمتطلبات المحلية لدول الخليج، لضمان حماية شاملة لأصولكم وسلامة الأفراد. [13, 14, 16, 20, 21]
-                </p>
-            </div>
-
-            <!-- بطاقة خدمة: نقل العفش -->
-            <div class="luxury-card p-8 flex flex-col items-center text-center">
-                <div class="service-icon mb-6">
-                    <i class="fas fa-truck-moving fa-3x text-rose-gold"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">خدمات نقل العفش الاحترافية</h3>
-                <p class="text- black  font-elegant">
-                    نضمن لكم تجربة نقل عفش سلسة وآمنة داخل المدن وبين دول الخليج. فريقنا المتخصص يتعامل مع ممتلكاتكم بعناية فائقة، من التعبئة والتغليف إلى النقل والتركيب، لراحة بالكم التامة. [1, 2, 3, 5, 6]
-                </p>
-            </div>
-
-            <!-- بطاقة: لماذا نحن (الجودة والاحترافية) -->
-            <div class="luxury-card p-8 flex flex-col items-center text-center">
-                <div class="service-icon mb-6">
-                    <i class="fas fa-award fa-3x text-rose-gold"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">الجودة والاحترافية</h3>
-                <p class="text- black  font-elegant">
-                    نلتزم بأعلى معايير الجودة في كل خدمة نقدمها. فريقنا مكون من خبراء مؤهلين ومدربين لتقديم حلول احترافية وموثوقة، مع التركيز على التفاصيل لضمان رضاكم التام في كل خطوة.
-                </p>
-            </div>
-
-            <!-- بطاقة: لماذا نحن (الالتزام بالمواعيد) -->
-            <div class="luxury-card p-8 flex flex-col items-center text-center">
-                <div class="service-icon mb-6">
-                    <i class="fas fa-clock fa-3x text-rose-gold"></i>
-                </div>
-                <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">الالتزام والدقة</h3>
-                <p class="text- black  font-elegant">
-                    نقدر وقتكم ونلتزم بالمواعيد المحددة بدقة متناهية. سرعة التنفيذ لا تعني التنازل عن الجودة، بل هي جزء من منهجيتنا لتقديم خدمات فعالة وفي الوقت المناسب، لتلبية احتياجاتكم بفاعلية.
-                </p>
-            </div>
-        </div>
+<!-- بانر شركة خدمات الخليج -->
+<section class="bg-gradient-to-r from-[#590d3d] to-[#590d3d]/90 py-12 px-6 relative overflow-hidden">
+  <!-- خلفية زخرفية -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-[#e8c468] rounded-full -translate-y-32 translate-x-32"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-[#e8c468] rounded-full translate-y-24 -translate-x-24"></div>
+  </div>
+  
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+    <!-- العنوان الرئيسي -->
+    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+      شركة خدمات الخليج
+    </h1>
+    
+    <!-- النص الفرعي -->
+    <p class="text-xl md:text-2xl text-[#e8c468] mb-8 font-semibold">
+      لإضافة موقع لدليل شركات الخدمات الخليج
+    </p>
+    
+    <!-- دعوة للعمل -->
+    <div class="mb-8">
+      <h2 class="text-2xl md:text-3xl text-white font-bold mb-6">
+        اتصل بنا الآن
+      </h2>
     </div>
+    
+    <!-- أزرار التواصل -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <!-- زر الواتساب -->
+      <a href="https://wa.me/966565265233" 
+         class="group bg-[#e8c468] hover:bg-[#e8c468]/90 text-[#590d3d] font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-3 min-w-[200px] justify-center">
+        <svg class="w-6 h-6 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+        <span>تواصل عبر الواتساب</span>
+      </a>
+      
+      <!-- زر الاتصال -->
+      <a href="tel:0565265233"
+         class="group bg-white hover:bg-gray-100 text-[#590d3d] font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-3 min-w-[200px] justify-center border-2 border-[#e8c468]">
+        <svg class="w-6 h-6 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span>اتصل بنا مباشرة</span>
+      </a>
+    </div>
+    
+    <!-- معلومات إضافية -->
+    <div class="mt-8 text-white/80 text-sm">
+      <p>خدمة سريعة ومضمونة • دعم فني متواصل • أسعار تنافسية</p>
+    </div>
+  </div>
 </section>
 
+
+
+
+ 
     <!-- Blog Section -->
-    <section id="blogs" class="section-padding bg-gradient-to-br from-light-silver to-pure-white relative overflow-hidden">
+ <section id="blogs" class="section-padding bg-gradient-to-br from-light-silver to-pure-white relative overflow-hidden">
         <div class="blog-particles" id="blogParticles"></div>
         <div class="container-custom relative z-10">
             <!-- Blog Header -->
@@ -321,44 +481,341 @@
    
 
 
+
+
+
+<!-- قسم شعارات الشركات مع خلفية سادة -->
+<section class="bg-gray-50 py-16 px-6 relative overflow-hidden">
+  
+  <div class="max-w-7xl mx-auto text-center relative z-10">
+    <!-- العنوان -->
+    <div class="mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#590d3d] mb-4">
+        شركاؤنا في النجاح
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-[#590d3d] to-[#e8c468] mx-auto mb-4"></div>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        نفتخر بشراكتنا مع أفضل الشركات في المنطقة لتقديم خدمات متميزة
+      </p>
+    </div>
     
-    <!-- Contact Section -->
-    <section class="section-padding bg-pure-white">
-        <div class="container-custom">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold text-yellow-600 mb-6 font-luxury">
-                    تواصل <span class="text-luxury">معنا</span>
-                </h2>
-                <p class="text-silver-mist text-xl font-elegant">نحن هنا لخدمتك في أي وقت بأعلى معايير الفخامة</p>
+    <!-- حاوي الشعارات مع تأثير القناع للإخفاء التدريجي -->
+    <div class="relative">
+      <!-- قناع تدريجي من اليسار -->
+      <div class="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-50 to-transparent z-10 pointer-events-none"></div>
+      <!-- قناع تدريجي من اليمين -->
+      <div class="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-50 to-transparent z-10 pointer-events-none"></div>
+      
+      <!-- حاوي التمرير -->
+      <div class="overflow-hidden py-8">
+        <div class="flex animate-scroll-infinite">
+          <!-- المجموعة الأولى من الشعارات -->
+          <div class="flex items-center justify-center min-w-full">
+            <!-- شعار 1 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://ironcool.net/img/logo.png" alt=" شركة ايرون كول  " class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">شركة ايرون كول </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="luxury-card text-center p-8">
-                    <div class="service-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">اتصل بنا</h3>
-                    <p class="text-silver-mist text-lg font-elegant">0565265233</p>
-                </div>
-                
-                <div class="luxury-card text-center p-8">
-                    <div class="service-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">راسلنا</h3>
-                    <p class="text-silver-mist text-lg font-elegant">info@gulf-services.com</p>
-                </div>
-                
-                <div class="luxury-card text-center p-8">
-                    <div class="service-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-600 mb-4 font-luxury">موقعنا</h3>
-                    <p class="text-silver-mist text-lg font-elegant">جميع دول الخليج العربي</p>
-                </div>
+            <!-- شعار 2 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://naqaa-clean.com/logo2.avif" alt="  نقاء كلين للنظافة" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">  نقاء كلين للنظافة</p>
             </div>
+            
+            <!-- شعار 3 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://nazretelebdaa.com/assets/img/icon.webp" alt="شركة نظرةالإبداع لمكافحة الحرائق" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">  نظرة الابداع للحرائق</p>
+            </div>
+            
+            <!-- شعار 4 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://www.bashir-mover.com/logo.png" alt="  بشاير الخير لنقل الاثاث بالكويت" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">  بشاير الخير لنقل الاثاث</p>
+            </div>
+            
+            <!-- شعار 5 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://cleanplusteam.com/logo.avif" alt="  شركة بلس كلين للنظافه" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">شركة بلس كلين للنظافه</p>
+            </div>
+            
+            <!-- شعار 6 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://naqlaty-ship.com/03.png" alt=" شركة نقلاتي لنقل عفش بالرياض" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300"> نقلاتي نقل عفش بالرياض</p>
+            </div>
+          </div>
+          
+          <!-- المجموعة الثانية (نسخة مكررة للتأثير الدائري) -->
+           <div class="flex items-center justify-center min-w-full">
+            <!-- شعار 1 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://ironcool.net/img/logo.png" alt=" شركة ايرون كول  " class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">شركة ايرون كول </p>
+            </div>
+            
+            <!-- شعار 2 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://naqaa-clean.com/logo2.avif" alt="  نقاء كلين للنظافة" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">  نقاء كلين للنظافة</p>
+            </div>
+            
+            <!-- شعار 3 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://nazretelebdaa.com/assets/img/icon.webp" alt="شركة نظرةالإبداع لمكافحة الحرائق" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">  نظرة الابداع للحرائق</p>
+            </div>
+            
+            <!-- شعار 4 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://www.bashir-mover.com/logo.png" alt="  بشاير الخير لنقل الاثاث بالكويت" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">  بشاير الخير لنقل الاثاث</p>
+            </div>
+            
+            <!-- شعار 5 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://cleanplusteam.com/logo.avif" alt="  شركة بلس كلين للنظافه" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300">شركة بلس كلين للنظافه</p>
+            </div>
+            
+            <!-- شعار 6 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://naqlaty-ship.com/03.png" alt=" شركة نقلاتي لنقل عفش بالرياض" class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300"> نقلاتي نقل عفش بالرياض</p>
+            </div>
+            <!-- شعار 6 -->
+            <div class="mx-12 flex flex-col items-center group cursor-pointer">
+              <div class="w-24 h-24 bg-white rounded-xl shadow-lg flex items-center justify-center mb-4 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110 border-2 border-transparent group-hover:border-[#e8c468]">
+                <img src="https://homo-ve.com/03.png" alt=" Homove لنقل العفش    " class="h-20 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+              </div>
+              <p class="text-sm font-bold text-[#590d3d] group-hover:text-[#e8c468] transition-colors duration-300"> Homove لنقل العفش </p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    
+    <!-- نص إضافي -->
+    <div class="mt-8">
+      <p class="text-[#590d3d] font-semibold">
+        انضم إلى شبكة شركائنا المتميزين واستفد من خدماتنا الاحترافية
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes scroll-infinite {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll-infinite {
+    animation: scroll-infinite 30s linear infinite;
+  }
+  
+  /* إيقاف الأنميشن عند التمرير فوق السكشن */
+  section:hover .animate-scroll-infinite {
+    animation-play-state: paused;
+  }
+</style>
+
+
+
+
+
+
+    
+   <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gradient-to-br from-white via-gray-50 to-gray-100 relative overflow-hidden">
+  <!-- خلفية زخرفية خفيفة -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-20 left-10 w-40 h-40 bg-[#590d3d] rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-32 h-32 bg-[#e8c468] rounded-full blur-3xl"></div>
+  </div>
+  
+  <div class="max-w-6xl mx-auto relative z-10">
+    <!-- العنوان الرئيسي -->
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-bold text-[#590d3d] mb-6">
+        تواصل معنا
+      </h2>
+      <div class="w-32 h-1 bg-gradient-to-r from-[#590d3d] to-[#e8c468] mx-auto mb-6"></div>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        نحن هنا لخدمتك على مدار الساعة. تواصل معنا الآن واحصل على استشارة مجانية لخدماتك المطلوبة
+      </p>
+    </div>
+    
+    <!-- أزرار التواصل السريع الرئيسية -->
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <!-- زر الواتساب الكبير -->
+      <a href="https://wa.me/966565265233" 
+         class="group bg-gradient-to-r from-[#e8c468] to-[#e8c468]/90 hover:from-[#e8c468]/90 hover:to-[#e8c468] text-[#590d3d] font-bold py-8 px-12 rounded-3xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-4 text-xl">
+        <svg class="w-8 h-8 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+        تواصل عبر الواتساب
+      </a>
+      
+      <!-- زر الاتصال الكبير -->
+      <a href="tel:0565265233" 
+         class="group bg-gradient-to-r from-[#590d3d] to-[#590d3d]/90 hover:from-[#590d3d]/90 hover:to-[#590d3d] text-white font-bold py-8 px-12 rounded-3xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-4 text-xl">
+        <svg class="w-8 h-8 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        اتصل بنا مباشرة
+      </a>
+    </div>
+    
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- معلومات التواصل -->
+      <div class="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 border border-gray-100">
+        <h3 class="text-3xl font-bold text-[#590d3d] mb-8 text-center">معلومات التواصل</h3>
+        
+        <div class="space-y-8">
+          <!-- الهاتف -->
+          <div class="flex items-center gap-6 group cursor-pointer p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#590d3d] to-[#590d3d]/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#590d3d] text-xl mb-1">اتصل بنا</h4>
+              <p class="text-gray-600 text-lg">0565265233</p>
+              <p class="text-sm text-gray-500">متاح 24/7 لخدمة الطوارئ</p>
+            </div>
+          </div>
+          
+          <!-- الواتساب -->
+          <div class="flex items-center gap-6 group cursor-pointer p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#e8c468] to-[#e8c468]/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-[#590d3d]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#590d3d] text-xl mb-1">واتساب</h4>
+              <p class="text-gray-600 text-lg">+966 966565265233</p>
+              <p class="text-sm text-gray-500">رد سريع خلال دقائق</p>
+            </div>
+          </div>
+          
+          <!-- العنوان -->
+          <div class="flex items-center gap-6 group cursor-pointer p-4 rounded-2xl hover:bg-gray-50 transition-all duration-300">
+            <div class="w-16 h-16 bg-gradient-to-r from-[#590d3d] to-[#590d3d]/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#590d3d] text-xl mb-1">موقعنا</h4>
+              <p class="text-gray-600 text-lg">الرياض، المملكة العربية السعودية</p>
+              <p class="text-sm text-gray-500">نخدم جميع  دول الخليج </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- ساعات العمل والخدمات -->
+      <div class="space-y-8">
+        <!-- ساعات العمل -->
+        <div class="bg-gradient-to-r from-[#590d3d] to-[#590d3d]/90 rounded-3xl shadow-2xl p-8 text-white">
+          <h3 class="text-3xl font-bold mb-8 flex items-center justify-center gap-3">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z"/>
+            </svg>
+            ساعات العمل
+          </h3>
+          
+          <div class="space-y-4">
+            <div class="flex justify-between items-center p-3 bg-white/10 rounded-xl">
+              <span class="font-semibold text-lg">السبت - الخميس</span>
+              <span class="text-[#e8c468] font-bold">9:00 ص - 6:00 م</span>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-white/10 rounded-xl">
+              <span class="font-semibold text-lg">الجمعة</span>
+              <span class="text-[#e8c468] font-bold">مغلق</span>
+            </div>
+            <div class="mt-6 p-4 bg-[#e8c468] rounded-xl text-[#590d3d]">
+              <p class="text-center font-bold text-lg">
+                🚨 خدمة الطوارئ: متاحة 24/7
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- لماذا تختارنا -->
+        <div class="bg-white rounded-3xl shadow-2xl p-8 border border-gray-100">
+          <h3 class="text-2xl font-bold text-[#590d3d] mb-6 text-center">لماذا تختارنا؟</h3>
+          
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[#e8c468] rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-[#590d3d]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-700 font-semibold">خدمة سريعة ومضمونة</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[#e8c468] rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-[#590d3d]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-700 font-semibold">دعم فني متواصل</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[#e8c468] rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-[#590d3d]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-700 font-semibold">أسعار تنافسية</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-[#e8c468] rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-[#590d3d]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+              </div>
+              <span class="text-gray-700 font-semibold">خبرة أكثر من 10 سنوات</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       <!-- Footer Section -->
     <footer class="footer-gradient relative overflow-hidden">
