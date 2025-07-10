@@ -1,7 +1,7 @@
  <style>
               @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
           
 
         }
@@ -235,8 +235,8 @@
         }
         
         .highlight-box {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-            color: white;
+            
+            color: black;
             border-radius: 16px;
             padding: 32px;
             margin: 32px 0;

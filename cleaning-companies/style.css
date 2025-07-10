@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "Lama-sans";
-    src: url("../assets/font/LamaSans-Black.woff") format("woff");
+    src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
 }
 
 body {
@@ -300,11 +300,11 @@ body {
 }
 
 .highlight-box {
-    background: var(--petroleum);
+    background: white;
     padding: 30px;
     border-radius: 12px;
     margin: 30px 0;
-    color: white;
+    color: black;
 }
 
 .quote-box {
@@ -330,10 +330,12 @@ body {
 }
 
 .chapter-header {
-    background: var(--petroleum);
-    color: white;
+    background: white;
+    color: black;
     padding: 30px;
-    border-radius: 12px;
+    border:2px solid black ;
+    border-radius: 12px
+   ;
     margin: 50px 0 30px 0;
     text-align: center;
 }
@@ -433,9 +435,10 @@ body {
 }
 
 .naqaa-banner {
-    background: var(--petroleum);
-    color: white;
+    background: white;
+    color: black;
     padding: 40px;
+    border:2px solid black;
     border-radius: 12px;
     text-align: center;
     margin: 40px 0;

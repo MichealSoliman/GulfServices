@@ -1,7 +1,7 @@
  <style>
         @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
         }
         
         
@@ -22,9 +22,6 @@
             --light-bg: #faf8f3;
 
 
-
-
-
               --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
             --petroleum: #590d3d;
@@ -36,9 +33,7 @@
             --warm-rose: #e8c468;
         }
         
-        * {
-            /* font-family: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
-        }
+      
         
         body {
             background: linear-gradient(135deg, #faf8f3 0%, #f0ede3 100%);
@@ -50,37 +45,17 @@
             font-family: "Lama-sans";
         }
          /* style nav */
- :root {
-            --charcoal: #2C3E50;
-            --silver-mist: #BDC3C7;
-            --petroleum: #590d3d;
-            --rose-gold: #e8c468;
-            --pure-white: #FFFFFF;
-            --dark-charcoal: #1A252F;
-            --light-silver: #ECF0F1;
-            --deep-petroleum: #590d3d;
-            --warm-rose: #e8c468;
-
-  
-        }
-          * {
+ 
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-         @font-face {
-            font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
-            
+        
 
-        }
+       
 
-        body {
-            
-            font-family: "Lama-sans";
-            background: linear-gradient(135deg, var(--light-silver) 0%, var(--pure-white) 100%);
-        }
-
+       
         .luxury-gradient {
             background: var(--petroleum);
         }
@@ -251,6 +226,7 @@
             box-shadow: 0 15px 35px  box-shadow: 0 8px 25px var(--rose-gold, 0.3)
         }
 
+       
         /* end style nav */
 
 
@@ -422,8 +398,8 @@
         }
         
         .section-header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
+            background: ;
+            color: Black;
             padding: 2.5rem;
             position: relative;
         }
@@ -492,18 +468,22 @@
 
         /* Company Promotion Boxes */
         .company-promo {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
+           
+            color: Black;
             padding: 2rem;
             border-radius: 15px;
             margin: 2rem 0;
             text-align: center;
+            border:2px solid #e8c468
         }
 
         .company-promo h4 {
-            color: white;
+            color: Black;
             font-size: 1.6rem;
             margin-bottom: 1rem;
+        }
+        .company-promo p {
+            text-align: center;
         }
 
         .company-promo .btn {
