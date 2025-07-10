@@ -722,8 +722,7 @@ class BlogManager {
     }
 
     if (post) {
-      // In a real application, this would navigate to a dedicated page
-      // For now, we'll show an alert with post details
+      
       alert(
         `عنوان المقال: ${post.title}\n\nالفئة: ${this.getCategoryName(
           post.category
@@ -734,9 +733,7 @@ class BlogManager {
         }\n\nسيتم توجيهك إلى صفحة المقال الكاملة...`
       );
 
-      // Here you would typically do:
-      // window.location.href = `/blog/${post.id}`;
-      // or use a router in a SPA
+    
     }
   }
 

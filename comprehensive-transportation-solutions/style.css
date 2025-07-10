@@ -1,7 +1,7 @@
  <style>
           @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
           
 
         }
@@ -38,12 +38,13 @@
             color: var(--text-dark);
             line-height: 1.8;
         }
-         /* style nav */
- :root {
-         
-
-  
+        .scroll-offset {
+        scroll-margin-top: 2000px; /* بدل 100px بارتفاع النافبار عندك */
         }
+
+         /* style nav */
+ 
+        
           * {
             margin: 0;
             padding: 0;
@@ -51,7 +52,7 @@
         }
          @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/LamaSans-Black.woff") format("woff");
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
             
 
         }
@@ -74,6 +75,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
+            
         }
 
         .luxury-card {
