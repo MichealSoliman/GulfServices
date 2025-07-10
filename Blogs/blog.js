@@ -191,7 +191,7 @@ const blogData = {
       title: " الاثاث والعفش في الخليج",
       excerpt:"دليلك لاختيار أفضل شركات نقل الأثاث والعفش في الخليج العربي، مع ضمان الأمان الكامل والخدمة السريعة دون متاعب",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop",
+        "../assets/images/istockphoto-1395748211-612x612.jpg",
       category: "moving",
     
       author: "فريق النقل السكني",
@@ -203,7 +203,7 @@ const blogData = {
       excerpt:
         "دليل شامل يساعدك في اختيار عملية نقل أثاث في جميع الاماكن تتميز بالأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop",
+        "../assets/images/istockphoto-928084778-612x612.jpg",
       category: "moving",
     
       author: "فريق النقل السكني",
@@ -217,7 +217,7 @@ const blogData = {
       excerpt:
         "استكشف معنا دليلًا متكاملًا حول أفضل شركات التنظيف في السعودية، حيث نُسلط الضوء على معايير الجودة والاحترافية، لنساعدك في اختيار الشركة الأنسب لتنظيف المنازل، المكاتب، الفلل، المساجد، وحتى خزانات المياه، مع ضمان نتائج مذهلة وراحة تدوم",
       image:
-        "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&h=300&fit=crop",
+        "../assets/images/pexels-pixabay-48889.jpg",
       category: "cleaning",
      
       author: "فريق التنظيف",
@@ -241,7 +241,7 @@ const blogData = {
       excerpt:
         " دليلك الشامل إلى أفضل خدمات التنظيف في الرياض: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب.",
       image:
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop",
+        "../assets/images/pexels-pixabay-209230.jpg",
       category: "cleaning",
      
       author: "فريق التنظيف السكني",
@@ -252,7 +252,7 @@ const blogData = {
       title: " النظافة في الخليج العربي",
       excerpt:" دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب",
       image:
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=300&fit=crop",
+        "../assets/images/pexels-jonathanborba-28576631.jpg",
       category: "cleaning",
     
       author: " التنظيف الخليجي",
