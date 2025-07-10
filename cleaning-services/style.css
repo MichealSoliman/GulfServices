@@ -230,7 +230,7 @@
         }
 
         .header p {
-            font-size: 1.2rem;
+            /* font-size: 1.2rem; */
             color: #7f8c8d;
             max-width: 800px;
             margin: 0 auto;
@@ -246,7 +246,7 @@
 
         .content-section {
             padding: 40px;
-            font-size: 1.1rem;
+            /* font-size: 1.1rem; */
         }
 
         .content-section h2 {
