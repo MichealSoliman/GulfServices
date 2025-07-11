@@ -381,7 +381,7 @@
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
+             font-family: "Lama-sans";
             position: relative;
             z-index: 2;
             color: var(--rose-gold);
@@ -514,7 +514,7 @@
             font-weight: 600;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
-            font-family: 'Tajawal', sans-serif;
+             font-family: "Lama-sans";
             font-size: 1rem;
             text-align: center;
             text-decoration: none;
@@ -529,7 +529,7 @@
         }
 
         .font-luxury {
-            font-family: 'Playfair Display', serif;
+            font-family: "Lama-sans";
         }
 
         .font-elegant {
@@ -609,7 +609,7 @@
         }
 
         .footer-section-title {
-            font-family: 'Playfair Display', serif;
+            font-family: "Lama-sans";
             font-weight: 700;
             font-size: 1.25rem;
             color: var(--rose-gold);
@@ -713,7 +713,7 @@
         }
 
         .company-logo {
-            font-family: 'Playfair Display', serif;
+             font-family: "Lama-sans";
             font-size: 2.5rem;
             font-weight: 900;
             background: linear-gradient(135deg, var(--rose-gold), var(--rose-gold));
@@ -764,7 +764,7 @@
             border-radius: 25px;
             padding: 12px 20px;
             color: var(--pure-white);
-            font-family: 'Tajawal', sans-serif;
+            font-family: "Lama-sans";
             width: 100%;
             margin-bottom: 1rem;
             backdrop-filter: blur(10px);
@@ -790,7 +790,7 @@
             font-weight: 600;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
-            font-family: 'Tajawal', sans-serif;
+             font-family: "Lama-sans";
             width: 100%;
             
         }
