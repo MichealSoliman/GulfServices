@@ -128,6 +128,7 @@
             transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 1000;
             padding: 80px 30px 30px;
+            
         }
 
         .mobile-menu.active {
