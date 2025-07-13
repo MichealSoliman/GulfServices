@@ -8,7 +8,7 @@ const services = [
     name: "نقل العفش بالكويت",
     description:
       "خدمة نقل العفش والأثاث في الكويت بأحدث الوسائل وأفضل الأسعار مع ضمان سلامة الأثاث وخدمة فاخرة",
-    image: "./assets/images/pexels-rdne-7464369.jpg",
+    image: "./assets/images/Furniture-moving-in-Kuwait.webp",
     url: "https://www.bashir-mover.com/",
     location: "الكويت",
     category: "  اثاث الكويت ",
@@ -35,7 +35,7 @@ const services = [
     description:
       "صيانة شاملة واحترافية لأنظمة التكييف في الرياض تشمل التنظيف، الفحص، وإصلاح الأعطال، مع أسعار تنافسية، وخدمة سريعة، وضمان كفاءة التبريد والأداء المثالي طوال العام.",
 
-    image: "./assets/images/pexels-rdne-7464393.jpg",
+    image: "./assets/images/Furniture-moving-in-Jeddah.webp",
     url: "https://homo-ve.com/",
     location: "جدة",
     category: "نقل عفش",
@@ -61,7 +61,7 @@ const services = [
     description:
       "اكزو موف تقدم خدمة نقل العفش والأثاث في الرياض بأحدث الوسائل وبأفضل الأسعار مع ضمان سلامة الأثاث وخدمة فاخرة.",
 
-    image: "./assets/images/pexels-rdne-7464403.jpg",
+    image: "./assets/images/Furniture-moving.webp",
     url: "https://exzofor.com/",
     location: "جدة",
     category: "نقل عفش",
@@ -73,7 +73,7 @@ const services = [
     name: "خدمات النظافة المنزلية  ",
     description:
       "نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق والقصور بأعلى معايير الجودة، مع عمالة تنظيف محترفة وأحدث تقنيات التنظيف",
-    image: "./assets/images/pexels-matilda-wormwood-4099091.jpg",
+    image: "./assets/images/hero-img.webp",
     url: "https://getlamaaclean.com/",
     location: "الرياض",
     category: "لمعة",
@@ -85,7 +85,7 @@ const services = [
     name: "نقل العفش بالرياض",
     description:
       "نقل أثاث وعفش في الرياض بأسلوب حديث، مع ضمان الأمان الكامل للعفش وخدمة عملاء راقية وبأسعار مناسبة.",
-    image: "./assets/images/istockphoto-1332288894-612x612.jpg",
+    image: "./assets/images/Furniture-moving-in-Riyadh.webp",
     
     url: "https://naqlaty-ship.com/",
     location: "الرياض",
@@ -112,7 +112,7 @@ const services = [
     description:
       "نقل الأثاث والعفش في الرياض بخدمة فاخرة، أسعار تنافسية، وضمان كامل لسلامة الأثاث.",
     
-    image: "./assets/images/istockphoto-928084778-612x612 (1).jpg",
+    image: "./assets/images/Furniture-transportation.webp",
 
     url: "https://www.primomoves.com/",
     location: "الرياض",
@@ -125,7 +125,7 @@ const services = [
     name: "نظافة منزلك  ",
     description:
       "نقدم خدمات تنظيف شاملة للمنازل والفلل والشقق والقصور بأعلى معايير الجودة، مع عمالة تنظيف محترفة وأحدث تقنيات التنظيف",
-    image: "./assets/images/istockphoto-1316473356-612x612.jpg",
+    image: "./assets/images/cleanplus.webp",
     url: "https://cleanplusteam.com/",
     location: "الرياض",
     category: "بلس كلين ",
@@ -151,7 +151,7 @@ const services = [
       "أفضل حلول نقل الأثاث والعفش في الرياض مع ضمان السرعة والأمان، تغليف احترافي وخدمة عملاء على مدار الساعة بأسعار مغرية.",
 
     
-    image: "./assets/images/istockphoto-1395748211-612x612.jpg",
+    image: "./assets/images/Riyadh-Furniture.webp",
 
     url: "https://jadmoves.com/",
     location: "الرياض",
