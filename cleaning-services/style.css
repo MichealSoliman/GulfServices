@@ -1,4 +1,5 @@
- <style>
+<style>
+
         * {
             margin: 0;
             padding: 0;
@@ -6,20 +7,20 @@
         }
 
         body {
-            font-family: "Lama-sans";
+            font-family: "Lama-sans", Arial, sans-serif;
             line-height: 1.8;
             color: #2c3e50;
             background: linear-gradient(135deg, #d5cad1 0%, #bcb6ba 100%);
             min-height: 100vh;
         }
-         @font-face {
+        
+        @font-face {
             font-family: "Lama-sans";
-            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
-            
-
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("truetype");
         }
-         :root{
-          --charcoal: #2C3E50;
+        :root{
+              --competitor-color: #8b4513;
+            --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
             --petroleum: #590d3d;
             --rose-gold: #e8c468;
@@ -28,12 +29,29 @@
             --light-silver: #ECF0F1;
             --deep-petroleum: #590d3d;
             --warm-rose: #e8c468;
+        }
+          /* style nav */
+ 
+        
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         @font-face {
+            font-family: "Lama-sans";
+            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
+            
 
-    }
-    
-    /* start nav */
+        }
 
-              .luxury-gradient {
+        body {
+            
+            font-family: "Lama-sans";
+            background: linear-gradient(135deg, var(--light-silver) 0%, var(--pure-white) 100%);
+        }
+
+        .luxury-gradient {
             background: var(--petroleum);
         }
 
@@ -45,6 +63,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
+            
         }
 
         .luxury-card {
@@ -202,15 +221,9 @@
             transform: translateY(-3px);
             box-shadow: 0 15px 35px  box-shadow: 0 8px 25px var(--rose-gold, 0.3)
         }
-/* end nav */
-   
-   
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+        /* end style nav */
+        
 
         .header {
             text-align: center;
@@ -230,7 +243,6 @@
         }
 
         .header p {
-            /* font-size: 1.2rem; */
             color: #7f8c8d;
             max-width: 800px;
             margin: 0 auto;
@@ -246,7 +258,6 @@
 
         .content-section {
             padding: 40px;
-            /* font-size: 1.1rem; */
         }
 
         .content-section h2 {
@@ -314,7 +325,7 @@
             padding: 25px;
             border-radius: 15px;
             margin: 25px 0;
-            box-shadow: 0 8px 25px rgba(116, 185, 255, 0.3);
+            box-shadow: 0 8px 25px rgba(232, 196, 104, 0.3);
         }
 
         .highlight-box h3 {
@@ -341,10 +352,6 @@
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
             .header h1 {
                 font-size: 2rem;
             }
@@ -362,10 +369,7 @@
             }
         }
     </style>
-
-
-
-            /* style footer */
+       /* style footer */
          style {
           }
 
