@@ -1,9 +1,8 @@
- <style>
+  <style>
         @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
         }
-        
         
         :root {
             --primary-color: #590d3d;
@@ -21,8 +20,7 @@
             --lamaa-blue: #a67b5b;
             --light-bg: #faf8f3;
 
-
-              --charcoal: #2C3E50;
+            --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
             --petroleum: #590d3d;
             --rose-gold: #e8c468;
@@ -31,9 +29,10 @@
             --light-silver: #ECF0F1;
             --deep-petroleum: #590d3d;
             --warm-rose: #e8c468;
+            
+            
         }
         
-      
         
         body {
             background: linear-gradient(135deg, #faf8f3 0%, #f0ede3 100%);
@@ -44,18 +43,7 @@
             margin: 0;
             font-family: "Lama-sans";
         }
-         /* style nav */
- 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         
-
-       
-
-       
         .luxury-gradient {
             background: var(--petroleum);
         }
@@ -226,9 +214,7 @@
             box-shadow: 0 15px 35px  box-shadow: 0 8px 25px var(--rose-gold, 0.3)
         }
 
-       
         /* end style nav */
-
 
         /* Floating Contact Buttons */
         .floating-contacts {
@@ -398,7 +384,6 @@
         }
         
         .section-header {
-            background: ;
             color: Black;
             padding: 2.5rem;
             position: relative;
@@ -468,7 +453,6 @@
 
         /* Company Promotion Boxes */
         .company-promo {
-           
             color: Black;
             padding: 2rem;
             border-radius: 15px;
@@ -610,51 +594,6 @@
             background-color: var(--light-bg);
         }
         
-        /* Footer */
-        .footer {
-            background: linear-gradient(135deg, var(--dark-primary) 0%, var(--primary-color) 100%);
-            color: white;
-            padding: 4rem 0 2rem 0;
-            margin-top: 5rem;
-        }
-        
-        .footer-content {
-            text-align: center;
-        }
-        
-        .footer-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--accent-color);
-        }
-        
-        .footer-text {
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-        
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            margin-bottom: 2.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .footer-link {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
-            font-size: 1.05rem;
-        }
-        
-        .footer-link:hover {
-            color: var(--accent-color);
-        }
-        
         .copyright {
             border-top: 1px solid rgba(232,196,104,0.3);
             padding-top: 2rem;
@@ -768,9 +707,10 @@
                 background: white;
             }
         }
-</style>
+    </style>
 
-        /* style footer */
+
+             /* style footer */
          style {
           }
 
