@@ -1,10 +1,9 @@
  <style>
-          @font-face {
+        @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
-          
-
         }
+        
         :root {
             --primary-color: #590d3d;
             --secondary-color: rgb(207, 41, 26);
@@ -16,9 +15,9 @@
             --border-color: #e6dede;
             --success-color: #ae4627;
             --bashir-color: #940000;
-
             --competitor-color: #8b4513;
-            --charcoal: #2C3E50;
+
+             --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
             --petroleum: #590d3d;
             --rose-gold: #e8c468;
@@ -27,41 +26,26 @@
             --light-silver: #ECF0F1;
             --deep-petroleum: #590d3d;
             --warm-rose: #e8c468;
+            --primary-color: #590d3d;
+            --secondary-color: #e8c468;
         }
         
-        * {
-           font-family: "Lama-sans";
-        }
+       
         
         body {
             background-color: var(--bg-light);
             color: var(--text-dark);
             line-height: 1.8;
+             font-family: "Lama-sans"
         }
-        .scroll-offset {
-        scroll-margin-top: 2000px; /* بدل 100px بارتفاع النافبار عندك */
-        }
-
-         /* style nav */
- 
         
-          * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-         @font-face {
-            font-family: "Lama-sans";
-            src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
             
-
         }
-
-        body {
-            
-            font-family: "Lama-sans";
-            background: linear-gradient(135deg, var(--light-silver) 0%, var(--pure-white) 100%);
-        }
+        
 
         .luxury-gradient {
             background: var(--petroleum);
@@ -75,7 +59,6 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1rem;
-            
         }
 
         .luxury-card {
@@ -235,11 +218,10 @@
         }
 
         /* end style nav */
-        
+
         .hero-section {
-            background:var(--primary-color);
+            background: var(--primary-color);
             color: white;
-            padding: 80px 0;
             position: relative;
             overflow: hidden;
         }
@@ -301,7 +283,7 @@
         }
         
         .section-header.competitor-header {
-            background:  var(--competitor-color);
+            background: var(--competitor-color);
         }
         
         .section-header::after {
@@ -527,23 +509,6 @@
             text-decoration: underline;
         }
         
-        .footer {
-            background: linear-gradient(135deg, var(--text-dark), #34495e);
-            color: white;
-            padding: 3rem 0;
-            margin-top: 4rem;
-        }
-        
-        .footer h4 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .footer p {
-            opacity: 0.8;
-            line-height: 1.6;
-        }
-        
         .scroll-to-top {
             position: fixed;
             bottom: 30px;
@@ -567,25 +532,6 @@
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        }
-        
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .section-content {
-                padding: 1.5rem;
-            }
-            
-            .table-of-contents {
-                position: static;
-                margin-bottom: 1rem;
-            }
         }
         
         .fade-in {
@@ -638,9 +584,80 @@
             font-size: 15px;
             margin: 0;
         }
+        
+        .accordion-item {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+        
+        .accordion-button {
+            background: none;
+            border: none;
+            width: 100%;
+            padding: 1.5rem;
+            text-align: right;
+            font-weight: 600;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .accordion-button:hover {
+            background: var(--bg-light);
+        }
+        
+        .accordion-button::after {
+            content: '+';
+            font-size: 1.5rem;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-button[aria-expanded="true"]::after {
+            transform: rotate(45deg);
+        }
+        
+        .accordion-collapse {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-collapse.show {
+            max-height: 500px;
+        }
+        
+        .accordion-body {
+            padding: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-content {
+                padding: 1.5rem;
+            }
+            
+            .table-of-contents {
+                position: static;
+                margin-bottom: 1rem;
+            }
+        }
     </style>
-
-         /* style footer */
+      /* style footer */
          style {
           }
 

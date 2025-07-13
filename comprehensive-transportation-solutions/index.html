@@ -11,8 +11,7 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://gooldenmoon.com/comprehensive-transportation-solutions/index.html">
 
-
-    <!-- Open Graph (للفيسبوك وLinkedIn) -->
+    <!-- Open Graph -->
     <meta property="og:title" content="الحلول الشاملة لعملية نقل العفش بالكويت ومدن الكويت" />
     <meta property="og:description" content="اكتشف جميع خدمات ونصائح نقل العفش بالكويت، مع أفضل الشركات المتخصصة لضمان عملية نقل سلسة وآمنة." />
     <meta property="og:type" content="article" />
@@ -25,32 +24,31 @@
     <meta name="twitter:description" content="تعرف على أفضل خدمات نقل العفش بالكويت مع حلول فعالة وآمنة في جميع مدن الكويت." />
     <meta name="twitter:image" content="https://yourwebsite.com/images/moving-services-kuwait.jpg" />
     
-    <!-- Bootstrap CSS RTL -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- 
-     <!-- Tailwind CSS footer -->
-     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
     <!-- Google Fonts - Arabic -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     
    <style>
-       @font-face {
+     @font-face {
             font-family: "Lama-sans";
             src: url("../assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
-          
+            
 
         }
-        
+        body{
+            font-family: "Lama-sans";
+        }
+
    </style>
 </head>
 <body>
-
-<navbar class="">
+       <navbar>
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     
@@ -72,15 +70,15 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="navbar top-0 w-full z-50 ">
+    <nav class="navbar  top-0 w-full z-50">
         <div class="container-custom">
-            <div class="flex justify-between items-center py-4 w-100">
+            <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-3 space-x-reverse">
                     <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
                         <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
                         
                     </div>
-                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity ml-5">خدمات الخليج</a>
+                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity">خدمات الخليج</a>
                 </div>
                 
                 <div class="hidden lg:flex space-x-8 space-x-reverse">
@@ -111,12 +109,11 @@
        
     </nav>
 </navbar>
-   
     <!-- Hero Section -->
-    <section class="hero-section ">
-        <div class="container py-20">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center hero-content">
+    <section class="hero-section py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center">
+                <div class="w-full max-w-4xl text-center hero-content">
                     <h1 class="hero-title">
                         <i class="fas fa-truck-moving"></i>
                         الحلول الشاملة لعملية نقل العفش بالكويت
@@ -127,8 +124,8 @@
                         خدمات احترافية • أسعار تنافسية • ضمان السلامة
                     </p>
                     <div class="mt-4">
-                        <a href="#content" class="btn btn-warning btn-lg px-4 py-2">
-                            <i class="fas fa-arrow-down ms-2"></i>
+                        <a href="#content" class="inline-block bg-yellow-500 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition-colors">
+                            <i class="fas fa-arrow-down ml-2"></i>
                             ابدأ القراءة
                         </a>
                     </div>
@@ -138,12 +135,12 @@
     </section>
 
     <!-- Main Content -->
-    <div class="container  " id="content">
-        <div class="row ">
+    <div class="max-w-7xl mx-auto px-4" id="content">
+        <div class="flex flex-wrap -mx-4">
             <!-- Table of Contents -->
-            <div class="col-lg-3">
-                <div class="table-of-contents ">
-                    <h3><i class="fas fa-list "></i> فهرس المحتويات</h3>
+            <div class="w-full lg:w-1/4 px-4">
+                <div class="table-of-contents">
+                    <h3><i class="fas fa-list"></i> فهرس المحتويات</h3>
                     <ul class="toc-list">
                         <li><a href="#introduction"><i class="fas fa-home"></i>المقدمة</a></li>
                         <li><a href="#bashir-company"><i class="fas fa-star"></i>شركة Bashir Mover</a></li>
@@ -164,9 +161,9 @@
             </div>
 
             <!-- Main Content -->
-            <div class="col-lg-9">
+            <div class="w-full lg:w-3/4 px-4">
                 <!-- Introduction Section -->
-                <div class="content-section fade-in scroll-mt-24 " id="introduction">
+                <div class="content-section fade-in" id="introduction">
                     <div class="section-header">
                         <h2><i class="fas fa-home"></i>مقدمة: أهمية نقل العفش الاحترافي في الكويت</h2>
                     </div>
@@ -188,14 +185,14 @@
                         <h3>التحديات المتزايدة في عملية نقل العفش</h3>
                         <p>مع تزايد حجم الأثاث وتعقيد تصميمه، وتنوع الأجهزة الإلكترونية والكهربائية الحساسة، أصبحت عملية النقل أكثر تعقيدًا من أي وقت مضى. لم يعد الأمر يقتصر على حمل الصناديق، بل يشمل:</p>
 
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/2 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-tools"></i>فك وتركيب الأثاث المعقد</h5>
                                     <p>العديد من قطع الأثاث الحديثة تتطلب فكًا دقيقًا وإعادة تركيب احترافية، خاصة الأثاث المدمج والمطابخ.</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="w-full md:w-1/2 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-shield-alt"></i>تغليف وحماية الممتلكات</h5>
                                     <p>الأجهزة الإلكترونية والتحف الفنية تحتاج تغليفًا خاصًا ومواد حماية متطورة.</p>
@@ -216,7 +213,7 @@
                 </div>
 
                 <!-- Bashir Company Section -->
-                <div class="content-section fade-in " id="bashir-company">
+                <div class="content-section fade-in" id="bashir-company">
                     <div class="section-header bashir-header">
                         <h2><i class="fas fa-crown"></i>شركة Bashir Mover - الرائدة في نقل العفش بالكويت</h2>
                     </div>
@@ -242,20 +239,20 @@
                         </div>
 
                         <h3>خدمات شركة Bashir Mover المتميزة</h3>
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-home"></i>نقل المنازل</h5>
                                     <p>خدمة شاملة لنقل الأثاث المنزلي بجميع أنواعه من الشقق والفلل والمنازل التقليدية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-building"></i>نقل المكاتب</h5>
                                     <p>حلول متخصصة لنقل مكاتب الشركات والمؤسسات مع الحفاظ على سرية المعلومات.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-warehouse"></i>التخزين المؤقت</h5>
                                     <p>مستودعات آمنة ومجهزة لتخزين الأثاث والممتلكات لفترات قصيرة أو طويلة.</p>
@@ -292,20 +289,20 @@
                         <h3>خدمة فك وتركيب الأثاث</h3>
                         <p>تعتبر هذه الخدمة من أهم الخدمات التي تقدمها شركات نقل العفش، حيث تتطلب خبرة ومهارة خاصة للتعامل مع أنواع مختلفة من الأثاث:</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-bed"></i>غرف النوم</h5>
                                     <p>فك وتركيب الأسرة، الدواليب، التسريحات، والكومودينات بعناية فائقة.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-utensils"></i>المطابخ</h5>
                                     <p>التعامل مع وحدات المطبخ، الأحواض، وأسطح العمل بحرفية عالية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-couch"></i>غرف المعيشة</h5>
                                     <p>فك وتركيب الكنب، طاولات القهوة، ووحدات التلفزيون.</p>
@@ -349,14 +346,14 @@
                         <h3>خدمات إضافية متخصصة</h3>
                         <p>تقدم بعض الشركات خدمات إضافية لتلبية احتياجات خاصة:</p>
 
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/2 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-snowflake"></i>فك وتركيب المكيفات</h5>
                                     <p>خدمة متخصصة تتطلب فنيين مؤهلين للتعامل مع أنظمة التكييف.</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="w-full md:w-1/2 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-broom"></i>خدمة التنظيف</h5>
                                     <p>تنظيف المنزل القديم والجديد قبل وبعد عملية النقل.</p>
@@ -377,20 +374,20 @@
                         <h3>أثاث غرف النوم</h3>
                         <p>تعد غرف النوم من أكثر الأماكن خصوصية في المنزل، ولذلك يتم اختيار أثاثها بعناية:</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-bed"></i>الأسرة</h5>
                                     <p>متوفرة بمقاسات متنوعة من المفرد إلى الكينج، وتشمل تصميمات خشبية ومبطنة.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-warehouse"></i>الدواليب</h5>
                                     <p>تشمل الدواليب الخشبية، المنزلقة، والمزودة بمرايا لتوفير المساحة.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-magic"></i>التسريحات والكومودينات</h5>
                                     <p>توفر مساحة لتخزين الأغراض الشخصية مع لمسة جمالية أنيقة.</p>
@@ -439,20 +436,20 @@
                     <div class="section-content">
                         <p>تتكون دولة الكويت من ست محافظات رئيسية، لكل محافظة طابعها المميز من حيث الموقع، الكثافة السكانية، والخدمات المتوفرة. فيما يلي نظرة سريعة على كل محافظة:</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-city"></i>محافظة العاصمة</h5>
                                     <p>تقع في قلب الكويت، وتضم المؤسسات الحكومية والوزارات، إضافة إلى المعالم السياحية مثل أبراج الكويت وسوق المباركية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-landmark"></i>محافظة حولي</h5>
                                     <p>من أكثر المحافظات كثافة سكانية، وتشتهر بالمراكز التجارية والتعليمية، وتنوع الجنسيات المقيمة فيها.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-industry"></i>محافظة الأحمدي</h5>
                                     <p>تقع جنوب البلاد وتُعرف كمركز رئيسي لصناعة النفط، وتضم العديد من المجمعات السكنية الحديثة.</p>
@@ -460,20 +457,20 @@
                             </div>
                         </div>
 
-                        <div class="row mt-4">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4 mt-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-ship"></i>محافظة الفروانية</h5>
                                     <p>تضم مطار الكويت الدولي، وتعد من أكبر المحافظات من حيث عدد السكان، وتتنوع فيها الأحياء التجارية والسكنية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-tree"></i>محافظة الجهراء</h5>
                                     <p>تمتد غرب الكويت، وتتميز بمساحتها الواسعة وتنوعها بين المناطق الزراعية والصحراوية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-home"></i>محافظة مبارك الكبير</h5>
                                     <p>من أحدث المحافظات، وتتميز بهدوئها وانتشار المناطق السكنية الحديثة والخدمات العائلية.</p>
@@ -494,20 +491,20 @@
                         <h3>حجم وكمية الأثاث</h3>
                         <p>يعتبر حجم الأثاث وكميته العامل الأساسي في تحديد التكلفة:</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-home"></i>شقة صغيرة (1-2 غرفة)</h5>
                                     <p>تكلفة أقل نسبيًا، تتراوح عادة بين 50-150 دينار كويتي</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-building"></i>شقة متوسطة (3-4 غرف)</h5>
                                     <p>تكلفة متوسطة، تتراوح بين 150-300 دينار كويتي</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-castle"></i>فيلا كبيرة</h5>
                                     <p>تكلفة أعلى، قد تصل إلى 500 دينار كويتي أو أكثر</p>
@@ -556,20 +553,20 @@
                         <h3>سمعة الشركة وتقييم العملاء</h3>
                         <p>تعتبر تقييمات العملاء وتجاربهم السابقة من أبرز المؤشرات على جودة الخدمة:</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-star"></i>تقييمات جوجل</h5>
                                     <p>يفضل اختيار شركات ذات تقييم مرتفع (4 نجوم فأكثر) وتعليقات إيجابية حقيقية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-comments"></i>تجارب العملاء</h5>
                                     <p>ابحث عن مراجعات موثوقة على مواقع التواصل الاجتماعي أو المنتديات المحلية.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-user-check"></i>السمعة العامة</h5>
                                     <p>اختر شركة معروفة ولها سجل من الالتزام والمصداقية في التعامل.</p>
@@ -655,9 +652,9 @@
                         <h3>مقارنة سريعة بين الشركات</h3>
                         <div class="highlight-box">
                             <h4><i class="fas fa-balance-scale"></i>نقاط المقارنة الرئيسية</h4>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h6><strong>شركة Bashir Mover</strong></h6>
+                            <div class="flex flex-wrap -mx-4">
+                                <div class="w-full md:w-1/3 px-4">
+                                    <h6 class="font-bold">شركة Bashir Mover</h6>
                                     <ul>
                                         <li>خبرة طويلة في السوق</li>
                                         <li>تغطية شاملة لجميع المحافظات</li>
@@ -665,8 +662,8 @@
                                         <li>تأمين شامل</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
-                                    <h6><strong>شركة Primo Moves</strong></h6>
+                                <div class="w-full md:w-1/3 px-4">
+                                    <h6 class="font-bold">شركة Primo Moves</h6>
                                     <ul>
                                         <li>تقنيات حديثة</li>
                                         <li>خدمة عملاء متميزة</li>
@@ -674,8 +671,8 @@
                                         <li>سرعة في التنفيذ</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
-                                    <h6><strong>شركة Meuvex</strong></h6>
+                                <div class="w-full md:w-1/3 px-4">
+                                    <h6 class="font-bold">شركة Meuvex</h6>
                                     <ul>
                                         <li>تخصص في الأثاث الراقي</li>
                                         <li>تغليف متقدم</li>
@@ -801,20 +798,20 @@
                         <h3>نقل العفش يمكن إنجازه دون محترفين</h3>
                         <p>يعتقد البعض أن بإمكانهم تنفيذ عملية النقل بأنفسهم لتوفير المال، لكن الواقع يثبت أن الاستعانة بمحترفين توفر وقتًا وجهدًا وتحمي الأثاث من التلف.</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-dollar-sign"></i>المفهوم: النقل الذاتي أوفر دائمًا</h5>
-                                    <p>الحقيقة: التكلفة قد ترتفع بسبب الأعطال، التلف، أو الوقت المهدر في غياب المعدات المناسبة.</p>
+                                    <p>الحقيقة: التكلفة قد ترتفع بسبب الأعطال، التلف، أو الوقت المهدور في غياب المعدات المناسبة.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-boxes"></i>المفهوم: التغليف غير ضروري</h5>
                                     <p>الحقيقة: التغليف الجيد ضروري لحماية الأثاث من الخدوش والكسر أثناء التحميل والتنزيل.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-user-friends"></i>المفهوم: يمكن الاعتماد على الأصدقاء فقط</h5>
                                     <p>الحقيقة: رغم النية الطيبة، يفتقر الأصدقاء غالبًا للخبرة في التعامل مع الأثاث الثقيل أو الحساس.</p>
@@ -851,20 +848,20 @@
                         <h3>ابدأ التحضير قبل يوم النقل بوقت كافٍ</h3>
                         <p>التحضير المسبق هو سر النجاح. تأكد من تجهيز كل شيء قبل موعد النقل لتجنب الفوضى والتأخير.</p>
 
-                        <div class="row">
-                            <div class="col-md-4">
+                        <div class="flex flex-wrap -mx-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-clipboard-check"></i>جهّز قائمة مهام</h5>
                                     <p>اكتب كل ما يجب إنجازه خلال أيام النقل، وتابع تنفيذ كل خطوة بشكل منظم.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-box"></i>رتّب أولويات التغليف</h5>
                                     <p>ابدأ بالأغراض غير الضرورية يوميًا، واترك الأساسيات لليوم الأخير.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="w-full md:w-1/3 px-4">
                                 <div class="info-card">
                                     <h5><i class="fas fa-trash-alt"></i>تخلّص من الفائض</h5>
                                     <p>استغل الفرصة للتخلص من الأثاث أو الأغراض التي لم تعد بحاجة إليها.</p>
@@ -897,15 +894,12 @@
                         <h2><i class="fas fa-question-circle"></i>الأسئلة الشائعة حول نقل العفش في الكويت</h2>
                     </div>
                     <div class="section-content">
-                        <div class="accordion" id="faqAccordion">
+                        <div class="space-y-4">
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                        <i class="fas fa-clock ms-2"></i>
-                                        ما هي المدة التي تستغرقها عملية نقل العفش؟
-                                    </button>
-                                </h2>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <button class="accordion-button" onclick="toggleAccordion(this)">
+                                    <span><i class="fas fa-clock ml-2"></i>ما هي المدة التي تستغرقها عملية نقل العفش؟</span>
+                                </button>
+                                <div class="accordion-collapse">
                                     <div class="accordion-body">
                                         <p>تعتمد المدة على عدة عوامل:</p>
                                         <ul>
@@ -918,13 +912,10 @@
                             </div>
 
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        <i class="fas fa-box ms-2"></i>
-                                        هل يمكنني تعبئة أغراضي بنفسي؟
-                                    </button>
-                                </h2>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <button class="accordion-button" onclick="toggleAccordion(this)">
+                                    <span><i class="fas fa-box ml-2"></i>هل يمكنني تعبئة أغراضي بنفسي؟</span>
+                                </button>
+                                <div class="accordion-collapse">
                                     <div class="accordion-body">
                                         <p>نعم، يمكنك ذلك لتوفير التكلفة، ولكن يجب مراعاة:</p>
                                         <ul>
@@ -938,13 +929,10 @@
                             </div>
 
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                        <i class="fas fa-warehouse ms-2"></i>
-                                        هل تقدم الشركات خدمة تخزين الأثاث؟
-                                    </button>
-                                </h2>
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <button class="accordion-button" onclick="toggleAccordion(this)">
+                                    <span><i class="fas fa-warehouse ml-2"></i>هل تقدم الشركات خدمة تخزين الأثاث؟</span>
+                                </button>
+                                <div class="accordion-collapse">
                                     <div class="accordion-body">
                                         <p>نعم، العديد من الشركات تقدم خدمة التخزين المؤقت في مستودعات آمنة ومجهزة بـ:</p>
                                         <ul>
@@ -993,8 +981,8 @@
                         </div>
 
                         <div class="text-center mt-4">
-                            <div class="alert alert-success" role="alert">
-                                <h5><i class="fas fa-check-circle"></i> نتمنى لك تجربة انتقال موفقة ومريحة!</h5>
+                            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded" role="alert">
+                                <h5 class="font-bold"><i class="fas fa-check-circle"></i> نتمنى لك تجربة انتقال موفقة ومريحة!</h5>
                                 <p class="mb-0">نأمل أن يكون هذا الدليل قد ساعدك في فهم جميع جوانب عملية نقل العفش في الكويت</p>
                             </div>
                         </div>
@@ -1003,7 +991,11 @@
             </div>
         </div>
     </div>
-
+      
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-to-top hidden" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
         <!-- Footer Section -->
     <footer style="background-color: #590d3d ;" class="footer-gradient relative overflow-hidden">
         <div class="footer-particles" id="footerParticles"></div>
@@ -1123,14 +1115,7 @@
             </div>
         </div>
     </footer>
-    <!-- Scroll to Top Button -->
-    <a href="#" class="scroll-to-top" id="scrollToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1151,9 +1136,9 @@
         
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
-                scrollToTopBtn.style.display = 'flex';
+                scrollToTopBtn.classList.remove('hidden');
             } else {
-                scrollToTopBtn.style.display = 'none';
+                scrollToTopBtn.classList.add('hidden');
             }
         });
 
@@ -1204,7 +1189,42 @@
                 }
             });
         });
+
+        // Accordion functionality
+        function toggleAccordion(button) {
+            const accordion = button.closest('.accordion-item');
+            const collapse = accordion.querySelector('.accordion-collapse');
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                if (item !== accordion) {
+                    const otherButton = item.querySelector('.accordion-button');
+                    const otherCollapse = item.querySelector('.accordion-collapse');
+                    otherButton.setAttribute('aria-expanded', 'false');
+                    otherCollapse.classList.remove('show');
+                }
+            });
+            
+            // Toggle current accordion
+            if (isExpanded) {
+                button.setAttribute('aria-expanded', 'false');
+                collapse.classList.remove('show');
+            } else {
+                button.setAttribute('aria-expanded', 'true');
+                collapse.classList.add('show');
+            }
+        }
+
+        // Initialize first accordion as open
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstAccordion = document.querySelector('.accordion-button');
+            if (firstAccordion) {
+                firstAccordion.setAttribute('aria-expanded', 'true');
+                firstAccordion.closest('.accordion-item').querySelector('.accordion-collapse').classList.add('show');
+            }
+        });
     </script>
-    <script src="../assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
