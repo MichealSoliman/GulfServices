@@ -484,7 +484,7 @@ const blogData = {
       excerpt:
         " اكتشف الحلول الشاملة لعملية نقل العفش بالكويت من التخطيط الدقيق حتى إعادة ترتيب العفش في الموقع الجديد — نقدم لك خدمة متكاملة تضمن لك الأمان، السرعة، والدقة في كل خطوة",
       image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop",
+        "./assets/images/Kuwait-furniture.webp",
       category: "moving",
       author: "فريق خدمات الخليج",
       link: "./comprehensive-transportation-solutions/index.html",
@@ -495,7 +495,7 @@ const blogData = {
       excerpt:
         "استكشف دليلنا الشامل لأفضل الطرق المبتكرة والعملية لترتيب الأثاث داخل المنزل بأسلوب أنيق ومنظم يوفر المساحة ويعزز الراحة",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=300&fit=crop",
+        "./assets/images/Furniture-arrangement.webp",
       category: "moving",
     
       author: "فريق النقل التجاري",
@@ -507,7 +507,7 @@ const blogData = {
       excerpt:
         "دليل شامل يساعدك في اختيار شركة نقل أثاث موثوقة تضمن الأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=300&fit=crop",
+        "./assets/images/Furniture-company.webp",
       category: "moving",
     
       author: "فريق النقل السكني",
@@ -519,7 +519,7 @@ const blogData = {
       excerpt:
         "دليل شامل يساعدك في اختيار عملية نقل أثاث في جميع الاماكن تتميز بالأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
       image:
-        "./assets/images/istockphoto-1395748211-612x612.jpg",
+        "./assets/images/Furniture-moving.webp",
       category: "moving",
     
       author: "فريق النقل السكني",
@@ -529,8 +529,9 @@ const blogData = {
       id: 3,
       title: " الاثاث والعفش في الخليج",
       excerpt:"دليلك لاختيار أفضل شركات نقل الأثاث والعفش في الخليج العربي، مع ضمان الأمان الكامل والخدمة السريعة دون متاعب",
-      image:
-        "./assets/images/istockphoto-928084778-612x612.jpg",
+      
+         image:
+        "./assets/images/Furniture-transportation.webp",
       category: "moving",
     
       author: "فريق النقل السكني",
@@ -544,7 +545,7 @@ const blogData = {
       excerpt:
         "استكشف معنا دليلًا متكاملًا حول أفضل شركات التنظيف في السعودية، حيث نُسلط الضوء على معايير الجودة والاحترافية، لنساعدك في اختيار الشركة الأنسب لتنظيف المنازل، المكاتب، الفلل، المساجد، وحتى خزانات المياه، مع ضمان نتائج مذهلة وراحة تدوم",
       image:
-        "./assets/images/pexels-pixabay-48889.jpg",
+        "./assets/images/Cleaning-in-Saudi-Arabia.webp",
       category: "cleaning",
     
       author: "فريق التنظيف",
@@ -556,7 +557,7 @@ const blogData = {
       excerpt:
         "دليل شامل لأساليب وخدمات التنظيف: استكشف أحدث تقنيات التنظيف وحلول العناية بالمنازل والمكاتب، مع نصائح لاختيار أفضل خدمات التنظيف لضمان بيئة نظيفة وصحية تدوم طويلًا.",
       image:
-        "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=500&h=300&fit=crop",
+        "./assets/images/Cleaning-methods.webp",
       category: "cleaning",
     
       author: "فريق التنظيف التجاري",
@@ -568,7 +569,7 @@ const blogData = {
       excerpt:
         " دليلك الشامل إلى أفضل خدمات التنظيف في الرياض: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب.",
       image:
-        "./assets/images/pexels-pixabay-209230.jpg",
+        "./assets/images/Cleaning-services.webp",
       category: "cleaning",
     
       author: "فريق التنظيف السكني",
@@ -579,7 +580,7 @@ const blogData = {
       title: " النظافة في الخليج العربي",
       excerpt:" دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب",
       image:
-        "./assets/images/pexels-jonathanborba-28576631.jpg",
+        "./assets/images/Cleanliness-in-the-Gulf.webp",
       category: "cleaning",
     
       author: " التنظيف الخليجي",
@@ -593,7 +594,7 @@ const blogData = {
       excerpt:
         "دليل شامل لصيانة أنظمة التكييف، يوضح أفضل الممارسات لإطالة عمر المكيف، وخطوات التنظيف الدورية، ونصائح الحفاظ على كفاءة التبريد وتوفير استهلاك الطاقة.",
       image:
-        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=500&h=300&fit=crop",
+        "./assets/images/Air-conditioner-maintenance.webp",
       category: "maintenance",
     
       author: "فريق الصيانة",
@@ -606,7 +607,7 @@ const blogData = {
         "الدليل الكامل لمكافحة الحرائق والوقاية منها: استراتيجيات الوقاية، وأساليب الإنقاذ، وخطط السلامة لحماية الأرواح والممتلكات، مع خطوات وإرشادات شاملة لتحقيق أعلى مستويات الأمان والسلامة في المنازل والأماكن العامة.",
 
       image:
-        "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=500&h=300&fit=crop",
+        "./assets/images/fire-fighting.webp",
       category: "maintenance",
     
       author: "فريق صيانة الأنظمة",
