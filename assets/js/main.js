@@ -487,7 +487,7 @@ const blogData = {
         "./assets/images/Kuwait-furniture.webp",
       category: "moving",
       author: "فريق خدمات الخليج",
-      link: "./comprehensive-transportation-solutions/index.html",
+      link: "./blogs/comprehensive-transportation-solutions/",
     },
     {
       id: 2,
@@ -499,7 +499,7 @@ const blogData = {
       category: "moving",
     
       author: "فريق النقل التجاري",
-      link: "./furniture-arrangement/index.html",
+      link: "./blogs/furniture-arrangement",
     },
     {
       id: 3,
@@ -511,7 +511,7 @@ const blogData = {
       category: "moving",
     
       author: "فريق النقل السكني",
-      link: "./furniture-moving-companies/index.html",
+      link: "./blogs/furniture-moving-companies",
     },
     {
       id: 3,
@@ -523,7 +523,7 @@ const blogData = {
       category: "moving",
     
       author: "فريق النقل السكني",
-      link: "./furniture-moving-in-the-Gulf/index.html",
+      link: "./blogs/furniture-moving-in-the-Gulf",
     },
     {
       id: 3,
@@ -535,7 +535,7 @@ const blogData = {
       category: "moving",
     
       author: "فريق النقل السكني",
-      link: "./furniture-in-the-gulf/index.html",
+      link: "./blogs/furniture-in-the-gulf",
     },
   ],
   cleaning: [
@@ -549,7 +549,7 @@ const blogData = {
       category: "cleaning",
     
       author: "فريق التنظيف",
-      link: "./cleaning-companies/index.html",
+      link: "./blogs/cleaning-companies",
     },
     {
       id: 5,
@@ -561,7 +561,7 @@ const blogData = {
       category: "cleaning",
     
       author: "فريق التنظيف التجاري",
-      link: "./cleaning-methods-and-services/index.html",
+      link: "./blogs/cleaning-methods-and-services",
     },
     {
       id: 6,
@@ -573,7 +573,7 @@ const blogData = {
       category: "cleaning",
     
       author: "فريق التنظيف السكني",
-      link: "./cleaning-services/index.html",
+      link: "./blogs/cleaning-services",
     },
     {
       id: 6,
@@ -584,7 +584,7 @@ const blogData = {
       category: "cleaning",
     
       author: " التنظيف الخليجي",
-      link: "./cleanliness-in-the-Gulf/index.html",
+      link: "./blogs/cleanliness-in-the-Gulf",
     },
   ],
   maintenance: [
@@ -598,7 +598,7 @@ const blogData = {
       category: "maintenance",
     
       author: "فريق الصيانة",
-      link: "./air-conditioner-maintenance/index.html",
+      link: "./blogs/air-conditioner-maintenance",
     },
     {
       id: 8,
@@ -611,7 +611,7 @@ const blogData = {
       category: "maintenance",
     
       author: "فريق صيانة الأنظمة",
-      link: "./fire-fighting/index.html",
+      link: "./blogs/fire-fighting",
     },
   
   ],
