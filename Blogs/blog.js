@@ -279,11 +279,11 @@ const blogData = {
         "الدليل الكامل لمكافحة الحرائق والوقاية منها: استراتيجيات الوقاية، وأساليب الإنقاذ، وخطط السلامة لحماية الأرواح والممتلكات، مع خطوات وإرشادات شاملة لتحقيق أعلى مستويات الأمان والسلامة في المنازل والأماكن العامة.",
 
       image:
-        "../blogs/assets/images/fire-fighting.webp",
+        "../assets/images/fire-fighting.webp",
       category: "maintenance",
      
       author: "فريق صيانة الأنظمة",
-      link: "../fire-fighting/",
+      link: "../blogs/fire-fighting/",
     },
   
   ],
