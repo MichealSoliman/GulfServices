@@ -237,7 +237,6 @@ class GulfServices {
       link.addEventListener("click", toggleMenu);
     });
   }
-
   // Load and display services
   loadServices() {
     const servicesGrid = document.getElementById("servicesGrid");
