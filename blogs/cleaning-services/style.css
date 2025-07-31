@@ -19,15 +19,15 @@
             src: url("/assets/font/ArbFONTS-LamaSans-Regular.ttf") format("truetype");
         }
         :root{
-              --competitor-color: #8b4513;
+              --competitor-color: #153052;
             --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
-            --petroleum: #590d3d;
+            --petroleum: #153052;
             --rose-gold: #e8c468;
             --pure-white: #FFFFFF;
             --dark-charcoal: #1A252F;
             --light-silver: #ECF0F1;
-            --deep-petroleum: #590d3d;
+            --deep-petroleum: #153052;
             --warm-rose: #e8c468;
         }
           /* style nav */
@@ -320,7 +320,7 @@
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #e8c468, #e8c468);
+            background: linear-gradient(135deg, #153052, #153052);
             color: white;
             padding: 25px;
             border-radius: 15px;
@@ -331,6 +331,10 @@
         .highlight-box h3 {
             color: white;
             border-right: 4px solid white;
+        }
+        .highlight-box li {
+            color: white;
+            
         }
 
         .tip-box {
