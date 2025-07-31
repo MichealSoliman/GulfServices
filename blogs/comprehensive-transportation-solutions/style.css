@@ -5,28 +5,28 @@
         }
         
         :root {
-            --primary-color: #590d3d;
+            --primary-color: #153052;
             --secondary-color: rgb(207, 41, 26);
-            --accent-color: #e74c3c;
-            --text-dark: #50392c;
+            --accent-color: #153052;
+            --text-dark: #153052;
             --text-light: #7f8c8d;
             --bg-light: #faf8f8;
             --bg-white: #ffffff;
             --border-color: #e6dede;
-            --success-color: #ae4627;
-            --bashir-color: #940000;
-            --competitor-color: #8b4513;
+            --success-color: #153052;
+            --bashir-color: #153052;
+            --competitor-color: #153052;
 
              --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
-            --petroleum: #590d3d;
+            --petroleum: #153052;
             --rose-gold: #e8c468;
             --pure-white: #FFFFFF;
             --dark-charcoal: #1A252F;
             --light-silver: #ECF0F1;
-            --deep-petroleum: #590d3d;
+            --deep-petroleum: #153052;
             --warm-rose: #e8c468;
-            --primary-color: #590d3d;
+            --primary-color: #153052;
             --secondary-color: #e8c468;
         }
         
@@ -550,7 +550,7 @@
             position: relative;
             margin-top: 40px;
             padding-right: 20px;
-            border-right: 3px solid #940000;
+            border-right: 3px solid #153052;
         }
 
         .timeline-step {
@@ -563,7 +563,7 @@
         .circle-icon {
             width: 50px;
             height: 50px;
-            background: #940000;
+            background: #153052;
             color: white;
             border-radius: 50%;
             text-align: center;
