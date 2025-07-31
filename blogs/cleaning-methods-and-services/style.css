@@ -5,30 +5,30 @@
         }
         
         :root {
-            --primary-color: #590d3d;
-            --secondary-color: #6b1a47;
-            --accent-color: #e8c468;
+            --primary-color: #153052;
+            --secondary-color: #153052;
+            --accent-color: #153052;
             --light-accent: #f4e8a6;
-            --dark-primary: #4a0a32;
-            --text-dark: #3a1028;
-            --text-light: #8b5a6b;
+            --dark-primary: #153052;
+            --text-dark: #153052;
+            --text-light: #153052;
             --border-color: #d4c4a8;
-            --success-color: #7a6f47;
-            --warning-color: #c8a052;
-            --danger-color: #8b4a63;
-            --lamaa-green: #8b7355;
-            --lamaa-blue: #a67b5b;
+            --success-color: #153052;
+            --warning-color: #153052;
+            --danger-color: #153052;
+            --lamaa-green: #153052;
+            --lamaa-blue: #153052;
             --light-bg: #faf8f3;
 
             --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
-            --petroleum: #590d3d;
+            --petroleum: #153052;
             --rose-gold: #e8c468;
             --pure-white: #FFFFFF;
             --dark-charcoal: #1A252F;
             --light-silver: #ECF0F1;
-            --deep-petroleum: #590d3d;
-            --warm-rose: #e8c468;
+            --deep-petroleum: #153052;
+            --warm-rose: #153052;
             
             
         }
@@ -191,7 +191,7 @@
             padding: 6rem 0;
         }
 
-                .luxury-btn {
+        .luxury-btn {
             background: linear-gradient(135deg, var(--petroleum), var(--deep-petroleum));
             color: var(--rose-gold);
             padding: 14px 28px;
@@ -472,7 +472,7 @@
 
         .company-promo .btn {
             background: var(--accent-color);
-            color: var(--dark-primary);
+            color: white;
             border: none;
             padding: 12px 30px;
             border-radius: 25px;
@@ -487,6 +487,7 @@
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(89,13,61,0.2);
             background: var(--light-accent);
+            color: var(--accent-color);
         }
         
         /* Special Elements */
