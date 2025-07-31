@@ -2,12 +2,12 @@
 :root {
     --charcoal: #2C3E50;
     --silver-mist: #BDC3C7;
-    --petroleum: #590d3d;
+    --petroleum: #153052;
     --rose-gold: #e8c468;
     --pure-white: #FFFFFF;
     --dark-charcoal: #1A252F;
     --light-silver: #ECF0F1;
-    --deep-petroleum: #590d3d;
+    --deep-petroleum: #153052;
     --warm-rose: #e8c468;
     /* ألوان هادئة جديدة */
     --soft-bg: #f8f9fa;
@@ -32,6 +32,7 @@ body {
     /* خلفية هادئة بدلاً من الحمراء */
     background: linear-gradient(135deg, var(--soft-bg) 0%, var(--soft-white) 50%, var(--light-gray) 100%);
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .luxury-gradient {
@@ -517,7 +518,7 @@ body {
     height: 45px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    color: var(--rose-gold);
+    color: white;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(10px);
