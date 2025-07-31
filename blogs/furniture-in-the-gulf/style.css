@@ -204,7 +204,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
         .section-divider {
-            background: linear-gradient(90deg, transparent, #590d3d, transparent);
+            background: linear-gradient(90deg, transparent, #153052, transparent);
             height: 2px;
             margin: 3rem 0;
         }

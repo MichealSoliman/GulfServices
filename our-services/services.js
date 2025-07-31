@@ -86,7 +86,7 @@ const services = [
     description:
       "نقل أثاث وعفش في الرياض بأسلوب حديث، مع ضمان الأمان الكامل للعفش وخدمة عملاء راقية وبأسعار مناسبة.",
     image: "../assets/images/Furniture-moving-in-Riyadh.webp",
-    
+
     url: "https://naqlaty-ship.com/",
     location: "الرياض",
     category: "نقل عفش",
@@ -111,7 +111,7 @@ const services = [
     name: "نقل العفش بالرياض",
     description:
       "نقل الأثاث والعفش في الرياض بخدمة فاخرة، أسعار تنافسية، وضمان كامل لسلامة الأثاث.",
-    
+
     image: "../assets/images/Furniture-transportation.webp",
 
     url: "https://www.primomoves.com/",
@@ -150,7 +150,6 @@ const services = [
     description:
       "أفضل حلول نقل الأثاث والعفش في الرياض مع ضمان السرعة والأمان، تغليف احترافي وخدمة عملاء على مدار الساعة بأسعار مغرية.",
 
-    
     image: "../assets/images/Riyadh-Furniture.webp",
 
     url: "https://jadmoves.com/",
@@ -271,10 +270,10 @@ class GulfServices {
     card.innerHTML = `
             <div class="relative">
                 <img src="${service.image}" alt="${service.name}" class="w-full h-48 object-cover">
-                <div style="background-color: #590d3d; color: #e8c468" class="absolute top-4 left-4  text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div style="background-color: #153052; color: #e8c468" class="absolute top-4 left-4  text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.location}
                 </div>
-                <div style="background-color: #590d3d; color: #e8c468" class="absolute top-4 right-4 bg-rose-gold text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div style="background-color: #153052; color: #e8c468" class="absolute top-4 right-4 bg-rose-gold text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.category}
                 </div>
                 <div  class="absolute bottom-4 right-4 bg-charcoal bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -284,7 +283,7 @@ class GulfServices {
             <div class="p-6">
                 <h3 class="text-xl font-bold text-yellow-600 mb-3 font-luxury">
                     <a href="${service.url}" class="hover:underline hover:text-yellow-700 transition-colors duration-300">
-                        ${service.name }←
+                        ${service.name}←
                     </a>
                 </h3>
 

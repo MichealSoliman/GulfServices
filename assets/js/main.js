@@ -86,7 +86,7 @@ const services = [
     description:
       "نقل أثاث وعفش في الرياض بأسلوب حديث، مع ضمان الأمان الكامل للعفش وخدمة عملاء راقية وبأسعار مناسبة.",
     image: "./assets/images/Furniture-moving-in-Riyadh.webp",
-    
+
     url: "https://naqlaty-ship.com/",
     location: "الرياض",
     category: "نقل عفش",
@@ -111,7 +111,7 @@ const services = [
     name: "نقل العفش بالرياض",
     description:
       "نقل الأثاث والعفش في الرياض بخدمة فاخرة، أسعار تنافسية، وضمان كامل لسلامة الأثاث.",
-    
+
     image: "./assets/images/Furniture-transportation.webp",
 
     url: "https://www.primomoves.com/",
@@ -150,7 +150,6 @@ const services = [
     description:
       "أفضل حلول نقل الأثاث والعفش في الرياض مع ضمان السرعة والأمان، تغليف احترافي وخدمة عملاء على مدار الساعة بأسعار مغرية.",
 
-    
     image: "./assets/images/Riyadh-Furniture.webp",
 
     url: "https://jadmoves.com/",
@@ -272,10 +271,10 @@ class GulfServices {
     card.innerHTML = `
             <div class="relative">
                 <img src="${service.image}" alt="${service.name}" class="w-full h-48 object-cover">
-                <div style="background-color: #590d3d; color: #e8c468" class="absolute top-4 left-4  text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div style="background-color: #153052; color: #e8c468" class="absolute top-4 left-4  text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.location}
                 </div>
-                <div style="background-color: #590d3d; color: #e8c468" class="absolute top-4 right-4 bg-rose-gold text-white px-3 py-1 rounded-full text-sm font-medium">
+                <div style="background-color: #153052; color: #e8c468" class="absolute top-4 right-4 bg-rose-gold text-white px-3 py-1 rounded-full text-sm font-medium">
                     ${service.category}
                 </div>
                 <div  class="absolute bottom-4 right-4 bg-charcoal bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -483,8 +482,7 @@ const blogData = {
       title: "الحلول الشاملة لعملية نقل العفش بالكويت",
       excerpt:
         " اكتشف الحلول الشاملة لعملية نقل العفش بالكويت من التخطيط الدقيق حتى إعادة ترتيب العفش في الموقع الجديد — نقدم لك خدمة متكاملة تضمن لك الأمان، السرعة، والدقة في كل خطوة",
-      image:
-        "./assets/images/Kuwait-furniture.webp",
+      image: "./assets/images/Kuwait-furniture.webp",
       category: "moving",
       author: "فريق خدمات الخليج",
       link: "./blogs/comprehensive-transportation-solutions/",
@@ -494,10 +492,9 @@ const blogData = {
       title: "دليل شامل: أفضل طرق ترتيب الأثاث في المنزل",
       excerpt:
         "استكشف دليلنا الشامل لأفضل الطرق المبتكرة والعملية لترتيب الأثاث داخل المنزل بأسلوب أنيق ومنظم يوفر المساحة ويعزز الراحة",
-      image:
-        "./assets/images/Furniture-arrangement.webp",
+      image: "./assets/images/Furniture-arrangement.webp",
       category: "moving",
-    
+
       author: "فريق النقل التجاري",
       link: "./blogs/furniture-arrangement",
     },
@@ -506,10 +503,9 @@ const blogData = {
       title: "دليل شامل لاختيار شركة نقل أثاث موثوقة",
       excerpt:
         "دليل شامل يساعدك في اختيار شركة نقل أثاث موثوقة تضمن الأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
-      image:
-        "./assets/images/Furniture-company.webp",
+      image: "./assets/images/Furniture-company.webp",
       category: "moving",
-    
+
       author: "فريق النقل السكني",
       link: "./blogs/furniture-moving-companies",
     },
@@ -518,22 +514,21 @@ const blogData = {
       title: " نقل الأثاث والعفش في الرياض ",
       excerpt:
         "دليل شامل يساعدك في اختيار عملية نقل أثاث في جميع الاماكن تتميز بالأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
-      image:
-        "./assets/images/Furniture-moving.webp",
+      image: "./assets/images/Furniture-moving.webp",
       category: "moving",
-    
+
       author: "فريق النقل السكني",
       link: "./blogs/furniture-moving-in-the-Gulf",
     },
     {
       id: 5,
       title: " الاثاث والعفش في الخليج",
-      excerpt:"دليلك لاختيار أفضل شركات نقل الأثاث والعفش في الخليج العربي، مع ضمان الأمان الكامل والخدمة السريعة دون متاعب",
-      
-         image:
-        "./assets/images/Furniture-transportation.webp",
+      excerpt:
+        "دليلك لاختيار أفضل شركات نقل الأثاث والعفش في الخليج العربي، مع ضمان الأمان الكامل والخدمة السريعة دون متاعب",
+
+      image: "./assets/images/Furniture-transportation.webp",
       category: "moving",
-    
+
       author: "فريق النقل السكني",
       link: "./blogs/furniture-in-the-gulf",
     },
@@ -544,10 +539,9 @@ const blogData = {
       title: "شركات التنظيف في السعودية",
       excerpt:
         "استكشف معنا دليلًا متكاملًا حول أفضل شركات التنظيف في السعودية، حيث نُسلط الضوء على معايير الجودة والاحترافية، لنساعدك في اختيار الشركة الأنسب لتنظيف المنازل، المكاتب، الفلل، المساجد، وحتى خزانات المياه، مع ضمان نتائج مذهلة وراحة تدوم",
-      image:
-        "./assets/images/Cleaning-in-Saudi-Arabia.webp",
+      image: "./assets/images/Cleaning-in-Saudi-Arabia.webp",
       category: "cleaning",
-    
+
       author: "فريق التنظيف",
       link: "./blogs/cleaning-companies",
     },
@@ -556,10 +550,9 @@ const blogData = {
       title: "دليل شامل لأساليب وخدمات التنظيف",
       excerpt:
         "دليل شامل لأساليب وخدمات التنظيف: استكشف أحدث تقنيات التنظيف وحلول العناية بالمنازل والمكاتب، مع نصائح لاختيار أفضل خدمات التنظيف لضمان بيئة نظيفة وصحية تدوم طويلًا.",
-      image:
-        "./assets/images/Cleaning-methods.webp",
+      image: "./assets/images/Cleaning-methods.webp",
       category: "cleaning",
-    
+
       author: "فريق التنظيف التجاري",
       link: "./blogs/cleaning-methods-and-services",
     },
@@ -568,21 +561,20 @@ const blogData = {
       title: " خدمات التنظيف المهنية في الرياض ",
       excerpt:
         " دليلك الشامل إلى أفضل خدمات التنظيف في الرياض: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب.",
-      image:
-        "./assets/images/Cleaning-services.webp",
+      image: "./assets/images/Cleaning-services.webp",
       category: "cleaning",
-    
+
       author: "فريق التنظيف السكني",
       link: "./blogs/cleaning-services",
     },
     {
       id: 9,
       title: " النظافة في الخليج العربي",
-      excerpt:" دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب",
-      image:
-        "./assets/images/Cleanliness-in-the-Gulf.webp",
+      excerpt:
+        " دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب",
+      image: "./assets/images/Cleanliness-in-the-Gulf.webp",
       category: "cleaning",
-    
+
       author: " التنظيف الخليجي",
       link: "./blogs/cleanliness-in-the-Gulf",
     },
@@ -593,10 +585,9 @@ const blogData = {
       title: "صيانة وتعديل المكيفات  ",
       excerpt:
         "دليل شامل لصيانة أنظمة التكييف، يوضح أفضل الممارسات لإطالة عمر المكيف، وخطوات التنظيف الدورية، ونصائح الحفاظ على كفاءة التبريد وتوفير استهلاك الطاقة.",
-      image:
-        "./assets/images/Air-conditioner-maintenance.webp",
+      image: "./assets/images/Air-conditioner-maintenance.webp",
       category: "maintenance",
-    
+
       author: "فريق الصيانة",
       link: "./blogs/air-conditioner-maintenance",
     },
@@ -606,14 +597,12 @@ const blogData = {
       excerpt:
         "الدليل الكامل لمكافحة الحرائق والوقاية منها: استراتيجيات الوقاية، وأساليب الإنقاذ، وخطط السلامة لحماية الأرواح والممتلكات، مع خطوات وإرشادات شاملة لتحقيق أعلى مستويات الأمان والسلامة في المنازل والأماكن العامة.",
 
-      image:
-        "./assets/images/fire-fighting.webp",
+      image: "./assets/images/fire-fighting.webp",
       category: "maintenance",
-    
+
       author: "فريق صيانة الأنظمة",
       link: "./blogs/fire-fighting",
     },
-  
   ],
 };
 
@@ -723,7 +712,6 @@ class BlogManager {
     }
 
     if (post) {
-      
       alert(
         `عنوان المقال: ${post.title}\n\nالفئة: ${this.getCategoryName(
           post.category
@@ -733,8 +721,6 @@ class BlogManager {
           post.excerpt
         }\n\nسيتم توجيهك إلى صفحة المقال الكاملة...`
       );
-
-    
     }
   }
 

@@ -459,12 +459,12 @@
         }
 
         .blog-card-category--cleaning {
-            background: linear-gradient(135deg, #590d3d, #590d3d);
+            background: linear-gradient(135deg, #153052, #153052);
             color: var(--rose-gold);
         }
 
         .blog-card-category--maintenance {
-            background: linear-gradient(135deg, #590d3d, #590d3d);
+            background: linear-gradient(135deg, #153052, #153052);
             color: var(--rose-gold);
         }
 
