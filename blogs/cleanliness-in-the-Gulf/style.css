@@ -4,12 +4,17 @@
             background-color: #faf9f7;
             color: #2d3748;
             line-height: 1.8;
+            overflow-x: hidden;
+           
             
         }
           @font-face {
             font-family: "Lama-sans";
             src: url("/assets/font/ArbFONTS-LamaSans-Regular.ttf") format("woff");
           
+* {
+  outline: 1px solid red !important;
+}
 
         }
         .primary-color {
