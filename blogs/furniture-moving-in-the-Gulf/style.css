@@ -3,12 +3,12 @@
           :root{
           --charcoal: #2C3E50;
             --silver-mist: #BDC3C7;
-            --petroleum: #590d3d;
+            --petroleum: #153052;
             --rose-gold: #e8c468;
             --pure-white: #FFFFFF;
             --dark-charcoal: #1A252F;
             --light-silver: #ECF0F1;
-            --deep-petroleum: #590d3d;
+            --deep-petroleum: #153052;
             --warm-rose: #e8c468;
 
     }
@@ -224,21 +224,21 @@
         h1 {
             font-size: 2.5em;
             text-align: center;
-            border-bottom: 3px solid #590d3d;
+            border-bottom: 3px solid #153052;
             padding-bottom: 0.5em;
             margin-bottom: 2em;
         }
         
         h2 {
             font-size: 2em;
-            color: #590d3d;
+            color: #153052;
             border-right: 5px solid #e8c468;
             padding-right: 1em;
         }
         
         h3 {
             font-size: 1.5em;
-            color: #590d3d;
+            color: #153052;
         }
         
         h4 {
@@ -257,7 +257,7 @@
         
         .highlight-box {
             background-color: #f8f4f0;
-            border: 2px solid #590d3d;
+            border: 2px solid #153052;
             padding: 1.5em;
             margin: 2em 0;
             border-radius: 0;
@@ -265,14 +265,14 @@
         
         .service-box {
             background-color: #faf8f6;
-            border-right: 5px solid #e8c468;
+            border-right: 5px solid #153052;
             padding: 1.5em;
             margin: 1.5em 0;
         }
         
         .tip-box {
             background-color: #f9f7f4;
-            border: 1px solid #590d3d;
+            border: 1px solid #153052;
             padding: 1.5em;
             margin: 1.5em 0;
         }
@@ -287,7 +287,7 @@
         }
         
         .company-link {
-            color: #590d3d;
+            color: #153052;
             text-decoration: none;
             font-weight: 600;
         }
@@ -298,7 +298,7 @@
         
         .section-divider {
             height: 3px;
-            background-color: #590d3d;
+            background-color: #153052;
             margin: 3em 0;
             border: none;
         }
@@ -307,15 +307,15 @@
             background-color: #f9f7f4;
             padding: 2em;
             margin: 2em 0;
-            border-top: 4px solid #590d3d;
-            border-bottom: 4px solid #590d3d;
+            border-top: 4px solid #153052;
+            border-bottom: 4px solid #153052;
         }
         
         .conclusion-section {
             background-color: #f8f4f0;
             padding: 2em;
             margin: 2em 0;
-            border: 2px solid #590d3d;
+            border: 2px solid #153052;
         }
         
         /* .stats-box {
@@ -337,13 +337,13 @@
         }
         
         th, td {
-            border: 1px solid #590d3d;
+            border: 1px solid #153052;
             padding: 0.75em;
             text-align: right;
         }
         
         th {
-            background-color: #590d3d;
+            background-color: #153052;
             color: white;
         }
         
