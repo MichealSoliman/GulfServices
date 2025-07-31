@@ -1,6 +1,6 @@
  <style>
         :root {
-            --primary-color: #590d3d;
+            --primary-color: #153052;
             --secondary-color: #e8c468;
             --background-soft: #f8f9fa;
             --background-light: #ffffff;
@@ -8,8 +8,8 @@
             --text-light: #6c757d;
             --border-light: #e9ecef;
             --gradient-soft: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            --gradient-primary: linear-gradient(135deg, #590d3d 0%, #7d1450 100%);
-            --gradient-secondary: linear-gradient(135deg, #e8c468 0%, #f4d484 100%);
+            --gradient-primary: linear-gradient(135deg, #153052 0%, #153052 100%);
+            --gradient-secondary: linear-gradient(135deg, #153052 0%, #153052 100%);
         }
 
              body {
@@ -187,7 +187,7 @@
         
         .tip-box {
             background: var(--gradient-secondary);
-            color: var(--text-dark);
+            color: white;
             padding: 25px;
             border-radius: 15px;
             margin: 20px 0;
@@ -263,7 +263,7 @@
         
         .highlight-text {
             background: var(--gradient-secondary);
-            color: var(--text-dark);
+            color: white;
             padding: 20px;
             border-radius: 10px;
             margin: 15px 0;
@@ -332,11 +332,12 @@
         
         .important-note {
             background: var(--gradient-secondary);
-            color: var(--text-dark);
+            color: white;
             border: 2px solid var(--primary-color);
             border-radius: 10px;
             padding: 20px;
             margin: 20px 0;
+            color: 
         }
         
         .important-note h5 i {
@@ -396,7 +397,7 @@
         
         .call-to-action {
             background: var(--gradient-secondary);
-            color: var(--text-dark);
+            color: white;
             padding: 40px;
             border-radius: 15px;
             text-align: center;
