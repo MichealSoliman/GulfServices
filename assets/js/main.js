@@ -486,123 +486,125 @@ const blogData = {
       category: "moving",
       author: "فريق خدمات الخليج",
       link: "./blogs/comprehensive-transportation-solutions/",
+      tags: [ "خدمات النقل", "أمان", "سرعة"],
     },
-    {
+     {
       id: 2,
       title: "دليل شامل: أفضل طرق ترتيب الأثاث في المنزل",
       excerpt:
         "استكشف دليلنا الشامل لأفضل الطرق المبتكرة والعملية لترتيب الأثاث داخل المنزل بأسلوب أنيق ومنظم يوفر المساحة ويعزز الراحة",
       image: "./assets/images/Furniture-arrangement.webp",
       category: "moving",
-
       author: "فريق النقل التجاري",
       link: "./blogs/furniture-arrangement",
+      tags: [ "ترتيب الأثاث ", "تنظيم ", "ديكور"],
     },
     {
-      id: 3,
-      title: "دليل شامل لاختيار شركة نقل أثاث موثوقة",
-      excerpt:
+    id: 3,
+    title: "دليل شامل لاختيار شركة نقل أثاث موثوقة",
+    excerpt:
         "دليل شامل يساعدك في اختيار شركة نقل أثاث موثوقة تضمن الأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
-      image: "./assets/images/Furniture-company.webp",
-      category: "moving",
-
-      author: "فريق النقل السكني",
-      link: "./blogs/furniture-moving-companies",
-    },
-    {
-      id: 4,
-      title: " نقل الأثاث والعفش في الرياض ",
-      excerpt:
-        "دليل شامل يساعدك في اختيار عملية نقل أثاث في جميع الاماكن تتميز بالأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
-      image: "./assets/images/Furniture-moving.webp",
-      category: "moving",
-
-      author: "فريق النقل السكني",
-      link: "./blogs/furniture-moving-in-the-Gulf",
-    },
-    {
-      id: 5,
-      title: " الاثاث والعفش في الخليج",
-      excerpt:
+    image: "./assets/images/Furniture-company.webp",
+    category: "moving",
+    author: "فريق النقل السكني",
+    link: "./blogs/furniture-moving-companies",
+    tags: ["نقل أثاث", "شركة نقل أثاث", ]  // الكلمات المفتاحية
+},
+{
+    id: 4,
+    title: "نقل الأثاث والعفش في الرياض",
+    excerpt:
+        "دليل شامل يساعدك في اختيار عملية نقل أثاث في جميع الأماكن تتميز بالأمان والاحترافية والسرعة في تنفيذ عملية النقل دون عناء.",
+    image: "./assets/images/Furniture-moving.webp",
+    category: "moving",
+    author: "فريق النقل السكني",
+    link: "./blogs/furniture-moving-in-the-Gulf",
+    tags: [ " عفش الرياض", "خدمات نقل الرياض"]  // الكلمات المفتاحية
+},
+{
+    id: 5,
+    title: "الأثاث والعفش في الخليج",
+    excerpt:
         "دليلك لاختيار أفضل شركات نقل الأثاث والعفش في الخليج العربي، مع ضمان الأمان الكامل والخدمة السريعة دون متاعب",
+    image: "./assets/images/Furniture-transportation.webp",
+    category: "moving",
+    author: "فريق النقل السكني",
+    link: "./blogs/furniture-in-the-gulf",
+    tags: ["نقل أثاث الخليج",  "شركات نقل في الخليج" ]  // الكلمات المفتاحية
+}
 
-      image: "./assets/images/Furniture-transportation.webp",
-      category: "moving",
-
-      author: "فريق النقل السكني",
-      link: "./blogs/furniture-in-the-gulf",
-    },
   ],
   cleaning: [
-    {
-      id: 6,
-      title: "شركات التنظيف في السعودية",
-      excerpt:
-        "استكشف معنا دليلًا متكاملًا حول أفضل شركات التنظيف في السعودية، حيث نُسلط الضوء على معايير الجودة والاحترافية، لنساعدك في اختيار الشركة الأنسب لتنظيف المنازل، المكاتب، الفلل، المساجد، وحتى خزانات المياه، مع ضمان نتائج مذهلة وراحة تدوم",
-      image: "./assets/images/Cleaning-in-Saudi-Arabia.webp",
-      category: "cleaning",
-
-      author: "فريق التنظيف",
-      link: "./blogs/cleaning-companies",
-    },
-    {
-      id: 7,
-      title: "دليل شامل لأساليب وخدمات التنظيف",
-      excerpt:
+   {
+    id: 6,
+    title: "شركات التنظيف في السعودية",
+    excerpt:
+        "استكشف معنا دليلًا متكاملًا حول أفضل شركات التنظيف في السعودية، حيث نُسلط الضوء على معايير الجودة والاحترافية، لنساعدك في اختيار الشركة الأنسب لتنظيف المنازل، المكاتب، الفلل، المساجد، وحتى خزانات المياه، مع ضمان نتائج مذهلة وراحة تدوم.",
+    image: "./assets/images/Cleaning-in-Saudi-Arabia.webp",
+    category: "cleaning",
+    author: "فريق التنظيف",
+    link: "./blogs/cleaning-companies",
+    tags: ["شركات تنظيف",  "تنظيف المنازل",]  // الكلمات المفتاحية
+},
+{
+    id: 7,
+    title: "دليل شامل لأساليب وخدمات التنظيف",
+    excerpt:
         "دليل شامل لأساليب وخدمات التنظيف: استكشف أحدث تقنيات التنظيف وحلول العناية بالمنازل والمكاتب، مع نصائح لاختيار أفضل خدمات التنظيف لضمان بيئة نظيفة وصحية تدوم طويلًا.",
-      image: "./assets/images/Cleaning-methods.webp",
-      category: "cleaning",
+    image: "./assets/images/Cleaning-methods.webp",
+    category: "cleaning",
+    author: "فريق التنظيف التجاري",
+    link: "./blogs/cleaning-methods-and-services",
+    tags: [ "خدمات التنظيف", "تنظيف منازل", ]  // الكلمات المفتاحية
+},
+{
+    id: 8,
+    title: "خدمات التنظيف المهنية في الرياض",
+    excerpt:
+        "دليلك الشامل إلى أفضل خدمات التنظيف في الرياض: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب.",
+    image: "./assets/images/Cleaning-services.webp",
+    category: "cleaning",
+    author: "فريق التنظيف السكني",
+    link: "./blogs/cleaning-services",
+    tags: [ "خدمات تنظيف الرياض",  "تنظيف المنازل"]  // الكلمات المفتاحية
+},
+{
+    id: 9,
+    title: "النظافة في الخليج العربي",
+    excerpt:
+        "دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب.",
+    image: "./assets/images/Cleanliness-in-the-Gulf.webp",
+    category: "cleaning",
+    author: "التنظيف الخليجي",
+    link: "./blogs/cleanliness-in-the-Gulf",
+    tags: [ "خدمات تنظيف ",   "شركة تنظيف في الخليج"]  // الكلمات المفتاحية
+}
 
-      author: "فريق التنظيف التجاري",
-      link: "./blogs/cleaning-methods-and-services",
-    },
-    {
-      id: 8,
-      title: " خدمات التنظيف المهنية في الرياض ",
-      excerpt:
-        " دليلك الشامل إلى أفضل خدمات التنظيف في الرياض: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب.",
-      image: "./assets/images/Cleaning-services.webp",
-      category: "cleaning",
-
-      author: "فريق التنظيف السكني",
-      link: "./blogs/cleaning-services",
-    },
-    {
-      id: 9,
-      title: " النظافة في الخليج العربي",
-      excerpt:
-        " دليلك الشامل إلى أفضل خدمات التنظيف في الخليج العربي: حلول مبتكرة، تقنيات حديثة، وفرق عمل محترفة تضمن لك نظافة مثالية في المنازل والمكاتب",
-      image: "./assets/images/Cleanliness-in-the-Gulf.webp",
-      category: "cleaning",
-
-      author: " التنظيف الخليجي",
-      link: "./blogs/cleanliness-in-the-Gulf",
-    },
   ],
   maintenance: [
-    {
-      id: 10,
-      title: "صيانة وتعديل المكيفات  ",
-      excerpt:
+   {
+    id: 10,
+    title: "صيانة وتعديل المكيفات",
+    excerpt:
         "دليل شامل لصيانة أنظمة التكييف، يوضح أفضل الممارسات لإطالة عمر المكيف، وخطوات التنظيف الدورية، ونصائح الحفاظ على كفاءة التبريد وتوفير استهلاك الطاقة.",
-      image: "./assets/images/Air-conditioner-maintenance.webp",
-      category: "maintenance",
-
-      author: "فريق الصيانة",
-      link: "./blogs/air-conditioner-maintenance",
-    },
-    {
-      id: 11,
-      title: "مكافحة الحرائق: دليل شامل للسلامة والوقاية",
-      excerpt:
+    image: "./assets/images/Air-conditioner-maintenance.webp",
+    category: "maintenance",
+    author: "فريق الصيانة",
+    link: "./blogs/air-conditioner-maintenance",
+    tags: ["صيانة مكيفات",  "تنظيف مكيفات", ]  // الكلمات المفتاحية
+},
+{
+    id: 11,
+    title: "مكافحة الحرائق: دليل شامل للسلامة والوقاية",
+    excerpt:
         "الدليل الكامل لمكافحة الحرائق والوقاية منها: استراتيجيات الوقاية، وأساليب الإنقاذ، وخطط السلامة لحماية الأرواح والممتلكات، مع خطوات وإرشادات شاملة لتحقيق أعلى مستويات الأمان والسلامة في المنازل والأماكن العامة.",
+    image: "./assets/images/fire-fighting.webp",
+    category: "maintenance",
+    author: "فريق صيانة الأنظمة",
+    link: "./blogs/fire-fighting",
+    tags: ["مكافحة الحرائق",  "السلامة من الحرائق",  ]  // الكلمات المفتاحية
+}
 
-      image: "./assets/images/fire-fighting.webp",
-      category: "maintenance",
-
-      author: "فريق صيانة الأنظمة",
-      link: "./blogs/fire-fighting",
-    },
   ],
 };
 
@@ -678,21 +680,27 @@ class BlogManager {
       maintenance: "الصيانة",
     };
 
-    card.innerHTML = `
-        <img src="${post.image}" alt="${post.title}" class="blog-card-image">
-        <div class="blog-card-content">
-        <span class="blog-card-category ${categoryClass}">${
-      categoryNames[post.category]
-    }</span>
+   card.innerHTML = `
+    <img src="${post.image}" alt="${post.title}" class="blog-card-image">
+    <div class="blog-card-content">
+        <span class="blog-card-category ${categoryClass}">
+            ${categoryNames[post.category]}
+        </span>
         <h3 class="blog-card-title">${post.title}</h3>
         <p class="blog-card-excerpt">${post.excerpt}</p>
         
+        <!-- إضافة الكلمات المفتاحية -->
+        <div class="blog-card-tags">
+            ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
+        </div>
+
         <a href="${post.link}" class="blog-card-button">
             <i class="fas fa-arrow-left ml-2"></i>
             عرض التفاصيل
         </a>
-        </div>
-        `;
+    </div>
+`;
+
 
     return card;
   }

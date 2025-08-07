@@ -519,6 +519,7 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
+            margin-top: 15px;
            
         }
 
@@ -819,3 +820,38 @@
 
 
 
+/* تنسيق الكلمات المفتاحية */
+.blog-card-tags {
+    margin-top: 10px;
+    margin-bottom: 20px;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; 
+    padding-bottom: 10px;  
+}
+
+.blog-card-tags .tag {
+    background-color: #f3f4f6;
+    color: #333;
+    padding: 8px 16px; 
+    margin: 5px;  
+    margin-top: 50px; 
+    border-radius: 20px;
+    font-size: 0.875rem; 
+    font-weight: 500;
+    line-height: 1.5; 
+    transition: background-color 0.3s ease;
+    white-space: normal; 
+    word-wrap: break-word; 
+}
+
+
+.blog-card-tags .tag:hover {
+    background-color: #e8c468;
+    color: white;
+}
+
+
+.blog-card-content {
+    margin-bottom: 25px; 
+}
