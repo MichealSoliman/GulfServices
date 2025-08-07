@@ -11,6 +11,7 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
    <link rel="canonical" href="https://gooldenmoon.com/our-services/">
     <!-- Open Graph / Facebook / WhatsApp / Telegram -->
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gooldenmoon.com/our-services/">
     <meta property="og:title" content="نقل الأثاث والعفش في الرياض - خدمة احترافية مع ضمان الأمان">
@@ -64,60 +65,51 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="space-y-6">
-            <a href="../index.html" style=" color: #e8c468" class= "block text-petroleum hover:text-deep-petroleum transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">الرئيسية</a>
-          <a href="../our-services/index.html"style=" color: #e8c468" class="block text-rose-gold hover:text-warm-rose transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">خدماتنا</a>
-            <a href="../blogs/index.html" style=" color: #e8c468" class="block text-charcoal hover:text-dark-charcoal transition-colors duration-300 text-lg font-medium py-3 border-b border-petroleum border-opacity-20">مدونة</a>
-        </div>
-        <div class="mt-8">
+  <nav class="navbar fixed top-0 w-full z-50">
+    <div class="container-custom">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class=" w-12 h-12 bg-white border-2 rounded-full flex items-center justify-center">
+                    <img src="https://goldenmoonads.com/mainlogo.png" alt="">
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity">خدمات الخليج</a>
+            </div>
+            
+            <div class="hidden lg:flex space-x-8 space-x-reverse">
+                <a href="../index.html" class="nav-link">الرئيسية</a>
+                <a href="../our-services/index.html" class="nav-link">خدماتنا</a>
+                <a href="../blogs/index.html" class="nav-link">مدونة</a>
+            </div>
+
             <a href="tel:0565265233">
-            <button class="luxury-btn w-full">
-                <i class="fas fa-phone ml-2"></i>
-                اتصل بنا الآن
-            </button>
-            </a>
-        </div>
-    </div>
-    <!-- Navigation -->
-    <nav class="navbar fixed top-0 w-full z-50">
-        <div class="container-custom">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-3 space-x-reverse">
-                    <div  class=" w-12 h-12 bg-white border-2  rounded-full flex items-center justify-center">
-                        <img  src="https://goldenmoonads.com/mainlogo.png" alt="">
-                        
-                    </div>
-                    <a href="index.html" class="text-2xl font-bold text-yellow-600 font-luxury hover:opacity-80 transition-opacity">خدمات الخليج</a>
-                </div>
-                
-                <div class="hidden lg:flex space-x-8 space-x-reverse">
-                   <a href="../index.html" class="nav-link active">الرئيسية</a>
-                   <a href="../our-services/index.html" class="nav-link active">خدماتنا</a>
-                    <a href="../blogs/index.html" class="nav-link"> مدونة </a>
-                
-                </div>
-                <a href="tel:0565265233">
                 <div class="hidden lg:block">
                     <button class="luxury-btn">
                         <i class="fas fa-phone ml-2"></i>
                         اتصل بنا
                     </button>
-                    </a>
                 </div>
-                
-                <div class="lg:hidden">
-                    <div class="hamburger" id="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            </a>
+
+            <div class="lg:hidden">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
-       
-    </nav>
+    </div>
+</nav>
+
+<script>
+    // إضافة فئة active للرابط الحالي
+    document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+</script>
+
 
     <!-- Services Section -->
     <section id="services" class="section-padding bg-light-silver m-5">
