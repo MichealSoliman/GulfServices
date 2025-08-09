@@ -508,7 +508,7 @@ const blogData = {
     category: "moving",
     author: "فريق النقل السكني",
     link: "./blogs/furniture-moving-companies",
-    tags: ["نقل أثاث", "شركة نقل أثاث", ]  // الكلمات المفتاحية
+    tags: ["نقل أثاث", "شركة نقل أثاث", ] 
 },
 {
     id: 4,
@@ -519,7 +519,7 @@ const blogData = {
     category: "moving",
     author: "فريق النقل السكني",
     link: "./blogs/furniture-moving-in-the-Gulf",
-    tags: [ " عفش الرياض", "خدمات نقل الرياض"]  // الكلمات المفتاحية
+    tags: [ " عفش الرياض", "خدمات نقل الرياض"]  
 },
 {
     id: 5,
@@ -530,7 +530,7 @@ const blogData = {
     category: "moving",
     author: "فريق النقل السكني",
     link: "./blogs/furniture-in-the-gulf",
-    tags: ["نقل أثاث الخليج",  "شركات نقل في الخليج" ]  // الكلمات المفتاحية
+    tags: ["نقل أثاث الخليج",  "شركات نقل في الخليج" ] 
 }
 
   ],
@@ -544,7 +544,7 @@ const blogData = {
     category: "cleaning",
     author: "فريق التنظيف",
     link: "./blogs/cleaning-companies",
-    tags: ["شركات تنظيف",  "تنظيف المنازل",]  // الكلمات المفتاحية
+    tags: ["شركات تنظيف",  "تنظيف المنازل",]  
 },
 {
     id: 7,
@@ -555,7 +555,7 @@ const blogData = {
     category: "cleaning",
     author: "فريق التنظيف التجاري",
     link: "./blogs/cleaning-methods-and-services",
-    tags: [ "خدمات التنظيف", "تنظيف منازل", ]  // الكلمات المفتاحية
+    tags: [ "خدمات التنظيف", "تنظيف منازل", ]  
 },
 {
     id: 8,
@@ -566,7 +566,7 @@ const blogData = {
     category: "cleaning",
     author: "فريق التنظيف السكني",
     link: "./blogs/cleaning-services",
-    tags: [ "خدمات تنظيف الرياض",  "تنظيف المنازل"]  // الكلمات المفتاحية
+    tags: [ "خدمات تنظيف الرياض",  "تنظيف المنازل"]  
 },
 {
     id: 9,
@@ -577,7 +577,7 @@ const blogData = {
     category: "cleaning",
     author: "التنظيف الخليجي",
     link: "./blogs/cleanliness-in-the-Gulf",
-    tags: [ "خدمات تنظيف ",   "شركة تنظيف في الخليج"]  // الكلمات المفتاحية
+    tags: [ "خدمات تنظيف ",   "شركة تنظيف في الخليج"]
 }
 
   ],
@@ -591,7 +591,7 @@ const blogData = {
     category: "maintenance",
     author: "فريق الصيانة",
     link: "./blogs/air-conditioner-maintenance",
-    tags: ["صيانة مكيفات",  "تنظيف مكيفات", ]  // الكلمات المفتاحية
+    tags: ["صيانة مكيفات",  "تنظيف مكيفات", ] 
 },
 {
     id: 11,
@@ -602,7 +602,7 @@ const blogData = {
     category: "maintenance",
     author: "فريق صيانة الأنظمة",
     link: "./blogs/fire-fighting",
-    tags: ["مكافحة الحرائق",  "السلامة من الحرائق",  ]  // الكلمات المفتاحية
+    tags: ["مكافحة الحرائق",  "السلامة من الحرائق",  ] 
 }
 
   ],
